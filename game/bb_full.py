@@ -443,7 +443,10 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
 
     # ---- спецкарты (лист СПЕЦКАРТЫ 24 позиции; активация ≤1 за ход — §9.1) ----
     def spec_phase(p, c):
-        if not C['special_cards'] or p.get('spec_used_turn') or rng.random() > p['pers']['spec_p'] * .7:
+        # №20 «Отменяет спец. возможность» (лист Р2.1 ч.1/2, дословно): цель заблокирована до конца игры
+        if p.get('spec_blocked'):
+            return
+        if not C['special_cards'] or p['spec_used'] or p.get('spec_used_turn') or rng.random() > p['pers']['spec_p'] * .7:
             return
         i = p['spec_i']; lv = [q for q in alive() if q is not p]
         def use():
