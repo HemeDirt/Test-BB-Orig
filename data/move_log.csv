@@ -522,3 +522,9 @@ _archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КА
 _archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,copy:draft-rules-to-notes (author B3; archive untouched),2026-11-02T00:00:00
 _archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/final_v5 (1).json,game/legacy/workspace.tar.gz/src/final_v5.json,re-extract:was duplicate_skipped but required by sim layout (md5 verified),2026-11-02T00:00:00
 _archive/ws/sim/pool_indices.json,game/legacy/workspace.tar.gz/sim/pool_indices.json,restore-layout:required by game_sim.py open('sim/pool_indices.json'),2026-11-02T00:00:00
+2026-11-01T18:06:45Z,_inbox/rules_v3.txt,docs/rules/rules_v3.txt,author_fix_layout_document
+2026-11-01T18:06:45Z,_inbox/rules_short.txt,docs/rules/rules_short.txt,author_fix_layout_document
+2026-11-01T18:06:45Z,_inbox/sim_8punk.txt,docs/reports/sim_8punk.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/sim_dop_2_20.txt,docs/reports/sim_dop_2_20.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/verify_dop.txt,docs/reports/verify_dop.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/zadanie_sim.txt,_inbox/zadanie_sim.txt,duplicate_skipped_md5_neq_SPEC_stays_inbox_pending_author
