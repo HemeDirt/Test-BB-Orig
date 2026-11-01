@@ -3,21 +3,24 @@
 ## Задача (текущее сообщение автора)
 Реорганизация по Сообщению 1 + дополнения (архивы, CORE_THINK.md, раздел 12 в QWEN.md).
 
-## Текущий шаг
-- ШАГ А: inventory.py написан и запущен → data/manifest.json/csv, duplicates.json, classes.json.
-  Сводка: файлов всего 409; классы: code 56, deck_data 3, sim_results 21, docs_rules 35,
-  docs_reports 11, logs 2, web_junk 39, zip_archives 12, duplicates 145, unknown 85.
-- Дополнение 2: scan_archives.py написан и запущен → data/manifest_archives.json.
-  workspace.tar.gz содержит sim/ (game_sim.py, sim8.py, sim_n.py, sweep*.py, time_model.py) и v5/final колоды — извлечь в game/legacy/ и data/deck/.
-  rar (7 шт.) — status unrar_unavailable (нет unrar), это не ошибка.
-- ШАГ Б: unknown прочитаны выборочно; правила сортировки зафиксированы ниже.
-- ШАГ В: переносы ещё НЕ выполнены. move_log.csv пустой.
+## Текущий шаг (обновлено 2026-11-02, Подшаг C завершается)
+- ПРИНЯТО ранее: ШАГ А инвентаризация (409 файлов), scan_archives (19 архивов), reorganize боевой прогон,
+  коммиты «reorg: initial structure», «reorg: layouts per author».
+- Подшаг A: reorganize.py исправлен (существование путей), боёвой прогон, манифесты пересозданы. DONE.
+- Подшаг B: archive_extract выполнен (extracted 58, duplicate_skipped 616, legacy 18 файлов в game/legacy/);
+  точечные раскладки: cardlife→_inbox, spec_raw→data/deck, v3→docs/rules, черновики v2/ред4.0КАНОН→docs/notes.
+  Коммит «reorg: archives and layouts» = 62e0b1c. DONE.
+- Подшаг C: C1 DONE — рабочий код game/ нет (ядро ещё не собрано, это ЭТАП 1); запускался legacy
+  game/legacy/workspace.tar.gz/sim_n.py seed=1 N=8 variant=base, EXIT=0, лог game/results/run_seed1_n8.log,
+  STATS end=2 deaths=4 alive=4 win=[2,5,7,8] harvests=0 nat1/nat20=true (одна партия, не среднее!).
+  Для запуска восстановлен layout данных внутри legacy-папки (src/final_v5.json, sim/pool_indices.json — копии с тем же md5, move_log дополнен).
+  C2 DONE — CORE_THINK.md создан, раздел 12 добавлен в QWEN.md в конце файла (правка санкционирована явно).
+  C3 — этот файл обновлён, коммит «reorg: complete».
 
 ## Следующий шаг
-1. Написать tools/reorganize.py (батч-переносы по таблице классов+правил, move_log.csv, delete/archive критерии, извлечение архивов code/deck_data/sim_results/docs_*/logs без дублей по md5).
-2. Выполнить git mv канонических файлов: QWEN_MD_ПРАВИЛА_ПРОЕКТА.md→QWEN.md, ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md→SPEC.md.
-3. Пересоздать манифест, вывести дерево, README.md, коммит "reorg: initial structure".
-4. ШАГ Е: прогон bbsim.py сид 1 N=8 (проверить запуск; код не править).
+Жду «принято» по реорганизации. После приёмки — Сообщение 3: ПОЛНЫЙ АУДИТ ЗНАНИЙ по папкам
+(game/ + legacy → data/deck → data/results → docs/rules → docs/reports → docs/notes → _inbox → _archive выборочно),
+заметки в docs/notes/audit/, финал AUDIT.md + один вопрос.
 
 ## Ключевые числа
 - Корень до реорганизации: 176 записей верхнего уровня, 409 файлов всего, 134 МБ.

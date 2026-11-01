@@ -515,3 +515,8 @@ archive::_archive/workspace.tar.gz::./КОЛОДА_ОБМЕНА.docx,docs/rules/
 archive::_archive/workspace.tar.gz::./КОЛОДА_ОБМЕНА.md,,duplicate_skipped
 workspace.tar	_archive/workspace.tar	restore:author-rule-no-archive-delete	2026-11-02T00:00:00
 docs/rules/from_archive/КОЛОДА_ОБМЕНА.docx,docs/notes/КОЛОДА_ОБМЕНА.docx,copy:draft-rules-to-notes (author B3),2026-11-01T17:59:02
+game/results/from_archive/final_v5 (1).json,game/legacy/workspace.tar.gz/src/final_v5.json,copy:restore-archive-layout-for-launch (md5 identical),2026-11-02T00:00:00
+game/results/pool_indices (1).json,game/legacy/workspace.tar.gz/sim/pool_indices.json,copy:restore-archive-layout-for-launch,2026-11-02T00:00:00
+game/results/pool_indices (1).json,data/deck/pool_indices.json,copy:pool-to-deck-truth per keep-list,2026-11-02T00:00:00
+_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md,copy:draft-rules-to-notes (author B3; archive untouched),2026-11-02T00:00:00
+_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,copy:draft-rules-to-notes (author B3; archive untouched),2026-11-02T00:00:00
