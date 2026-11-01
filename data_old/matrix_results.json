@@ -1,0 +1,393 @@
+{
+ "sit_base": {
+  "games": 100,
+  "end": 3.5,
+  "p90": 5,
+  "deaths": 4.4,
+  "alive": 3.6,
+  "harvest_pct": 62,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 125,
+   "harvest": 87,
+   "selfkill": 78,
+   "kill": 74
+  },
+  "acts": {
+   "wound": 532,
+   "kill": 440,
+   "humiliate": 274,
+   "heal": 230,
+   "steal": 221
+  }
+ },
+ "sit_plane": {
+  "games": 100,
+  "end": 3.5,
+  "p90": 5,
+  "deaths": 4.4,
+  "alive": 3.6,
+  "harvest_pct": 60,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 125,
+   "harvest": 81,
+   "selfkill": 78,
+   "kill": 74
+  },
+  "acts": {
+   "wound": 532,
+   "kill": 440,
+   "humiliate": 274,
+   "heal": 230,
+   "steal": 221
+  }
+ },
+ "sit_pole": {
+  "games": 100,
+  "end": 5.81,
+  "p90": 7,
+  "deaths": 7.26,
+  "alive": 0.95,
+  "harvest_pct": 93,
+  "revive_pct": 16,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 214,
+   "wounds": 180,
+   "kill": 114,
+   "selfkill": 109
+  },
+  "acts": {
+   "wound": 627,
+   "kill": 622,
+   "humiliate": 340,
+   "heal": 290,
+   "steal": 289
+  }
+ },
+ "sit_purg": {
+  "games": 100,
+  "end": 4.79,
+  "p90": 7,
+  "deaths": 5.83,
+  "alive": 2.4,
+  "harvest_pct": 70,
+  "revive_pct": 17,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 146,
+   "wounds": 136,
+   "kill": 108,
+   "selfkill": 97
+  },
+  "acts": {
+   "wound": 577,
+   "kill": 536,
+   "humiliate": 317,
+   "heal": 248,
+   "steal": 245
+  }
+ },
+ "sit_hrono": {
+  "games": 100,
+  "end": 2.14,
+  "p90": 3,
+  "deaths": 2,
+  "alive": 6,
+  "harvest_pct": 25,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 60,
+   "selfkill": 41,
+   "kill": 32,
+   "harvest": 29
+  },
+  "acts": {
+   "wound": 398,
+   "kill": 233,
+   "humiliate": 202,
+   "steal": 173,
+   "heal": 170
+  }
+ },
+ "sit_amkary": {
+  "games": 100,
+  "end": 5.23,
+  "p90": 6,
+  "deaths": 6.63,
+  "alive": 1.52,
+  "harvest_pct": 87,
+  "revive_pct": 12,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 178,
+   "wounds": 172,
+   "kill": 107,
+   "selfkill": 101
+  },
+  "acts": {
+   "wound": 601,
+   "kill": 588,
+   "humiliate": 333,
+   "heal": 285,
+   "steal": 272
+  }
+ },
+ "dth7": {
+  "games": 100,
+  "end": 3.89,
+  "p90": 5,
+  "deaths": 4.22,
+  "alive": 3.79,
+  "harvest_pct": 78,
+  "revive_pct": 1,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 136,
+   "selfkill": 107,
+   "kill": 84,
+   "link": 68
+  },
+  "acts": {
+   "wound": 568,
+   "kill": 513,
+   "humiliate": 296,
+   "heal": 271,
+   "steal": 245
+  }
+ },
+ "rpds_economy": {
+  "games": 100,
+  "end": 3.47,
+  "p90": 4,
+  "deaths": 4.35,
+  "alive": 3.65,
+  "harvest_pct": 49,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 118,
+   "kill": 81,
+   "selfkill": 79,
+   "harvest": 70
+  },
+  "acts": {
+   "wound": 517,
+   "kill": 429,
+   "humiliate": 256,
+   "heal": 248,
+   "steal": 220
+  }
+ },
+ "N4": {
+  "games": 100,
+  "end": 2.9,
+  "p90": 3,
+  "deaths": 2.03,
+  "alive": 1.97,
+  "harvest_pct": 73,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 106,
+   "kill": 40,
+   "selfkill": 33,
+   "wounds": 24
+  },
+  "acts": {
+   "wound": 206,
+   "kill": 175,
+   "steal": 155,
+   "humiliate": 153,
+   "marauder": 44
+  }
+ },
+ "N6": {
+  "games": 100,
+  "end": 3.41,
+  "p90": 4,
+  "deaths": 3.11,
+  "alive": 2.89,
+  "harvest_pct": 67,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 96,
+   "wounds": 79,
+   "kill": 61,
+   "selfkill": 57
+  },
+  "acts": {
+   "wound": 319,
+   "kill": 318,
+   "humiliate": 195,
+   "steal": 176,
+   "heal": 162
+  }
+ },
+ "N8": {
+  "games": 100,
+  "end": 3.5,
+  "p90": 5,
+  "deaths": 4.4,
+  "alive": 3.6,
+  "harvest_pct": 62,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 125,
+   "harvest": 87,
+   "selfkill": 78,
+   "kill": 74
+  },
+  "acts": {
+   "wound": 532,
+   "kill": 440,
+   "humiliate": 274,
+   "heal": 230,
+   "steal": 221
+  }
+ },
+ "N10": {
+  "games": 100,
+  "end": 3.65,
+  "p90": 5,
+  "deaths": 5.49,
+  "alive": 4.51,
+  "harvest_pct": 38,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 149,
+   "selfkill": 97,
+   "kill": 96,
+   "sniper": 72
+  },
+  "acts": {
+   "wound": 618,
+   "kill": 499,
+   "heal": 437,
+   "steal": 306,
+   "humiliate": 290
+  }
+ },
+ "N12": {
+  "games": 100,
+  "end": 3.85,
+  "p90": 5,
+  "deaths": 6.6,
+  "alive": 5.48,
+  "harvest_pct": 38,
+  "revive_pct": 8,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 171,
+   "kill": 115,
+   "selfkill": 95,
+   "link": 73
+  },
+  "acts": {
+   "wound": 652,
+   "kill": 611,
+   "heal": 548,
+   "humiliate": 455,
+   "steal": 337
+  }
+ },
+ "N16": {
+  "games": 100,
+  "end": 6.94,
+  "p90": 10,
+  "deaths": 12.45,
+  "alive": 4.57,
+  "harvest_pct": 67,
+  "revive_pct": 47,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 345,
+   "kill": 244,
+   "selfkill": 241,
+   "harvest": 128
+  },
+  "acts": {
+   "kill": 1259,
+   "wound": 1091,
+   "heal": 926,
+   "humiliate": 869,
+   "steal": 655
+  }
+ },
+ "N20": {
+  "games": 100,
+  "end": 6.66,
+  "p90": 9,
+  "deaths": 14.72,
+  "alive": 6.34,
+  "harvest_pct": 49,
+  "revive_pct": 49,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 518,
+   "selfkill": 318,
+   "kill": 295,
+   "link": 83
+  },
+  "acts": {
+   "kill": 1557,
+   "wound": 1452,
+   "heal": 1124,
+   "humiliate": 1042,
+   "steal": 704
+  }
+ },
+ "peaceful": {
+  "games": 100,
+  "end": 4.19,
+  "p90": 5,
+  "deaths": 4.17,
+  "alive": 3.83,
+  "harvest_pct": 86,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "harvest": 180,
+   "kill": 63,
+   "wounds": 58,
+   "selfkill": 48
+  },
+  "acts": {
+   "heal": 507,
+   "wound": 272,
+   "kill": 271,
+   "humiliate": 191,
+   "steal": 165
+  }
+ },
+ "base_ref": {
+  "games": 100,
+  "end": 3.5,
+  "p90": 5,
+  "deaths": 4.4,
+  "alive": 3.6,
+  "harvest_pct": 62,
+  "revive_pct": 0,
+  "stall_pct": 0,
+  "causes": {
+   "wounds": 125,
+   "harvest": 87,
+   "selfkill": 78,
+   "kill": 74
+  },
+  "acts": {
+   "wound": 532,
+   "kill": 440,
+   "humiliate": 274,
+   "heal": 230,
+   "steal": 221
+  }
+ }
+}

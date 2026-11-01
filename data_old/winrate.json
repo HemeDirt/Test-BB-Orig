@@ -1,0 +1,746 @@
+{
+ "base": {
+  "games": 100,
+  "end": 4.81,
+  "deaths": 5,
+  "surv_rate": 0.444,
+  "archs": {
+   "actor": {
+    "apps": 35,
+    "wins": 16,
+    "wr": 45.7
+   },
+   "aggr": {
+    "apps": 35,
+    "wins": 10,
+    "wr": 28.6
+   },
+   "chaos": {
+    "apps": 41,
+    "wins": 16,
+    "wr": 39.0
+   },
+   "collector_live": {
+    "apps": 45,
+    "wins": 22,
+    "wr": 48.9
+   },
+   "diplomat": {
+    "apps": 42,
+    "wins": 29,
+    "wr": 69.0
+   },
+   "fixated": {
+    "apps": 32,
+    "wins": 12,
+    "wr": 37.5
+   },
+   "fun": {
+    "apps": 36,
+    "wins": 20,
+    "wr": 55.6
+   },
+   "fun_late": {
+    "apps": 27,
+    "wins": 11,
+    "wr": 40.7
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 11,
+    "wr": 28.9
+   },
+   "hoard": {
+    "apps": 40,
+    "wins": 24,
+    "wr": 60.0
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 6,
+    "wr": 18.2
+   },
+   "lurker": {
+    "apps": 29,
+    "wins": 14,
+    "wr": 48.3
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 15,
+    "wr": 44.1
+   },
+   "marauder": {
+    "apps": 36,
+    "wins": 19,
+    "wr": 52.8
+   },
+   "medic": {
+    "apps": 31,
+    "wins": 18,
+    "wr": 58.1
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 16,
+    "wr": 61.5
+   },
+   "rampage": {
+    "apps": 34,
+    "wins": 8,
+    "wr": 23.5
+   },
+   "star": {
+    "apps": 37,
+    "wins": 19,
+    "wr": 51.4
+   },
+   "suicider": {
+    "apps": 31,
+    "wins": 11,
+    "wr": 35.5
+   },
+   "team": {
+    "apps": 37,
+    "wins": 14,
+    "wr": 37.8
+   },
+   "turtle": {
+    "apps": 41,
+    "wins": 24,
+    "wr": 58.5
+   },
+   "unionist": {
+    "apps": 36,
+    "wins": 11,
+    "wr": 30.6
+   },
+   "veteran": {
+    "apps": 43,
+    "wins": 18,
+    "wr": 41.9
+   }
+  },
+  "p90": 7
+ },
+ "plane": {
+  "games": 100,
+  "end": 4.19,
+  "deaths": 4.83,
+  "surv_rate": 0.457,
+  "archs": {
+   "actor": {
+    "apps": 35,
+    "wins": 16,
+    "wr": 45.7
+   },
+   "aggr": {
+    "apps": 35,
+    "wins": 11,
+    "wr": 31.4
+   },
+   "chaos": {
+    "apps": 41,
+    "wins": 19,
+    "wr": 46.3
+   },
+   "collector_live": {
+    "apps": 45,
+    "wins": 22,
+    "wr": 48.9
+   },
+   "diplomat": {
+    "apps": 42,
+    "wins": 30,
+    "wr": 71.4
+   },
+   "fixated": {
+    "apps": 32,
+    "wins": 15,
+    "wr": 46.9
+   },
+   "fun": {
+    "apps": 36,
+    "wins": 18,
+    "wr": 50.0
+   },
+   "fun_late": {
+    "apps": 27,
+    "wins": 9,
+    "wr": 33.3
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 13,
+    "wr": 34.2
+   },
+   "hoard": {
+    "apps": 40,
+    "wins": 23,
+    "wr": 57.5
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 8,
+    "wr": 24.2
+   },
+   "lurker": {
+    "apps": 29,
+    "wins": 13,
+    "wr": 44.8
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 13,
+    "wr": 38.2
+   },
+   "marauder": {
+    "apps": 36,
+    "wins": 20,
+    "wr": 55.6
+   },
+   "medic": {
+    "apps": 31,
+    "wins": 17,
+    "wr": 54.8
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 17,
+    "wr": 65.4
+   },
+   "rampage": {
+    "apps": 34,
+    "wins": 9,
+    "wr": 26.5
+   },
+   "star": {
+    "apps": 37,
+    "wins": 22,
+    "wr": 59.5
+   },
+   "suicider": {
+    "apps": 31,
+    "wins": 13,
+    "wr": 41.9
+   },
+   "team": {
+    "apps": 37,
+    "wins": 14,
+    "wr": 37.8
+   },
+   "turtle": {
+    "apps": 41,
+    "wins": 25,
+    "wr": 61.0
+   },
+   "unionist": {
+    "apps": 36,
+    "wins": 9,
+    "wr": 25.0
+   },
+   "veteran": {
+    "apps": 43,
+    "wins": 18,
+    "wr": 41.9
+   }
+  },
+  "p90": 5
+ },
+ "pole": {
+  "games": 100,
+  "end": 7.46,
+  "deaths": 7.7,
+  "surv_rate": 0.148,
+  "archs": {
+   "actor": {
+    "apps": 35,
+    "wins": 7,
+    "wr": 20.0
+   },
+   "aggr": {
+    "apps": 35,
+    "wins": 3,
+    "wr": 8.6
+   },
+   "chaos": {
+    "apps": 42,
+    "wins": 4,
+    "wr": 9.5
+   },
+   "collector_live": {
+    "apps": 45,
+    "wins": 5,
+    "wr": 11.1
+   },
+   "diplomat": {
+    "apps": 42,
+    "wins": 6,
+    "wr": 14.3
+   },
+   "fixated": {
+    "apps": 32,
+    "wins": 8,
+    "wr": 25.0
+   },
+   "fun": {
+    "apps": 36,
+    "wins": 5,
+    "wr": 13.9
+   },
+   "fun_late": {
+    "apps": 27,
+    "wins": 6,
+    "wr": 22.2
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 3,
+    "wr": 7.9
+   },
+   "hoard": {
+    "apps": 40,
+    "wins": 9,
+    "wr": 22.5
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 3,
+    "wr": 9.1
+   },
+   "lurker": {
+    "apps": 30,
+    "wins": 6,
+    "wr": 20.0
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 5,
+    "wr": 14.7
+   },
+   "marauder": {
+    "apps": 36,
+    "wins": 9,
+    "wr": 25.0
+   },
+   "medic": {
+    "apps": 31,
+    "wins": 6,
+    "wr": 19.4
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 5,
+    "wr": 19.2
+   },
+   "rampage": {
+    "apps": 35,
+    "wins": 2,
+    "wr": 5.7
+   },
+   "star": {
+    "apps": 37,
+    "wins": 3,
+    "wr": 8.1
+   },
+   "suicider": {
+    "apps": 31,
+    "wins": 3,
+    "wr": 9.7
+   },
+   "team": {
+    "apps": 37,
+    "wins": 6,
+    "wr": 16.2
+   },
+   "turtle": {
+    "apps": 41,
+    "wins": 9,
+    "wr": 22.0
+   },
+   "unionist": {
+    "apps": 36,
+    "wins": 4,
+    "wr": 11.1
+   },
+   "veteran": {
+    "apps": 43,
+    "wins": 5,
+    "wr": 11.6
+   }
+  },
+  "p90": 10
+ },
+ "purg": {
+  "games": 100,
+  "end": 5.84,
+  "deaths": 5.84,
+  "surv_rate": 0.35,
+  "archs": {
+   "actor": {
+    "apps": 34,
+    "wins": 13,
+    "wr": 38.2
+   },
+   "aggr": {
+    "apps": 34,
+    "wins": 9,
+    "wr": 26.5
+   },
+   "chaos": {
+    "apps": 43,
+    "wins": 13,
+    "wr": 30.2
+   },
+   "collector_live": {
+    "apps": 44,
+    "wins": 16,
+    "wr": 36.4
+   },
+   "diplomat": {
+    "apps": 43,
+    "wins": 11,
+    "wr": 25.6
+   },
+   "fixated": {
+    "apps": 30,
+    "wins": 10,
+    "wr": 33.3
+   },
+   "fun": {
+    "apps": 37,
+    "wins": 16,
+    "wr": 43.2
+   },
+   "fun_late": {
+    "apps": 28,
+    "wins": 12,
+    "wr": 42.9
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 13,
+    "wr": 34.2
+   },
+   "hoard": {
+    "apps": 42,
+    "wins": 17,
+    "wr": 40.5
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 7,
+    "wr": 21.2
+   },
+   "lurker": {
+    "apps": 30,
+    "wins": 9,
+    "wr": 30.0
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 12,
+    "wr": 35.3
+   },
+   "marauder": {
+    "apps": 35,
+    "wins": 17,
+    "wr": 48.6
+   },
+   "medic": {
+    "apps": 32,
+    "wins": 13,
+    "wr": 40.6
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 11,
+    "wr": 42.3
+   },
+   "rampage": {
+    "apps": 34,
+    "wins": 9,
+    "wr": 26.5
+   },
+   "star": {
+    "apps": 37,
+    "wins": 16,
+    "wr": 43.2
+   },
+   "suicider": {
+    "apps": 33,
+    "wins": 9,
+    "wr": 27.3
+   },
+   "team": {
+    "apps": 36,
+    "wins": 10,
+    "wr": 27.8
+   },
+   "turtle": {
+    "apps": 39,
+    "wins": 18,
+    "wr": 46.2
+   },
+   "unionist": {
+    "apps": 35,
+    "wins": 13,
+    "wr": 37.1
+   },
+   "veteran": {
+    "apps": 42,
+    "wins": 13,
+    "wr": 31.0
+   }
+  },
+  "p90": 9
+ },
+ "hrono": {
+  "games": 100,
+  "end": 2.12,
+  "deaths": 1.8,
+  "surv_rate": 0.793,
+  "archs": {
+   "actor": {
+    "apps": 33,
+    "wins": 27,
+    "wr": 81.8
+   },
+   "aggr": {
+    "apps": 36,
+    "wins": 25,
+    "wr": 69.4
+   },
+   "chaos": {
+    "apps": 41,
+    "wins": 31,
+    "wr": 75.6
+   },
+   "collector_live": {
+    "apps": 45,
+    "wins": 40,
+    "wr": 88.9
+   },
+   "diplomat": {
+    "apps": 42,
+    "wins": 38,
+    "wr": 90.5
+   },
+   "fixated": {
+    "apps": 30,
+    "wins": 19,
+    "wr": 63.3
+   },
+   "fun": {
+    "apps": 35,
+    "wins": 30,
+    "wr": 85.7
+   },
+   "fun_late": {
+    "apps": 27,
+    "wins": 23,
+    "wr": 85.2
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 29,
+    "wr": 76.3
+   },
+   "hoard": {
+    "apps": 40,
+    "wins": 33,
+    "wr": 82.5
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 21,
+    "wr": 63.6
+   },
+   "lurker": {
+    "apps": 29,
+    "wins": 25,
+    "wr": 86.2
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 27,
+    "wr": 79.4
+   },
+   "marauder": {
+    "apps": 35,
+    "wins": 29,
+    "wr": 82.9
+   },
+   "medic": {
+    "apps": 30,
+    "wins": 25,
+    "wr": 83.3
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 21,
+    "wr": 80.8
+   },
+   "rampage": {
+    "apps": 34,
+    "wins": 26,
+    "wr": 76.5
+   },
+   "star": {
+    "apps": 37,
+    "wins": 30,
+    "wr": 81.1
+   },
+   "suicider": {
+    "apps": 32,
+    "wins": 22,
+    "wr": 68.8
+   },
+   "team": {
+    "apps": 36,
+    "wins": 26,
+    "wr": 72.2
+   },
+   "turtle": {
+    "apps": 40,
+    "wins": 32,
+    "wr": 80.0
+   },
+   "unionist": {
+    "apps": 35,
+    "wins": 29,
+    "wr": 82.9
+   },
+   "veteran": {
+    "apps": 43,
+    "wins": 35,
+    "wr": 81.4
+   }
+  },
+  "p90": 3
+ },
+ "amkary": {
+  "games": 100,
+  "end": 6.78,
+  "deaths": 7,
+  "surv_rate": 0.223,
+  "archs": {
+   "actor": {
+    "apps": 35,
+    "wins": 13,
+    "wr": 37.1
+   },
+   "aggr": {
+    "apps": 35,
+    "wins": 4,
+    "wr": 11.4
+   },
+   "chaos": {
+    "apps": 41,
+    "wins": 5,
+    "wr": 12.2
+   },
+   "collector_live": {
+    "apps": 45,
+    "wins": 8,
+    "wr": 17.8
+   },
+   "diplomat": {
+    "apps": 43,
+    "wins": 13,
+    "wr": 30.2
+   },
+   "fixated": {
+    "apps": 32,
+    "wins": 6,
+    "wr": 18.8
+   },
+   "fun": {
+    "apps": 36,
+    "wins": 15,
+    "wr": 41.7
+   },
+   "fun_late": {
+    "apps": 27,
+    "wins": 6,
+    "wr": 22.2
+   },
+   "gambler": {
+    "apps": 38,
+    "wins": 4,
+    "wr": 10.5
+   },
+   "hoard": {
+    "apps": 40,
+    "wins": 16,
+    "wr": 40.0
+   },
+   "loyal": {
+    "apps": 33,
+    "wins": 3,
+    "wr": 9.1
+   },
+   "lurker": {
+    "apps": 29,
+    "wins": 7,
+    "wr": 24.1
+   },
+   "manip": {
+    "apps": 34,
+    "wins": 7,
+    "wr": 20.6
+   },
+   "marauder": {
+    "apps": 36,
+    "wins": 11,
+    "wr": 30.6
+   },
+   "medic": {
+    "apps": 31,
+    "wins": 5,
+    "wr": 16.1
+   },
+   "paranoid": {
+    "apps": 26,
+    "wins": 7,
+    "wr": 26.9
+   },
+   "rampage": {
+    "apps": 35,
+    "wins": 4,
+    "wr": 11.4
+   },
+   "star": {
+    "apps": 37,
+    "wins": 8,
+    "wr": 21.6
+   },
+   "suicider": {
+    "apps": 31,
+    "wins": 9,
+    "wr": 29.0
+   },
+   "team": {
+    "apps": 37,
+    "wins": 8,
+    "wr": 21.6
+   },
+   "turtle": {
+    "apps": 41,
+    "wins": 11,
+    "wr": 26.8
+   },
+   "unionist": {
+    "apps": 36,
+    "wins": 6,
+    "wr": 16.7
+   },
+   "veteran": {
+    "apps": 43,
+    "wins": 7,
+    "wr": 16.3
+   }
+  },
+  "p90": 9
+ }
+}

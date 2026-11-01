@@ -1,0 +1,38 @@
+{
+ "meta": {
+  "games": 100,
+  "sit": "base",
+  "note": "срабатываний ветки за 100 партий; счётчики не трогают ГСЧ",
+  "core_sha": "bdef4789ffdb"
+ },
+ "counts": {
+  "8": {
+   "blind_kill": 452,
+   "harvest_pick=leader": 148,
+   "pressure": 126,
+   "spec_cycle": 507,
+   "traitor": 100,
+   "mode=rpds_economy": 2750,
+   "random_outcome": 893,
+   "crit_price": 43,
+   "or_noise": 3132,
+   "pacifist_c1": 782,
+   "queue_reverse": 219,
+   "escalation": 70
+  },
+  "12": {
+   "blind_kill": 759,
+   "harvest_pick=leader": 185,
+   "pressure": 143,
+   "spec_cycle": 659,
+   "traitor": 100,
+   "mode=rpds_economy": 5296,
+   "random_outcome": 1686,
+   "crit_price": 64,
+   "or_noise": 8738,
+   "pacifist_c1": 1163,
+   "queue_reverse": 309,
+   "escalation": 199
+  }
+ }
+}

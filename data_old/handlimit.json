@@ -1,0 +1,995 @@
+{
+ "meta": {
+  "games": 100,
+  "axes": [
+   "N8/base",
+   "N8/plane",
+   "N12/base",
+   "N16/base"
+  ],
+  "limits": [
+   null,
+   7,
+   9,
+   12,
+   15
+  ],
+  "seeds": "1..100 (парные)",
+  "date": "2026-10-16",
+  "core": "B15",
+  "seconds": 8.1,
+  "games_total": 2000
+ },
+ "runs": {
+  "N8/base|None": {
+   "games": 100,
+   "end_mean": 4.91,
+   "end_sd": 1.91,
+   "p90": 7,
+   "deaths_mean": 5.02,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 13.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 0.74,
+   "gained_max_mean": 0.57,
+   "drag_mean": 8.96,
+   "rev_pct": 35,
+   "harv_pct": 64,
+   "coll_per_game": 1.62,
+   "coll_surv_pct": 51,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.4,
+   "coll_max_mean": 1.8
+  },
+  "N8/base|7": {
+   "games": 100,
+   "end_mean": 4.88,
+   "end_sd": 1.85,
+   "p90": 7,
+   "deaths_mean": 5,
+   "burns_mean": 0.21,
+   "burns_pct": 18,
+   "maxhand_mean": 7,
+   "hand_sum_mean": 13.3,
+   "hand_max_mean": 4.2,
+   "gained_mean": 0.7,
+   "gained_max_mean": 0.56,
+   "drag_mean": 8.31,
+   "rev_pct": 35,
+   "harv_pct": 67,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 52,
+   "coll_gained_mean": 0.4,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.8
+  },
+  "N8/base|9": {
+   "games": 100,
+   "end_mean": 4.91,
+   "end_sd": 1.91,
+   "p90": 7,
+   "deaths_mean": 5.02,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 13.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 0.74,
+   "gained_max_mean": 0.57,
+   "drag_mean": 8.96,
+   "rev_pct": 35,
+   "harv_pct": 64,
+   "coll_per_game": 1.62,
+   "coll_surv_pct": 51,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.4,
+   "coll_max_mean": 1.8
+  },
+  "N8/base|12": {
+   "games": 100,
+   "end_mean": 4.91,
+   "end_sd": 1.91,
+   "p90": 7,
+   "deaths_mean": 5.02,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 13.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 0.74,
+   "gained_max_mean": 0.57,
+   "drag_mean": 8.96,
+   "rev_pct": 35,
+   "harv_pct": 64,
+   "coll_per_game": 1.62,
+   "coll_surv_pct": 51,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.4,
+   "coll_max_mean": 1.8
+  },
+  "N8/base|15": {
+   "games": 100,
+   "end_mean": 4.91,
+   "end_sd": 1.91,
+   "p90": 7,
+   "deaths_mean": 5.02,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 13.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 0.74,
+   "gained_max_mean": 0.57,
+   "drag_mean": 8.96,
+   "rev_pct": 35,
+   "harv_pct": 64,
+   "coll_per_game": 1.62,
+   "coll_surv_pct": 51,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.4,
+   "coll_max_mean": 1.8
+  },
+  "N8/plane|None": {
+   "games": 100,
+   "end_mean": 4.21,
+   "end_sd": 1.0,
+   "p90": 5,
+   "deaths_mean": 4.79,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 14.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 0.73,
+   "gained_max_mean": 0.56,
+   "drag_mean": 1.24,
+   "rev_pct": 31,
+   "harv_pct": 54,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 55,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.8
+  },
+  "N8/plane|7": {
+   "games": 100,
+   "end_mean": 4.23,
+   "end_sd": 0.99,
+   "p90": 5,
+   "deaths_mean": 4.76,
+   "burns_mean": 0.21,
+   "burns_pct": 18,
+   "maxhand_mean": 7,
+   "hand_sum_mean": 13.9,
+   "hand_max_mean": 4.5,
+   "gained_mean": 0.69,
+   "gained_max_mean": 0.55,
+   "drag_mean": 1.23,
+   "rev_pct": 31,
+   "harv_pct": 57,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 56,
+   "coll_gained_mean": 0.4,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.9
+  },
+  "N8/plane|9": {
+   "games": 100,
+   "end_mean": 4.21,
+   "end_sd": 1.0,
+   "p90": 5,
+   "deaths_mean": 4.79,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 14.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 0.73,
+   "gained_max_mean": 0.56,
+   "drag_mean": 1.24,
+   "rev_pct": 31,
+   "harv_pct": 54,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 55,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.8
+  },
+  "N8/plane|12": {
+   "games": 100,
+   "end_mean": 4.21,
+   "end_sd": 1.0,
+   "p90": 5,
+   "deaths_mean": 4.79,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 14.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 0.73,
+   "gained_max_mean": 0.56,
+   "drag_mean": 1.24,
+   "rev_pct": 31,
+   "harv_pct": 54,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 55,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.8
+  },
+  "N8/plane|15": {
+   "games": 100,
+   "end_mean": 4.21,
+   "end_sd": 1.0,
+   "p90": 5,
+   "deaths_mean": 4.79,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.18,
+   "hand_sum_mean": 14.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 0.73,
+   "gained_max_mean": 0.56,
+   "drag_mean": 1.24,
+   "rev_pct": 31,
+   "harv_pct": 54,
+   "coll_per_game": 1.63,
+   "coll_surv_pct": 55,
+   "coll_gained_mean": 0.41,
+   "coll_hand_mean": 2.5,
+   "coll_max_mean": 1.8
+  },
+  "N12/base|None": {
+   "games": 100,
+   "end_mean": 6.62,
+   "end_sd": 2.16,
+   "p90": 10,
+   "deaths_mean": 8.16,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.25,
+   "hand_sum_mean": 14.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 1.07,
+   "gained_max_mean": 0.7,
+   "drag_mean": 14.73,
+   "rev_pct": 57,
+   "harv_pct": 74,
+   "coll_per_game": 2.23,
+   "coll_surv_pct": 52,
+   "coll_gained_mean": 0.61,
+   "coll_hand_mean": 2.3,
+   "coll_max_mean": 1.7
+  },
+  "N12/base|7": {
+   "games": 100,
+   "end_mean": 6.46,
+   "end_sd": 2.11,
+   "p90": 9,
+   "deaths_mean": 8.16,
+   "burns_mean": 0.27,
+   "burns_pct": 25,
+   "maxhand_mean": 7,
+   "hand_sum_mean": 14.5,
+   "hand_max_mean": 4.3,
+   "gained_mean": 1.06,
+   "gained_max_mean": 0.68,
+   "drag_mean": 12.75,
+   "rev_pct": 56,
+   "harv_pct": 73,
+   "coll_per_game": 2.25,
+   "coll_surv_pct": 51,
+   "coll_gained_mean": 0.59,
+   "coll_hand_mean": 2.2,
+   "coll_max_mean": 1.6
+  },
+  "N12/base|9": {
+   "games": 100,
+   "end_mean": 6.62,
+   "end_sd": 2.16,
+   "p90": 10,
+   "deaths_mean": 8.16,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.25,
+   "hand_sum_mean": 14.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 1.07,
+   "gained_max_mean": 0.7,
+   "drag_mean": 14.73,
+   "rev_pct": 57,
+   "harv_pct": 74,
+   "coll_per_game": 2.23,
+   "coll_surv_pct": 52,
+   "coll_gained_mean": 0.61,
+   "coll_hand_mean": 2.3,
+   "coll_max_mean": 1.7
+  },
+  "N12/base|12": {
+   "games": 100,
+   "end_mean": 6.62,
+   "end_sd": 2.16,
+   "p90": 10,
+   "deaths_mean": 8.16,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.25,
+   "hand_sum_mean": 14.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 1.07,
+   "gained_max_mean": 0.7,
+   "drag_mean": 14.73,
+   "rev_pct": 57,
+   "harv_pct": 74,
+   "coll_per_game": 2.23,
+   "coll_surv_pct": 52,
+   "coll_gained_mean": 0.61,
+   "coll_hand_mean": 2.3,
+   "coll_max_mean": 1.7
+  },
+  "N12/base|15": {
+   "games": 100,
+   "end_mean": 6.62,
+   "end_sd": 2.16,
+   "p90": 10,
+   "deaths_mean": 8.16,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.25,
+   "hand_sum_mean": 14.4,
+   "hand_max_mean": 4.2,
+   "gained_mean": 1.07,
+   "gained_max_mean": 0.7,
+   "drag_mean": 14.73,
+   "rev_pct": 57,
+   "harv_pct": 74,
+   "coll_per_game": 2.23,
+   "coll_surv_pct": 52,
+   "coll_gained_mean": 0.61,
+   "coll_hand_mean": 2.3,
+   "coll_max_mean": 1.7
+  },
+  "N16/base|None": {
+   "games": 100,
+   "end_mean": 8.02,
+   "end_sd": 2.75,
+   "p90": 12,
+   "deaths_mean": 11.74,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.46,
+   "hand_sum_mean": 17.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 1.41,
+   "gained_max_mean": 0.78,
+   "drag_mean": 25.06,
+   "rev_pct": 70,
+   "harv_pct": 73,
+   "coll_per_game": 2.9,
+   "coll_surv_pct": 45,
+   "coll_gained_mean": 0.69,
+   "coll_hand_mean": 3.0,
+   "coll_max_mean": 2.0
+  },
+  "N16/base|7": {
+   "games": 100,
+   "end_mean": 7.77,
+   "end_sd": 2.49,
+   "p90": 11,
+   "deaths_mean": 11.51,
+   "burns_mean": 0.5,
+   "burns_pct": 45,
+   "maxhand_mean": 7,
+   "hand_sum_mean": 16.9,
+   "hand_max_mean": 4.6,
+   "gained_mean": 1.35,
+   "gained_max_mean": 0.76,
+   "drag_mean": 18.81,
+   "rev_pct": 69,
+   "harv_pct": 74,
+   "coll_per_game": 2.89,
+   "coll_surv_pct": 44,
+   "coll_gained_mean": 0.69,
+   "coll_hand_mean": 2.8,
+   "coll_max_mean": 1.9
+  },
+  "N16/base|9": {
+   "games": 100,
+   "end_mean": 8.02,
+   "end_sd": 2.75,
+   "p90": 12,
+   "deaths_mean": 11.74,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.46,
+   "hand_sum_mean": 17.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 1.41,
+   "gained_max_mean": 0.78,
+   "drag_mean": 25.06,
+   "rev_pct": 70,
+   "harv_pct": 73,
+   "coll_per_game": 2.9,
+   "coll_surv_pct": 45,
+   "coll_gained_mean": 0.69,
+   "coll_hand_mean": 3.0,
+   "coll_max_mean": 2.0
+  },
+  "N16/base|12": {
+   "games": 100,
+   "end_mean": 8.02,
+   "end_sd": 2.75,
+   "p90": 12,
+   "deaths_mean": 11.74,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.46,
+   "hand_sum_mean": 17.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 1.41,
+   "gained_max_mean": 0.78,
+   "drag_mean": 25.06,
+   "rev_pct": 70,
+   "harv_pct": 73,
+   "coll_per_game": 2.9,
+   "coll_surv_pct": 45,
+   "coll_gained_mean": 0.69,
+   "coll_hand_mean": 3.0,
+   "coll_max_mean": 2.0
+  },
+  "N16/base|15": {
+   "games": 100,
+   "end_mean": 8.02,
+   "end_sd": 2.75,
+   "p90": 12,
+   "deaths_mean": 11.74,
+   "burns_mean": 0,
+   "burns_pct": 0,
+   "maxhand_mean": 7.46,
+   "hand_sum_mean": 17.0,
+   "hand_max_mean": 4.5,
+   "gained_mean": 1.41,
+   "gained_max_mean": 0.78,
+   "drag_mean": 25.06,
+   "rev_pct": 70,
+   "harv_pct": 73,
+   "coll_per_game": 2.9,
+   "coll_surv_pct": 45,
+   "coll_gained_mean": 0.69,
+   "coll_hand_mean": 3.0,
+   "coll_max_mean": 2.0
+  }
+ },
+ "pairs": {
+  "N8/base|7": {
+   "end": {
+    "delta": -0.03,
+    "sd": 0.499,
+    "sem": 0.05,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": -0.02,
+    "sd": 0.316,
+    "sem": 0.032,
+    "mark": ""
+   },
+   "gained": {
+    "delta": -0.04,
+    "sd": 0.196,
+    "sem": 0.02,
+    "mark": "✳"
+   },
+   "hand_sum": {
+    "delta": -0.12,
+    "sd": 2.628,
+    "sem": 0.263,
+    "mark": ""
+   },
+   "drag": {
+    "delta": -0.649,
+    "sd": 6.736,
+    "sem": 0.674,
+    "mark": ""
+   },
+   "burns_mean": 0.21
+  },
+  "N8/base|9": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N8/base|12": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N8/base|15": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N8/plane|7": {
+   "end": {
+    "delta": 0.02,
+    "sd": 0.244,
+    "sem": 0.024,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": -0.03,
+    "sd": 0.298,
+    "sem": 0.03,
+    "mark": ""
+   },
+   "gained": {
+    "delta": -0.04,
+    "sd": 0.196,
+    "sem": 0.02,
+    "mark": "✳"
+   },
+   "hand_sum": {
+    "delta": -0.13,
+    "sd": 2.436,
+    "sem": 0.244,
+    "mark": ""
+   },
+   "drag": {
+    "delta": -0.003,
+    "sd": 0.299,
+    "sem": 0.03,
+    "mark": ""
+   },
+   "burns_mean": 0.21
+  },
+  "N8/plane|9": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N8/plane|12": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N8/plane|15": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N12/base|7": {
+   "end": {
+    "delta": -0.16,
+    "sd": 0.595,
+    "sem": 0.06,
+    "mark": "✳"
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.424,
+    "sem": 0.042,
+    "mark": ""
+   },
+   "gained": {
+    "delta": -0.01,
+    "sd": 0.412,
+    "sem": 0.041,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0.07,
+    "sd": 1.551,
+    "sem": 0.155,
+    "mark": ""
+   },
+   "drag": {
+    "delta": -1.975,
+    "sd": 10.004,
+    "sem": 1.0,
+    "mark": ""
+   },
+   "burns_mean": 0.27
+  },
+  "N12/base|9": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N12/base|12": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N12/base|15": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N16/base|7": {
+   "end": {
+    "delta": -0.25,
+    "sd": 1.512,
+    "sem": 0.151,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": -0.23,
+    "sd": 1.618,
+    "sem": 0.162,
+    "mark": ""
+   },
+   "gained": {
+    "delta": -0.06,
+    "sd": 0.562,
+    "sem": 0.056,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": -0.12,
+    "sd": 4.357,
+    "sem": 0.436,
+    "mark": ""
+   },
+   "drag": {
+    "delta": -6.247,
+    "sd": 38.404,
+    "sem": 3.84,
+    "mark": ""
+   },
+   "burns_mean": 0.5
+  },
+  "N16/base|9": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N16/base|12": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  },
+  "N16/base|15": {
+   "end": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "deaths": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "gained": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "hand_sum": {
+    "delta": 0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "drag": {
+    "delta": 0.0,
+    "sd": 0.0,
+    "sem": 0.0,
+    "mark": ""
+   },
+   "burns_mean": 0
+  }
+ }
+}

@@ -1,0 +1,134 @@
+[
+ {
+  "sit": "amkary",
+  "ro": false,
+  "end": 6.72,
+  "p90": 9,
+  "deaths": 6.94,
+  "alive": 1.82,
+  "harv": 90,
+  "selfkill": 15,
+  "harvest_sh": 36
+ },
+ {
+  "sit": "amkary",
+  "ro": true,
+  "end": 6.58,
+  "p90": 8,
+  "deaths": 6.8,
+  "alive": 1.91,
+  "harv": 96,
+  "selfkill": 14,
+  "harvest_sh": 39
+ },
+ {
+  "sit": "base",
+  "ro": false,
+  "end": 4.91,
+  "p90": 7,
+  "deaths": 5.02,
+  "alive": 3.52,
+  "harv": 64,
+  "selfkill": 17,
+  "harvest_sh": 27
+ },
+ {
+  "sit": "base",
+  "ro": true,
+  "end": 4.79,
+  "p90": 7,
+  "deaths": 4.92,
+  "alive": 3.55,
+  "harv": 75,
+  "selfkill": 15,
+  "harvest_sh": 29
+ },
+ {
+  "sit": "hrono",
+  "ro": false,
+  "end": 2.11,
+  "p90": 3,
+  "deaths": 1.77,
+  "alive": 6.28,
+  "harv": 21,
+  "selfkill": 16,
+  "harvest_sh": 14
+ },
+ {
+  "sit": "hrono",
+  "ro": true,
+  "end": 1.96,
+  "p90": 3,
+  "deaths": 1.76,
+  "alive": 6.26,
+  "harv": 25,
+  "selfkill": 18,
+  "harvest_sh": 16
+ },
+ {
+  "sit": "plane",
+  "ro": false,
+  "end": 4.21,
+  "p90": 5,
+  "deaths": 4.79,
+  "alive": 3.66,
+  "harv": 54,
+  "selfkill": 16,
+  "harvest_sh": 16
+ },
+ {
+  "sit": "plane",
+  "ro": true,
+  "end": 4.25,
+  "p90": 5,
+  "deaths": 4.68,
+  "alive": 3.73,
+  "harv": 71,
+  "selfkill": 14,
+  "harvest_sh": 20
+ },
+ {
+  "sit": "pole",
+  "ro": false,
+  "end": 7.53,
+  "p90": 10,
+  "deaths": 7.75,
+  "alive": 1.15,
+  "harv": 97,
+  "selfkill": 14,
+  "harvest_sh": 39
+ },
+ {
+  "sit": "pole",
+  "ro": true,
+  "end": 7.54,
+  "p90": 10,
+  "deaths": 7.71,
+  "alive": 1.2,
+  "harv": 100,
+  "selfkill": 13,
+  "harvest_sh": 40
+ },
+ {
+  "sit": "purg",
+  "ro": false,
+  "end": 5.94,
+  "p90": 9,
+  "deaths": 5.88,
+  "alive": 2.81,
+  "harv": 84,
+  "selfkill": 14,
+  "harvest_sh": 39
+ },
+ {
+  "sit": "purg",
+  "ro": true,
+  "end": 5.97,
+  "p90": 9,
+  "deaths": 6.03,
+  "alive": 2.76,
+  "harv": 86,
+  "selfkill": 14,
+  "harvest_sh": 37
+ }
+]
