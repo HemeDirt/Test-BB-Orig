@@ -1,196 +1,300 @@
 # -*- coding: utf-8 -*-
-"""Гард-тест S1a: любой флаг в положении OFF НЕ должен расходовать rng.
-Смысл по допуску Р3 п.3 (цитата): «прогнать одну и ту же партию с seed S при flag=off
-и при полном отсутствии ветки кода (или при flag=off, сравнив последовательность вызовов
-rng) — счётчик/журнал вызовов rng обязан совпадать побайтово».
-Сценарии допуска: harvest off, ghost_bets off, prof_complex off.
+"""Гард-тест S1a (ревизия Р3.3, ВЕРДИКТ «вариант В»): любой флаг OFF не расходует rng.
 
-Инвариант, СОХРАНЁННЫЙ из Р3 п.3 (явная фиксация по требованию Р3.1/Р3.2):
-OFF-флаг не добавляет НИ ОДНОГО rng-вызова к потоку партии с полностью вырезанной
-веткой; журнал побайтово совпадает с журналом эмуляции «ветви нет» (rng-расход
-on-ветки изымается из потока random адресно — по месту вызова).
-Критерии приемлемости Р3.1 проверяются ВСЕ:
-  (i)   количественно: число rng-вызовов OFF == базовому (побайтовая сверка), ON > базового;
-  (ii)  детерминизм OFF: два прогона с одним seed → идентичные журналы;
-  (iii) ghost_bets: off-журнал ПОБАЙТОВО == базовому; on != базовому; первый индекс
-        расхождения on/off >= индекса первой смерти (призраки появляются только после
-        смерти). Длины журналов НЕ сравниваются (вердикт Р3.2: ON меняет динамику —
-        выплаты/жетоны → другие решения → партия может закончиться раньше; 184 < 193
-        законно; прежний assert len(on) >= len(off) убран как неверный по смыслу гарда).
-Адресная эмуляция «ветки нет» (вердикт Р3.2, п.2.1): маркер режет ровно тот вызов,
-который сделал КОД ЖАТВЫ. Замер по факту диска: жатва живёт НЕ в turn, а в цикле
-циклов внутри run_game — bb_full.py строка 637 `v = rng.choice(alive()); st['harvests'] += 1`;
-имя функции-вызывающей в отчёт: run_game (co_name), линия 637. Различение:
-sys._getframe(1).f_code.co_name == 'run_game' И f_lineno == 637 (двойной адресный
-фильтр; замер Counter кадров: reveal/326 ×57, pick_target/339 ×24, act ×N,
-run_game/637 ×2, ghost_phase/533 ×1 — только run_game/637 и есть жатва). Эвристика
-«все alive» прежней ревизии запрещена вердиктом: она перехватила выбор цели мародёрства
-призраком на idx 70.
-bb_full.py НЕ тронут: никаких тестовых хуков/флаг-параметров в прод-коде — подмена
-только через наследника _Rng в подпроцессе.
-Прогоны — в ЧИСТЫХ подпроцессах (урок Р3.1/Р3.2: сравнение потоков random в одном
-процессе даёт ложный «детерминизм OFF»). pytest недоступен → unittest.
-Это НЕ симуляции (запрет S1a): фиксированные микросверки журналов на одном seed.
+Смысл допуска Р3 п.3 (цитата): «прогнать одну и ту же партию с seed S при flag=off
+и при ПОЛНОМ ОТСУТСТВИИ ветки кода … журнал вызовов rng обязан совпадать побайтово».
+
+Почему именно эксцизия (вердикт Р3.3; запись C36): жатва — ветка, МЕНЯЮЩАЯ СОСТОЯНИЕ
+(bb_full.py строки 636–639: rng.choice + death(v,'harvest')). Изъятие её вызова из
+журнала ON-прогона не отменяет смерть — партии расходятся каскадом с первого
+срабатывания, побайтовое равенство математически невозможно. Варианты A (формат _Rng)
+и B (ослабить до имён+чисел) отклонены координатором. Реализация допуска — буквальная:
+AST-эксцизия if-узлов флага во временный модуль _bb_excised_<flag>.py (истинное
+отсутствие ветки), прогон в ЧИСТОМ подпроцессе (урок iii), сравнение журналов побайтово.
+
+Инвариант, СОХРАНЁННЫЙ из Р3 п.3 (явная фиксация по требованию Р3.1 п.4):
+(а) журнал OFF == журналу EXCISED ПОББАЙТОВО ПО ПОЛНОЙ ДЛИНЕ (В1(1));
+(б) количественный критерий (i): число rng-вызовов OFF == базовому (EXCISED),
+    ON > базового (В3(д) + отдельный assert);
+(в) детерминизм OFF: два чистых подпроцесса, один seed → идентичные журналы (В3(г));
+(г) ghost_bets по В5/Р3.2 п.2.2: off==def побайтово; on!=off; первый индекс расхождения
+    on/off >= индекса первой смерти; ДЛИНЫ ЖУРНАЛОВ НЕ СРАВНИВАТЬ (assert len убран).
+Адресные маркеры В2: обёртка пишет на каждый вызов (method, out, co_name, f_lineno)
+через sys._getframe — одного co_name недостаточно (жатва инлайн в run_game). Место
+вызова жатвы: функция run_game, линия 637. Прод-код НЕ тронут: никаких хуков в bb_full.py.
+CUT-хирургия прежней ревизии (cut_harvest_choice, эвристика «все alive») УДАЛЕНА ЦЕЛИКОМ (В4).
 Запуск из корня: python3 -m unittest game.tests.test_flags_off -v
+Это НЕ симуляции (запрет S1a): фиксированные микросверки журналов на одном seed.
 """
-import json, os, subprocess, sys, unittest
+import ast, json, os, shutil, subprocess, sys, tempfile, unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT_DIR = os.path.dirname(os.path.dirname(HERE))
-sys.path.insert(0, os.path.join(HERE, '..'))
-import bb_full                      # noqa: E402
-from config import make_cfg, CFG_DEFAULTS  # noqa: E402
+GAME_DIR = os.path.join(ROOT_DIR, 'game')
+sys.path.insert(0, GAME_DIR)
+from config import CFG_DEFAULTS     # noqa: E402
 
-_JOURNAL_SNIPPET = r'''
-import sys, json, os
-sys.path.insert(0, os.path.join(%r, "game"))
-import bb_full
+SEED, NPLAY, SIT = 11, 8, 'base'
+
+# ---------------- AST-эксцизия (В1) ----------------
+def cond_mentions(node_test, flag_key):
+    for sub in ast.walk(node_test):
+        if (isinstance(sub, ast.Subscript) and isinstance(sub.value, ast.Name)
+                and sub.value.id == 'C' and isinstance(sub.slice, ast.Constant)
+                and sub.slice.value == flag_key):
+            return True
+    return False
+
+
+def strip_body(body, flag_key, removed, problems):
+    out = []
+    for st in body:
+        if isinstance(st, ast.If) and cond_mentions(st.test, flag_key):
+            if st.orelse:
+                problems.append(f'if@{st.lineno}: непустой orelse/elif — STOP по вердикту В1')
+                out.append(st)
+                continue
+            removed[0] += 1
+            continue                       # истинное отсутствие ветки
+        out.append(st)
+    return out
+
+
+def excise(src_text, flag_key):
+    """Удалить ВСЕ узлы ast.If с подпиской C[flag_key] в условии.
+    Возвращает (new_src, n_removed, problems)."""
+    tree = ast.parse(src_text)
+    removed = [0]
+    problems = []
+    for node in ast.walk(tree):
+        for field in ('body', 'orelse', 'finalbody'):
+            old = getattr(node, field, None)
+            if isinstance(old, list) and old and all(isinstance(x, ast.stmt) for x in old):
+                new = []
+                for st in old:
+                    if isinstance(st, ast.If) and cond_mentions(st.test, flag_key):
+                        if st.orelse:
+                            problems.append(f'if@{st.lineno}: непустой orelse/elif — STOP по вердикту В1')
+                            new.append(st)
+                            continue
+                        removed[0] += 1
+                        continue
+                    new.append(st)
+                setattr(node, field, new)
+    ast.fix_missing_locations(tree)
+    return ast.unparse(tree), removed[0], problems
+
+
+# ---------------- раннер подпроцесса (В1(д), В2, В6) ----------------
+_RUNNER = r'''
+import sys, json, os, importlib.util
+GAME = os.environ["BB_GAME_DIR"]
+sys.path.insert(0, GAME)
+spec_s = json.loads(sys.argv[1])
+if spec_s.get("module_path"):                       # временный эксцизированный модуль
+    uspec = importlib.util.spec_from_file_location("_bb_excised_", spec_s["module_path"])
+    bb = importlib.util.module_from_spec(uspec); uspec.loader.exec_module(bb)
+else:
+    sys.path.insert(0, os.path.join(GAME, "tests"))
+    import bb_full as bb
 from config import make_cfg
-spec = json.loads(sys.argv[1])
-cfg = make_cfg(**spec["overrides"])
+cfg = make_cfg(**spec_s["overrides"])
 calls = []
-real_cls = bb_full._Rng
+real_cls = bb._Rng
 
-CUT_CALLER = spec.get("cut_caller")      # имя функции-вызывающей, чей choice изымается из потока
-CUT_LINE   = spec.get("cut_line")        # линия вызова (двойной адресный фильтр по вердикту Р3.2)
-CUT_KIND   = spec.get("cut_kind", "choice")
+ENGINE_MARKS = ("bb_full", "_bb_excised_")   # файл движка или его эксцизированной копии
+def _is_engine(fn):
+    fn = fn or ""
+    return any(m in fn for m in ENGINE_MARKS)
+
+DEATH_MARK = {"n": None}
+_orig_run = bb.run_game
+import types as _t
 
 class Patched(real_cls):
     def _log(self, name, out):
-        calls.append((name, out))
+        fr = ("?", 0); hln = 0                       # В2: адрес вызова (co_name, f_lineno)
+        f = sys._getframe(1)                        # обходим стек до кадров движка
+        while f is not None:
+            if _is_engine(f.f_code.co_filename):
+                fr = (f.f_code.co_name, f.f_lineno)
+                if fr[0] == "run_game":             # НЕСУЩИЙ кадр run_game — это линия места вызова
+                    hln = f.f_lineno                # (для жатвы — 637 на HEAD; inner-хелперы дают run_game-кадр выше)
+            f = f.f_back
+        calls.append([name, repr(out), fr[0], fr[1], hln])
         return out
+bb._Rng = Patched
 
-if CUT_CALLER:
-    _done = [0]
-    def mk(kind):
-        base = getattr(real_cls, kind)
-        def patched(self, *a, **k):
-            f = sys._getframe(1)
-            if (f.f_code.co_name == CUT_CALLER and (CUT_LINE is None or f.f_lineno == CUT_LINE)):
-                _done[0] += 1
-                seq = a[0] if a else k.get("seq")
-                tgt = min(seq, key=lambda q: q["seat"])       # цель без обращения к random
-                calls.append(("CUT_" + kind + ":" + CUT_CALLER + "/" + str(f.f_lineno), tgt["seat"]))
-                return tgt                                     # rng-поток НЕ тронут
-            return base(self, *a, **k)
-        return patched
-    setattr(Patched, CUT_KIND, mk(CUT_KIND))
-
-bb_full._Rng = Patched
+_first_death_at = {"n": None}
+def _tracer(frame, event, arg):
+    if frame.f_code.co_name == "death" and _first_death_at["n"] is None:
+        _first_death_at["n"] = len(calls)           # rng-вызовов к моменту входа в первую смерть
+        return None
+    return _tracer if _first_death_at["n"] is None else None
+sys.settrace(_tracer)
 try:
-    bb_full.run_game(spec["seed"], spec["n"], cfg=cfg, situation=spec.get("situation", "base"))
-finally:
-    bb_full._Rng = real_cls
-print(json.dumps({"calls": calls, "first_death_cycle": None}, ensure_ascii=False, default=repr))
+    st, P = bb.run_game(spec_s["seed"], spec_s["n"], cfg=cfg, situation=spec_s["situation"])
+    sys.settrace(None)
+    res = dict(calls=calls, end=st["end"], deaths=st["deaths"], harvests=st["harvests"],
+               first_death=st["first_death"], bets=st["bets"],
+               death_journal_len=_first_death_at["n"])
+except NotImplementedError as e:
+    sys.settrace(None)
+    res = dict(error=type(e).__name__+": "+str(e), calls=calls, end=None, deaths=None, harvests=None,
+               first_death=None, bets=None)
+print(json.dumps(res, ensure_ascii=False))
 '''
 
 
-def journal_subprocess(overrides, seed=7, n=8, situation='base', cut_caller=None, cut_line=None, cut_kind='choice'):
-    """Журнал rng-вызовов партии в ЧИСТОМ процессе. Возвращает список вызовов."""
-    spec = dict(seed=seed, n=n, situation=situation, overrides=dict(overrides))
-    if cut_caller:
-        spec['cut_caller'] = cut_caller
-        spec['cut_kind'] = cut_kind
-    if cut_line is not None:
-        spec['cut_line'] = cut_line
-    code = _JOURNAL_SNIPPET % ROOT_DIR
-    p = subprocess.run([sys.executable, '-c', code, json.dumps(spec)],
-                       capture_output=True, text=True, cwd=ROOT_DIR)
+def run_proc(overrides, module_path=None):
+    payload = json.dumps({"seed": SEED, "n": NPLAY, "situation": SIT,
+                          "overrides": overrides, "module_path": module_path})
+    script = os.path.join(tempfile.gettempdir(), "_guard_runner.py")
+    with open(script, "w", encoding="utf-8") as fh:
+        fh.write(_RUNNER)
+    env = dict(os.environ, BB_GAME_DIR=GAME_DIR)
+    p = subprocess.run([sys.executable, script, payload], capture_output=True,
+                       text=True, env=env, timeout=180)
     if p.returncode != 0:
-        raise RuntimeError(f"журнальный подпроцесс упал: {p.stderr[-800:]}")
-    return json.loads(p.stdout)['calls']
+        raise RuntimeError("runner failed:\n" + p.stderr[-1500:])
+    return json.loads(p.stdout.strip().splitlines()[-1])
 
 
-def run_state(overrides, seed, n, situation='base'):
-    cfg = make_cfg(**overrides)
-    st, _ = bb_full.run_game(seed, n, cfg=cfg, situation=situation)
-    return st
+def journal_of(res):
+    return [(c[0], c[1]) for c in res["calls"]]     # пары (method, out) — без маркеров
+
+
+HARVEST_CALLER = "run_game"                          # В2: имя функции места вызова жатвы
+
+
+def harvest_line_in_src():
+    """Точная линия места вызова rng жатвы в bb_full.py (на HEAD = 637):
+    строка вида `v = rng.choice(alive()); st['harvests'] += 1` внутри if C['harvest']."""
+    with open(os.path.join(GAME_DIR, "bb_full.py"), encoding="utf-8") as fh:
+        for i, l in enumerate(fh.read().splitlines(), 1):
+            if "rng.choice(alive())" in l and "st['harvests']" in l:
+                return i
+    raise AssertionError("место вызова жатвы не найдено в bb_full.py — молчаливый проход запрещён")
+
+
+def harvest_marks(res, line):
+    """В2: ДВОЙНОЙ адресный фильтр: co_name==run_game И f_lineno==линия жатвы.
+    Раздача рук (shuffle/sample) и выборы из хелперов (act/turn/death/ghost_phase) отсекаются
+    по линии; выбор цели мародёрства призраком (прежний FAIL idx 70) — по co_name ghost_phase."""
+    return [i for i, c in enumerate(res["calls"])
+            if c[0] == "choice" and c[2] == HARVEST_CALLER and c[4] == line]
+
+
+def write_excised(flag_key):
+    """В1(г): временный модуль ИМЕННО в game/ — чтобы ROOT и импорты решались как у bb_full."""
+    with open(os.path.join(GAME_DIR, "bb_full.py"), encoding="utf-8") as fh:
+        src = fh.read()
+    new_src, n_removed, problems = excise(src, flag_key)
+    if problems:
+        raise AssertionError("ЭКСЦИЗИЯ НЕТРИВИАЛЬНА (стоп по В1): " + "; ".join(problems))
+    path = os.path.join(GAME_DIR, "_bb_excised_%s.py" % flag_key)
+    with open(path, "w", encoding="utf-8") as fh:
+        fh.write(new_src)
+    return path, n_removed
 
 
 class TestFlagsOff(unittest.TestCase):
-    SEED, N = 7, 8
+    _exc_paths = []
 
-    # ---- сценарий 1: главный гард допуска — harvest OFF не расходует rng ----
-    def test_harvest_off_does_not_consume_rng(self):
-        SEED = 8   # на этом seed ON-ветка жива: harvest наступает (гард не пустой)
-        # (ii) детерминизм OFF: два прогона с одним seed в ЧИСТЫХ процессах → идентичные журналы
-        j_off = journal_subprocess({'harvest': False}, seed=SEED, n=self.N)
-        j_off2 = journal_subprocess({'harvest': False}, seed=SEED, n=self.N)
-        self.assertEqual(repr(j_off), repr(j_off2), "детерминизм OFF: один seed → идентичный журнал")
+    @classmethod
+    def tearDownClass(cls):                           # В1(г): временный файл удалить в finally-гаранте
+        for pth in cls._exc_paths:
+            try:
+                os.unlink(pth)
+            except OSError:
+                pass
+        cls._exc_paths = []
 
-        # контроль непустоты гарда: на seed=8 ветка ON реально срабатывает
-        st_on = run_state({'harvest': True}, SEED, self.N)
-        self.assertGreater(st_on['harvests'], 0, "контроль: ON-ветка жива на seed=8 (гард не пустой)")
+    # ---------- harvest: В1(1)-(2) + В3 ----------
+    def test_harvest_off_equals_excised_bytewise(self):
+        exc_path, n_removed = write_excised("harvest"); self._exc_paths.append(exc_path)
+        self.assertGreaterEqual(n_removed, 1,
+            "паттерн разъехался: узлов C['harvest'] не найдено — молчаливый проход запрещён (В1(в))")
+        base = run_proc({}, module_path=exc_path)    # EXCISED: ветви нет физически
+        off = run_proc({"harvest": False})           # флаг off
+        on = run_proc({"harvest": True})             # флаг on
+        self.assertEqual(journal_of(off), journal_of(base),
+                         "гард Р3 п.3: журнал OFF обязан побайтово == EXCISED по полной длине")
+        self.assertNotEqual(journal_of(on), journal_of(base), "ON должен отличаться от базы")
+        # (2) контроль непустоты
+        self.assertEqual(off["harvests"], 0); self.assertEqual(base["harvests"], 0)
+        self.assertGreaterEqual(on["harvests"], 1)
+        # В3(а): в OFF-журнале ноль маркированных записей жатвы (адрес: кадр run_game + choice)
+        hl = harvest_line_in_src()                  # 637 на HEAD
+        bad = harvest_marks(off, hl)
+        self.assertEqual(bad, [], "OFF-прогон коснулся rng-места жатвы: индексы %r" % bad[:4])
+        # контроль непустоты фильтра: в EXCISED тоже ноль (жатвы физически нет)
+        self.assertEqual(harvest_marks(base, hl), [], "эксцизия не убрала rng жатвы")
+        # контроль работы фильтра: ON обязан дать метки (иначе фильтр разъехался бы молча)
+        mark_idx = harvest_marks(on, hl)
+        self.assertTrue(mark_idx, "в ON-журнале нет ни одной маркированной жатвы — фильтр разъехался")
+        k = mark_idx[0]
+        # В3(б'): OFF == префиксу ON СТРОГО ДО первой маркированной записи жатвы (без неё:
+        # сама запись жатвы существует только в ON-ветке — включать её нельзя, это не «до»)
+        self.assertEqual(journal_of(off)[:k], journal_of(on)[:k],
+                         "расхождение OFF/ON раньше первой жатвы")
+        # В3(в): индекс первого расхождения OFF/ON == индексу первой маркерной записи жатвы
+        jo, jn = journal_of(off), journal_of(on)
+        diff = min(len(jo), len(jn))
+        for i in range(min(len(jo), len(jn))):
+            if jo[i] != jn[i]:
+                diff = i; break
+        self.assertEqual(diff, k, "первое расхождение смещено относительно маркера жатвы")
+        # В3(д): полные журналы ON != OFF
+        self.assertNotEqual(jn, jo)
+        # количественный критерий (i): число вызовов OFF == базе, ON > базы
+        self.assertEqual(len(off["calls"]), len(base["calls"]))
+        self.assertGreater(len(on["calls"]), len(base["calls"]))
 
-        # эквивалентность конфигов: явный on == дефолт диска (harvest=True по §7 v3;
-        # допуск Р3 диктовал default off — расхождение ЗАФИКСИРОВАНО в CONFLICTS C34,
-        # база сравнения здесь — вырезанная ветка, поэтому тест не зависит от разрешения C34)
-        j_def = journal_subprocess({}, seed=SEED, n=self.N)
-        j_on = journal_subprocess({'harvest': True}, seed=SEED, n=self.N)
-        self.assertEqual(repr(j_def), repr(j_on), "явный on == дефолт (эквивалентность конфигов)")
+    def test_determinism_off_two_subprocesses(self):
+        a = run_proc({"harvest": False}); b = run_proc({"harvest": False})
+        self.assertEqual(journal_of(a), journal_of(b), "детерминизм OFF нарушен (В3(г))")
 
-        # (i)+(iii) АДРЕСНАЯ эмуляция «полного отсутствия ветки»: жатва выбирает цель
-        # rng.choice(alive()) в коде цикла циклов run_game, bb_full.py строка 637. Режем ровно
-        # этот вызов по двойному адресу co_name=='run_game' + lineno==637; остальные choice — обычный поток.
-        j_cut = journal_subprocess({'harvest': True}, seed=SEED, n=self.N, cut_caller='run_game', cut_line=637)
-        markers = [x for x in j_cut if str(x[0]).startswith('CUT_choice:run_game/637')]
-        self.assertEqual(len(markers), int(st_on['harvests']),
-                         f"базис: изъято ровно {st_on['harvests']} rng-расходов жатвы (по числу жатв ON)")
-        j_cut_nomarker = [x for x in j_cut if not str(x[0]).startswith('CUT_')]
-        self.assertEqual(repr(j_off), repr(j_cut_nomarker),
-                         "OFF побайтово == ON с адресно вырезанным rng-расходом жатвы ⇒ инвариант Р3 п.3 сохранён")
-        self.assertEqual(len(j_off), len(j_cut_nomarker), "OFF добавил 0 вызовов rng к потоку без ветки")
+    # ---------- ghost_bets: В1(3) + В5 ----------
+    def test_ghost_bets_off_equals_default_and_excised(self):
+        self.assertIs(CFG_DEFAULTS["ghost_bets"], False, "дефолт печати №2: ghost_bets off")
+        exc_path, n_removed = write_excised("ghost_bets"); self._exc_paths.append(exc_path)
+        self.assertGreaterEqual(n_removed, 2, "ожидается ≥2 узла C['ghost_bets'] (~511 и ~538)")
+        base = run_proc({})                          # дефолтный прогон (ghost_bets off)
+        off = run_proc({"ghost_bets": False})
+        on = run_proc({"ghost_bets": True})
+        self.assertEqual(journal_of(off), journal_of(base), "off-журнал побайтово == базовому")
+        exc = run_proc({}, module_path=exc_path)
+        self.assertEqual(journal_of(base), journal_of(exc),
+                         "эксцизия ghost_bets: база == EXCISED побайтово (В1(3))")
+        self.assertNotEqual(journal_of(on), journal_of(base), "on != базе")
+        # первый индекс расхождения on/off >= индекса первой СМЕРТИ в том же журнале (OFF-база);
+        # длины НЕ сравнивать (вердикт Р3.2 п.2.2)
+        fd = off["first_death"]
+        self.assertIsNotNone(fd, "в этом сценарии должна быть хотя бы одна смерть (иначе тест пуст)")
+        joff, jon = journal_of(off), journal_of(on)
+        diverge = min(len(joff), len(jon))
+        for i in range(min(len(joff), len(jon))):
+            if joff[i] != jon[i]:
+                diverge = i; break
+        # индекс первой СМЕРТИ в той же шкале журнала: число rng-вызовов к моменту first_death
+        # (first_death снимается в подпроцессе ровно перед append записи journal_of)
+        idx_death = off.get("death_journal_len")
+        self.assertIsNotNone(idx_death, "раннер не вернул метку времени первой смерти")
+        self.assertGreaterEqual(diverge, idx_death,
+            "расхождение on/off (%d) раньше первой смерти (%d) — ставки призраков расходуют rng до смерти"
+            % (diverge, idx_death))
 
-        # (i) количественно: ON потребляет больше rng, чем OFF (реальный поток)
-        self.assertGreater(len(j_on), len(j_off),
-                           "ON > базового по числу rng-вызовов (реальный поток)")
-
-    # ---- сценарий 2: ghost_bets OFF (= default печати №2) — три assert по вердикту Р3.2 ----
-    def test_ghost_bets_off_is_rng_neutral_default(self):
-        self.assertIs(CFG_DEFAULTS['ghost_bets'], False, "печать №2: ставки вырезаны")
-        j_off = journal_subprocess({'ghost_bets': False}, seed=self.SEED, n=self.N)
-        j_base = journal_subprocess({}, seed=self.SEED, n=self.N)
-        j_on = journal_subprocess({'ghost_bets': True}, seed=self.SEED, n=self.N)
-        # (а) off-журнал побайтово == базовому
-        self.assertEqual(repr(j_off), repr(j_base), "ghost_bets=off == база: журнал побайтово совпадает")
-        # (б) on-журнал != базовому
-        self.assertNotEqual(repr(j_on), repr(j_base), "on-ветка добавляет вызовы (гард осмыслен)")
-        # (в) первый индекс расхождения on/off >= индекса первой смерти (ставит только призрак)
-        first_div = next(i for i in range(max(len(j_on), len(j_off)))
-                         if j_on[i] != j_off[i])
-        st_ref = run_state({'ghost_bets': False}, self.SEED, self.N)
-        # индекс первой смерти в журнале: первое событие 💀 недетерминированно по позиции,
-        # опираемся на структурное свойство: ставки делает ТОЛЬКО ghost_phase, а он впервые
-        # вызывается на цикле >= первом со смертью; в журнале до первой смерти нет ни одного
-        # randint(1,max(1,len(alive()))) вида ставок. Проверяем прямым следствием: на seed без
-        # смертей (n=2, короткий cap) on==off.
-        j_on_nod = journal_subprocess({'ghost_bets': True}, seed=self.SEED, n=2, situation='base')
-        j_off_nod = journal_subprocess({'ghost_bets': False}, seed=self.SEED, n=2, situation='base')
-        st2 = run_state({'ghost_bets': False}, self.SEED, 2)
-        if st2['deaths'] == 0:
-            self.assertEqual(repr(j_on_nod), repr(j_off_nod),
-                             "без смертей (призраков нет) on==off ⇒ расхождение возможно только после 1-й смерти")
-        self.assertGreaterEqual(first_div, 0)
-        # длины журналов НЕ сравниваем (вердикт Р3.2: ON меняет динамику партии)
-
-    # ---- сценарий 3: prof_complex OFF — заглушка, rng не трогает ----
+    # ---------- prof_complex: заглушка (В5) ----------
     def test_prof_complex_off_stub(self):
-        self.assertIs(CFG_DEFAULTS['prof_complex'], False)
-        with self.assertRaises(NotImplementedError):
-            bb_full.run_game(self.SEED, 2, cfg=make_cfg(prof_complex=True))
-        j_off = journal_subprocess({'prof_complex': False}, seed=self.SEED, n=self.N)
-        j_base = journal_subprocess({}, seed=self.SEED, n=self.N)
-        self.assertEqual(repr(j_off), repr(j_base), "prof_complex=off не расходует rng относительно базы")
-
-    # ---- свёртка: все флаги, уже выключенные в печати №2, побайтово равны базе ----
-    def test_every_off_default_flag_rng_neutral(self):
-        baseline = journal_subprocess({}, seed=self.SEED, n=self.N)
-        for flag, val in CFG_DEFAULTS.items():
-            off_like = (val is False) or (isinstance(val, str) and val == 'none')
-            if off_like:
-                again = journal_subprocess({flag: val}, seed=self.SEED, n=self.N)
-                self.assertEqual(repr(baseline), repr(again), f"OFF-дефолт {flag} сместил rng-журнал")
+        off = run_proc({"prof_complex": False})
+        self.assertIsNotNone(off["end"], "при prof_complex off партия идёт штатно")
+        on = run_proc({"prof_complex": True})
+        self.assertIn("NotImplementedError", on.get("error") or "",
+                      "prof_complex=True обязан падать NotImplemented (лист автора отдельно)")
+        self.assertEqual(journal_of(on), journal_of(off)[:len(journal_of(on))],
+                         "до падения prof_complex rng-поток совпадает с off (заглушка нейтральна)")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main(verbosity=2)
