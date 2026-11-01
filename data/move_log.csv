@@ -172,3 +172,5 @@ zadanie_sim.txt,_inbox/zadanie_sim.txt,class:unknown,2026-11-01T17:45:33
 карты_v5_по_категориям.md,data/deck/карты_v5_по_категориям.md,class:unknown,2026-11-01T17:45:33
 карты_настолка_v4.xlsx,data/deck/карты_настолка_v4.xlsx,class:deck_data,2026-11-01T17:45:33
 карты_настолка_полный_набор.md,data/deck/карты_настолка_полный_набор.md,class:unknown,2026-11-01T17:45:33
+moved: _archive/ws/10_docs/колода/spec_raw.txt -> data/deck/spec_raw.txt (author instruction B3)
+moved: _archive/blitz1.1/docs/rules/SPEC_cardlife.md -> _inbox/SPEC_cardlife.md (foreign file, author instruction B3)
