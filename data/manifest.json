@@ -1,11 +1,11 @@
 [
  {
   "path": ".gitignore",
-  "bytes": 25,
+  "bytes": 26,
   "ext": "",
-  "mtime_epoch": 1793554071.6143005,
-  "mtime": "2026-11-01T17:27:51Z",
-  "md5": "55b0b191f795a8cfa81e324936e6f92c"
+  "mtime_epoch": 1793555213.1435757,
+  "mtime": "2026-11-01T17:46:53Z",
+  "md5": "ba0699b3c9c2d66e8425e79704a0c43c"
  },
  {
   "path": "DECISIONS.md",
@@ -118,6 +118,14 @@
   "mtime_epoch": 1793553004.018225,
   "mtime": "2026-11-01T17:10:04Z",
   "md5": "f210a8abda64fd50f1afa29e4397fead"
+ },
+ {
+  "path": "_archive/workspace.tar",
+  "bytes": 4101125,
+  "ext": ".tar",
+  "mtime_epoch": 1793555191.2763975,
+  "mtime": "2026-11-01T17:46:31Z",
+  "md5": "290f1c0555a630764f255f0fcfe7713a"
  },
  {
   "path": "_archive/workspace.tar.gz",
@@ -1320,222 +1328,6 @@
   "md5": "7a4e34e072fb1f2f492e8fbc37cfafbb"
  },
  {
-  "path": "_archive/tools_old/build_canon_decks.py",
-  "bytes": 3731,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "c8ad166074709a1261c2fe45c35cb43a"
- },
- {
-  "path": "_archive/tools_old/build_pool1000.py",
-  "bytes": 9956,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "4372077703f193318508e68ab5fe90b2"
- },
- {
-  "path": "_archive/tools_old/check.py",
-  "bytes": 1283,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "34f49d1d526d726213d79b9833fb1ccf"
- },
- {
-  "path": "_archive/tools_old/extract.py",
-  "bytes": 543,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "9922f79d0b6336cea9663e6b21aadc78"
- },
- {
-  "path": "_archive/tools_old/integrity_audit.py",
-  "bytes": 8522,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "6cf4b996d9da6dd789c7b7ebd45c9ba7"
- },
- {
-  "path": "_archive/tools_old/make_fingerprints.py",
-  "bytes": 5163,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.988225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "632c0923fffc7a1e6468bf0de8868fdf"
- },
- {
-  "path": "_archive/tools_old/make_game_html.py",
-  "bytes": 35623,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "c013e3bd34ea7c4b6d9645dd17c5fd5d"
- },
- {
-  "path": "_archive/tools_old/matrix_b8.py",
-  "bytes": 2887,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "4d1145d5a9820608e41fc14ebe32ee95"
- },
- {
-  "path": "_archive/tools_old/md2docx_min.py",
-  "bytes": 2814,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "9301c123ac9ae79bfb72d402d0fde53a"
- },
- {
-  "path": "_archive/tools_old/near.py",
-  "bytes": 791,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "8d406d5152d94a8f7fcdf2ddd965465e"
- },
- {
-  "path": "_archive/tools_old/run_d6_experiment.py",
-  "bytes": 5521,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "2ce5b7ee299e5afd130f711b8e8ec4cb"
- },
- {
-  "path": "_archive/tools_old/run_draft.py",
-  "bytes": 10777,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "2d2a32bfca6de6abf961b63d3905dcf0"
- },
- {
-  "path": "_archive/tools_old/run_grudge.py",
-  "bytes": 11755,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "d656ba00d8503b16bbf0c789275d5260"
- },
- {
-  "path": "_archive/tools_old/run_handlimit.py",
-  "bytes": 11479,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "831b514288bc72faae5125ae2293b665"
- },
- {
-  "path": "_archive/tools_old/run_matrix.py",
-  "bytes": 1997,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "b751b48d23e4aeb678f0bce4c5a67fa3"
- },
- {
-  "path": "_archive/tools_old/run_matrix_b7.py",
-  "bytes": 3208,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "ce60f9cdbeefc341361618c105e0af67"
- },
- {
-  "path": "_archive/tools_old/run_pendulum.py",
-  "bytes": 14699,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "e90b0a5bb5d73b4c85216bc2ba076658"
- },
- {
-  "path": "_archive/tools_old/run_report.py",
-  "bytes": 4003,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "9fd6eee6029f84e5868c23451bf7a8a8"
- },
- {
-  "path": "_archive/tools_old/run_reputation.py",
-  "bytes": 8639,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "3d5f3b6e8ce669d060c563897ac8c151"
- },
- {
-  "path": "_archive/tools_old/run_reserve.py",
-  "bytes": 15076,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "8f991a8efc59ba86da8ad3808b20b8a4"
- },
- {
-  "path": "_archive/tools_old/run_tilt.py",
-  "bytes": 9326,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "91b1f0dab5eb6d3bb6281fe1310ace2b"
- },
- {
-  "path": "_archive/tools_old/run_tornado.py",
-  "bytes": 14347,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.989225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "972538bfc2f9b5a0587e7d22ddea2d76"
- },
- {
-  "path": "_archive/tools_old/run_triggers.py",
-  "bytes": 5131,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.990225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "72b601f7ed0093f6a104cd9f276caf20"
- },
- {
-  "path": "_archive/tools_old/run_winrate.py",
-  "bytes": 2238,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.990225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "60691f1ba02260ec5abaa7128ee07c1d"
- },
- {
-  "path": "_archive/tools_old/tornado_report.py",
-  "bytes": 21654,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.990225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "6ad8171c740282e6e5457a295badf91e"
- },
- {
-  "path": "_archive/tools_old/validate.py",
-  "bytes": 2324,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.990225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "fc39642fe8641064a4cf76a1081e45ca"
- },
- {
-  "path": "_archive/tools_old/xpeek.py",
-  "bytes": 369,
-  "ext": ".py",
-  "mtime_epoch": 1793553003.990225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "50d9b2bfae365ea3f401560bf3393c93"
- },
- {
   "path": "_archive/viewer_old/VIEW_game_2026_N16_base.html",
   "bytes": 218262,
   "ext": ".html",
@@ -1806,14 +1598,6 @@
   "mtime_epoch": 1793553004.036225,
   "mtime": "2026-11-01T17:10:04Z",
   "md5": "be775e5dadf2d04055f49c51cda8c76a"
- },
- {
-  "path": "_archive/ws/10_docs/колода/spec_raw.txt",
-  "bytes": 20544,
-  "ext": ".txt",
-  "mtime_epoch": 1793553004.036225,
-  "mtime": "2026-11-01T17:10:04Z",
-  "md5": "7b114b8f5691dabe3e020580a480f248"
  },
  {
   "path": "_archive/ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md",
@@ -2200,6 +1984,14 @@
   "md5": "f7a49e65877a7af85b4a8d0123cdde71"
  },
  {
+  "path": "_inbox/SPEC_cardlife.md",
+  "bytes": 4657,
+  "ext": ".md",
+  "mtime_epoch": 1793555157.9811265,
+  "mtime": "2026-11-01T17:45:57Z",
+  "md5": "2a3300ab6846ae54c3fd8003c447b8ef"
+ },
+ {
   "path": "_inbox/rules_short.txt",
   "bytes": 23400,
   "ext": ".txt",
@@ -2249,19 +2041,19 @@
  },
  {
   "path": "data/classes.json",
-  "bytes": 56003,
+  "bytes": 51065,
   "ext": ".json",
-  "mtime_epoch": 1793553800.9051108,
-  "mtime": "2026-11-01T17:23:20Z",
-  "md5": "a8d63a3b6f0000d85ed86e82bd91abea"
+  "mtime_epoch": 1793555135.949947,
+  "mtime": "2026-11-01T17:45:35Z",
+  "md5": "e0344a16e741fe8d0ad48967b92484f6"
  },
  {
   "path": "data/deleted_list.txt",
-  "bytes": 3639,
+  "bytes": 3601,
   "ext": ".txt",
-  "mtime_epoch": 1793555133.85893,
-  "mtime": "2026-11-01T17:45:33Z",
-  "md5": "0df0fd7af50ebeda10f0e1987169d849"
+  "mtime_epoch": 1793555191.2793975,
+  "mtime": "2026-11-01T17:46:31Z",
+  "md5": "abe1cf3038d5094db7e75605338c5784"
  },
  {
   "path": "data/dryrun.log",
@@ -2288,20 +2080,36 @@
   "md5": "ac08dfbd9b3101b98161950b0ac1c951"
  },
  {
+  "path": "data/dryrun_extract2.log",
+  "bytes": 49939,
+  "ext": ".log",
+  "mtime_epoch": 1793555172.2612429,
+  "mtime": "2026-11-01T17:46:12Z",
+  "md5": "d776e8977ffbd7780b57a4ea1ebb7172"
+ },
+ {
   "path": "data/duplicates.json",
-  "bytes": 21263,
+  "bytes": 12672,
   "ext": ".json",
-  "mtime_epoch": 1793553800.9011106,
-  "mtime": "2026-11-01T17:23:20Z",
-  "md5": "5e636a7827ba3f19de92cfb0b1cda489"
+  "mtime_epoch": 1793555135.946947,
+  "mtime": "2026-11-01T17:45:35Z",
+  "md5": "aee117064092dca2c4bb39edbf3e5123"
+ },
+ {
+  "path": "data/extract_run.log",
+  "bytes": 1425,
+  "ext": ".log",
+  "mtime_epoch": 1793555175.61127,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "6629aafc084fc23a845f18a0ce1ef583"
  },
  {
   "path": "data/inventory_after.log",
-  "bytes": 0,
+  "bytes": 14849,
   "ext": ".log",
-  "mtime_epoch": 1793555135.805946,
+  "mtime_epoch": 1793555135.949947,
   "mtime": "2026-11-01T17:45:35Z",
-  "md5": "d41d8cd98f00b204e9800998ecf8427e"
+  "md5": "cf9822282f64403e7c7c4b5c02a33f43"
  },
  {
   "path": "data/inventory_report.txt",
@@ -2312,20 +2120,28 @@
   "md5": "cabe307d86198cc786624a46953ce426"
  },
  {
+  "path": "data/legacy_found.txt",
+  "bytes": 1159,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.61127,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "e57fea8a36cb85002b770aeaa90c91e9"
+ },
+ {
   "path": "data/manifest.csv",
-  "bytes": 47733,
+  "bytes": 44488,
   "ext": ".csv",
-  "mtime_epoch": 1793553800.8991108,
-  "mtime": "2026-11-01T17:23:20Z",
-  "md5": "e801176166092ea04b3475685ad5ceeb"
+  "mtime_epoch": 1793555135.943947,
+  "mtime": "2026-11-01T17:45:35Z",
+  "md5": "14b3decb08c5b2d340e401830f1b8723"
  },
  {
   "path": "data/manifest.json",
-  "bytes": 82871,
+  "bytes": 74810,
   "ext": ".json",
-  "mtime_epoch": 1793553800.8971107,
-  "mtime": "2026-11-01T17:23:20Z",
-  "md5": "23efecd5be7b11c16cadcf6d16e4544b"
+  "mtime_epoch": 1793555135.9419472,
+  "mtime": "2026-11-01T17:45:35Z",
+  "md5": "de2b5c4fb14ff1fa7a18e54af775078b"
  },
  {
   "path": "data/manifest_archives.json",
@@ -2337,11 +2153,11 @@
  },
  {
   "path": "data/move_log.csv",
-  "bytes": 14531,
+  "bytes": 60076,
   "ext": ".csv",
-  "mtime_epoch": 1793555133.85893,
-  "mtime": "2026-11-01T17:45:33Z",
-  "md5": "bcfff0649e466277df67d24c54e4deb8"
+  "mtime_epoch": 1793555942.1255252,
+  "mtime": "2026-11-01T17:59:02Z",
+  "md5": "6ab7b1f3a7bec6984045b7c34bfd17ba"
  },
  {
   "path": "data/run_reorg.log",
@@ -2368,12 +2184,100 @@
   "md5": "07b3d78edb0150d444346f9f47fd97ba"
  },
  {
+  "path": "data/deck/1_professiya.txt",
+  "bytes": 22337,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5632696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "785600aa7b38911cfaa43faf9b567c70"
+ },
+ {
+  "path": "data/deck/2_telo.txt",
+  "bytes": 16532,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5632696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "2a52fc9515fd7759b24a8cc74c9147d8"
+ },
+ {
+  "path": "data/deck/3_razum.txt",
+  "bytes": 12980,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5622697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "aedf4fe1a38020a8b76cef882e241cf8"
+ },
+ {
+  "path": "data/deck/4_sposobnosti.txt",
+  "bytes": 22149,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5642698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "156030fe7ffa9e1c5afe34711332a635"
+ },
+ {
+  "path": "data/deck/5_inventar.txt",
+  "bytes": 10100,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5642698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "a8f83ede38127bc6fffa0a82123d28d0"
+ },
+ {
+  "path": "data/deck/6_istoriya.txt",
+  "bytes": 19607,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5632696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "ba280017149808d16b99ff27f0dd86aa"
+ },
+ {
+  "path": "data/deck/7_znaniya.txt",
+  "bytes": 18080,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5632696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "a36bfbba29ac0323391c46d7a0e4c898"
+ },
+ {
+  "path": "data/deck/8_detali.txt",
+  "bytes": 18251,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5632696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "f9c65f3979446cc069a515eef14bb41e"
+ },
+ {
+  "path": "data/deck/9_spec.txt",
+  "bytes": 22919,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.5622697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "bdda864a378af3f03a10d81897f0614e"
+ },
+ {
+  "path": "data/deck/pool_indices.json",
+  "bytes": 13818,
+  "ext": ".json",
+  "mtime_epoch": 1793555937.5814884,
+  "mtime": "2026-11-01T17:58:57Z",
+  "md5": "10dfd2b267a24c2b49d5306ffbe35239"
+ },
+ {
   "path": "data/deck/ryukzak_raw.txt",
   "bytes": 3823,
   "ext": ".txt",
   "mtime_epoch": 1793553003.976225,
   "mtime": "2026-11-01T17:10:03Z",
   "md5": "b23da2b95444176ef0893fad79736fe8"
+ },
+ {
+  "path": "data/deck/spec_raw.txt",
+  "bytes": 20544,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.036225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7b114b8f5691dabe3e020580a480f248"
  },
  {
   "path": "data/deck/telo_raw.txt",
@@ -2406,6 +2310,14 @@
   "mtime_epoch": 1793553004.062225,
   "mtime": "2026-11-01T17:10:04Z",
   "md5": "d7a40b2fa7f7b98dd2f1272d5f316f29"
+ },
+ {
+  "path": "data/deck/карты_настолка_v5.xlsx",
+  "bytes": 541236,
+  "ext": ".xlsx",
+  "mtime_epoch": 1793555175.5832698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "a7ae5bf12e380d9ded782ee673f09cd8"
  },
  {
   "path": "data/deck/карты_настолка_полный_набор.md",
@@ -2446,6 +2358,22 @@
   "mtime_epoch": 1793553004.055225,
   "mtime": "2026-11-01T17:10:04Z",
   "md5": "af82b87c523f7b3e4e0edcc2f915b37a"
+ },
+ {
+  "path": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx",
+  "bytes": 82313,
+  "ext": ".docx",
+  "mtime_epoch": 1793555942.1225252,
+  "mtime": "2026-11-01T17:59:02Z",
+  "md5": "b12adb41dca425798cafd364643aa0e8"
+ },
+ {
+  "path": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md",
+  "bytes": 121905,
+  "ext": ".md",
+  "mtime_epoch": 1793555942.1215253,
+  "mtime": "2026-11-01T17:59:02Z",
+  "md5": "a1c6d8b4dfa218204b2ceed149322eb8"
  },
  {
   "path": "docs/notes/СТАРТ_ЧАТА_С_CODER.md",
@@ -2640,6 +2568,54 @@
   "md5": "dedd259f7cfae5e2f950c53e66e27a65"
  },
  {
+  "path": "docs/rules/from_archive/ЖУРНАЛ_ЧИСТКИ_РЕД5.docx",
+  "bytes": 43008,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.5662696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "0ad7a20cabb0bfc30882a94a8451cbfd"
+ },
+ {
+  "path": "docs/rules/from_archive/КОЛОДА_ОБМЕНА.docx",
+  "bytes": 39239,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.61127,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "ea557aff23eae28fcd3ed87f1231900b"
+ },
+ {
+  "path": "docs/rules/from_archive/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "bytes": 53236,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.5802698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "8283c6fe6c0d6aef2dfe6890570f6cd9"
+ },
+ {
+  "path": "docs/rules/from_archive/ПРИМЕР_ИГРЫ_8_игроков.docx",
+  "bytes": 62074,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.57927,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "f17390c7ad6269ab86183a4593abfae8"
+ },
+ {
+  "path": "docs/rules/from_archive/ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.docx",
+  "bytes": 48712,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.5802698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "0b007322b21790fae8a8d340b77841ad"
+ },
+ {
+  "path": "docs/rules/from_archive/СИМУЛЯЦИИ_2_20.docx",
+  "bytes": 44706,
+  "ext": ".docx",
+  "mtime_epoch": 1793555175.5862699,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "5e440898eb032b81fbb24296da451c61"
+ },
+ {
   "path": "game/game_sim_before_personality.py",
   "bytes": 49495,
   "ext": ".py",
@@ -2680,6 +2656,326 @@
   "md5": "50d9b2bfae365ea3f401560bf3393c93"
  },
  {
+  "path": "game/legacy/Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py",
+  "bytes": 14508,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4932692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "70ae15a102115b5bed1da06a6e92f718"
+ },
+ {
+  "path": "game/legacy/Test-BB-revert-4-game-file-analysis-b3311/game_sim.py",
+  "bytes": 48233,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4972692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "d8994082b16db2135d0bf1d271bc0719"
+ },
+ {
+  "path": "game/legacy/Test-BB-site/game_sim.py",
+  "bytes": 59047,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5152693,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "c0db0df821ddf0e533ad00aaefa4f55f"
+ },
+ {
+  "path": "game/legacy/tools/audit_full.py",
+  "bytes": 9318,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5652697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "5ecc0ced186ec1cb65ea695a3d394e59"
+ },
+ {
+  "path": "game/legacy/tools/bb (1).py",
+  "bytes": 14480,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.492269,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "70aff9f7ce369e0edf5ca9367e02c683"
+ },
+ {
+  "path": "game/legacy/tools/bb.py",
+  "bytes": 8119,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4932692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "9d0c8d77b40da0d41a34382e0176779a"
+ },
+ {
+  "path": "game/legacy/tools/bb_events (1).py",
+  "bytes": 14147,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4932692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "7ca0e00061161ab0db6d7b7b13888458"
+ },
+ {
+  "path": "game/legacy/tools/bb_html (1).py",
+  "bytes": 44922,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4932692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "7ab2740b1ea75146b291e038d8c013ff"
+ },
+ {
+  "path": "game/legacy/tools/bb_model (1).py",
+  "bytes": 16660,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4942691,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "067a45084ddc8fa84fa9f4cdb4be6fe7"
+ },
+ {
+  "path": "game/legacy/tools/build_canon_decks.py",
+  "bytes": 3718,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4942691,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "24a4d1518bf0c15c906c6456f3c55fc5"
+ },
+ {
+  "path": "game/legacy/tools/build_v5.py",
+  "bytes": 2398,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.61027,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "622255ec40abc0d78e60f8e36e969fc1"
+ },
+ {
+  "path": "game/legacy/tools/censor.py",
+  "bytes": 10738,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.60927,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "db7d9daa963ee4e7ef1292167c7d2104"
+ },
+ {
+  "path": "game/legacy/tools/censor_fix.py",
+  "bytes": 21250,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.61027,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "39c5a54dcafd552807f814d216cdfdc8"
+ },
+ {
+  "path": "game/legacy/tools/check_clean.py",
+  "bytes": 3674,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.61027,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "5ad934a29382fb804ca30b2c5efa6160"
+ },
+ {
+  "path": "game/legacy/tools/coverage_test (1).py",
+  "bytes": 17087,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4962692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "f60b4909dfe5c30ad1ce12c7d2025b14"
+ },
+ {
+  "path": "game/legacy/tools/csv_export (1).py",
+  "bytes": 7915,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4962692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "80c2e0d47b13258dfeff9e32f2078115"
+ },
+ {
+  "path": "game/legacy/tools/export_v5_xlsx.py",
+  "bytes": 23504,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.61027,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "8334b93c9792e65fc484eba7fa181393"
+ },
+ {
+  "path": "game/legacy/tools/fuzz_test (1).py",
+  "bytes": 3843,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.4972692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "dba185954065d0470e639230e656992a"
+ },
+ {
+  "path": "game/legacy/tools/make_web.py",
+  "bytes": 1902,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.498269,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "83457e8f7dcaeeb14a079eb930c0ad86"
+ },
+ {
+  "path": "game/legacy/tools/md2docx.py",
+  "bytes": 3904,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.60927,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "9169a1b22d74e5b78198639255765e2a"
+ },
+ {
+  "path": "game/legacy/tools/one_search.py",
+  "bytes": 2184,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5652697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "6820db8ff3e9136ca25a0193e3d94d34"
+ },
+ {
+  "path": "game/legacy/tools/t2.py",
+  "bytes": 138,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.61027,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "62fd3a20ad91b73ce33b3ce439f6f71d"
+ },
+ {
+  "path": "game/legacy/tools/verify_any.py",
+  "bytes": 7734,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5652697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "3297d891400a767438af409d44187116"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/build_pool1000.py",
+  "bytes": 9956,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5662696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "61ef9ae9f376599bf8bd16408b5f0a2b"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/dice_fair_base.json",
+  "bytes": 774,
+  "ext": ".json",
+  "mtime_epoch": 1793555175.5672698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "55e34507f6816a9e0890d6f40ca74bc9"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/dice_fairness.json",
+  "bytes": 873,
+  "ext": ".json",
+  "mtime_epoch": 1793555175.5662696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "54346d38c1f0a14db30a0c7d92af41e9"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/game_sim.py",
+  "bytes": 48377,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5672698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "a8d972dc23684f07a1c43351498a9615"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/log_360.txt",
+  "bytes": 36179,
+  "ext": ".txt",
+  "mtime_epoch": 1793555175.57927,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "60b8f8b70af44478951cfe6e7efbc303"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/make_dop_md.py",
+  "bytes": 49240,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5692697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "fa9db693e5a153dbff7f1add118dfb78"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/make_sim8_md.py",
+  "bytes": 45511,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.57927,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "d2b715d05390c2b2e2658ae635815e5f"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/pool_sim1000.json",
+  "bytes": 126994,
+  "ext": ".json",
+  "mtime_epoch": 1793555175.5682697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "e51782ad5ed825409f9645b18dde0c6c"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sim8.py",
+  "bytes": 88379,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5682697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "fd4536e60cf5a9a8bce1abee84a2c030"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sim_n.py",
+  "bytes": 36503,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5672698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "59f061992a0a5442fd38f0ade1fac7f0"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sweep.py",
+  "bytes": 637,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5672698,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "f27d9aa23ae694ae151de664c4ce72d0"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sweep8.py",
+  "bytes": 7739,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5692697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "bfd4d392279f0b5c67d00c0fcc87562f"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sweep_mods.py",
+  "bytes": 3582,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5662696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "1af1dc1e4c2645ee457d9cb2794584d3"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sweep_n.py",
+  "bytes": 2425,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5782697,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "3e6351ba6081f5066077abcd9cf18310"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/time_model.py",
+  "bytes": 7902,
+  "ext": ".py",
+  "mtime_epoch": 1793555175.5662696,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "869d8fbb887b9e7b50a47ec88e638dd6"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/sim/pool_indices.json",
+  "bytes": 13818,
+  "ext": ".json",
+  "mtime_epoch": 1793555923.8103766,
+  "mtime": "2026-11-01T17:58:43Z",
+  "md5": "10dfd2b267a24c2b49d5306ffbe35239"
+ },
+ {
+  "path": "game/legacy/workspace.tar.gz/src/final_v5.json",
+  "bytes": 199813,
+  "ext": ".json",
+  "mtime_epoch": 1793555909.3822596,
+  "mtime": "2026-11-01T17:58:29Z",
+  "md5": "ba43cca307686050761a15e1f7e74678"
+ },
+ {
   "path": "game/results/pendulum.json",
   "bytes": 16565,
   "ext": ".json",
@@ -2718,6 +3014,14 @@
   "mtime_epoch": 1793553003.975225,
   "mtime": "2026-11-01T17:10:03Z",
   "md5": "2968422551c5899fbd547cd29c29b64b"
+ },
+ {
+  "path": "game/results/run_seed1_n8.log",
+  "bytes": 9835,
+  "ext": ".log",
+  "mtime_epoch": 1793555923.8603768,
+  "mtime": "2026-11-01T17:58:43Z",
+  "md5": "833ca790a8a10471a5e4d43210fd30e4"
  },
  {
   "path": "game/results/sweep8_results.json",
@@ -2784,12 +3088,28 @@
   "md5": "3c8296389e7606c6a9db27a5f4bff1f0"
  },
  {
+  "path": "game/results/from_archive/dice_dist (2).json",
+  "bytes": 331,
+  "ext": ".json",
+  "mtime_epoch": 1793555175.4962692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "cffce199a226a6aaaa5fe88c66c45169"
+ },
+ {
+  "path": "game/results/from_archive/final_v5 (1).json",
+  "bytes": 199813,
+  "ext": ".json",
+  "mtime_epoch": 1793555175.4972692,
+  "mtime": "2026-11-01T17:46:15Z",
+  "md5": "ba43cca307686050761a15e1f7e74678"
+ },
+ {
   "path": "tools/archive_extract.py",
-  "bytes": 5273,
+  "bytes": 5849,
   "ext": ".py",
-  "mtime_epoch": 1793553994.4216754,
-  "mtime": "2026-11-01T17:26:34Z",
-  "md5": "1fbcce5731493ac84c75c0b32f961869"
+  "mtime_epoch": 1793555171.92424,
+  "mtime": "2026-11-01T17:46:11Z",
+  "md5": "5d208e1e2685fb77be75f0ed3d370e31"
  },
  {
   "path": "tools/inventory.py",
@@ -2814,6 +3134,222 @@
   "mtime_epoch": 1793553821.9092805,
   "mtime": "2026-11-01T17:23:41Z",
   "md5": "82fec67477bee1859c6f3bc4b0021d68"
+ },
+ {
+  "path": "tools/sim_runners/build_canon_decks.py",
+  "bytes": 3731,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c8ad166074709a1261c2fe45c35cb43a"
+ },
+ {
+  "path": "tools/sim_runners/build_pool1000.py",
+  "bytes": 9956,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4372077703f193318508e68ab5fe90b2"
+ },
+ {
+  "path": "tools/sim_runners/check.py",
+  "bytes": 1283,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "34f49d1d526d726213d79b9833fb1ccf"
+ },
+ {
+  "path": "tools/sim_runners/extract.py",
+  "bytes": 543,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9922f79d0b6336cea9663e6b21aadc78"
+ },
+ {
+  "path": "tools/sim_runners/integrity_audit.py",
+  "bytes": 8522,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6cf4b996d9da6dd789c7b7ebd45c9ba7"
+ },
+ {
+  "path": "tools/sim_runners/make_fingerprints.py",
+  "bytes": 5163,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "632c0923fffc7a1e6468bf0de8868fdf"
+ },
+ {
+  "path": "tools/sim_runners/make_game_html.py",
+  "bytes": 35623,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c013e3bd34ea7c4b6d9645dd17c5fd5d"
+ },
+ {
+  "path": "tools/sim_runners/matrix_b8.py",
+  "bytes": 2887,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4d1145d5a9820608e41fc14ebe32ee95"
+ },
+ {
+  "path": "tools/sim_runners/md2docx_min.py",
+  "bytes": 2814,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9301c123ac9ae79bfb72d402d0fde53a"
+ },
+ {
+  "path": "tools/sim_runners/near.py",
+  "bytes": 791,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8d406d5152d94a8f7fcdf2ddd965465e"
+ },
+ {
+  "path": "tools/sim_runners/run_d6_experiment.py",
+  "bytes": 5521,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2ce5b7ee299e5afd130f711b8e8ec4cb"
+ },
+ {
+  "path": "tools/sim_runners/run_draft.py",
+  "bytes": 10777,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2d2a32bfca6de6abf961b63d3905dcf0"
+ },
+ {
+  "path": "tools/sim_runners/run_grudge.py",
+  "bytes": 11755,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d656ba00d8503b16bbf0c789275d5260"
+ },
+ {
+  "path": "tools/sim_runners/run_handlimit.py",
+  "bytes": 11479,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "831b514288bc72faae5125ae2293b665"
+ },
+ {
+  "path": "tools/sim_runners/run_matrix.py",
+  "bytes": 1997,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b751b48d23e4aeb678f0bce4c5a67fa3"
+ },
+ {
+  "path": "tools/sim_runners/run_matrix_b7.py",
+  "bytes": 3208,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ce60f9cdbeefc341361618c105e0af67"
+ },
+ {
+  "path": "tools/sim_runners/run_pendulum.py",
+  "bytes": 14699,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e90b0a5bb5d73b4c85216bc2ba076658"
+ },
+ {
+  "path": "tools/sim_runners/run_report.py",
+  "bytes": 4003,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9fd6eee6029f84e5868c23451bf7a8a8"
+ },
+ {
+  "path": "tools/sim_runners/run_reputation.py",
+  "bytes": 8639,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3d5f3b6e8ce669d060c563897ac8c151"
+ },
+ {
+  "path": "tools/sim_runners/run_reserve.py",
+  "bytes": 15076,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8f991a8efc59ba86da8ad3808b20b8a4"
+ },
+ {
+  "path": "tools/sim_runners/run_tilt.py",
+  "bytes": 9326,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "91b1f0dab5eb6d3bb6281fe1310ace2b"
+ },
+ {
+  "path": "tools/sim_runners/run_tornado.py",
+  "bytes": 14347,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "972538bfc2f9b5a0587e7d22ddea2d76"
+ },
+ {
+  "path": "tools/sim_runners/run_triggers.py",
+  "bytes": 5131,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "72b601f7ed0093f6a104cd9f276caf20"
+ },
+ {
+  "path": "tools/sim_runners/run_winrate.py",
+  "bytes": 2238,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "60691f1ba02260ec5abaa7128ee07c1d"
+ },
+ {
+  "path": "tools/sim_runners/tornado_report.py",
+  "bytes": 21654,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6ad8171c740282e6e5457a295badf91e"
+ },
+ {
+  "path": "tools/sim_runners/validate.py",
+  "bytes": 2324,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "fc39642fe8641064a4cf76a1081e45ca"
+ },
+ {
+  "path": "tools/sim_runners/xpeek.py",
+  "bytes": 369,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "50d9b2bfae365ea3f401560bf3393c93"
  },
  {
   "path": "tools_old/run_tests.sh",

@@ -24,6 +24,15 @@
   ]
  },
  {
+  "md5": "10dfd2b267a24c2b49d5306ffbe35239",
+  "bytes": 13818,
+  "keep": "data/deck/pool_indices.json",
+  "drop": [
+   "game/legacy/workspace.tar.gz/sim/pool_indices.json",
+   "game/results/pool_indices (1).json"
+  ]
+ },
+ {
   "md5": "1587a2e065c7dd4eb5328e6d5c3ea3c3",
   "bytes": 16565,
   "keep": "game/results/pendulum.json",
@@ -72,11 +81,27 @@
   ]
  },
  {
+  "md5": "290f1c0555a630764f255f0fcfe7713a",
+  "bytes": 4101125,
+  "keep": "_archive/workspace.tar",
+  "drop": [
+   "_archive/workspace.tar.gz"
+  ]
+ },
+ {
   "md5": "2968422551c5899fbd547cd29c29b64b",
   "bytes": 31040,
   "keep": "game/results/reserve.json",
   "drop": [
    "_archive/data_old/reserve.json"
+  ]
+ },
+ {
+  "md5": "2a3300ab6846ae54c3fd8003c447b8ef",
+  "bytes": 4657,
+  "keep": "_inbox/SPEC_cardlife.md",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/SPEC_cardlife.md"
   ]
  },
  {
@@ -150,7 +175,7 @@
   "bytes": 369,
   "keep": "game/xpeek.py",
   "drop": [
-   "_archive/tools_old/xpeek.py"
+   "tools/sim_runners/xpeek.py"
   ]
  },
  {
@@ -158,7 +183,7 @@
   "bytes": 21654,
   "keep": "game/tornado_report.py",
   "drop": [
-   "_archive/tools_old/tornado_report.py"
+   "tools/sim_runners/tornado_report.py"
   ]
  },
  {
@@ -282,11 +307,35 @@
   ]
  },
  {
+  "md5": "a1c6d8b4dfa218204b2ceed149322eb8",
+  "bytes": 121905,
+  "keep": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md",
+  "drop": [
+   "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md"
+  ]
+ },
+ {
+  "md5": "b12adb41dca425798cafd364643aa0e8",
+  "bytes": 82313,
+  "keep": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx",
+  "drop": [
+   "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx"
+  ]
+ },
+ {
   "md5": "b4b665483122101481697d5aac20e836",
   "bytes": 1747,
   "keep": "_archive/web_junk/test_human.js",
   "drop": [
    "_archive/src_extra/test_human.js"
+  ]
+ },
+ {
+  "md5": "ba43cca307686050761a15e1f7e74678",
+  "bytes": 199813,
+  "keep": "game/legacy/workspace.tar.gz/src/final_v5.json",
+  "drop": [
+   "game/results/from_archive/final_v5 (1).json"
   ]
  },
  {
@@ -320,14 +369,6 @@
   "keep": "_archive/blitz1.1/src/canon/cards_spec.md",
   "drop": [
    "_archive/blitz1.1/docs/cards/cards_spec.md"
-  ]
- },
- {
-  "md5": "d41d8cd98f00b204e9800998ecf8427e",
-  "bytes": 0,
-  "keep": "data/inventory_after.log",
-  "drop": [
-   "data/dryrun.log"
   ]
  },
  {
@@ -519,7 +560,7 @@
   "bytes": 2324,
   "keep": "game/validate.py",
   "drop": [
-   "_archive/tools_old/validate.py"
+   "tools/sim_runners/validate.py"
   ]
  }
 ]

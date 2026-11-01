@@ -2,7 +2,7 @@
  ".gitignore": {
   "class": "unknown",
   "reason": "no rule matched (ext -)",
-  "bytes": 25,
+  "bytes": 26,
   "ext": ""
  },
  "DECISIONS.md": {
@@ -89,9 +89,15 @@
   "bytes": 4802878,
   "ext": ".rar"
  },
- "_archive/workspace.tar.gz": {
+ "_archive/workspace.tar": {
   "class": "zip_archives",
-  "reason": "ext .gz",
+  "reason": "ext .tar",
+  "bytes": 4101125,
+  "ext": ".tar"
+ },
+ "_archive/workspace.tar.gz": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
   "bytes": 4101125,
   "ext": ".gz"
  },
@@ -390,8 +396,8 @@
   "ext": ".md"
  },
  "_archive/blitz1.1/docs/rules/SPEC_cardlife.md": {
-  "class": "docs_rules",
-  "reason": "rules-ish name",
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
   "bytes": 4657,
   "ext": ".md"
  },
@@ -989,168 +995,6 @@
   "bytes": 1061,
   "ext": ".yml"
  },
- "_archive/tools_old/build_canon_decks.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 3731,
-  "ext": ".py"
- },
- "_archive/tools_old/build_pool1000.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 9956,
-  "ext": ".py"
- },
- "_archive/tools_old/check.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 1283,
-  "ext": ".py"
- },
- "_archive/tools_old/extract.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 543,
-  "ext": ".py"
- },
- "_archive/tools_old/integrity_audit.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 8522,
-  "ext": ".py"
- },
- "_archive/tools_old/make_fingerprints.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 5163,
-  "ext": ".py"
- },
- "_archive/tools_old/make_game_html.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 35623,
-  "ext": ".py"
- },
- "_archive/tools_old/matrix_b8.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 2887,
-  "ext": ".py"
- },
- "_archive/tools_old/md2docx_min.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 2814,
-  "ext": ".py"
- },
- "_archive/tools_old/near.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 791,
-  "ext": ".py"
- },
- "_archive/tools_old/run_d6_experiment.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 5521,
-  "ext": ".py"
- },
- "_archive/tools_old/run_draft.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 10777,
-  "ext": ".py"
- },
- "_archive/tools_old/run_grudge.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 11755,
-  "ext": ".py"
- },
- "_archive/tools_old/run_handlimit.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 11479,
-  "ext": ".py"
- },
- "_archive/tools_old/run_matrix.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 1997,
-  "ext": ".py"
- },
- "_archive/tools_old/run_matrix_b7.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 3208,
-  "ext": ".py"
- },
- "_archive/tools_old/run_pendulum.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 14699,
-  "ext": ".py"
- },
- "_archive/tools_old/run_report.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 4003,
-  "ext": ".py"
- },
- "_archive/tools_old/run_reputation.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 8639,
-  "ext": ".py"
- },
- "_archive/tools_old/run_reserve.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 15076,
-  "ext": ".py"
- },
- "_archive/tools_old/run_tilt.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 9326,
-  "ext": ".py"
- },
- "_archive/tools_old/run_tornado.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 14347,
-  "ext": ".py"
- },
- "_archive/tools_old/run_triggers.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 5131,
-  "ext": ".py"
- },
- "_archive/tools_old/run_winrate.py": {
-  "class": "code",
-  "reason": "python source",
-  "bytes": 2238,
-  "ext": ".py"
- },
- "_archive/tools_old/tornado_report.py": {
-  "class": "duplicates",
-  "reason": "md5-dup, drop per keep-rule",
-  "bytes": 21654,
-  "ext": ".py"
- },
- "_archive/tools_old/validate.py": {
-  "class": "duplicates",
-  "reason": "md5-dup, drop per keep-rule",
-  "bytes": 2324,
-  "ext": ".py"
- },
- "_archive/tools_old/xpeek.py": {
-  "class": "duplicates",
-  "reason": "md5-dup, drop per keep-rule",
-  "bytes": 369,
-  "ext": ".py"
- },
  "_archive/viewer_old/VIEW_game_2026_N16_base.html": {
   "class": "web_junk",
   "reason": "ext .html",
@@ -1355,12 +1199,6 @@
   "bytes": 14695,
   "ext": ".txt"
  },
- "_archive/ws/10_docs/колода/spec_raw.txt": {
-  "class": "unknown",
-  "reason": "no rule matched (ext .txt)",
-  "bytes": 20544,
-  "ext": ".txt"
- },
  "_archive/ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md": {
   "class": "duplicates",
   "reason": "md5-dup, drop per keep-rule",
@@ -1410,14 +1248,14 @@
   "ext": ".docx"
  },
  "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx": {
-  "class": "docs_rules",
-  "reason": "rules-ish name",
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
   "bytes": 82313,
   "ext": ".docx"
  },
  "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md": {
-  "class": "docs_rules",
-  "reason": "rules-ish name",
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
   "bytes": 121905,
   "ext": ".md"
  },
@@ -1649,6 +1487,12 @@
   "bytes": 76067,
   "ext": ".png"
  },
+ "_inbox/SPEC_cardlife.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 4657,
+  "ext": ".md"
+ },
  "_inbox/rules_short.txt": {
   "class": "unknown",
   "reason": "no rule matched (ext .txt)",
@@ -1688,18 +1532,18 @@
  "data/classes.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 56003,
+  "bytes": 51065,
   "ext": ".json"
  },
  "data/deleted_list.txt": {
   "class": "unknown",
   "reason": "small txt, needs reading",
-  "bytes": 3639,
+  "bytes": 3601,
   "ext": ".txt"
  },
  "data/dryrun.log": {
-  "class": "duplicates",
-  "reason": "md5-dup, drop per keep-rule",
+  "class": "unknown",
+  "reason": "no rule matched (ext .log)",
   "bytes": 0,
   "ext": ".log"
  },
@@ -1715,16 +1559,28 @@
   "bytes": 86945,
   "ext": ".log"
  },
+ "data/dryrun_extract2.log": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .log)",
+  "bytes": 49939,
+  "ext": ".log"
+ },
  "data/duplicates.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 21263,
+  "bytes": 12672,
   "ext": ".json"
+ },
+ "data/extract_run.log": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .log)",
+  "bytes": 1425,
+  "ext": ".log"
  },
  "data/inventory_after.log": {
   "class": "unknown",
   "reason": "no rule matched (ext .log)",
-  "bytes": 0,
+  "bytes": 14849,
   "ext": ".log"
  },
  "data/inventory_report.txt": {
@@ -1733,16 +1589,22 @@
   "bytes": 17584,
   "ext": ".txt"
  },
+ "data/legacy_found.txt": {
+  "class": "unknown",
+  "reason": "small txt, needs reading",
+  "bytes": 1159,
+  "ext": ".txt"
+ },
  "data/manifest.csv": {
   "class": "unknown",
   "reason": "no rule matched (ext .csv)",
-  "bytes": 47733,
+  "bytes": 44488,
   "ext": ".csv"
  },
  "data/manifest.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 82871,
+  "bytes": 74810,
   "ext": ".json"
  },
  "data/manifest_archives.json": {
@@ -1754,7 +1616,7 @@
  "data/move_log.csv": {
   "class": "unknown",
   "reason": "no rule matched (ext .csv)",
-  "bytes": 14531,
+  "bytes": 60076,
   "ext": ".csv"
  },
  "data/run_reorg.log": {
@@ -1775,10 +1637,76 @@
   "bytes": 3875,
   "ext": ".txt"
  },
+ "data/deck/1_professiya.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 22337,
+  "ext": ".txt"
+ },
+ "data/deck/2_telo.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 16532,
+  "ext": ".txt"
+ },
+ "data/deck/3_razum.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 12980,
+  "ext": ".txt"
+ },
+ "data/deck/4_sposobnosti.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 22149,
+  "ext": ".txt"
+ },
+ "data/deck/5_inventar.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 10100,
+  "ext": ".txt"
+ },
+ "data/deck/6_istoriya.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 19607,
+  "ext": ".txt"
+ },
+ "data/deck/7_znaniya.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 18080,
+  "ext": ".txt"
+ },
+ "data/deck/8_detali.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 18251,
+  "ext": ".txt"
+ },
+ "data/deck/9_spec.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 22919,
+  "ext": ".txt"
+ },
+ "data/deck/pool_indices.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 13818,
+  "ext": ".json"
+ },
  "data/deck/ryukzak_raw.txt": {
   "class": "unknown",
   "reason": "small txt, needs reading",
   "bytes": 3823,
+  "ext": ".txt"
+ },
+ "data/deck/spec_raw.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 20544,
   "ext": ".txt"
  },
  "data/deck/telo_raw.txt": {
@@ -1803,6 +1731,12 @@
   "class": "deck_data",
   "reason": "spreadsheet deck",
   "bytes": 541461,
+  "ext": ".xlsx"
+ },
+ "data/deck/карты_настолка_v5.xlsx": {
+  "class": "deck_data",
+  "reason": "spreadsheet deck",
+  "bytes": 541236,
   "ext": ".xlsx"
  },
  "data/deck/карты_настолка_полный_набор.md": {
@@ -1833,6 +1767,18 @@
   "class": "docs_rules",
   "reason": "rules-ish name",
   "bytes": 34271,
+  "ext": ".md"
+ },
+ "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 82313,
+  "ext": ".docx"
+ },
+ "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 121905,
   "ext": ".md"
  },
  "docs/notes/СТАРТ_ЧАТА_С_CODER.md": {
@@ -1979,6 +1925,42 @@
   "bytes": 41993,
   "ext": ".docx"
  },
+ "docs/rules/from_archive/ЖУРНАЛ_ЧИСТКИ_РЕД5.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 43008,
+  "ext": ".docx"
+ },
+ "docs/rules/from_archive/КОЛОДА_ОБМЕНА.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 39239,
+  "ext": ".docx"
+ },
+ "docs/rules/from_archive/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 53236,
+  "ext": ".docx"
+ },
+ "docs/rules/from_archive/ПРИМЕР_ИГРЫ_8_игроков.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 62074,
+  "ext": ".docx"
+ },
+ "docs/rules/from_archive/ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 48712,
+  "ext": ".docx"
+ },
+ "docs/rules/from_archive/СИМУЛЯЦИИ_2_20.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 44706,
+  "ext": ".docx"
+ },
  "game/game_sim_before_personality.py": {
   "class": "code",
   "reason": "python source",
@@ -2009,6 +1991,246 @@
   "bytes": 369,
   "ext": ".py"
  },
+ "game/legacy/Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14508,
+  "ext": ".py"
+ },
+ "game/legacy/Test-BB-revert-4-game-file-analysis-b3311/game_sim.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 48233,
+  "ext": ".py"
+ },
+ "game/legacy/Test-BB-site/game_sim.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 59047,
+  "ext": ".py"
+ },
+ "game/legacy/tools/audit_full.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9318,
+  "ext": ".py"
+ },
+ "game/legacy/tools/bb (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14480,
+  "ext": ".py"
+ },
+ "game/legacy/tools/bb.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8119,
+  "ext": ".py"
+ },
+ "game/legacy/tools/bb_events (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14147,
+  "ext": ".py"
+ },
+ "game/legacy/tools/bb_html (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 44922,
+  "ext": ".py"
+ },
+ "game/legacy/tools/bb_model (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 16660,
+  "ext": ".py"
+ },
+ "game/legacy/tools/build_canon_decks.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3718,
+  "ext": ".py"
+ },
+ "game/legacy/tools/build_v5.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2398,
+  "ext": ".py"
+ },
+ "game/legacy/tools/censor.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 10738,
+  "ext": ".py"
+ },
+ "game/legacy/tools/censor_fix.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 21250,
+  "ext": ".py"
+ },
+ "game/legacy/tools/check_clean.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3674,
+  "ext": ".py"
+ },
+ "game/legacy/tools/coverage_test (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 17087,
+  "ext": ".py"
+ },
+ "game/legacy/tools/csv_export (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7915,
+  "ext": ".py"
+ },
+ "game/legacy/tools/export_v5_xlsx.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 23504,
+  "ext": ".py"
+ },
+ "game/legacy/tools/fuzz_test (1).py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3843,
+  "ext": ".py"
+ },
+ "game/legacy/tools/make_web.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1902,
+  "ext": ".py"
+ },
+ "game/legacy/tools/md2docx.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3904,
+  "ext": ".py"
+ },
+ "game/legacy/tools/one_search.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2184,
+  "ext": ".py"
+ },
+ "game/legacy/tools/t2.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 138,
+  "ext": ".py"
+ },
+ "game/legacy/tools/verify_any.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7734,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/build_pool1000.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9956,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/dice_fair_base.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 774,
+  "ext": ".json"
+ },
+ "game/legacy/workspace.tar.gz/dice_fairness.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 873,
+  "ext": ".json"
+ },
+ "game/legacy/workspace.tar.gz/game_sim.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 48377,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/log_360.txt": {
+  "class": "logs",
+  "reason": "log by name",
+  "bytes": 36179,
+  "ext": ".txt"
+ },
+ "game/legacy/workspace.tar.gz/make_dop_md.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 49240,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/make_sim8_md.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 45511,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/pool_sim1000.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 126994,
+  "ext": ".json"
+ },
+ "game/legacy/workspace.tar.gz/sim8.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 88379,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sim_n.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 36503,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sweep.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 637,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sweep8.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7739,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sweep_mods.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3582,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sweep_n.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2425,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/time_model.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7902,
+  "ext": ".py"
+ },
+ "game/legacy/workspace.tar.gz/sim/pool_indices.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 13818,
+  "ext": ".json"
+ },
+ "game/legacy/workspace.tar.gz/src/final_v5.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 199813,
+  "ext": ".json"
+ },
  "game/results/pendulum.json": {
   "class": "sim_results",
   "reason": "sim json by name pattern",
@@ -2022,8 +2244,8 @@
   "ext": ".json"
  },
  "game/results/pool_indices (1).json": {
-  "class": "sim_results",
-  "reason": "sim json by name pattern",
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
   "bytes": 13818,
   "ext": ".json"
  },
@@ -2038,6 +2260,12 @@
   "reason": "sim json by name pattern",
   "bytes": 31040,
   "ext": ".json"
+ },
+ "game/results/run_seed1_n8.log": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .log)",
+  "bytes": 9835,
+  "ext": ".log"
  },
  "game/results/sweep8_results.json": {
   "class": "sim_results",
@@ -2087,10 +2315,22 @@
   "bytes": 1897,
   "ext": ".json"
  },
+ "game/results/from_archive/dice_dist (2).json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 331,
+  "ext": ".json"
+ },
+ "game/results/from_archive/final_v5 (1).json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 199813,
+  "ext": ".json"
+ },
  "tools/archive_extract.py": {
   "class": "code",
   "reason": "python source",
-  "bytes": 5273,
+  "bytes": 5849,
   "ext": ".py"
  },
  "tools/inventory.py": {
@@ -2109,6 +2349,168 @@
   "class": "code",
   "reason": "python source",
   "bytes": 4730,
+  "ext": ".py"
+ },
+ "tools/sim_runners/build_canon_decks.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3731,
+  "ext": ".py"
+ },
+ "tools/sim_runners/build_pool1000.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9956,
+  "ext": ".py"
+ },
+ "tools/sim_runners/check.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1283,
+  "ext": ".py"
+ },
+ "tools/sim_runners/extract.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 543,
+  "ext": ".py"
+ },
+ "tools/sim_runners/integrity_audit.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8522,
+  "ext": ".py"
+ },
+ "tools/sim_runners/make_fingerprints.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5163,
+  "ext": ".py"
+ },
+ "tools/sim_runners/make_game_html.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 35623,
+  "ext": ".py"
+ },
+ "tools/sim_runners/matrix_b8.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2887,
+  "ext": ".py"
+ },
+ "tools/sim_runners/md2docx_min.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2814,
+  "ext": ".py"
+ },
+ "tools/sim_runners/near.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 791,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_d6_experiment.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5521,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_draft.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 10777,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_grudge.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11755,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_handlimit.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11479,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_matrix.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1997,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_matrix_b7.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3208,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_pendulum.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14699,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_report.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4003,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_reputation.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8639,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_reserve.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 15076,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_tilt.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9326,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_tornado.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14347,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_triggers.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5131,
+  "ext": ".py"
+ },
+ "tools/sim_runners/run_winrate.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2238,
+  "ext": ".py"
+ },
+ "tools/sim_runners/tornado_report.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 21654,
+  "ext": ".py"
+ },
+ "tools/sim_runners/validate.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2324,
+  "ext": ".py"
+ },
+ "tools/sim_runners/xpeek.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 369,
   "ext": ".py"
  },
  "tools_old/run_tests.sh": {
