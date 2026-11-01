@@ -1,0 +1,18 @@
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/game_sim.py
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/game_sim.py
+archive::_archive/workspace.tar.gz::./sim/sweep_mods.py
+archive::_archive/workspace.tar.gz::./sim/dice_fairness.json
+archive::_archive/workspace.tar.gz::./sim/build_pool1000.py
+archive::_archive/workspace.tar.gz::./sim/time_model.py
+archive::_archive/workspace.tar.gz::./sim/sim_n.py
+archive::_archive/workspace.tar.gz::./sim/dice_fair_base.json
+archive::_archive/workspace.tar.gz::./sim/sweep.py
+archive::_archive/workspace.tar.gz::./sim/game_sim.py
+archive::_archive/workspace.tar.gz::./sim/sim8.py
+archive::_archive/workspace.tar.gz::./sim/pool_sim1000.json
+archive::_archive/workspace.tar.gz::./sim/make_dop_md.py
+archive::_archive/workspace.tar.gz::./sim/sweep8.py
+archive::_archive/workspace.tar.gz::./sim/sweep_n.py
+archive::_archive/workspace.tar.gz::./sim/make_sim8_md.py
+archive::_archive/workspace.tar.gz::./sim/log_360.txt

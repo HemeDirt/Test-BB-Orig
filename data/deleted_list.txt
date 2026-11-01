@@ -50,7 +50,6 @@ src_test_digest (1).md	delete:duplicate-suffix
 sweep_mods_results.json	delete:duplicate-suffix
 sweep_n_results.json	delete:duplicate-suffix
 verify_dop_results.json	delete:duplicate-suffix
-workspace.tar	delete:duplicate-suffix
 БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx	delete:duplicate-suffix
 БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md	delete:duplicate-suffix
 БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md	delete:duplicate-suffix

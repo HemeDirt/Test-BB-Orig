@@ -52,8 +52,18 @@ def main():
     rows = walk(ROOT)
     groups = dup_groups(rows)
     repo_md5 = {r["md5"] for r in rows if not r["md5"].startswith("ERR")}
-    archives = [r["path"] for r in sorted(rows, key=lambda x: x["path"])
-                if r["path"].lower().endswith((".zip", ".tar", ".tar.gz", ".tgz"))]
+    archives = []
+    for cand in (os.path.join(ROOT, ap) for ap in [r["path"] for r in rows]):
+        pass
+    # B1-fix: ищем архивы где угодно в дереве (после реорганизации они лежат в _archive/),
+    # пропуская служебные папки .git и содержимое уже извлечённое.
+    for dirpath, dirnames, filenames in os.walk(ROOT):
+        dirnames[:] = [d for d in dirnames if d not in (".git", "__pycache__")]
+        for fn in filenames:
+            if fn.lower().endswith((".zip", ".tar", ".tar.gz", ".tgz")):
+                rel = os.path.relpath(os.path.join(dirpath, fn), ROOT)
+                archives.append(rel)
+    archives.sort()
     seen = set(repo_md5)
     legacy_found, n_ex, n_dup, n_skip_class = [], 0, 0, 0
     for ap in archives:
