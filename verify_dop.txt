@@ -1,0 +1,117 @@
+# -*- coding: utf-8 -*-
+"""Дополнительные проверки для отчёта «СИМУЛЯЦИИ_2_20»:
+1) честность кубика только на базовой конфигурации (без ситуационных dN-бросков);
+2) как именно партии заканчиваются (порог / лимит циклов / «никого не осталось»);
+3) патовые ситуации в командном режиме «на уничтожение».
+Usage: python3 sim/verify_dop.py [SEEDS]
+"""
+import sys, os, json, math
+from collections import Counter
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import sim_n
+
+SEEDS = int(sys.argv[1]) if len(sys.argv) > 1 else 300
+
+
+def chi_square(counts, faces=20):
+    tot = sum(counts.values())
+    exp = tot / faces
+    chi = sum((counts.get(f, 0) - exp) ** 2 / exp for f in range(1, faces + 1))
+    return tot, exp, chi
+
+
+def main():
+    out = {}
+
+    # --- 1) кубик: только база, N=4..16 -------------------------------------------------
+    rolls = Counter()
+    per_n = {}
+    games = 0
+    for n in (4, 6, 8, 10, 12, 16):
+        cnt = Counter()
+        for s in range(1, SEEDS + 1):
+            r = sim_n.run_game(s, n, 'base')
+            for f, c in r['roll_dist'].items():
+                cnt[int(f)] += c
+            games += 1
+        rolls.update(cnt)
+        tot, exp, chi = chi_square(cnt)
+        per_n[n] = dict(rolls=tot, chi2=round(chi, 1),
+                        min_pct=round(100 * min(cnt.values()) / tot, 3),
+                        max_pct=round(100 * max(cnt.values()) / tot, 3))
+        print(f'кубик N={n:2d}: бросков {tot:7d}  chi2={chi:6.1f} (df=19, порог 5% = 30.1)  '
+              f'грани {per_n[n]["min_pct"]}%..{per_n[n]["max_pct"]}%', flush=True)
+
+    tot, exp, chi = chi_square(rolls)
+    pcts = {f: 100 * rolls[f] / tot for f in range(1, 21)}
+    sd = math.sqrt(tot * 0.05 * 0.95)
+    out['dice'] = dict(games=games, total_rolls=tot, expected_per_face=round(exp, 1), chi2=round(chi, 1),
+                       df=19, crit_005=30.14, min_face=min(pcts, key=pcts.get),
+                       min_pct=round(min(pcts.values()), 3), max_face=max(pcts, key=pcts.get),
+                       max_pct=round(max(pcts.values()), 3), one_sd=round(sd, 1),
+                       one_sd_pp=round(100 * sd / tot, 3), per_n=per_n,
+                       pcts={str(f): round(pcts[f], 3) for f in range(1, 21)},
+                       counts={str(f): rolls[f] for f in range(1, 21)})
+    print(f'ИТОГО кубик: {tot} бросков, chi2={chi:.1f} (df=19), 1 сигма на грань = {sd:.0f} '
+          f'= {100*sd/tot:.3f} п.п., разброс {min(pcts.values()):.3f}%..{max(pcts.values()):.3f}%', flush=True)
+
+    # --- 2) как заканчивается базовая партия -------------------------------------------
+    fin = {}
+    for n in (4, 8, 12, 20):
+        rows = [sim_n.run_game(s, n, 'base') for s in range(1, SEEDS + 1)]
+        stall = sum(1 for r in rows if r['stall'])
+        nowin = sum(1 for r in rows if r['no_win'])
+        ends = Counter(r['end'] for r in rows)
+        fin[n] = dict(games=len(rows), stall_pct=round(100 * stall / len(rows), 2),
+                      nowin_pct=round(100 * nowin / len(rows), 2),
+                      end_dist={str(k): ends[k] for k in sorted(ends)},
+                      max_end=max(ends),
+                      blood3_pct=round(100 * sum(1 for r in rows if r['max_cycle_deaths'] >= 3) / len(rows), 1),
+                      blood4_pct=round(100 * sum(1 for r in rows if r['max_cycle_deaths'] >= 4) / len(rows), 1),
+                      mass_pct=round(100 * sum(1 for r in rows if r['mass']) / len(rows), 1),
+                      forced_pct=round(100 * sum(1 for r in rows if r['forced']) / len(rows), 1))
+        print(f'финал N={n:2d}: лимит циклов {fin[n]["stall_pct"]}%  «никого не осталось» {fin[n]["nowin_pct"]}%  '
+              f'макс. цикл {fin[n]["max_end"]}  3+ выбывших за цикл {fin[n]["blood3_pct"]}%', flush=True)
+    out['endings'] = fin
+
+    # --- 3) командный режим «на уничтожение»: патовые ситуации --------------------------
+    team = {}
+    for n in (8, 12, 16):
+        rows = [sim_n.run_game(s, n, 'amkary2') for s in range(1, SEEDS + 1)]
+        stall = [r for r in rows if r['stall']]
+        team[n] = dict(games=len(rows),
+                       end_mean=round(sum(r['end'] for r in rows) / len(rows), 2),
+                       end_max=max(r['end'] for r in rows),
+                       teamwin_pct=round(100 * sum(1 for r in rows if r['team_win']) / len(rows), 1),
+                       stall_pct=round(100 * len(stall) / len(rows), 1),
+                       nowin_pct=round(100 * sum(1 for r in rows if r['no_win']) / len(rows), 2),
+                       stall_with_both_teams=round(100 * sum(1 for r in stall if r['alive'] >= 2) / max(1, len(stall)), 1),
+                       stall_alive_mean=round(sum(r['alive'] for r in stall) / max(1, len(stall)), 2),
+                       deaths_mean=round(sum(r['deaths'] for r in rows) / len(rows), 2),
+                       revive_pct=round(100 * sum(1 for r in rows if r['token_revive'] or r['spec_revive']) / len(rows), 1),
+                       mass_pct=round(100 * sum(1 for r in rows if r['mass']) / len(rows), 1))
+        a = team[n]
+        print(f'«Амкары: на уничтожение» N={n:2d}: конец ~{a["end_mean"]} (макс {a["end_max"]}), '
+              f'одна команда {a["teamwin_pct"]}%, лимит циклов {a["stall_pct"]}% '
+              f'(из них с двумя живыми командами {a["stall_with_both_teams"]}%), воскрешений {a["revive_pct"]}%', flush=True)
+    out['team'] = team
+
+    # --- 4) ротация рук («Пьяная хронология») — сколько оборотов делает стол -------------
+    rot = {}
+    for n in (8, 16):
+        rows = [sim_n.run_game(s, n, 'hrono') for s in range(1, SEEDS + 1)]
+        rot[n] = dict(games=len(rows), end_mean=round(sum(r['end'] for r in rows) / len(rows), 2),
+                      rotations_mean=round(sum(r['rotations'] for r in rows) / len(rows), 2),
+                      mass_pct=round(100 * sum(1 for r in rows if r['mass']) / len(rows), 1),
+                      revive_pct=round(100 * sum(1 for r in rows if r['token_revive'] or r['spec_revive']) / len(rows), 1),
+                      stall_pct=round(100 * sum(1 for r in rows if r['stall']) / len(rows), 1))
+        print(f'ротация N={n:2d}: смен рук за партию ~{rot[n]["rotations_mean"]}, конец ~{rot[n]["end_mean"]}, '
+              f'лимит циклов {rot[n]["stall_pct"]}%', flush=True)
+    out['rotation'] = rot
+
+    json.dump(out, open('sim/verify_dop_results.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    print('saved sim/verify_dop_results.json')
+
+
+if __name__ == '__main__':
+    main()
