@@ -1,0 +1,1252 @@
+[
+ {
+  "name": "sit_base",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   4.76,
+   4.41,
+   5.11
+  ],
+  "end_p90": 7,
+  "deaths": [
+   5.08,
+   4.75,
+   5.41
+  ],
+  "alive": 3.53,
+  "harvest_pct": 70,
+  "revive_pct": 35,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 123,
+   "harvest": 120,
+   "kill": 87,
+   "selfkill": 81,
+   "quota": 24
+  },
+  "acts": {
+   "wound": 513,
+   "kill": 478,
+   "heal": 393,
+   "humiliate": 310,
+   "steal": 207,
+   "fun": 167,
+   "marauder": 123
+  },
+  "extra": {
+   "sniper_cond": 26,
+   "demon": 56,
+   "betray": 4,
+   "doll": 22,
+   "hc": 15,
+   "fun": 167,
+   "film": 25,
+   "ghost_observer": 134,
+   "ghost_mentor": 166,
+   "ghost_spoiler": 61,
+   "ghost_avenger": 147
+  }
+ },
+ {
+  "name": "sit_plane",
+  "n": 8,
+  "situation": "plane",
+  "end": [
+   4.23,
+   4.06,
+   4.4
+  ],
+  "end_p90": 5,
+  "deaths": [
+   4.84,
+   4.59,
+   5.09
+  ],
+  "alive": 3.62,
+  "harvest_pct": 58,
+  "revive_pct": 33,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 113,
+   "kill": 83,
+   "selfkill": 78,
+   "harvest": 74,
+   "forced": 42
+  },
+  "acts": {
+   "wound": 478,
+   "kill": 455,
+   "heal": 358,
+   "humiliate": 292,
+   "steal": 201,
+   "fun": 165,
+   "marauder": 112
+  },
+  "extra": {
+   "sniper_cond": 26,
+   "demon": 46,
+   "betray": 3,
+   "doll": 20,
+   "hc": 13,
+   "fun": 165,
+   "film": 25,
+   "ghost_observer": 128,
+   "ghost_mentor": 160,
+   "ghost_spoiler": 56,
+   "ghost_avenger": 140
+  }
+ },
+ {
+  "name": "sit_pole",
+  "n": 8,
+  "situation": "pole",
+  "end": [
+   7.23,
+   6.9,
+   7.56
+  ],
+  "end_p90": 9,
+  "deaths": [
+   7.69,
+   7.42,
+   7.96
+  ],
+  "alive": 1.25,
+  "harvest_pct": 95,
+  "revive_pct": 44,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 276,
+   "wounds": 165,
+   "kill": 113,
+   "selfkill": 98,
+   "link": 28
+  },
+  "acts": {
+   "wound": 610,
+   "kill": 602,
+   "heal": 482,
+   "humiliate": 358,
+   "steal": 239,
+   "fun": 204,
+   "marauder": 147
+  },
+  "extra": {
+   "sniper_cond": 27,
+   "demon": 79,
+   "betray": 5,
+   "doll": 24,
+   "hc": 18,
+   "fun": 204,
+   "film": 25,
+   "ghost_observer": 199,
+   "ghost_mentor": 278,
+   "ghost_spoiler": 103,
+   "ghost_avenger": 189
+  }
+ },
+ {
+  "name": "sit_purg",
+  "n": 8,
+  "situation": "purg",
+  "end": [
+   6.02,
+   5.58,
+   6.46
+  ],
+  "end_p90": 9,
+  "deaths": [
+   6.39,
+   5.98,
+   6.8
+  ],
+  "alive": 2.41,
+  "harvest_pct": 81,
+  "revive_pct": 43,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 192,
+   "wounds": 167,
+   "selfkill": 90,
+   "kill": 90,
+   "link": 22
+  },
+  "acts": {
+   "wound": 567,
+   "kill": 538,
+   "heal": 464,
+   "humiliate": 308,
+   "steal": 211,
+   "fun": 194,
+   "marauder": 122
+  },
+  "extra": {
+   "sniper_cond": 24,
+   "demon": 71,
+   "betray": 4,
+   "doll": 20,
+   "hc": 18,
+   "fun": 194,
+   "film": 25,
+   "ghost_mentor": 230,
+   "ghost_avenger": 176,
+   "ghost_spoiler": 86,
+   "ghost_observer": 147
+  }
+ },
+ {
+  "name": "sit_hrono",
+  "n": 8,
+  "situation": "hrono",
+  "end": [
+   2.16,
+   1.96,
+   2.36
+  ],
+  "end_p90": 4,
+  "deaths": [
+   1.93,
+   1.74,
+   2.12
+  ],
+  "alive": 6.2,
+  "harvest_pct": 23,
+  "revive_pct": 23,
+  "stall_pct": 0,
+  "thr_hit_pct": 98,
+  "causes": {
+   "kill": 38,
+   "selfkill": 38,
+   "wounds": 32,
+   "harvest": 26,
+   "quota": 22
+  },
+  "acts": {
+   "wound": 314,
+   "humiliate": 208,
+   "kill": 207,
+   "heal": 206,
+   "steal": 132,
+   "fun": 99,
+   "marauder": 34
+  },
+  "extra": {
+   "sniper_cond": 22,
+   "demon": 24,
+   "betray": 2,
+   "doll": 10,
+   "hc": 6,
+   "fun": 99,
+   "film": 23,
+   "ghost_observer": 49,
+   "ghost_mentor": 49,
+   "ghost_spoiler": 24,
+   "ghost_avenger": 71
+  }
+ },
+ {
+  "name": "sit_amkary",
+  "n": 8,
+  "situation": "amkary",
+  "end": [
+   6.4,
+   6.08,
+   6.72
+  ],
+  "end_p90": 8,
+  "deaths": [
+   6.85,
+   6.62,
+   7.08
+  ],
+  "alive": 1.94,
+  "harvest_pct": 92,
+  "revive_pct": 42,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 213,
+   "wounds": 161,
+   "kill": 105,
+   "selfkill": 95,
+   "link": 27
+  },
+  "acts": {
+   "wound": 583,
+   "kill": 572,
+   "heal": 458,
+   "humiliate": 346,
+   "steal": 228,
+   "fun": 196,
+   "marauder": 135
+  },
+  "extra": {
+   "sniper_cond": 27,
+   "demon": 74,
+   "betray": 5,
+   "doll": 24,
+   "hc": 18,
+   "fun": 196,
+   "film": 25,
+   "ghost_observer": 176,
+   "ghost_mentor": 241,
+   "ghost_spoiler": 90,
+   "ghost_avenger": 178
+  }
+ },
+ {
+  "name": "dth7",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   5.22,
+   4.9,
+   5.54
+  ],
+  "end_p90": 7,
+  "deaths": [
+   5.02,
+   4.72,
+   5.32
+  ],
+  "alive": 3.66,
+  "harvest_pct": 91,
+  "revive_pct": 36,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 201,
+   "kill": 99,
+   "selfkill": 91,
+   "quota": 26,
+   "link": 25
+  },
+  "acts": {
+   "kill": 540,
+   "wound": 524,
+   "heal": 488,
+   "humiliate": 324,
+   "steal": 221,
+   "fun": 180,
+   "marauder": 117
+  },
+  "extra": {
+   "sniper_cond": 27,
+   "demon": 65,
+   "betray": 4,
+   "doll": 27,
+   "hc": 20,
+   "fun": 180,
+   "film": 25,
+   "ghost_observer": 129,
+   "ghost_mentor": 171,
+   "ghost_spoiler": 53,
+   "ghost_avenger": 149
+  }
+ },
+ {
+  "name": "rpds_economy",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   4.76,
+   4.36,
+   5.16
+  ],
+  "end_p90": 7,
+  "deaths": [
+   5.12,
+   4.77,
+   5.47
+  ],
+  "alive": 3.55,
+  "harvest_pct": 66,
+  "revive_pct": 39,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 127,
+   "wounds": 108,
+   "kill": 93,
+   "selfkill": 83,
+   "link": 26
+  },
+  "acts": {
+   "wound": 514,
+   "kill": 489,
+   "heal": 366,
+   "humiliate": 285,
+   "steal": 206,
+   "fun": 188,
+   "marauder": 98
+  },
+  "extra": {
+   "sniper_cond": 19,
+   "demon": 59,
+   "betray": 1,
+   "doll": 20,
+   "hc": 17,
+   "fun": 188,
+   "film": 27,
+   "ghost_avenger": 170,
+   "ghost_spoiler": 58,
+   "ghost_mentor": 171,
+   "ghost_observer": 113
+  }
+ },
+ {
+  "name": "N4",
+  "n": 4,
+  "situation": "base",
+  "end": [
+   3,
+   2.83,
+   3.17
+  ],
+  "end_p90": 4,
+  "deaths": [
+   2.14,
+   2.01,
+   2.27
+  ],
+  "alive": 1.91,
+  "harvest_pct": 76,
+  "revive_pct": 7,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 93,
+   "selfkill": 32,
+   "kill": 29,
+   "wounds": 28,
+   "link": 9
+  },
+  "acts": {
+   "wound": 202,
+   "kill": 177,
+   "humiliate": 129,
+   "heal": 67,
+   "steal": 65,
+   "fun": 45,
+   "marauder": 15
+  },
+  "extra": {
+   "sniper_cond": 12,
+   "demon": 25,
+   "betray": 1,
+   "doll": 4,
+   "hc": 11,
+   "fun": 45,
+   "film": 10,
+   "ghost_avenger": 61,
+   "ghost_spoiler": 22,
+   "ghost_mentor": 76,
+   "ghost_observer": 55
+  }
+ },
+ {
+  "name": "N6",
+  "n": 6,
+  "situation": "base",
+  "end": [
+   3.84,
+   3.56,
+   4.12
+  ],
+  "end_p90": 5,
+  "deaths": [
+   3.52,
+   3.31,
+   3.73
+  ],
+  "alive": 2.69,
+  "harvest_pct": 68,
+  "revive_pct": 19,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 107,
+   "kill": 63,
+   "wounds": 62,
+   "selfkill": 50,
+   "link": 17
+  },
+  "acts": {
+   "kill": 321,
+   "wound": 313,
+   "humiliate": 221,
+   "heal": 157,
+   "steal": 134,
+   "fun": 125,
+   "marauder": 64
+  },
+  "extra": {
+   "sniper_cond": 16,
+   "demon": 33,
+   "betray": 4,
+   "doll": 11,
+   "hc": 11,
+   "fun": 125,
+   "film": 18,
+   "ghost_avenger": 99,
+   "ghost_spoiler": 40,
+   "ghost_observer": 94,
+   "ghost_mentor": 119
+  }
+ },
+ {
+  "name": "N8",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   4.76,
+   4.41,
+   5.11
+  ],
+  "end_p90": 7,
+  "deaths": [
+   5.08,
+   4.75,
+   5.41
+  ],
+  "alive": 3.53,
+  "harvest_pct": 70,
+  "revive_pct": 35,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 123,
+   "harvest": 120,
+   "kill": 87,
+   "selfkill": 81,
+   "quota": 24
+  },
+  "acts": {
+   "wound": 513,
+   "kill": 478,
+   "heal": 393,
+   "humiliate": 310,
+   "steal": 207,
+   "fun": 167,
+   "marauder": 123
+  },
+  "extra": {
+   "sniper_cond": 26,
+   "demon": 56,
+   "betray": 4,
+   "doll": 22,
+   "hc": 15,
+   "fun": 167,
+   "film": 25,
+   "ghost_observer": 134,
+   "ghost_mentor": 166,
+   "ghost_spoiler": 61,
+   "ghost_avenger": 147
+  }
+ },
+ {
+  "name": "N10",
+  "n": 10,
+  "situation": "base",
+  "end": [
+   5.77,
+   5.34,
+   6.2
+  ],
+  "end_p90": 9,
+  "deaths": [
+   7.15,
+   6.73,
+   7.57
+  ],
+  "alive": 3.97,
+  "harvest_pct": 71,
+  "revive_pct": 56,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 175,
+   "harvest": 149,
+   "selfkill": 130,
+   "kill": 120,
+   "quota": 32
+  },
+  "acts": {
+   "kill": 697,
+   "wound": 654,
+   "heal": 581,
+   "humiliate": 397,
+   "fun": 291,
+   "steal": 274,
+   "marauder": 138
+  },
+  "extra": {
+   "sniper_cond": 28,
+   "demon": 96,
+   "betray": 4,
+   "doll": 27,
+   "hc": 17,
+   "fun": 291,
+   "film": 28,
+   "ghost_mentor": 223,
+   "ghost_avenger": 252,
+   "ghost_spoiler": 90,
+   "ghost_observer": 150
+  }
+ },
+ {
+  "name": "N12",
+  "n": 12,
+  "situation": "base",
+  "end": [
+   6.49,
+   5.99,
+   6.99
+  ],
+  "end_p90": 9,
+  "deaths": [
+   8.54,
+   8.07,
+   9.01
+  ],
+  "alive": 4.88,
+  "harvest_pct": 66,
+  "revive_pct": 61,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 248,
+   "selfkill": 164,
+   "kill": 161,
+   "harvest": 126,
+   "link": 33
+  },
+  "acts": {
+   "heal": 903,
+   "kill": 864,
+   "wound": 831,
+   "humiliate": 502,
+   "steal": 369,
+   "fun": 345,
+   "marauder": 205
+  },
+  "extra": {
+   "sniper_cond": 34,
+   "demon": 135,
+   "betray": 8,
+   "doll": 40,
+   "hc": 17,
+   "fun": 345,
+   "film": 38,
+   "ghost_spoiler": 102,
+   "ghost_avenger": 318,
+   "ghost_mentor": 262,
+   "ghost_observer": 172
+  }
+ },
+ {
+  "name": "N16",
+  "n": 16,
+  "situation": "base",
+  "end": [
+   8.39,
+   7.75,
+   9.03
+  ],
+  "end_p90": 12,
+  "deaths": [
+   12.5,
+   11.85,
+   13.15
+  ],
+  "alive": 5.9,
+  "harvest_pct": 73,
+  "revive_pct": 78,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 403,
+   "kill": 244,
+   "selfkill": 217,
+   "harvest": 159,
+   "sniper": 54
+  },
+  "acts": {
+   "heal": 1550,
+   "kill": 1300,
+   "wound": 1228,
+   "humiliate": 822,
+   "fun": 625,
+   "steal": 529,
+   "marauder": 338
+  },
+  "extra": {
+   "sniper_cond": 57,
+   "demon": 190,
+   "betray": 15,
+   "doll": 49,
+   "hc": 33,
+   "fun": 625,
+   "film": 54,
+   "ghost_avenger": 484,
+   "ghost_observer": 240,
+   "ghost_spoiler": 137,
+   "ghost_mentor": 389
+  }
+ },
+ {
+  "name": "N20",
+  "n": 20,
+  "situation": "base",
+  "end": [
+   10.48,
+   9.7,
+   11.26
+  ],
+  "end_p90": 15,
+  "deaths": [
+   17.41,
+   16.52,
+   18.3
+  ],
+  "alive": 6.42,
+  "harvest_pct": 75,
+  "revive_pct": 87,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 613,
+   "kill": 338,
+   "selfkill": 329,
+   "harvest": 177,
+   "sniper": 66
+  },
+  "acts": {
+   "heal": 2433,
+   "kill": 1828,
+   "wound": 1573,
+   "humiliate": 1060,
+   "fun": 970,
+   "steal": 699,
+   "marauder": 553
+  },
+  "extra": {
+   "sniper_cond": 66,
+   "demon": 300,
+   "betray": 21,
+   "doll": 65,
+   "hc": 38,
+   "fun": 970,
+   "film": 76,
+   "ghost_avenger": 695,
+   "ghost_mentor": 530,
+   "ghost_spoiler": 167,
+   "ghost_observer": 349
+  }
+ },
+ {
+  "name": "D6_N4",
+  "n": 4,
+  "situation": "base",
+  "end": [
+   2.9,
+   2.72,
+   3.08
+  ],
+  "end_p90": 4,
+  "deaths": [
+   2.19,
+   2.06,
+   2.32
+  ],
+  "alive": 1.88,
+  "harvest_pct": 78,
+  "revive_pct": 8,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 113,
+   "wounds": 24,
+   "kill": 22,
+   "selfkill": 22,
+   "link": 15
+  },
+  "acts": {
+   "wound": 204,
+   "kill": 170,
+   "humiliate": 125,
+   "heal": 71,
+   "steal": 68,
+   "fun": 47,
+   "marauder": 21
+  },
+  "extra": {
+   "sniper_cond": 10,
+   "demon": 24,
+   "betray": 3,
+   "doll": 6,
+   "hc": 10,
+   "fun": 47,
+   "film": 12,
+   "ghost_mentor": 86,
+   "ghost_avenger": 49,
+   "ghost_observer": 56,
+   "ghost_spoiler": 28
+  }
+ },
+ {
+  "name": "D6_N6",
+  "n": 6,
+  "situation": "base",
+  "end": [
+   3.97,
+   3.69,
+   4.25
+  ],
+  "end_p90": 6,
+  "deaths": [
+   3.61,
+   3.39,
+   3.83
+  ],
+  "alive": 2.67,
+  "harvest_pct": 78,
+  "revive_pct": 22,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 134,
+   "kill": 57,
+   "selfkill": 53,
+   "wounds": 46,
+   "link": 18
+  },
+  "acts": {
+   "wound": 345,
+   "kill": 332,
+   "humiliate": 207,
+   "steal": 151,
+   "heal": 134,
+   "fun": 123,
+   "marauder": 57
+  },
+  "extra": {
+   "sniper_cond": 17,
+   "demon": 36,
+   "betray": 2,
+   "doll": 12,
+   "hc": 14,
+   "fun": 123,
+   "film": 17,
+   "ghost_avenger": 108,
+   "ghost_mentor": 118,
+   "ghost_observer": 91,
+   "ghost_spoiler": 44
+  }
+ },
+ {
+  "name": "D6_N8",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   4.86,
+   4.47,
+   5.25
+  ],
+  "end_p90": 8,
+  "deaths": [
+   4.98,
+   4.65,
+   5.31
+  ],
+  "alive": 3.7,
+  "harvest_pct": 67,
+  "revive_pct": 41,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 139,
+   "wounds": 108,
+   "selfkill": 81,
+   "kill": 73,
+   "quota": 22
+  },
+  "acts": {
+   "kill": 519,
+   "wound": 491,
+   "heal": 387,
+   "humiliate": 318,
+   "steal": 219,
+   "fun": 191,
+   "marauder": 115
+  },
+  "extra": {
+   "sniper_cond": 20,
+   "demon": 73,
+   "betray": 3,
+   "doll": 20,
+   "hc": 18,
+   "fun": 191,
+   "film": 25,
+   "ghost_observer": 110,
+   "ghost_mentor": 182,
+   "ghost_avenger": 146,
+   "ghost_spoiler": 60
+  }
+ },
+ {
+  "name": "D6_N10",
+  "n": 10,
+  "situation": "base",
+  "end": [
+   6.3,
+   5.79,
+   6.81
+  ],
+  "end_p90": 10,
+  "deaths": [
+   7.09,
+   6.63,
+   7.55
+  ],
+  "alive": 4.1,
+  "harvest_pct": 74,
+  "revive_pct": 50,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 198,
+   "wounds": 163,
+   "kill": 115,
+   "selfkill": 99,
+   "sniper": 29
+  },
+  "acts": {
+   "wound": 740,
+   "kill": 740,
+   "heal": 626,
+   "humiliate": 478,
+   "fun": 295,
+   "steal": 286,
+   "marauder": 162
+  },
+  "extra": {
+   "sniper_cond": 29,
+   "demon": 97,
+   "betray": 6,
+   "doll": 35,
+   "hc": 21,
+   "fun": 295,
+   "film": 29,
+   "ghost_avenger": 207,
+   "ghost_observer": 173,
+   "ghost_mentor": 247,
+   "ghost_spoiler": 82
+  }
+ },
+ {
+  "name": "D6_N12",
+  "n": 12,
+  "situation": "base",
+  "end": [
+   7.22,
+   6.64,
+   7.8
+  ],
+  "end_p90": 12,
+  "deaths": [
+   8.75,
+   8.22,
+   9.28
+  ],
+  "alive": 4.85,
+  "harvest_pct": 77,
+  "revive_pct": 67,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 224,
+   "harvest": 206,
+   "kill": 145,
+   "selfkill": 141,
+   "sniper": 44
+  },
+  "acts": {
+   "kill": 1017,
+   "heal": 915,
+   "wound": 880,
+   "humiliate": 566,
+   "steal": 432,
+   "fun": 414,
+   "marauder": 239
+  },
+  "extra": {
+   "sniper_cond": 44,
+   "demon": 150,
+   "betray": 6,
+   "doll": 36,
+   "hc": 25,
+   "fun": 414,
+   "film": 38,
+   "ghost_spoiler": 103,
+   "ghost_observer": 194,
+   "ghost_mentor": 295,
+   "ghost_avenger": 283
+  }
+ },
+ {
+  "name": "D6_N16",
+  "n": 16,
+  "situation": "base",
+  "end": [
+   8.6,
+   7.93,
+   9.27
+  ],
+  "end_p90": 13,
+  "deaths": [
+   12.1,
+   11.4,
+   12.8
+  ],
+  "alive": 6.35,
+  "harvest_pct": 68,
+  "revive_pct": 83,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 371,
+   "selfkill": 210,
+   "kill": 205,
+   "harvest": 179,
+   "sniper": 58
+  },
+  "acts": {
+   "heal": 1599,
+   "kill": 1386,
+   "wound": 1245,
+   "humiliate": 790,
+   "fun": 656,
+   "steal": 544,
+   "marauder": 362
+  },
+  "extra": {
+   "sniper_cond": 58,
+   "demon": 190,
+   "betray": 15,
+   "doll": 49,
+   "hc": 38,
+   "fun": 656,
+   "film": 53,
+   "ghost_spoiler": 140,
+   "ghost_observer": 275,
+   "ghost_avenger": 421,
+   "ghost_mentor": 374
+  }
+ },
+ {
+  "name": "neg_all",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   3.84,
+   3.58,
+   4.1
+  ],
+  "end_p90": 6,
+  "deaths": [
+   5.1,
+   4.81,
+   5.39
+  ],
+  "alive": 3.41,
+  "harvest_pct": 45,
+  "revive_pct": 36,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 145,
+   "kill": 110,
+   "selfkill": 106,
+   "harvest": 65,
+   "link": 22
+  },
+  "acts": {
+   "kill": 618,
+   "wound": 612,
+   "steal": 245,
+   "humiliate": 197,
+   "marauder": 114,
+   "heal": 111,
+   "mass_steal": 61
+  },
+  "extra": {
+   "sniper_cond": 24,
+   "demon": 51,
+   "betray": 0,
+   "doll": 19,
+   "hc": 6,
+   "fun": 0,
+   "film": 24,
+   "ghost_mentor": 149,
+   "ghost_avenger": 217,
+   "ghost_observer": 101,
+   "ghost_spoiler": 43
+  }
+ },
+ {
+  "name": "pos_all",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   5.19,
+   4.86,
+   5.52
+  ],
+  "end_p90": 8,
+  "deaths": [
+   5.17,
+   4.88,
+   5.46
+  ],
+  "alive": 3.5,
+  "harvest_pct": 80,
+  "revive_pct": 38,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "harvest": 179,
+   "wounds": 131,
+   "kill": 66,
+   "selfkill": 54,
+   "truth": 20
+  },
+  "acts": {
+   "heal": 905,
+   "wound": 396,
+   "kill": 372,
+   "steal": 227,
+   "marauder": 110,
+   "humiliate": 84,
+   "mass_steal": 47
+  },
+  "extra": {
+   "sniper_cond": 21,
+   "demon": 85,
+   "betray": 8,
+   "doll": 21,
+   "hc": 17,
+   "fun": 7,
+   "film": 23,
+   "ghost_mentor": 214,
+   "ghost_observer": 127,
+   "ghost_avenger": 100,
+   "ghost_spoiler": 76
+  }
+ },
+ {
+  "name": "harv_late",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   5.16,
+   4.77,
+   5.55
+  ],
+  "end_p90": 8,
+  "deaths": [
+   5.11,
+   4.79,
+   5.43
+  ],
+  "alive": 3.58,
+  "harvest_pct": 54,
+  "revive_pct": 37,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 133,
+   "selfkill": 95,
+   "harvest": 93,
+   "kill": 91,
+   "quota": 26
+  },
+  "acts": {
+   "wound": 552,
+   "kill": 521,
+   "heal": 433,
+   "humiliate": 346,
+   "steal": 222,
+   "fun": 197,
+   "marauder": 118
+  },
+  "extra": {
+   "sniper_cond": 27,
+   "demon": 71,
+   "betray": 3,
+   "doll": 23,
+   "hc": 17,
+   "fun": 197,
+   "film": 25,
+   "ghost_observer": 120,
+   "ghost_spoiler": 69,
+   "ghost_avenger": 169,
+   "ghost_mentor": 153
+  }
+ },
+ {
+  "name": "harv_max2",
+  "n": 8,
+  "situation": "base",
+  "end": [
+   5.71,
+   4.8,
+   6.62
+  ],
+  "end_p90": 9,
+  "deaths": [
+   5.3,
+   4.86,
+   5.74
+  ],
+  "alive": 3.55,
+  "harvest_pct": 70,
+  "revive_pct": 38,
+  "stall_pct": 0,
+  "thr_hit_pct": 0,
+  "causes": {
+   "wounds": 139,
+   "kill": 104,
+   "selfkill": 94,
+   "harvest": 93,
+   "quota": 25
+  },
+  "acts": {
+   "kill": 538,
+   "wound": 531,
+   "heal": 451,
+   "humiliate": 323,
+   "steal": 217,
+   "fun": 176,
+   "marauder": 131
+  },
+  "extra": {
+   "sniper_cond": 26,
+   "demon": 53,
+   "betray": 4,
+   "doll": 23,
+   "hc": 15,
+   "fun": 176,
+   "film": 25,
+   "ghost_observer": 134,
+   "ghost_mentor": 160,
+   "ghost_spoiler": 60,
+   "ghost_avenger": 176
+  }
+ }
+]
