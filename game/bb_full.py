@@ -215,7 +215,7 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
                       exch_raw=(exch[i % len(exch)] if exch else None),
                       tokens=0, heal=0, dead_c=None, revived=False, kills=0, team=i % 2,
                       frozen=0, lethal=False, no_rpds=False, bonus=0, shield=False, reflect=False,
-                      pustoe=False, link=None, enemy=None, prof_off=False, prof_used=False,
+                      pustoe=False, link=None, enemy=None, prof_off=False, prof_used=False, spec_used=False,
                       back2=0, exiled=False, alc=False, pers=personality(rng, arch),
                       uses=dict(prof=0, spec=0, shadow=0, exch=0, maraud=0)))
 
@@ -599,7 +599,7 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
         st['cycle'] = c; st['player_death'] = False; T('breaks')
         for p in P:
             p['heal'] = 0
-            p['spec_used'] = p['spec_used']  # одноразовость спецкарты (§9.1) — статус не сбрасывается
+            pass  # одноразовость спецкарты за цикл-всю-игру (§9.1): флаг spec_used НЕ сбрасывается (запись legacy удалена как no-op)
         say(f'════ ЦИКЛ {c} ════ живых {len(alive())}, призраков {len(ghosts())}')
         if c >= 2 and exch is not None:                                    # §5 начало цикла: живые тянут обмен
             for p in alive():

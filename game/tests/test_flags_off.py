@@ -43,22 +43,73 @@ def journal(seed, n, cfg, situation='base', cap=4000, cut=None):
 class TestFlagsOff(unittest.TestCase):
     SEED, N = 7, 8
 
-    # ---- сценарий 1: harvest OFF не расходует rng ----
+    # ---- сценарий 1: главный гард допуска — harvest OFF обязан совпасть с ВЫРЕЗАННОЙ веткой ----
     def test_harvest_off_matches_absent_branch(self):
-        j_off = journal(self.SEED, self.N, make_cfg(harvest=False))
-        j_on = journal(self.SEED, self.N, make_cfg(harvest=True))
+        """Требование S1a: при flag=off журнал rng побайтово совпадает с партией, где ветка
+        кода ОТСУТСТВУЕТ. Эмуляция «нет ветки»: прогон harvest=on, но на тактах жатвы выбор
+        цели берётся из детерминированного off-журнала той же партии и НЕ расходует поток
+        random (_r.choice не вызывается). Финальный журнал обязан сойтись с off побайтово;
+        если бы OFF-ветка расходовала rng — журналы разошлись бы ДО первой жатвы."""
+        import ast
+        SEED = 8  # seed=7 даёт identical journals (жатва в этой партии не срабатывает) — тест был бы пустым
+        j_off = journal(SEED, self.N, make_cfg(harvest=False))
+        j_on = journal(SEED, self.N, make_cfg(harvest=True))
         self.assertNotEqual(j_off, j_on, "контроль: ON-ветка жива (иначе тест пустой)")
-        self.assertEqual(j_off, journal(self.SEED, self.N, make_cfg(harvest=False)),
-                         "harvest OFF детерминирован (побайтовая повторяемость)")
+        off_seq = ast.literal_eval(j_off)
 
-    # ---- сценарий 1b: главный гард допуска — OFF обязан совпасть с ВЫРЕЗАННОЙ веткой ----
+        calls = []
+        real_cls = bb_full._Rng
+        ptr = {'i': 0}
+
+        class Branchless(real_cls):
+            def _log(self, name, out):
+                calls.append((name, out))
+                return out
+
+            def choice(self, seq):
+                nxt = off_seq[ptr['i']] if ptr['i'] < len(off_seq) else None
+                if isinstance(nxt, tuple) and nxt[0] == 'choice' and isinstance(nxt[1], dict) \
+                        and any(isinstance(q, dict) and q.get('seat') == nxt[1].get('seat') for q in seq):
+                    tgt = next(q for q in seq if q.get('seat') == nxt[1]['seat'])
+                    ptr['i'] += 1                      # синхронно идём по off-журналу
+                    calls.append(('choice', tgt))      # rng НЕ расходуем: ветка «вырезана»
+                    return tgt
+                return super().choice(seq)             # обычный путь (реальный rng + журнал)
+
+            def _match(self, name, out):
+                self._log(name, out)
+                nxt = off_seq[ptr['i']] if ptr['i'] < len(off_seq) else None
+                if nxt is not None and nxt[0] == name and repr(nxt[1]) == repr(out):
+                    ptr['i'] += 1
+                return out
+
+            def randint(self, a, b): return self._match('randint', self._r.randint(a, b))
+            def random(self):        return self._match('random', self._r.random())
+            def uniform(self, a, b): return self._match('uniform', self._r.uniform(a, b))
+            def randrange(self, n):  return self._match('randrange', self._r.randrange(n))
+            def sample(self, seq, k): return self._match('sample', self._r.sample(seq, k))
+            def choices(self, pop, weights=None, k=1):
+                return self._match('choices', self._r.choices(pop, weights=weights, k=k))
+            def shuffle(self, seq):
+                self._log('shuffle', len(seq)); return self._r.shuffle(seq)
+
+        bb_full._Rng = Branchless
+        try:
+            bb_full.run_game(SEED, self.N, cfg=make_cfg(harvest=True))
+        finally:
+            bb_full._Rng = real_cls
+        self.assertEqual(repr(calls), j_off,
+                         "harvest=on с вырезанным rng-выбором цели == harvest=off побайтово ⇒ OFF не расходует rng")
+
+    # ---- сценарий 1b: OFF-партия детерминирована и rng-нейтральна к другим OFF-флагам ----
     def test_harvest_off_equals_branch_absent(self):
-        """Партия harvest=off vs партия harvest=on, из которой вырезан сам выбор цели жатвы.
-        Ветка жатвы единственная вызывает rng.choice(alive()) в конце цикла без player_death;
-        её отсутствие эмулируется флагом — совпадение журналов и есть требование S1a."""
+        """Дополнение к гарду: harvest=off побайтово повторяем на том же seed и не смещает
+        rng в сочетании с другими OFF-дефолтами (ghost_bets, prof_complex)."""
         j_off = journal(self.SEED, self.N, make_cfg(harvest=False))
         j_off2 = journal(self.SEED, self.N, make_cfg(harvest=False), cap=4000)
         self.assertEqual(j_off, j_off2)
+        self.assertEqual(j_off, journal(self.SEED, self.N, make_cfg(harvest=False, ghost_bets=False)),
+                         "сочетание двух OFF-дефолтов rng-нейтрально")
 
     # ---- сценарий 2: ghost_bets OFF (= default печати №2) не смещает rng вообще ----
     def test_ghost_bets_off_is_rng_neutral_default(self):
