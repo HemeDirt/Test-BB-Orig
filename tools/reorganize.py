@@ -7,6 +7,7 @@
 Запуск: python3 tools/reorganize.py [--dry]
 """
 import csv, gzip, hashlib, io, json, os, re, shutil, sys, tarfile, zipfile
+from datetime import datetime
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DRY = "--dry" in sys.argv
@@ -74,14 +75,21 @@ def size_zero(path):
     try: return os.path.getsize(os.path.join(ROOT, path)) == 0
     except OSError: return False
 
+DELETED_LIST = os.path.join(ROOT, "data", "deleted_list.txt")
+
 def log_move(frm, to, reason):
-    if DRY: 
+    if DRY:
         print(f"[dry] {frm} -> {to} ({reason})"); return
     new = not os.path.exists(MOVE_LOG)
     with open(MOVE_LOG, "a", newline="", encoding="utf-8") as f:
         w = csv.writer(f)
-        if new: w.writerow(["from", "to", "reason"])
-        w.writerow([frm, to, reason])
+        if new: w.writerow(["from", "to", "reason", "ts"])
+        w.writerow([frm, to, reason, datetime.now().isoformat(timespec="seconds")])
+
+def log_deleted(rel, reason):
+    if DRY: return
+    with open(DELETED_LIST, "a", encoding="utf-8") as f:
+        f.write(f"{rel}\t{reason}\n")
 
 def ensure_dirs():
     for d in ["game", "game/results", "game/legacy", "dist", "data/deck", "data/live",
@@ -105,27 +113,36 @@ def move_file(rel, target_dir, reason):
 def main():
     rows, groups, classes = load_rules()
     ensure_dirs()
-    stats = {"moved": 0, "deleted": 0, "archived_dir": 0, "kept": 0}
+    stats = {"moved": 0, "deleted": 0, "archived_dir": 0, "kept": 0, "skipped_gone": 0}
+    # A1: перед каждой операцией проверяем существование пути — устаревший список
+    # не приводит к падению; после переноса папки её содержимое пропускается.
+    def exists(rel): return os.path.exists(os.path.join(ROOT, rel))
+    protected = {"game", "data", "docs", "tools", "dist", "_archive", "_inbox", "results"}
     # 1) папки верхнего уровня -> _archive целиком (кроме служебных новых)
-    topdirs = [d for d in os.listdir(ROOT)
-               if os.path.isdir(os.path.join(ROOT, d)) and d not in
-               {".git", "game", "data", "docs", "tools", "dist", "_archive", "_inbox", "results"}]
-    for d in sorted(topdirs):
+    topdirs = sorted({r["path"].split("/",1)[0] for r in rows if "/" in r["path"]}
+                     | {d for d in os.listdir(ROOT) if os.path.isdir(os.path.join(ROOT, d)) and not d.startswith(".")})
+    for d in topdirs:
+        if d in protected or not exists(d): continue
+        if not os.path.isdir(os.path.join(ROOT, d)): continue
         move_file(d, "_archive/", "archive:whole-dir")
         stats["archived_dir"] += 1
-    # 2) файлы по классам
+    # 2) файлы по классам (только те, что лежат в корне на момент обработки)
     for r in sorted(rows, key=lambda x: x["path"]):
         rel = r["path"]
-        if "/" in rel:  # после шага 1 во внешних папках уже пусто; внутренние не трогаем
-            continue
+        if "/" in rel:
+            continue  # содержимое внешних папок уехало вместе с папкой на шаге 1
+        if not exists(rel):
+            stats["skipped_gone"] += 1; continue
         cls = classes[rel]["class"]
         tgt = target_for(rel, cls, classes[rel]["reason"])
         if tgt[1] == "keep": stats["kept"] += 1; continue
         if tgt[1] == "delete":
+            why = "empty" if size_zero(rel) else "duplicate-suffix"
             if DRY: print(f"[dry] rm {rel}")
             else:
-                os.remove(os.path.join(ROOT, rel)); log_move(rel, "", "delete:" + ("empty" if size_zero(rel) else "duplicate-suffix"))
+                os.remove(os.path.join(ROOT, rel)); log_move(rel, "", "delete:" + why); log_deleted(rel, "delete:" + why)
             stats["deleted"] += 1; continue
+
         if tgt[1].startswith("rename:"):
             newname = tgt[1].split(":", 1)[1]
             dstrel = newname
@@ -139,3 +156,6 @@ def main():
     print(json.dumps(stats, ensure_ascii=False))
     # примечание: извлечение из архивов (доп. 2.3–2.6) делает tools/archive_extract.py
 
+
+if __name__ == "__main__":
+    main()

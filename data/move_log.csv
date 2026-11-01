@@ -1,0 +1,174 @@
+from,to,reason,ts
+@asamuzakjp,_archive/@asamuzakjp,archive:whole-dir,2026-11-01T17:45:33
+@bramus,_archive/@bramus,archive:whole-dir,2026-11-01T17:45:33
+@csstools,_archive/@csstools,archive:whole-dir,2026-11-01T17:45:33
+blitz1.1,_archive/blitz1.1,archive:whole-dir,2026-11-01T17:45:33
+data_old,_archive/data_old,archive:whole-dir,2026-11-01T17:45:33
+docs_old,_archive/docs_old,archive:whole-dir,2026-11-01T17:45:33
+dumps,_archive/dumps,archive:whole-dir,2026-11-01T17:45:33
+experiments,_archive/experiments,archive:whole-dir,2026-11-01T17:45:33
+old_engine,_archive/old_engine,archive:whole-dir,2026-11-01T17:45:33
+old_tests,_archive/old_tests,archive:whole-dir,2026-11-01T17:45:33
+other,_archive/other,archive:whole-dir,2026-11-01T17:45:33
+site_live,_archive/site_live,archive:whole-dir,2026-11-01T17:45:33
+src_extra,_archive/src_extra,archive:whole-dir,2026-11-01T17:45:33
+src_github_workflows,_archive/src_github_workflows,archive:whole-dir,2026-11-01T17:45:33
+tools_old,_archive/tools_old,archive:whole-dir,2026-11-01T17:45:33
+viewer_old,_archive/viewer_old,archive:whole-dir,2026-11-01T17:45:33
+web_old,_archive/web_old,archive:whole-dir,2026-11-01T17:45:33
+workflows,_archive/workflows,archive:whole-dir,2026-11-01T17:45:33
+ws,_archive/ws,archive:whole-dir,2026-11-01T17:45:33
+10_teny.txt,data/deck/10_teny.txt,class:deck_data,2026-11-01T17:45:33
+117352720311 (1).htm,_archive/web_junk/117352720311 (1).htm,class:web_junk,2026-11-01T17:45:33
+117352720311.htm,_archive/web_junk/117352720311.htm,class:web_junk,2026-11-01T17:45:33
+11_obmen.txt,data/deck/11_obmen.txt,class:deck_data,2026-11-01T17:45:33
+Crome bin and asa.zip,_archive/Crome bin and asa.zip,class:zip_archives,2026-11-01T17:45:33
+PENDULUM_N16.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+QUESTIONS.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_168804_N12_hrono.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_777_N8_plane.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_7_N12_hrono.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPUTATION.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+RESERVE.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+SP-131_compressed.pdf,,delete:duplicate-suffix,2026-11-01T17:45:33
+SPEC_cardlife.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+TILT.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+TORNADO.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+Test-BB-revert-4-game-file-analysis-b3311.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+Test-BB-site.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+VERDICT_tornado.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEWER.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_bb_seed777.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2026_N16_base.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_grudge.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_grudwindow.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_reserve.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_strictreserve.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_4_N8_agentrevive.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_4_N8_tilt.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_55_N12_handlimit7.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_58_N8_draft.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_606_N8_traitor.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_777_N8_plane.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_tornado.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+WINRATE.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+blitz_new_site.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+docs.rar,_archive/docs.rar,class:zip_archives,2026-11-01T17:45:33
+game_sim_before_personality.py,game/game_sim_before_personality.py,class:code,2026-11-01T17:45:33
+index.html,_archive/web_junk/index.html,class:web_junk,2026-11-01T17:45:33
+live_index.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+main_backup.rar,_archive/main_backup.rar,class:zip_archives,2026-11-01T17:45:33
+package-lock.json,_archive/web_junk/package-lock.json,class:web_junk,2026-11-01T17:45:33
+package.json,_archive/web_junk/package.json,class:web_junk,2026-11-01T17:45:33
+pages_index.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+pendulum.json,game/results/pendulum.json,class:sim_results,2026-11-01T17:45:33
+plane100_b5.json,game/results/plane100_b5.json,class:sim_results,2026-11-01T17:45:33
+pool_indices (1).json,game/results/pool_indices (1).json,class:sim_results,2026-11-01T17:45:33
+report_generators_digest.md,docs/reports/report_generators_digest.md,class:docs_reports,2026-11-01T17:45:33
+reputation.json,game/results/reputation.json,class:sim_results,2026-11-01T17:45:33
+reserve.json,game/results/reserve.json,class:sim_results,2026-11-01T17:45:33
+rules_print_v3.txt,docs/rules/rules_print_v3.txt,class:unknown,2026-11-01T17:45:33
+rules_short.txt,_inbox/rules_short.txt,class:unknown,2026-11-01T17:45:33
+rules_v3.txt,_inbox/rules_v3.txt,class:unknown,2026-11-01T17:45:33
+run_d6_experiment.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_draft.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_grudge.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_handlimit.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_matrix.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_matrix_b7.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_page.js,_archive/web_junk/run_page.js,class:web_junk,2026-11-01T17:45:33
+run_pendulum.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_report.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_reputation.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_reserve.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_tests.sh,tools_old/run_tests.sh,class:unknown,2026-11-01T17:45:33
+run_tilt.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_tornado.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_triggers.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_winrate.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+ryukzak_raw.txt,data/deck/ryukzak_raw.txt,class:unknown,2026-11-01T17:45:33
+sample_log_frag.txt,docs/reports/sample_log_frag.txt,class:logs,2026-11-01T17:45:33
+sim8_digest.md,docs/reports/sim8_digest.md,class:unknown,2026-11-01T17:45:33
+sim_8punk.txt,_inbox/sim_8punk.txt,class:unknown,2026-11-01T17:45:33
+sim_dop_2_20.txt,_inbox/sim_dop_2_20.txt,class:unknown,2026-11-01T17:45:33
+sim_n_digest.md,docs/reports/sim_n_digest.md,class:unknown,2026-11-01T17:45:33
+site_live.rar,_archive/site_live.rar,class:zip_archives,2026-11-01T17:45:33
+site_new_index.html,_archive/web_junk/site_new_index.html,class:web_junk,2026-11-01T17:45:33
+site_package.zip,_archive/site_package.zip,class:zip_archives,2026-11-01T17:45:33
+site_root_index.zip,_archive/site_root_index.zip,class:zip_archives,2026-11-01T17:45:33
+site_v11.rar,_archive/site_v11.rar,class:zip_archives,2026-11-01T17:45:33
+site_v9_final.rar,_archive/site_v9_final.rar,class:zip_archives,2026-11-01T17:45:33
+situations.md,docs/rules/situations.md,class:docs_rules,2026-11-01T17:45:33
+situations_raw.txt,,delete:duplicate-suffix,2026-11-01T17:45:33
+spec_raw.txt,,delete:duplicate-suffix,2026-11-01T17:45:33
+src_test_digest (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+src_test_digest.md,docs/reports/src_test_digest.md,class:unknown,2026-11-01T17:45:33
+sweep8_results.json,game/results/sweep8_results.json,class:sim_results,2026-11-01T17:45:33
+sweep_mods_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+sweep_n_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+sweeps_digest.md,docs/reports/sweeps_digest.md,class:unknown,2026-11-01T17:45:33
+telo_raw.txt,data/deck/telo_raw.txt,class:unknown,2026-11-01T17:45:33
+template_index.html,_archive/web_junk/template_index.html,class:web_junk,2026-11-01T17:45:33
+test_effects.py,game/test_effects.py,class:code,2026-11-01T17:45:33
+test_game.js,_archive/web_junk/test_game.js,class:web_junk,2026-11-01T17:45:33
+test_human.js,_archive/web_junk/test_human.js,class:web_junk,2026-11-01T17:45:33
+tilt.json,game/results/tilt.json,class:sim_results,2026-11-01T17:45:33
+time_results.json,game/results/time_results.json,class:sim_results,2026-11-01T17:45:33
+tornado_n12.json,game/results/tornado_n12.json,class:sim_results,2026-11-01T17:45:33
+tornado_n8.json,game/results/tornado_n8.json,class:sim_results,2026-11-01T17:45:33
+tornado_report.py,game/tornado_report.py,class:code,2026-11-01T17:45:33
+tornado_triggers.json,game/results/tornado_triggers.json,class:sim_results,2026-11-01T17:45:33
+user_original.html,_archive/web_junk/user_original.html,class:web_junk,2026-11-01T17:45:33
+validate.py,game/validate.py,class:code,2026-11-01T17:45:33
+verify_dop.txt,_inbox/verify_dop.txt,class:unknown,2026-11-01T17:45:33
+verify_dop_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+view_test.js,_archive/web_junk/view_test.js,class:web_junk,2026-11-01T17:45:33
+webtest.rar,_archive/webtest.rar,class:zip_archives,2026-11-01T17:45:33
+winrate.json,game/results/winrate.json,class:sim_results,2026-11-01T17:45:33
+witness_seeds.json,game/results/witness_seeds.json,class:sim_results,2026-11-01T17:45:33
+workspace.tar,,delete:duplicate-suffix,2026-11-01T17:45:33
+workspace.tar.gz,_archive/workspace.tar.gz,class:zip_archives,2026-11-01T17:45:33
+xpeek.py,game/xpeek.py,class:code,2026-11-01T17:45:33
+zadanie_sim.txt,_inbox/zadanie_sim.txt,class:unknown,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx,docs/rules/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,docs/rules/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx,docs/notes/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx,class:unknown,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx,docs/rules/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx,class:docs_rules,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md,docs/rules/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md,class:docs_rules,2026-11-01T17:45:33
+ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ЖУРНАЛ_ЧИСТКИ_РЕД5.md,docs/notes/ЖУРНАЛ_ЧИСТКИ_РЕД5.md,class:docs_rules,2026-11-01T17:45:33
+ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+КОЛОДА_ОБМЕНА (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+КОЛОДА_ОБМЕНА.md,data/deck/КОЛОДА_ОБМЕНА.md,class:docs_rules,2026-11-01T17:45:33
+КОНТЕКСТ_БРИФ.md,docs/notes/КОНТЕКСТ_БРИФ.md,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v2.md,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_v2.md,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3.md,docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.md,class:docs_rules,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков.md,docs/rules/ПРИМЕР_ИГРЫ_8_игроков.md,class:docs_rules,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md,docs/rules/ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md,class:docs_rules,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx,docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx,class:docs_rules,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md,docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_2_20 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_2_20.md,docs/rules/СИМУЛЯЦИИ_2_20.md,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ.docx,docs/rules/СИМУЛЯЦИИ_8ПУНКТОВ.docx,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ.md,docs/rules/СИМУЛЯЦИИ_8ПУНКТОВ.md,class:docs_rules,2026-11-01T17:45:33
+СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx,docs/rules/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx,class:docs_rules,2026-11-01T17:45:33
+СТАРТ_ЧАТА_С_CODER.md,docs/notes/СТАРТ_ЧАТА_С_CODER.md,class:docs_rules,2026-11-01T17:45:33
+карты_v5_по_категориям.md,data/deck/карты_v5_по_категориям.md,class:unknown,2026-11-01T17:45:33
+карты_настолка_v4.xlsx,data/deck/карты_настолка_v4.xlsx,class:deck_data,2026-11-01T17:45:33
+карты_настолка_полный_набор.md,data/deck/карты_настолка_полный_набор.md,class:unknown,2026-11-01T17:45:33
