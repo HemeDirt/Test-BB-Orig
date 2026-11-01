@@ -529,3 +529,22 @@ _archive/ws/sim/pool_indices.json,game/legacy/workspace.tar.gz/sim/pool_indices.
 2026-11-01T18:06:45Z,_inbox/verify_dop.txt,docs/reports/verify_dop.txt,author_fix_layout_report
 2026-11-01T18:06:45Z,_inbox/zadanie_sim.txt,_inbox/zadanie_sim.txt,duplicate_skipped_md5_neq_SPEC_stays_inbox_pending_author
 run_tests.sh,_archive/tools_old/run_tests.sh,root-tail:merge-back-into-archive-dir,2026-11-02
+patch_b11,_archive/old_engine/patch_b11.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b13_snap,_archive/old_engine/patch_b13_snap.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b14_blindguard,_archive/old_engine/patch_b14_blindguard.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b14_events,_archive/old_engine/patch_b14_events.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15_handlimit,_archive/old_engine/patch_b15_handlimit.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15b_handfix,_archive/old_engine/patch_b15b_handfix.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15c_maxhand,_archive/old_engine/patch_b15c_maxhand.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b16_draft,_archive/old_engine/patch_b16_draft.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b17_deadstop,_archive/old_engine/patch_b17_deadstop.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b18_trio,_archive/old_engine/patch_b18_trio.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b21_reputation,_archive/old_engine/patch_b21_reputation.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b21b_agentrevive,_archive/old_engine/patch_b21b_agentrevive.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b22_tilt,_archive/old_engine/patch_b22_tilt.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b23_reserve,_archive/old_engine/patch_b23_reserve.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b23b_reservegate,_archive/old_engine/patch_b23b_reservegate.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b25_grudge,_archive/old_engine/patch_b25_grudge.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+bb_full.py,_archive/old_engine/bb_full.py,extract-ref:synthesis-golden-reference,2026-11-02
+bb_core (1).py,game/legacy/Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py,extract-ref:parametric-core-base,2026-11-02
+decks_canon_print.json,_archive/blitz1.1/src/canon/decks.json,layout:canon-deck-to-data-deck(md5 6f8542a7),2026-11-02
