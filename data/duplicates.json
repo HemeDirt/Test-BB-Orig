@@ -163,14 +163,6 @@
   ]
  },
  {
-  "md5": "4546c3464d22db17c3aea94ef793a108",
-  "bytes": 32201,
-  "keep": "_archive/ws/10_docs/симуляции/QWEN_MD_ПРАВИЛА_ПРОЕКТА.md",
-  "drop": [
-   "QWEN.md"
-  ]
- },
- {
   "md5": "50d9b2bfae365ea3f401560bf3393c93",
   "bytes": 369,
   "keep": "game/xpeek.py",

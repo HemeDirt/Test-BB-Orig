@@ -8,6 +8,14 @@
   "md5": "ba0699b3c9c2d66e8425e79704a0c43c"
  },
  {
+  "path": "CORE_THINK.md",
+  "bytes": 10947,
+  "ext": ".md",
+  "mtime_epoch": 1793556015.860124,
+  "mtime": "2026-11-01T18:00:15Z",
+  "md5": "6ef9c427313893e968b831875a0c83ec"
+ },
+ {
   "path": "DECISIONS.md",
   "bytes": 4094,
   "ext": ".md",
@@ -17,11 +25,11 @@
  },
  {
   "path": "QWEN.md",
-  "bytes": 32201,
+  "bytes": 33939,
   "ext": ".md",
-  "mtime_epoch": 1793553003.791225,
-  "mtime": "2026-11-01T17:10:03Z",
-  "md5": "4546c3464d22db17c3aea94ef793a108"
+  "mtime_epoch": 1793555983.5238616,
+  "mtime": "2026-11-01T17:59:43Z",
+  "md5": "269986da23aaf9b9d50980ae1a9b7ecb"
  },
  {
   "path": "README.md",
@@ -41,11 +49,11 @@
  },
  {
   "path": "STATE.md",
-  "bytes": 2481,
+  "bytes": 2933,
   "ext": ".md",
-  "mtime_epoch": 1793553863.9216201,
-  "mtime": "2026-11-01T17:24:23Z",
-  "md5": "ee5943e49866dc0ab9dc9c099baca85f"
+  "mtime_epoch": 1793556035.5702832,
+  "mtime": "2026-11-01T18:00:35Z",
+  "md5": "1e79e986807ed6d20d21ad983f785d4f"
  },
  {
   "path": "_archive/Crome bin and asa.zip",
@@ -2041,11 +2049,11 @@
  },
  {
   "path": "data/classes.json",
-  "bytes": 51065,
+  "bytes": 60204,
   "ext": ".json",
-  "mtime_epoch": 1793555135.949947,
-  "mtime": "2026-11-01T17:45:35Z",
-  "md5": "e0344a16e741fe8d0ad48967b92484f6"
+  "mtime_epoch": 1793555945.5305529,
+  "mtime": "2026-11-01T17:59:05Z",
+  "md5": "c4f0d86fb77e5e669d08b9319e6f286f"
  },
  {
   "path": "data/deleted_list.txt",
@@ -2089,11 +2097,11 @@
  },
  {
   "path": "data/duplicates.json",
-  "bytes": 12672,
+  "bytes": 13801,
   "ext": ".json",
-  "mtime_epoch": 1793555135.946947,
-  "mtime": "2026-11-01T17:45:35Z",
-  "md5": "aee117064092dca2c4bb39edbf3e5123"
+  "mtime_epoch": 1793555945.526553,
+  "mtime": "2026-11-01T17:59:05Z",
+  "md5": "995534896bd7b75ba5a6f41ba0685606"
  },
  {
   "path": "data/extract_run.log",
@@ -2129,19 +2137,19 @@
  },
  {
   "path": "data/manifest.csv",
-  "bytes": 44488,
+  "bytes": 52648,
   "ext": ".csv",
-  "mtime_epoch": 1793555135.943947,
-  "mtime": "2026-11-01T17:45:35Z",
-  "md5": "14b3decb08c5b2d340e401830f1b8723"
+  "mtime_epoch": 1793555945.5245528,
+  "mtime": "2026-11-01T17:59:05Z",
+  "md5": "564fd9d3b39ade3fd01b3730bc134727"
  },
  {
   "path": "data/manifest.json",
-  "bytes": 74810,
+  "bytes": 88732,
   "ext": ".json",
-  "mtime_epoch": 1793555135.9419472,
-  "mtime": "2026-11-01T17:45:35Z",
-  "md5": "de2b5c4fb14ff1fa7a18e54af775078b"
+  "mtime_epoch": 1793555945.522553,
+  "mtime": "2026-11-01T17:59:05Z",
+  "md5": "ecf3e7242c6f8bc669ce39b29c264534"
  },
  {
   "path": "data/manifest_archives.json",
@@ -2153,11 +2161,11 @@
  },
  {
   "path": "data/move_log.csv",
-  "bytes": 60076,
+  "bytes": 60978,
   "ext": ".csv",
-  "mtime_epoch": 1793555942.1255252,
-  "mtime": "2026-11-01T17:59:02Z",
-  "md5": "6ab7b1f3a7bec6984045b7c34bfd17ba"
+  "mtime_epoch": 1793556022.7021794,
+  "mtime": "2026-11-01T18:00:22Z",
+  "md5": "a6891ac885262aef658a0aebb9b6cc65"
  },
  {
   "path": "data/run_reorg.log",

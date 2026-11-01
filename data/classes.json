@@ -5,6 +5,12 @@
   "bytes": 26,
   "ext": ""
  },
+ "CORE_THINK.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 10947,
+  "ext": ".md"
+ },
  "DECISIONS.md": {
   "class": "unknown",
   "reason": "no rule matched (ext .md)",
@@ -12,9 +18,9 @@
   "ext": ".md"
  },
  "QWEN.md": {
-  "class": "duplicates",
-  "reason": "md5-dup, drop per keep-rule",
-  "bytes": 32201,
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 33939,
   "ext": ".md"
  },
  "README.md": {
@@ -32,7 +38,7 @@
  "STATE.md": {
   "class": "unknown",
   "reason": "no rule matched (ext .md)",
-  "bytes": 2481,
+  "bytes": 2933,
   "ext": ".md"
  },
  "_archive/Crome bin and asa.zip": {
@@ -1532,7 +1538,7 @@
  "data/classes.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 51065,
+  "bytes": 60204,
   "ext": ".json"
  },
  "data/deleted_list.txt": {
@@ -1568,7 +1574,7 @@
  "data/duplicates.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 12672,
+  "bytes": 13801,
   "ext": ".json"
  },
  "data/extract_run.log": {
@@ -1598,13 +1604,13 @@
  "data/manifest.csv": {
   "class": "unknown",
   "reason": "no rule matched (ext .csv)",
-  "bytes": 44488,
+  "bytes": 52648,
   "ext": ".csv"
  },
  "data/manifest.json": {
   "class": "unknown",
   "reason": "no rule matched (ext .json)",
-  "bytes": 74810,
+  "bytes": 88732,
   "ext": ".json"
  },
  "data/manifest_archives.json": {
@@ -1616,7 +1622,7 @@
  "data/move_log.csv": {
   "class": "unknown",
   "reason": "no rule matched (ext .csv)",
-  "bytes": 60076,
+  "bytes": 60978,
   "ext": ".csv"
  },
  "data/run_reorg.log": {
