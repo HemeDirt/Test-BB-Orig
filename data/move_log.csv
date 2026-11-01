@@ -528,3 +528,4 @@ _archive/ws/sim/pool_indices.json,game/legacy/workspace.tar.gz/sim/pool_indices.
 2026-11-01T18:06:45Z,_inbox/sim_dop_2_20.txt,docs/reports/sim_dop_2_20.txt,author_fix_layout_report
 2026-11-01T18:06:45Z,_inbox/verify_dop.txt,docs/reports/verify_dop.txt,author_fix_layout_report
 2026-11-01T18:06:45Z,_inbox/zadanie_sim.txt,_inbox/zadanie_sim.txt,duplicate_skipped_md5_neq_SPEC_stays_inbox_pending_author
+run_tests.sh,_archive/tools_old/run_tests.sh,root-tail:merge-back-into-archive-dir,2026-11-02
