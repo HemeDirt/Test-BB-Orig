@@ -1,0 +1,70 @@
+PENDULUM_N16.md	delete:duplicate-suffix
+QUESTIONS.md	delete:duplicate-suffix
+REPORT_game_168804_N12_hrono.md	delete:duplicate-suffix
+REPORT_game_777_N8_plane.md	delete:duplicate-suffix
+REPORT_game_7_N12_hrono.md	delete:duplicate-suffix
+REPUTATION.md	delete:duplicate-suffix
+RESERVE.md	delete:duplicate-suffix
+SP-131_compressed.pdf	delete:duplicate-suffix
+SPEC_cardlife.md	delete:duplicate-suffix
+TILT.md	delete:duplicate-suffix
+TORNADO.md	delete:duplicate-suffix
+Test-BB-revert-4-game-file-analysis-b3311.zip	delete:duplicate-suffix
+Test-BB-site.zip	delete:duplicate-suffix
+VERDICT_tornado.md	delete:duplicate-suffix
+VIEWER.md	delete:duplicate-suffix
+VIEW_bb_seed777.html	delete:duplicate-suffix
+VIEW_game_2026_N16_base.html	delete:duplicate-suffix
+VIEW_game_2_N8_grudge.html	delete:duplicate-suffix
+VIEW_game_2_N8_grudwindow.html	delete:duplicate-suffix
+VIEW_game_2_N8_reserve.html	delete:duplicate-suffix
+VIEW_game_2_N8_strictreserve.html	delete:duplicate-suffix
+VIEW_game_4_N8_agentrevive.html	delete:duplicate-suffix
+VIEW_game_4_N8_tilt.html	delete:duplicate-suffix
+VIEW_game_55_N12_handlimit7.html	delete:duplicate-suffix
+VIEW_game_58_N8_draft.html	delete:duplicate-suffix
+VIEW_game_606_N8_traitor.html	delete:duplicate-suffix
+VIEW_game_777_N8_plane.html	delete:duplicate-suffix
+VIEW_tornado.html	delete:duplicate-suffix
+WINRATE.md	delete:duplicate-suffix
+blitz_new_site.zip	delete:duplicate-suffix
+live_index.html	delete:duplicate-suffix
+pages_index.html	delete:duplicate-suffix
+run_d6_experiment.py	delete:duplicate-suffix
+run_draft.py	delete:duplicate-suffix
+run_grudge.py	delete:duplicate-suffix
+run_handlimit.py	delete:duplicate-suffix
+run_matrix.py	delete:duplicate-suffix
+run_matrix_b7.py	delete:duplicate-suffix
+run_pendulum.py	delete:duplicate-suffix
+run_report.py	delete:duplicate-suffix
+run_reputation.py	delete:duplicate-suffix
+run_reserve.py	delete:duplicate-suffix
+run_tilt.py	delete:duplicate-suffix
+run_tornado.py	delete:duplicate-suffix
+run_triggers.py	delete:duplicate-suffix
+run_winrate.py	delete:duplicate-suffix
+situations_raw.txt	delete:duplicate-suffix
+spec_raw.txt	delete:duplicate-suffix
+src_test_digest (1).md	delete:duplicate-suffix
+sweep_mods_results.json	delete:duplicate-suffix
+sweep_n_results.json	delete:duplicate-suffix
+verify_dop_results.json	delete:duplicate-suffix
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx	delete:duplicate-suffix
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md	delete:duplicate-suffix
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md	delete:duplicate-suffix
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx	delete:duplicate-suffix
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx	delete:duplicate-suffix
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md	delete:duplicate-suffix
+ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md	delete:duplicate-suffix
+ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx	delete:duplicate-suffix
+КОЛОДА_ОБМЕНА (1).md	delete:duplicate-suffix
+ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md	delete:duplicate-suffix
+ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md	delete:duplicate-suffix
+ПРИМЕР_ИГРЫ_8_игроков (1).md	delete:duplicate-suffix
+ПРИМЕР_ИГРЫ_8_игроков (2).md	delete:duplicate-suffix
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md	delete:duplicate-suffix
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md	delete:duplicate-suffix
+СИМУЛЯЦИИ_2_20 (1).md	delete:duplicate-suffix
+СИМУЛЯЦИИ_8ПУНКТОВ (1).docx	delete:duplicate-suffix
+СИМУЛЯЦИИ_8ПУНКТОВ (1).md	delete:duplicate-suffix

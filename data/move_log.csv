@@ -1,0 +1,550 @@
+from,to,reason,ts
+@asamuzakjp,_archive/@asamuzakjp,archive:whole-dir,2026-11-01T17:45:33
+@bramus,_archive/@bramus,archive:whole-dir,2026-11-01T17:45:33
+@csstools,_archive/@csstools,archive:whole-dir,2026-11-01T17:45:33
+blitz1.1,_archive/blitz1.1,archive:whole-dir,2026-11-01T17:45:33
+data_old,_archive/data_old,archive:whole-dir,2026-11-01T17:45:33
+docs_old,_archive/docs_old,archive:whole-dir,2026-11-01T17:45:33
+dumps,_archive/dumps,archive:whole-dir,2026-11-01T17:45:33
+experiments,_archive/experiments,archive:whole-dir,2026-11-01T17:45:33
+old_engine,_archive/old_engine,archive:whole-dir,2026-11-01T17:45:33
+old_tests,_archive/old_tests,archive:whole-dir,2026-11-01T17:45:33
+other,_archive/other,archive:whole-dir,2026-11-01T17:45:33
+site_live,_archive/site_live,archive:whole-dir,2026-11-01T17:45:33
+src_extra,_archive/src_extra,archive:whole-dir,2026-11-01T17:45:33
+src_github_workflows,_archive/src_github_workflows,archive:whole-dir,2026-11-01T17:45:33
+tools_old,_archive/tools_old,archive:whole-dir,2026-11-01T17:45:33
+viewer_old,_archive/viewer_old,archive:whole-dir,2026-11-01T17:45:33
+web_old,_archive/web_old,archive:whole-dir,2026-11-01T17:45:33
+workflows,_archive/workflows,archive:whole-dir,2026-11-01T17:45:33
+ws,_archive/ws,archive:whole-dir,2026-11-01T17:45:33
+10_teny.txt,data/deck/10_teny.txt,class:deck_data,2026-11-01T17:45:33
+117352720311 (1).htm,_archive/web_junk/117352720311 (1).htm,class:web_junk,2026-11-01T17:45:33
+117352720311.htm,_archive/web_junk/117352720311.htm,class:web_junk,2026-11-01T17:45:33
+11_obmen.txt,data/deck/11_obmen.txt,class:deck_data,2026-11-01T17:45:33
+Crome bin and asa.zip,_archive/Crome bin and asa.zip,class:zip_archives,2026-11-01T17:45:33
+PENDULUM_N16.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+QUESTIONS.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_168804_N12_hrono.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_777_N8_plane.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPORT_game_7_N12_hrono.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+REPUTATION.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+RESERVE.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+SP-131_compressed.pdf,,delete:duplicate-suffix,2026-11-01T17:45:33
+SPEC_cardlife.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+TILT.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+TORNADO.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+Test-BB-revert-4-game-file-analysis-b3311.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+Test-BB-site.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+VERDICT_tornado.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEWER.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_bb_seed777.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2026_N16_base.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_grudge.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_grudwindow.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_reserve.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_2_N8_strictreserve.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_4_N8_agentrevive.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_4_N8_tilt.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_55_N12_handlimit7.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_58_N8_draft.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_606_N8_traitor.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_game_777_N8_plane.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+VIEW_tornado.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+WINRATE.md,,delete:duplicate-suffix,2026-11-01T17:45:33
+blitz_new_site.zip,,delete:duplicate-suffix,2026-11-01T17:45:33
+docs.rar,_archive/docs.rar,class:zip_archives,2026-11-01T17:45:33
+game_sim_before_personality.py,game/game_sim_before_personality.py,class:code,2026-11-01T17:45:33
+index.html,_archive/web_junk/index.html,class:web_junk,2026-11-01T17:45:33
+live_index.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+main_backup.rar,_archive/main_backup.rar,class:zip_archives,2026-11-01T17:45:33
+package-lock.json,_archive/web_junk/package-lock.json,class:web_junk,2026-11-01T17:45:33
+package.json,_archive/web_junk/package.json,class:web_junk,2026-11-01T17:45:33
+pages_index.html,,delete:duplicate-suffix,2026-11-01T17:45:33
+pendulum.json,game/results/pendulum.json,class:sim_results,2026-11-01T17:45:33
+plane100_b5.json,game/results/plane100_b5.json,class:sim_results,2026-11-01T17:45:33
+pool_indices (1).json,game/results/pool_indices (1).json,class:sim_results,2026-11-01T17:45:33
+report_generators_digest.md,docs/reports/report_generators_digest.md,class:docs_reports,2026-11-01T17:45:33
+reputation.json,game/results/reputation.json,class:sim_results,2026-11-01T17:45:33
+reserve.json,game/results/reserve.json,class:sim_results,2026-11-01T17:45:33
+rules_print_v3.txt,docs/rules/rules_print_v3.txt,class:unknown,2026-11-01T17:45:33
+rules_short.txt,_inbox/rules_short.txt,class:unknown,2026-11-01T17:45:33
+rules_v3.txt,_inbox/rules_v3.txt,class:unknown,2026-11-01T17:45:33
+run_d6_experiment.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_draft.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_grudge.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_handlimit.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_matrix.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_matrix_b7.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_page.js,_archive/web_junk/run_page.js,class:web_junk,2026-11-01T17:45:33
+run_pendulum.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_report.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_reputation.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_reserve.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_tests.sh,tools_old/run_tests.sh,class:unknown,2026-11-01T17:45:33
+run_tilt.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_tornado.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_triggers.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+run_winrate.py,,delete:duplicate-suffix,2026-11-01T17:45:33
+ryukzak_raw.txt,data/deck/ryukzak_raw.txt,class:unknown,2026-11-01T17:45:33
+sample_log_frag.txt,docs/reports/sample_log_frag.txt,class:logs,2026-11-01T17:45:33
+sim8_digest.md,docs/reports/sim8_digest.md,class:unknown,2026-11-01T17:45:33
+sim_8punk.txt,_inbox/sim_8punk.txt,class:unknown,2026-11-01T17:45:33
+sim_dop_2_20.txt,_inbox/sim_dop_2_20.txt,class:unknown,2026-11-01T17:45:33
+sim_n_digest.md,docs/reports/sim_n_digest.md,class:unknown,2026-11-01T17:45:33
+site_live.rar,_archive/site_live.rar,class:zip_archives,2026-11-01T17:45:33
+site_new_index.html,_archive/web_junk/site_new_index.html,class:web_junk,2026-11-01T17:45:33
+site_package.zip,_archive/site_package.zip,class:zip_archives,2026-11-01T17:45:33
+site_root_index.zip,_archive/site_root_index.zip,class:zip_archives,2026-11-01T17:45:33
+site_v11.rar,_archive/site_v11.rar,class:zip_archives,2026-11-01T17:45:33
+site_v9_final.rar,_archive/site_v9_final.rar,class:zip_archives,2026-11-01T17:45:33
+situations.md,docs/rules/situations.md,class:docs_rules,2026-11-01T17:45:33
+situations_raw.txt,,delete:duplicate-suffix,2026-11-01T17:45:33
+spec_raw.txt,,delete:duplicate-suffix,2026-11-01T17:45:33
+src_test_digest (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+src_test_digest.md,docs/reports/src_test_digest.md,class:unknown,2026-11-01T17:45:33
+sweep8_results.json,game/results/sweep8_results.json,class:sim_results,2026-11-01T17:45:33
+sweep_mods_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+sweep_n_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+sweeps_digest.md,docs/reports/sweeps_digest.md,class:unknown,2026-11-01T17:45:33
+telo_raw.txt,data/deck/telo_raw.txt,class:unknown,2026-11-01T17:45:33
+template_index.html,_archive/web_junk/template_index.html,class:web_junk,2026-11-01T17:45:33
+test_effects.py,game/test_effects.py,class:code,2026-11-01T17:45:33
+test_game.js,_archive/web_junk/test_game.js,class:web_junk,2026-11-01T17:45:33
+test_human.js,_archive/web_junk/test_human.js,class:web_junk,2026-11-01T17:45:33
+tilt.json,game/results/tilt.json,class:sim_results,2026-11-01T17:45:33
+time_results.json,game/results/time_results.json,class:sim_results,2026-11-01T17:45:33
+tornado_n12.json,game/results/tornado_n12.json,class:sim_results,2026-11-01T17:45:33
+tornado_n8.json,game/results/tornado_n8.json,class:sim_results,2026-11-01T17:45:33
+tornado_report.py,game/tornado_report.py,class:code,2026-11-01T17:45:33
+tornado_triggers.json,game/results/tornado_triggers.json,class:sim_results,2026-11-01T17:45:33
+user_original.html,_archive/web_junk/user_original.html,class:web_junk,2026-11-01T17:45:33
+validate.py,game/validate.py,class:code,2026-11-01T17:45:33
+verify_dop.txt,_inbox/verify_dop.txt,class:unknown,2026-11-01T17:45:33
+verify_dop_results.json,,delete:duplicate-suffix,2026-11-01T17:45:33
+view_test.js,_archive/web_junk/view_test.js,class:web_junk,2026-11-01T17:45:33
+webtest.rar,_archive/webtest.rar,class:zip_archives,2026-11-01T17:45:33
+winrate.json,game/results/winrate.json,class:sim_results,2026-11-01T17:45:33
+witness_seeds.json,game/results/witness_seeds.json,class:sim_results,2026-11-01T17:45:33
+workspace.tar,,delete:duplicate-suffix,2026-11-01T17:45:33
+workspace.tar.gz,_archive/workspace.tar.gz,class:zip_archives,2026-11-01T17:45:33
+xpeek.py,game/xpeek.py,class:code,2026-11-01T17:45:33
+zadanie_sim.txt,_inbox/zadanie_sim.txt,class:unknown,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx,docs/rules/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,docs/rules/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,class:docs_rules,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx,docs/notes/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx,class:unknown,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx,docs/rules/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx,class:docs_rules,2026-11-01T17:45:33
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md,docs/rules/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md,class:docs_rules,2026-11-01T17:45:33
+ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ЖУРНАЛ_ЧИСТКИ_РЕД5.md,docs/notes/ЖУРНАЛ_ЧИСТКИ_РЕД5.md,class:docs_rules,2026-11-01T17:45:33
+ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+КОЛОДА_ОБМЕНА (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+КОЛОДА_ОБМЕНА.md,data/deck/КОЛОДА_ОБМЕНА.md,class:docs_rules,2026-11-01T17:45:33
+КОНТЕКСТ_БРИФ.md,docs/notes/КОНТЕКСТ_БРИФ.md,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v2.md,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_v2.md,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,class:docs_rules,2026-11-01T17:45:33
+ПРАВИЛА_БЛИЦ_БОЙ_v3.md,docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.md,class:docs_rules,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_8_игроков.md,docs/rules/ПРИМЕР_ИГРЫ_8_игроков.md,class:docs_rules,2026-11-01T17:45:33
+ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md,docs/rules/ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md,class:docs_rules,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx,docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx,class:docs_rules,2026-11-01T17:45:33
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md,docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_2_20 (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_2_20.md,docs/rules/СИМУЛЯЦИИ_2_20.md,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ (1).docx,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ (1).md,,delete:duplicate-suffix,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ.docx,docs/rules/СИМУЛЯЦИИ_8ПУНКТОВ.docx,class:docs_rules,2026-11-01T17:45:33
+СИМУЛЯЦИИ_8ПУНКТОВ.md,docs/rules/СИМУЛЯЦИИ_8ПУНКТОВ.md,class:docs_rules,2026-11-01T17:45:33
+СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx,docs/rules/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx,class:docs_rules,2026-11-01T17:45:33
+СТАРТ_ЧАТА_С_CODER.md,docs/notes/СТАРТ_ЧАТА_С_CODER.md,class:docs_rules,2026-11-01T17:45:33
+карты_v5_по_категориям.md,data/deck/карты_v5_по_категориям.md,class:unknown,2026-11-01T17:45:33
+карты_настолка_v4.xlsx,data/deck/карты_настолка_v4.xlsx,class:deck_data,2026-11-01T17:45:33
+карты_настолка_полный_набор.md,data/deck/карты_настолка_полный_набор.md,class:unknown,2026-11-01T17:45:33
+moved: _archive/ws/10_docs/колода/spec_raw.txt -> data/deck/spec_raw.txt (author instruction B3)
+moved: _archive/blitz1.1/docs/rules/SPEC_cardlife.md -> _inbox/SPEC_cardlife.md (foreign file, author instruction B3)
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/.github/workflows/jekyll-docker.yml,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/.github/workflows/pages.yml,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/.github/workflows/python-package-conda.yml,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/ANSWERS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/BB_SIMS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/D6_CARD.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/DECISIONS_IDEAS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/DEFAULTS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/FULL_REPORT.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/GRUDGE.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/GUIDE_LEADER.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/HANDLIMIT.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/HOWTO_RUN.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/MENU_33_IDEAS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/PENDULUM_N16.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/QUESTIONS.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/REPORT_game_168804_N12_hrono.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/REPORT_game_777_N8_plane.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/REPORT_game_7_N12_hrono.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/REPUTATION.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/RESERVE.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/SP-131_compressed.pdf,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/SPEC_cardlife.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/TILT.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/TORNADO.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VERDICT_tornado.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEWER.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_bb_seed777.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_2026_N16_base.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_2_N8_grudge.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_2_N8_grudwindow.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_2_N8_reserve.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_2_N8_strictreserve.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_4_N8_agentrevive.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_4_N8_tilt.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_55_N12_handlimit7.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_58_N8_draft.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_606_N8_traitor.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_game_777_N8_plane.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/VIEW_tornado.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/WINRATE.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/batch_100.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/batch_canon24.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb (1).py,game/legacy/tools/bb (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb.py,game/legacy/tools/bb.py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py,game/legacy/Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_events (1).py,game/legacy/tools/bb_events (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_full.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_html (1).py,game/legacy/tools/bb_html (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_model (1).py,game/legacy/tools/bb_model (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/bb_model (2).py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/build_canon_decks.py,game/legacy/tools/build_canon_decks.py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/build_pool1000.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_abilities.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_body.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_details.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_exchange.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_history.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_inventory.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_knowledge.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_mind.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_professions.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_shadows.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/cards_spec.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/canon/decks.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_abilities.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_body.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_details.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_exchange.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_history.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_inventory.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_knowledge.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_mind.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_professions.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_shadows.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/cards_spec.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/check.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/coverage_test (1).py,game/legacy/tools/coverage_test (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/csv_export (1).py,game/legacy/tools/csv_export (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/dice_dist (2).json,game/results/from_archive/dice_dist (2).json,extract-from-archive class:sim_results
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/extract.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/final_v5 (1).json,game/results/from_archive/final_v5 (1).json,extract-from-archive class:sim_results
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/fuzz_test (1).py,game/legacy/tools/fuzz_test (1).py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/game_sim.py,game/legacy/Test-BB-revert-4-game-file-analysis-b3311/game_sim.py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/grudge.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/handlimit.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/integrity_audit.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/log_showcase.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/make_fingerprints.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/make_web.py,game/legacy/tools/make_web.py,extract-from-archive class:code
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_abl.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_b7.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_b8.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_b8.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_results.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_revesc.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/matrix_sits_ro.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/md2docx_min.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/near.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/nsweep_current.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/pamyatka.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b11.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b13_snap.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b14_blindguard.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b14_events.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b15_handlimit.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b15b_handfix.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b15c_maxhand.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b16_draft.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b17_deadstop.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b18_trio.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b21_reputation.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b21b_agentrevive.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b22_tilt.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b23_reserve.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b23b_reservegate.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/patch_b25_grudge.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/pendulum.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/plane100_b5.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/pool_indices (1).json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/report_generators_digest.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/reputation.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/reserve.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/rules_print_v3.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/rules_short.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/rules_v3.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_d6_experiment.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_draft.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_grudge.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_handlimit.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_matrix.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_matrix_b7.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_pendulum.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_report.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_reputation.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_reserve.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_tests.sh,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_tilt.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_tornado.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_triggers.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/run_winrate.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/sim8_digest.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/sim_8punk.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/sim_dop_2_20.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/sim_n_digest.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/situations.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/src_test_digest (1).md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/src_test_digest.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/sweeps_digest.md,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/template_index.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/test_effects.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/tilt.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/tornado_n12.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/tornado_n8.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/tornado_report.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/tornado_triggers.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/validate.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/view_test.js,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/web/game101.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/web/game42.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/web/game5.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/web/game777.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/web/start.html,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/winrate.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/witness_seeds.json,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/xpeek.py,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/zadanie_sim.txt,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/СИМУЛЯЦИИ_8ПУНКТОВ (1).docx,,duplicate_skipped
+archive::_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/карты_настолка_v4.xlsx,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::index.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/blitz.py,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/make_web.py,,duplicate_skipped:name-collision
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/template_index.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/test_game.js,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/bb.py,,duplicate_skipped:name-collision
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/game_sim.py,game/legacy/Test-BB-site/game_sim.py,extract-from-archive class:code
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_history.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_details.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_professions.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_shadows.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/decks.json,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_body.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_exchange.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_inventory.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_abilities.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_knowledge.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_spec.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/src/canon/cards_mind.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/viewer/VIEW_bb_seed5.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/viewer/game.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/viewer/VIEW_bb_seed777.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/tests/run_tests.sh,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/reports/REPORT_game_7_N12_hrono.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/reports/REPORT_game_777_N8_plane.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/reports/REPORT_game_168804_N12_hrono.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/PENDULUM_N16.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/GUIDE_LEADER.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/GRUDGE.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/FULL_REPORT.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/DEFAULTS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/REPUTATION.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/sim8_digest.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/report_generators_digest.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/DECISIONS_IDEAS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/sim_n_digest.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/HOWTO_RUN.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/sweeps_digest.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/src_test_digest.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/TORNADO.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/BB_SIMS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/ANSWERS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/VERDICT_tornado.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/TILT.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/WINRATE.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/HANDLIMIT.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/VIEWER.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/MENU_33_IDEAS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/RESERVE.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/notes/QUESTIONS.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/preview/index.html,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/situations.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/SPEC_cardlife.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/rules_print_v3.txt,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/zadanie_sim.txt,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/D6_CARD.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/rules_v3.txt,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/rules_short.txt,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/pamyatka.txt,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/rules/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_history.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_details.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_professions.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_shadows.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_body.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_exchange.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_inventory.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_abilities.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_knowledge.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_spec.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/docs/cards/cards_mind.md,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/tools/patch_personality.py,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/tools/patch_personality_b.py,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/tools/patch_personality_c.py,,duplicate_skipped
+archive::_archive/other/Test-BB-site.zip::project/blitz/tools/batch_stats.py,,duplicate_skipped
+archive::_archive/other/blitz_new_site.zip::index.html,,duplicate_skipped
+archive::_archive/other/site_package.zip::index.html,,duplicate_skipped
+archive::_archive/other/site_root_index.zip::index.html,,duplicate_skipped
+archive::_archive/site_package.zip::index.html,,duplicate_skipped
+archive::_archive/site_root_index.zip::index.html,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./v5/final/3_razum.txt,data/deck/3_razum.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/9_spec.txt,data/deck/9_spec.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/6_istoriya.txt,data/deck/6_istoriya.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/2_telo.txt,data/deck/2_telo.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/10_teny.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./v5/final/7_znaniya.txt,data/deck/7_znaniya.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/1_professiya.txt,data/deck/1_professiya.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/8_detali.txt,data/deck/8_detali.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/5_inventar.txt,data/deck/5_inventar.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./v5/final/11_obmen.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./v5/final/4_sposobnosti.txt,data/deck/4_sposobnosti.txt,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./СИМУЛЯЦИИ_8ПУНКТОВ.docx,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./test/verify_any.py,game/legacy/tools/verify_any.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./test/audit_full.py,game/legacy/tools/audit_full.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./test/one_search.py,game/legacy/tools/one_search.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ЖУРНАЛ_ЧИСТКИ_РЕД5.docx,docs/rules/from_archive/ЖУРНАЛ_ЧИСТКИ_РЕД5.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./sim/sweep_mods.py,game/legacy/workspace.tar/sweep_mods.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/event_freq.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/dice_fairness.json,game/legacy/workspace.tar/dice_fairness.json,extract-from-archive class:sim_results
+archive::_archive/workspace.tar.gz::./sim/build_pool1000.py,game/legacy/workspace.tar/build_pool1000.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/verify_dop_results.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/time_model.py,game/legacy/workspace.tar/time_model.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/sim_n.py,game/legacy/workspace.tar/sim_n.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/sample_log_frag.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/dice_fair_base.json,game/legacy/workspace.tar/dice_fair_base.json,extract-from-archive class:sim_results
+archive::_archive/workspace.tar.gz::./sim/harvest_off_duration.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/sweep.py,game/legacy/workspace.tar/sweep.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/game_sim.py,game/legacy/workspace.tar/game_sim.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/pool_indices.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/sweep_n_results.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/sim8.py,game/legacy/workspace.tar/sim8.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/pool_sim1000.json,game/legacy/workspace.tar/pool_sim1000.json,extract-from-archive class:sim_results
+archive::_archive/workspace.tar.gz::./sim/verify_dop.py,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/make_dop_md.py,game/legacy/workspace.tar/make_dop_md.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/sweep8.py,game/legacy/workspace.tar/sweep8.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/time_results.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/report_numbers.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/sweep8_results.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/dice_dist.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/sweep_n.py,game/legacy/workspace.tar/sweep_n.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/make_sim8_md.py,game/legacy/workspace.tar/make_sim8_md.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./sim/sweep_mods_results.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./sim/log_360.txt,game/legacy/workspace.tar/log_360.txt,extract-from-archive class:logs
+archive::_archive/workspace.tar.gz::./ПРИМЕР_ИГРЫ_8_игроков.docx,docs/rules/from_archive/ПРИМЕР_ИГРЫ_8_игроков.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.docx,docs/rules/from_archive/ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,docs/rules/from_archive/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./карты_настолка_v5.xlsx,data/deck/карты_настолка_v5.xlsx,extract-from-archive class:deck_data
+archive::_archive/workspace.tar.gz::./карты_v5_по_категориям.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./СИМУЛЯЦИИ_2_20.docx,docs/rules/from_archive/СИМУЛЯЦИИ_2_20.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./uploads/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./uploads/ПРИМЕР_ИГРЫ_8_игроков.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./near.py,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ПРАВИЛА_БЛИЦ_БОЙ_v2.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./check.py,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ПРИМЕР_ИГРЫ_8_игроков.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./СИМУЛЯЦИИ_8ПУНКТОВ.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./СИМУЛЯЦИИ_2_20.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ЖУРНАЛ_ЧИСТКИ_РЕД5.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./ПРАВИЛА_БЛИЦ_БОЙ_v3.md,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/obmen_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/prof_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/spec_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/final_v5.json,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/telo_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/md2docx.py,game/legacy/tools/md2docx.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/censor.py,game/legacy/tools/censor.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/build_v5.py,game/legacy/tools/build_v5.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/ryukzak_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/check_clean.py,game/legacy/tools/check_clean.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/censor_fix.py,game/legacy/tools/censor_fix.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/t2.py,game/legacy/tools/t2.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./src/situations_raw.txt,,duplicate_skipped
+archive::_archive/workspace.tar.gz::./src/export_v5_xlsx.py,game/legacy/tools/export_v5_xlsx.py,extract-from-archive class:code
+archive::_archive/workspace.tar.gz::./КОЛОДА_ОБМЕНА.docx,docs/rules/from_archive/КОЛОДА_ОБМЕНА.docx,extract-from-archive class:docs_rules
+archive::_archive/workspace.tar.gz::./КОЛОДА_ОБМЕНА.md,,duplicate_skipped
+workspace.tar	_archive/workspace.tar	restore:author-rule-no-archive-delete	2026-11-02T00:00:00
+docs/rules/from_archive/КОЛОДА_ОБМЕНА.docx,docs/notes/КОЛОДА_ОБМЕНА.docx,copy:draft-rules-to-notes (author B3),2026-11-01T17:59:02
+game/results/from_archive/final_v5 (1).json,game/legacy/workspace.tar.gz/src/final_v5.json,copy:restore-archive-layout-for-launch (md5 identical),2026-11-02T00:00:00
+game/results/pool_indices (1).json,game/legacy/workspace.tar.gz/sim/pool_indices.json,copy:restore-archive-layout-for-launch,2026-11-02T00:00:00
+game/results/pool_indices (1).json,data/deck/pool_indices.json,copy:pool-to-deck-truth per keep-list,2026-11-02T00:00:00
+_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md,copy:draft-rules-to-notes (author B3; archive untouched),2026-11-02T00:00:00
+_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx,copy:draft-rules-to-notes (author B3; archive untouched),2026-11-02T00:00:00
+_archive/dumps/Test-BB-revert-4-game-file-analysis-b3311.zip::Test-BB-revert-4-game-file-analysis-b3311/final_v5 (1).json,game/legacy/workspace.tar.gz/src/final_v5.json,re-extract:was duplicate_skipped but required by sim layout (md5 verified),2026-11-02T00:00:00
+_archive/ws/sim/pool_indices.json,game/legacy/workspace.tar.gz/sim/pool_indices.json,restore-layout:required by game_sim.py open('sim/pool_indices.json'),2026-11-02T00:00:00
+2026-11-01T18:06:45Z,_inbox/rules_v3.txt,docs/rules/rules_v3.txt,author_fix_layout_document
+2026-11-01T18:06:45Z,_inbox/rules_short.txt,docs/rules/rules_short.txt,author_fix_layout_document
+2026-11-01T18:06:45Z,_inbox/sim_8punk.txt,docs/reports/sim_8punk.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/sim_dop_2_20.txt,docs/reports/sim_dop_2_20.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/verify_dop.txt,docs/reports/verify_dop.txt,author_fix_layout_report
+2026-11-01T18:06:45Z,_inbox/zadanie_sim.txt,_inbox/zadanie_sim.txt,duplicate_skipped_md5_neq_SPEC_stays_inbox_pending_author
+run_tests.sh,_archive/tools_old/run_tests.sh,root-tail:merge-back-into-archive-dir,2026-11-02
+patch_b11,_archive/old_engine/patch_b11.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b13_snap,_archive/old_engine/patch_b13_snap.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b14_blindguard,_archive/old_engine/patch_b14_blindguard.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b14_events,_archive/old_engine/patch_b14_events.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15_handlimit,_archive/old_engine/patch_b15_handlimit.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15b_handfix,_archive/old_engine/patch_b15b_handfix.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b15c_maxhand,_archive/old_engine/patch_b15c_maxhand.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b16_draft,_archive/old_engine/patch_b16_draft.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b17_deadstop,_archive/old_engine/patch_b17_deadstop.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b18_trio,_archive/old_engine/patch_b18_trio.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b21_reputation,_archive/old_engine/patch_b21_reputation.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b21b_agentrevive,_archive/old_engine/patch_b21b_agentrevive.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b22_tilt,_archive/old_engine/patch_b22_tilt.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b23_reserve,_archive/old_engine/patch_b23_reserve.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b23b_reservegate,_archive/old_engine/patch_b23b_reservegate.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+patch_b25_grudge,_archive/old_engine/patch_b25_grudge.py,extract-ref:patch-docs-for-synthesis,2026-11-02
+bb_full.py,_archive/old_engine/bb_full.py,extract-ref:synthesis-golden-reference,2026-11-02
+bb_core (1).py,game/legacy/Test-BB-revert-4-game-file-analysis-b3311/bb_core (1).py,extract-ref:parametric-core-base,2026-11-02
+decks_canon_print.json,_archive/blitz1.1/src/canon/decks.json,layout:canon-deck-to-data-deck(md5 6f8542a7),2026-11-02

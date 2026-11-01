@@ -1,0 +1,558 @@
+[
+ {
+  "md5": "01da8c9246113f0361e1453883a53155",
+  "bytes": 16656,
+  "keep": "game/test_effects.py",
+  "drop": [
+   "_archive/old_tests/test_effects.py"
+  ]
+ },
+ {
+  "md5": "0b391e547fc80b0fbc879c21dea88cf1",
+  "bytes": 32593,
+  "keep": "docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx"
+  ]
+ },
+ {
+  "md5": "0c833fb5d215fae7352ca21a61e60cdf",
+  "bytes": 3846,
+  "keep": "docs/rules/situations.md",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/situations.md"
+  ]
+ },
+ {
+  "md5": "10dfd2b267a24c2b49d5306ffbe35239",
+  "bytes": 13818,
+  "keep": "data/deck/pool_indices.json",
+  "drop": [
+   "game/legacy/workspace.tar.gz/sim/pool_indices.json",
+   "game/results/pool_indices (1).json"
+  ]
+ },
+ {
+  "md5": "1587a2e065c7dd4eb5328e6d5c3ea3c3",
+  "bytes": 16565,
+  "keep": "game/results/pendulum.json",
+  "drop": [
+   "_archive/data_old/pendulum.json"
+  ]
+ },
+ {
+  "md5": "15f4d17309c78f051d1e21c9b09ba045",
+  "bytes": 94742,
+  "keep": "game/results/tornado_n12.json",
+  "drop": [
+   "_archive/data_old/tornado_n12.json"
+  ]
+ },
+ {
+  "md5": "1cf3bf54481622d56380de34a0f139e6",
+  "bytes": 12862,
+  "keep": "_archive/web_junk/view_test.js",
+  "drop": [
+   "_archive/src_extra/view_test.js"
+  ]
+ },
+ {
+  "md5": "1dabe981da5ce26cfc894772376befaf",
+  "bytes": 1536,
+  "keep": "_archive/blitz1.1/src/canon/cards_exchange.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_exchange.md"
+  ]
+ },
+ {
+  "md5": "1f2241ce483fc519c21e4d6ca7ac6441",
+  "bytes": 43127,
+  "keep": "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx"
+  ]
+ },
+ {
+  "md5": "26ea29115b9480abfcde4df6716be83a",
+  "bytes": 1141,
+  "keep": "_archive/blitz1.1/src/canon/cards_mind.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_mind.md"
+  ]
+ },
+ {
+  "md5": "290f1c0555a630764f255f0fcfe7713a",
+  "bytes": 4101125,
+  "keep": "_archive/workspace.tar",
+  "drop": [
+   "_archive/workspace.tar.gz"
+  ]
+ },
+ {
+  "md5": "2968422551c5899fbd547cd29c29b64b",
+  "bytes": 31040,
+  "keep": "game/results/reserve.json",
+  "drop": [
+   "_archive/data_old/reserve.json"
+  ]
+ },
+ {
+  "md5": "2a3300ab6846ae54c3fd8003c447b8ef",
+  "bytes": 4657,
+  "keep": "_inbox/SPEC_cardlife.md",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/SPEC_cardlife.md"
+  ]
+ },
+ {
+  "md5": "2fa835bec2d5f81b0cc84386798b7480",
+  "bytes": 5071,
+  "keep": "docs/reports/src_test_digest.md",
+  "drop": [
+   "_archive/blitz1.1/docs/notes/src_test_digest.md"
+  ]
+ },
+ {
+  "md5": "30c5b45bc484c922ea1fd758fd510922",
+  "bytes": 1026,
+  "keep": "_archive/blitz1.1/src/canon/cards_body.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_body.md"
+  ]
+ },
+ {
+  "md5": "30fcb7891aeb73fa097c386344c7d21a",
+  "bytes": 1102,
+  "keep": "_archive/blitz1.1/src/canon/cards_inventory.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_inventory.md"
+  ]
+ },
+ {
+  "md5": "33233dd34c5310758ff1e719b86b4bf0",
+  "bytes": 1420,
+  "keep": "_archive/blitz1.1/src/canon/cards_knowledge.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_knowledge.md"
+  ]
+ },
+ {
+  "md5": "3539e29fdabb6dfc6748b4dbcb4a8dc6",
+  "bytes": 716816,
+  "keep": "_archive/web_junk/index.html",
+  "drop": [
+   "_archive/blitz1.1/web/index.html",
+   "_archive/blitz1.1/docs/preview/index.html",
+   "_archive/blitz1.1/docs/index.html"
+  ]
+ },
+ {
+  "md5": "3c8296389e7606c6a9db27a5f4bff1f0",
+  "bytes": 1897,
+  "keep": "game/results/witness_seeds.json",
+  "drop": [
+   "_archive/data_old/witness_seeds.json"
+  ]
+ },
+ {
+  "md5": "4272e32b1b408f41f225e7bde903e253",
+  "bytes": 4775,
+  "keep": "_archive/blitz1.1/src/canon/cards_professions.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_professions.md"
+  ]
+ },
+ {
+  "md5": "50d9b2bfae365ea3f401560bf3393c93",
+  "bytes": 369,
+  "keep": "game/xpeek.py",
+  "drop": [
+   "tools/sim_runners/xpeek.py"
+  ]
+ },
+ {
+  "md5": "6ad8171c740282e6e5457a295badf91e",
+  "bytes": 21654,
+  "keep": "game/tornado_report.py",
+  "drop": [
+   "tools/sim_runners/tornado_report.py"
+  ]
+ },
+ {
+  "md5": "6e6f2d3dae252a1ef9e51674c40c5f4c",
+  "bytes": 60254,
+  "keep": "docs/rules/СИМУЛЯЦИИ_8ПУНКТОВ.docx",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/СИМУЛЯЦИИ_8ПУНКТОВ.docx"
+  ]
+ },
+ {
+  "md5": "7037f808a0c815691ad93c48161cfb7d",
+  "bytes": 6360,
+  "keep": "data/deck/КОЛОДА_ОБМЕНА.md",
+  "drop": [
+   "_archive/ws/10_docs/колода/КОЛОДА_ОБМЕНА.md"
+  ]
+ },
+ {
+  "md5": "7185db70be259f0c8a2d7c40e467b8c1",
+  "bytes": 10414,
+  "keep": "docs/notes/СТАРТ_ЧАТА_С_CODER.md",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/СТАРТ_ЧАТА_С_CODER.md"
+  ]
+ },
+ {
+  "md5": "76652c27c4ff0c0252bc97678fb0d0dc",
+  "bytes": 1568,
+  "keep": "_archive/blitz1.1/src/canon/cards_abilities.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_abilities.md"
+  ]
+ },
+ {
+  "md5": "7c43f215444b06500f84a82ddfaf6be5",
+  "bytes": 5894,
+  "keep": "game/results/tilt.json",
+  "drop": [
+   "_archive/data_old/tilt.json"
+  ]
+ },
+ {
+  "md5": "7e1aea41c8f180155a9941877edc570a",
+  "bytes": 803,
+  "keep": "game/results/tornado_triggers.json",
+  "drop": [
+   "_archive/data_old/tornado_triggers.json"
+  ]
+ },
+ {
+  "md5": "7fcfc0b5ee9234e4a269b808e001e2dc",
+  "bytes": 23400,
+  "keep": "_inbox/rules_short.txt",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/rules_short.txt"
+  ]
+ },
+ {
+  "md5": "806265c1f9b6fe2c2d4f8bb840c7f921",
+  "bytes": 46608,
+  "keep": "_inbox/sim_8punk.txt",
+  "drop": [
+   "_archive/experiments/sim_8punk.txt"
+  ]
+ },
+ {
+  "md5": "829253bb551cbe53571cb94472505022",
+  "bytes": 1791,
+  "keep": "game/results/reputation.json",
+  "drop": [
+   "_archive/data_old/reputation.json"
+  ]
+ },
+ {
+  "md5": "87938df60cf38025ea7bea50a19bb115",
+  "bytes": 10061,
+  "keep": "game/results/winrate.json",
+  "drop": [
+   "_archive/data_old/winrate.json"
+  ]
+ },
+ {
+  "md5": "8828e7d4a238ee1858d6a0ae622ece49",
+  "bytes": 2165,
+  "keep": "_archive/blitz1.1/src/canon/cards_shadows.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_shadows.md"
+  ]
+ },
+ {
+  "md5": "931e957addd7ae1262a676b97aeda71d",
+  "bytes": 555943,
+  "keep": "_archive/web_junk/site_new_index.html",
+  "drop": [
+   "_archive/other/site_new_index.html"
+  ]
+ },
+ {
+  "md5": "94c1ae31ed849157ff43920046efff22",
+  "bytes": 36281,
+  "keep": "_inbox/rules_v3.txt",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/rules_v3.txt"
+  ]
+ },
+ {
+  "md5": "99473f2335357d7fc125d62181816170",
+  "bytes": 38641,
+  "keep": "docs/rules/rules_print_v3.txt",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/rules_print_v3.txt"
+  ]
+ },
+ {
+  "md5": "a08779609faab59c0711444658bbf3aa",
+  "bytes": 9066,
+  "keep": "docs/reports/sim8_digest.md",
+  "drop": [
+   "_archive/blitz1.1/docs/notes/sim8_digest.md"
+  ]
+ },
+ {
+  "md5": "a1c6d8b4dfa218204b2ceed149322eb8",
+  "bytes": 121905,
+  "keep": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md",
+  "drop": [
+   "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md"
+  ]
+ },
+ {
+  "md5": "b12adb41dca425798cafd364643aa0e8",
+  "bytes": 82313,
+  "keep": "docs/notes/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx",
+  "drop": [
+   "_archive/ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx"
+  ]
+ },
+ {
+  "md5": "b4b665483122101481697d5aac20e836",
+  "bytes": 1747,
+  "keep": "_archive/web_junk/test_human.js",
+  "drop": [
+   "_archive/src_extra/test_human.js"
+  ]
+ },
+ {
+  "md5": "ba43cca307686050761a15e1f7e74678",
+  "bytes": 199813,
+  "keep": "game/legacy/workspace.tar.gz/src/final_v5.json",
+  "drop": [
+   "game/results/from_archive/final_v5 (1).json"
+  ]
+ },
+ {
+  "md5": "bc8d27add6adb76dc99943156bf77e93",
+  "bytes": 1326,
+  "keep": "_archive/blitz1.1/src/canon/cards_history.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_history.md"
+  ]
+ },
+ {
+  "md5": "c0b85eeb529b1fa3ff6418cce53800da",
+  "bytes": 113338,
+  "keep": "game/results/tornado_n8.json",
+  "drop": [
+   "_archive/data_old/tornado_n8.json"
+  ]
+ },
+ {
+  "md5": "c105500cc6dd31e96b483af9a323d38a",
+  "bytes": 672832,
+  "keep": "_archive/blitz1.1/web/game.js",
+  "drop": [
+   "_archive/blitz1.1/docs/preview/game.js",
+   "_archive/blitz1.1/docs/game.js"
+  ]
+ },
+ {
+  "md5": "c3e036fef263e1bd76d8b03d38babd35",
+  "bytes": 3928,
+  "keep": "_archive/blitz1.1/src/canon/cards_spec.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_spec.md"
+  ]
+ },
+ {
+  "md5": "d5ecaca35bfe2e801ebc5997e9d4a7ae",
+  "bytes": 950,
+  "keep": "game/results/plane100_b5.json",
+  "drop": [
+   "_archive/data_old/plane100_b5.json"
+  ]
+ },
+ {
+  "md5": "d6df90b206c9dd817a3625f96379f187",
+  "bytes": 11551,
+  "keep": "docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md"
+  ]
+ },
+ {
+  "md5": "d7a40b2fa7f7b98dd2f1272d5f316f29",
+  "bytes": 541461,
+  "keep": "data/deck/карты_настолка_v4.xlsx",
+  "drop": [
+   "_archive/ws/10_docs/колода/карты_настолка_v4.xlsx",
+   "_archive/data_old/карты_настолка_v4.xlsx"
+  ]
+ },
+ {
+  "md5": "d89234abd955541dea8a12e024e52d2b",
+  "bytes": 1812,
+  "keep": "_archive/blitz1.1/src/canon/cards_details.md",
+  "drop": [
+   "_archive/blitz1.1/docs/cards/cards_details.md"
+  ]
+ },
+ {
+  "md5": "d9cc944857c587d35d604ec45cf5150c",
+  "bytes": 41788,
+  "keep": "docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "drop": [
+   "_archive/ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ДО_ПЕЧАТИ.docx",
+   "_archive/blitz1.1/docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx"
+  ]
+ },
+ {
+  "md5": "d9ec7d9e858d0f24e59a3fae71829b66",
+  "bytes": 28227,
+  "keep": "SPEC.md",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md"
+  ]
+ },
+ {
+  "md5": "da2ca4e1739a36edd84267228c74005c",
+  "bytes": 53863,
+  "keep": "docs/rules/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx"
+  ]
+ },
+ {
+  "md5": "db025b5c07758705effd116538c94e59",
+  "bytes": 4692,
+  "keep": "_archive/ws/30_tools/md2docx.py",
+  "drop": [
+   "_archive/ws/30_tools/md2docx.txt"
+  ]
+ },
+ {
+  "md5": "de6e843bb77dc3c4a22596844f6f3141",
+  "bytes": 43998,
+  "keep": "_archive/blitz1.1/web/observer.html",
+  "drop": [
+   "_archive/blitz1.1/src/observer_template.html",
+   "_archive/blitz1.1/docs/preview/observer.html",
+   "_archive/blitz1.1/docs/observer.html"
+  ]
+ },
+ {
+  "md5": "dfe4a07105eb3088c2f89db862e320ca",
+  "bytes": 16510,
+  "keep": "_archive/site_root_index.zip",
+  "drop": [
+   "_archive/other/site_root_index.zip"
+  ]
+ },
+ {
+  "md5": "e18ee0728cea1ca9907ad9c0fac01319",
+  "bytes": 44027,
+  "keep": "docs/rules/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx",
+  "drop": [
+   "_archive/ws/10_docs/правила/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx"
+  ]
+ },
+ {
+  "md5": "e29b1644850d82fa8362daa5c41432d6",
+  "bytes": 4070,
+  "keep": "docs/reports/report_generators_digest.md",
+  "drop": [
+   "_archive/blitz1.1/docs/notes/report_generators_digest.md"
+  ]
+ },
+ {
+  "md5": "e52844049a5bf269d06d974a40af3e09",
+  "bytes": 16510,
+  "keep": "_archive/site_package.zip",
+  "drop": [
+   "_archive/other/site_package.zip",
+   "_archive/other/blitz_new_site.zip"
+  ]
+ },
+ {
+  "md5": "efb5a044b0546f17bb71b7f71604eae6",
+  "bytes": 12849,
+  "keep": "docs/notes/ЖУРНАЛ_ЧИСТКИ_РЕД5.md",
+  "drop": [
+   "_archive/ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md"
+  ]
+ },
+ {
+  "md5": "efef150ea96b9da361dae62956fe5832",
+  "bytes": 43924,
+  "keep": "_inbox/sim_dop_2_20.txt",
+  "drop": [
+   "_archive/experiments/sim_dop_2_20.txt"
+  ]
+ },
+ {
+  "md5": "f091f56e2964a4ba49fec822f971212e",
+  "bytes": 27976,
+  "keep": "_inbox/zadanie_sim.txt",
+  "drop": [
+   "_archive/blitz1.1/docs/rules/zadanie_sim.txt"
+  ]
+ },
+ {
+  "md5": "f14af24bb480a64050eabf1e2040d2b2",
+  "bytes": 78739,
+  "keep": "_archive/web_junk/user_original.html",
+  "drop": [
+   "_archive/other/user_original.html",
+   "_archive/other/live_index.html",
+   "_archive/other/pages_index.html"
+  ]
+ },
+ {
+  "md5": "f23740ea2ffba84414484ffde8e49bfd",
+  "bytes": 151318,
+  "keep": "docs/notes/КОНТЕКСТ_БРИФ.md",
+  "drop": [
+   "_archive/ws/00_brief/КОНТЕКСТ_БРИФ.md"
+  ]
+ },
+ {
+  "md5": "f3665ba1d017344f02c7b499f4f985af",
+  "bytes": 2995,
+  "keep": "docs/reports/sim_n_digest.md",
+  "drop": [
+   "_archive/blitz1.1/docs/notes/sim_n_digest.md"
+  ]
+ },
+ {
+  "md5": "f3e54f1a8b773040e505b481b2255a9d",
+  "bytes": 41898,
+  "keep": "docs/rules/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx"
+  ]
+ },
+ {
+  "md5": "f857961e044298a30998775192cbe65c",
+  "bytes": 5496,
+  "keep": "docs/reports/sweeps_digest.md",
+  "drop": [
+   "_archive/blitz1.1/docs/notes/sweeps_digest.md"
+  ]
+ },
+ {
+  "md5": "fbb110f6d114156abceabcea4ef3eae7",
+  "bytes": 53460,
+  "keep": "docs/notes/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx",
+  "drop": [
+   "_archive/ws/10_docs/симуляции/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx",
+   "_archive/docs_old/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx"
+  ]
+ },
+ {
+  "md5": "fc39642fe8641064a4cf76a1081e45ca",
+  "bytes": 2324,
+  "keep": "game/validate.py",
+  "drop": [
+   "tools/sim_runners/validate.py"
+  ]
+ }
+]
