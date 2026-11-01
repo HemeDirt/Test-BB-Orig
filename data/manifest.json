@@ -1,0 +1,3274 @@
+[
+ {
+  "path": "10_teny.txt",
+  "bytes": 23040,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.759225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b8e7c8567c875f41b9769d51169d3c1e"
+ },
+ {
+  "path": "117352720311 (1).htm",
+  "bytes": 167579,
+  "ext": ".htm",
+  "mtime_epoch": 1793553003.760225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "16ddba49ed9b6d0f8420ecdc62b853da"
+ },
+ {
+  "path": "117352720311.htm",
+  "bytes": 167579,
+  "ext": ".htm",
+  "mtime_epoch": 1793553003.760225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4b6026df267316cb48d2bf2eec438886"
+ },
+ {
+  "path": "11_obmen.txt",
+  "bytes": 3875,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.760225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "07b3d78edb0150d444346f9f47fd97ba"
+ },
+ {
+  "path": "Crome bin and asa.zip",
+  "bytes": 4808178,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f7c3a92ec8fbe74c24dbb67bf5164dc1"
+ },
+ {
+  "path": "PENDULUM_N16.md",
+  "bytes": 10385,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ef85b9d88f5b4b56ccb472d4b743d98c"
+ },
+ {
+  "path": "QUESTIONS.md",
+  "bytes": 2086,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8c5e71d3e9be0364669b9dc071e1678a"
+ },
+ {
+  "path": "QWEN_MD_ПРАВИЛА_ПРОЕКТА.md",
+  "bytes": 32201,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4546c3464d22db17c3aea94ef793a108"
+ },
+ {
+  "path": "README.md",
+  "bytes": 14,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "585bb8cd2dba50c11c0bbc8d693a473e"
+ },
+ {
+  "path": "REPORT_game_168804_N12_hrono.md",
+  "bytes": 18787,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ede52374dc504a9f0273e2c059ce28e8"
+ },
+ {
+  "path": "REPORT_game_777_N8_plane.md",
+  "bytes": 17954,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dd79330b448876fd8d768804e2b8febc"
+ },
+ {
+  "path": "REPORT_game_7_N12_hrono.md",
+  "bytes": 20880,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "270d4066a8a31d97af3b9f8c046cdf56"
+ },
+ {
+  "path": "REPUTATION.md",
+  "bytes": 4846,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "efa63260ebe174c621670ba9d636b863"
+ },
+ {
+  "path": "RESERVE.md",
+  "bytes": 22998,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.791225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "99d090b12b190a1d40886e238ca59d17"
+ },
+ {
+  "path": "SP-131_compressed.pdf",
+  "bytes": 11830941,
+  "ext": ".pdf",
+  "mtime_epoch": 1793553003.828225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "04075b53c903f0aa0a416635197396e9"
+ },
+ {
+  "path": "SPEC_cardlife.md",
+  "bytes": 4657,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.828225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2a3300ab6846ae54c3fd8003c447b8ef"
+ },
+ {
+  "path": "TILT.md",
+  "bytes": 7002,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.828225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c5e2cbd3c7464cc1934b9e54a2d8e63a"
+ },
+ {
+  "path": "TORNADO.md",
+  "bytes": 32266,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.828225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e3505b3be3b1d8348b05d94a2ec9cf6d"
+ },
+ {
+  "path": "Test-BB-revert-4-game-file-analysis-b3311.zip",
+  "bytes": 13645435,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.868225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "964522c726a2a32590ed418094341ea4"
+ },
+ {
+  "path": "Test-BB-site.zip",
+  "bytes": 435419,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.870225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6d98d9ed3269104ba8f7191bc037323d"
+ },
+ {
+  "path": "VERDICT_tornado.md",
+  "bytes": 7259,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.870225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8542655a9954672dde0920fcd045a240"
+ },
+ {
+  "path": "VIEWER.md",
+  "bytes": 11505,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.870225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "007bb999b34512c40c4550cb5ea211e5"
+ },
+ {
+  "path": "VIEW_bb_seed777.html",
+  "bytes": 49410,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.870225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1b6b8654f2267f4f8073acd18b6c2918"
+ },
+ {
+  "path": "VIEW_game_2026_N16_base.html",
+  "bytes": 218262,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.871225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d2a770dfc33b848f34d9ee20ac3eb811"
+ },
+ {
+  "path": "VIEW_game_2_N8_grudge.html",
+  "bytes": 150046,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.871225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1fd8f9f88f7cce44d2bd304226fa8fbd"
+ },
+ {
+  "path": "VIEW_game_2_N8_grudwindow.html",
+  "bytes": 154000,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.871225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "628972e9500315c39115e626b55e3363"
+ },
+ {
+  "path": "VIEW_game_2_N8_reserve.html",
+  "bytes": 131107,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.871225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4ff7513d8c3629cdd031d8fa786186ce"
+ },
+ {
+  "path": "VIEW_game_2_N8_strictreserve.html",
+  "bytes": 114953,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.872225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e7144e77597a92c617f7bff6ae0b7df6"
+ },
+ {
+  "path": "VIEW_game_4_N8_agentrevive.html",
+  "bytes": 109301,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.872225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "a28cafabc522fd1a79d9f9703e8eee96"
+ },
+ {
+  "path": "VIEW_game_4_N8_tilt.html",
+  "bytes": 135132,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.872225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d12b997fda7bf994a8666c4ddc9e8ecc"
+ },
+ {
+  "path": "VIEW_game_55_N12_handlimit7.html",
+  "bytes": 204141,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.873225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "73b561a446317cda9e4fad555ac19862"
+ },
+ {
+  "path": "VIEW_game_58_N8_draft.html",
+  "bytes": 94096,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "df188be489ea66574f4f98114329180b"
+ },
+ {
+  "path": "VIEW_game_606_N8_traitor.html",
+  "bytes": 129607,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c73e43e5142e7cc3c14424d571db41b9"
+ },
+ {
+  "path": "VIEW_game_777_N8_plane.html",
+  "bytes": 120541,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b8a009634e563ca1ec0fac057b807006"
+ },
+ {
+  "path": "VIEW_tornado.html",
+  "bytes": 74647,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c0906fe83a368f5db5b8c95e346a41d3"
+ },
+ {
+  "path": "WINRATE.md",
+  "bytes": 6633,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c9028cb769d31a90f9bd32e30c3c9033"
+ },
+ {
+  "path": "blitz_new_site.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e52844049a5bf269d06d974a40af3e09"
+ },
+ {
+  "path": "docs.rar",
+  "bytes": 45529,
+  "ext": ".rar",
+  "mtime_epoch": 1793553003.893225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b2261a06b4c7372353a53123d7b191b1"
+ },
+ {
+  "path": "game_sim_before_personality.py",
+  "bytes": 49495,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.967225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d21e288a3000b4541c1e8ff93f318f79"
+ },
+ {
+  "path": "index.html",
+  "bytes": 716816,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.968225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3539e29fdabb6dfc6748b4dbcb4a8dc6"
+ },
+ {
+  "path": "live_index.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.968225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "main_backup.rar",
+  "bytes": 426568,
+  "ext": ".rar",
+  "mtime_epoch": 1793553003.969225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f891b604dde7a10e9aa1c8062ed07d0b"
+ },
+ {
+  "path": "package-lock.json",
+  "bytes": 18662,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0c271afbf72ac1791d32a0a331ad80bd"
+ },
+ {
+  "path": "package.json",
+  "bytes": 51,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "14df15f84a109605c34dc85150e31314"
+ },
+ {
+  "path": "pages_index.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "pendulum.json",
+  "bytes": 16565,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1587a2e065c7dd4eb5328e6d5c3ea3c3"
+ },
+ {
+  "path": "plane100_b5.json",
+  "bytes": 950,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d5ecaca35bfe2e801ebc5997e9d4a7ae"
+ },
+ {
+  "path": "pool_indices (1).json",
+  "bytes": 13818,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "10dfd2b267a24c2b49d5306ffbe35239"
+ },
+ {
+  "path": "report_generators_digest.md",
+  "bytes": 4070,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e29b1644850d82fa8362daa5c41432d6"
+ },
+ {
+  "path": "reputation.json",
+  "bytes": 1791,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "829253bb551cbe53571cb94472505022"
+ },
+ {
+  "path": "reserve.json",
+  "bytes": 31040,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2968422551c5899fbd547cd29c29b64b"
+ },
+ {
+  "path": "rules_print_v3.txt",
+  "bytes": 38641,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "99473f2335357d7fc125d62181816170"
+ },
+ {
+  "path": "rules_short.txt",
+  "bytes": 23400,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7fcfc0b5ee9234e4a269b808e001e2dc"
+ },
+ {
+  "path": "rules_v3.txt",
+  "bytes": 36281,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "94c1ae31ed849157ff43920046efff22"
+ },
+ {
+  "path": "run_d6_experiment.py",
+  "bytes": 5521,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.975225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2ce5b7ee299e5afd130f711b8e8ec4cb"
+ },
+ {
+  "path": "run_draft.py",
+  "bytes": 10777,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2d2a32bfca6de6abf961b63d3905dcf0"
+ },
+ {
+  "path": "run_grudge.py",
+  "bytes": 11755,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d656ba00d8503b16bbf0c789275d5260"
+ },
+ {
+  "path": "run_handlimit.py",
+  "bytes": 11479,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "831b514288bc72faae5125ae2293b665"
+ },
+ {
+  "path": "run_matrix.py",
+  "bytes": 1997,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b751b48d23e4aeb678f0bce4c5a67fa3"
+ },
+ {
+  "path": "run_matrix_b7.py",
+  "bytes": 3208,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ce60f9cdbeefc341361618c105e0af67"
+ },
+ {
+  "path": "run_page.js",
+  "bytes": 895,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "81810b8c2e8ebcdedaf75e18341f45f0"
+ },
+ {
+  "path": "run_pendulum.py",
+  "bytes": 14699,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e90b0a5bb5d73b4c85216bc2ba076658"
+ },
+ {
+  "path": "run_report.py",
+  "bytes": 4003,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9fd6eee6029f84e5868c23451bf7a8a8"
+ },
+ {
+  "path": "run_reputation.py",
+  "bytes": 8639,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3d5f3b6e8ce669d060c563897ac8c151"
+ },
+ {
+  "path": "run_reserve.py",
+  "bytes": 15076,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8f991a8efc59ba86da8ad3808b20b8a4"
+ },
+ {
+  "path": "run_tests.sh",
+  "bytes": 16869,
+  "ext": ".sh",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b473491ae2a4216181cb2006678c765d"
+ },
+ {
+  "path": "run_tilt.py",
+  "bytes": 9326,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "91b1f0dab5eb6d3bb6281fe1310ace2b"
+ },
+ {
+  "path": "run_tornado.py",
+  "bytes": 14347,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "972538bfc2f9b5a0587e7d22ddea2d76"
+ },
+ {
+  "path": "run_triggers.py",
+  "bytes": 5131,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "72b601f7ed0093f6a104cd9f276caf20"
+ },
+ {
+  "path": "run_winrate.py",
+  "bytes": 2238,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "60691f1ba02260ec5abaa7128ee07c1d"
+ },
+ {
+  "path": "ryukzak_raw.txt",
+  "bytes": 3823,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.976225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b23da2b95444176ef0893fad79736fe8"
+ },
+ {
+  "path": "sample_log_frag.txt",
+  "bytes": 2103,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8ecdfe13032e8566f7195ba8f262ba94"
+ },
+ {
+  "path": "sim8_digest.md",
+  "bytes": 9066,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "a08779609faab59c0711444658bbf3aa"
+ },
+ {
+  "path": "sim_8punk.txt",
+  "bytes": 46608,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "806265c1f9b6fe2c2d4f8bb840c7f921"
+ },
+ {
+  "path": "sim_dop_2_20.txt",
+  "bytes": 43924,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "efef150ea96b9da361dae62956fe5832"
+ },
+ {
+  "path": "sim_n_digest.md",
+  "bytes": 2995,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f3665ba1d017344f02c7b499f4f985af"
+ },
+ {
+  "path": "site_live.rar",
+  "bytes": 50893,
+  "ext": ".rar",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e11a7597bd0569098ae0f997b5465392"
+ },
+ {
+  "path": "site_new_index.html",
+  "bytes": 555943,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "931e957addd7ae1262a676b97aeda71d"
+ },
+ {
+  "path": "site_package.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e52844049a5bf269d06d974a40af3e09"
+ },
+ {
+  "path": "site_root_index.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dfe4a07105eb3088c2f89db862e320ca"
+ },
+ {
+  "path": "site_v11.rar",
+  "bytes": 45389,
+  "ext": ".rar",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0dc2b9609c0411b5849d746614b75186"
+ },
+ {
+  "path": "site_v9_final.rar",
+  "bytes": 45382,
+  "ext": ".rar",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "18f984ec4a0b1edce602f553f63349d2"
+ },
+ {
+  "path": "situations.md",
+  "bytes": 3846,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.978225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0c833fb5d215fae7352ca21a61e60cdf"
+ },
+ {
+  "path": "situations_raw.txt",
+  "bytes": 13838,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "5f9918c8b4bd674540e372a6b6872ed9"
+ },
+ {
+  "path": "spec_raw.txt",
+  "bytes": 20544,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7b114b8f5691dabe3e020580a480f248"
+ },
+ {
+  "path": "src_test_digest (1).md",
+  "bytes": 5071,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2fa835bec2d5f81b0cc84386798b7480"
+ },
+ {
+  "path": "src_test_digest.md",
+  "bytes": 5071,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2fa835bec2d5f81b0cc84386798b7480"
+ },
+ {
+  "path": "sweep8_results.json",
+  "bytes": 2266840,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.987225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1e8caea4aba0ac540df68978266da81c"
+ },
+ {
+  "path": "sweep_mods_results.json",
+  "bytes": 21201,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.987225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6fd73e3249227ac8a19e6129b58d54bc"
+ },
+ {
+  "path": "sweep_n_results.json",
+  "bytes": 10507,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.987225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "424026eb56f750f733bb579359ed568c"
+ },
+ {
+  "path": "sweeps_digest.md",
+  "bytes": 5496,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.987225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f857961e044298a30998775192cbe65c"
+ },
+ {
+  "path": "telo_raw.txt",
+  "bytes": 605,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "837dac08e4614673e076aa876adc1e97"
+ },
+ {
+  "path": "template_index.html",
+  "bytes": 7405,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e19b8733df237a3fabf82e1682a76db6"
+ },
+ {
+  "path": "test_effects.py",
+  "bytes": 16656,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "01da8c9246113f0361e1453883a53155"
+ },
+ {
+  "path": "test_game.js",
+  "bytes": 2573,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "5f8a948c30a946c76c0ad36d02bec8a8"
+ },
+ {
+  "path": "test_human.js",
+  "bytes": 1747,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b4b665483122101481697d5aac20e836"
+ },
+ {
+  "path": "tilt.json",
+  "bytes": 5894,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7c43f215444b06500f84a82ddfaf6be5"
+ },
+ {
+  "path": "time_results.json",
+  "bytes": 88759,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "76b22a6257b3fc26b83feffe5122778b"
+ },
+ {
+  "path": "tornado_n12.json",
+  "bytes": 94742,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "15f4d17309c78f051d1e21c9b09ba045"
+ },
+ {
+  "path": "tornado_n8.json",
+  "bytes": 113338,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c0b85eeb529b1fa3ff6418cce53800da"
+ },
+ {
+  "path": "tornado_report.py",
+  "bytes": 21654,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6ad8171c740282e6e5457a295badf91e"
+ },
+ {
+  "path": "tornado_triggers.json",
+  "bytes": 803,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7e1aea41c8f180155a9941877edc570a"
+ },
+ {
+  "path": "user_original.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "validate.py",
+  "bytes": 2324,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "fc39642fe8641064a4cf76a1081e45ca"
+ },
+ {
+  "path": "verify_dop.txt",
+  "bytes": 7121,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d76e53f4857732e0e40025a17b6cf65f"
+ },
+ {
+  "path": "verify_dop_results.json",
+  "bytes": 3677,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "aae69791265835407949286cc42dd4a4"
+ },
+ {
+  "path": "view_test.js",
+  "bytes": 12862,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1cf3bf54481622d56380de34a0f139e6"
+ },
+ {
+  "path": "webtest.rar",
+  "bytes": 4802878,
+  "ext": ".rar",
+  "mtime_epoch": 1793553004.018225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f210a8abda64fd50f1afa29e4397fead"
+ },
+ {
+  "path": "winrate.json",
+  "bytes": 10061,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.018225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "87938df60cf38025ea7bea50a19bb115"
+ },
+ {
+  "path": "witness_seeds.json",
+  "bytes": 1897,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.018225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "3c8296389e7606c6a9db27a5f4bff1f0"
+ },
+ {
+  "path": "workspace.tar",
+  "bytes": 4101125,
+  "ext": ".tar",
+  "mtime_epoch": 1793553004.027225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "290f1c0555a630764f255f0fcfe7713a"
+ },
+ {
+  "path": "workspace.tar.gz",
+  "bytes": 4101125,
+  "ext": ".gz",
+  "mtime_epoch": 1793553004.035225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "290f1c0555a630764f255f0fcfe7713a"
+ },
+ {
+  "path": "xpeek.py",
+  "bytes": 369,
+  "ext": ".py",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "50d9b2bfae365ea3f401560bf3393c93"
+ },
+ {
+  "path": "zadanie_sim.txt",
+  "bytes": 27976,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f091f56e2964a4ba49fec822f971212e"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx",
+  "bytes": 44027,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e18ee0728cea1ca9907ad9c0fac01319"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md",
+  "bytes": 23572,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "c46565e6a9428bb71beeb2868a8989eb"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md",
+  "bytes": 23572,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "c46565e6a9428bb71beeb2868a8989eb"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx",
+  "bytes": 44027,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e18ee0728cea1ca9907ad9c0fac01319"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md",
+  "bytes": 23572,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "c46565e6a9428bb71beeb2868a8989eb"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx",
+  "bytes": 32593,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "0b391e547fc80b0fbc879c21dea88cf1"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx",
+  "bytes": 53460,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "fbb110f6d114156abceabcea4ef3eae7"
+ },
+ {
+  "path": "БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx",
+  "bytes": 53460,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "fbb110f6d114156abceabcea4ef3eae7"
+ },
+ {
+  "path": "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx",
+  "bytes": 53863,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "da2ca4e1739a36edd84267228c74005c"
+ },
+ {
+  "path": "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md",
+  "bytes": 44295,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.052225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e70a3ebc2fcc321aa5cbe23431c06b3c"
+ },
+ {
+  "path": "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx",
+  "bytes": 53863,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "da2ca4e1739a36edd84267228c74005c"
+ },
+ {
+  "path": "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md",
+  "bytes": 44295,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e70a3ebc2fcc321aa5cbe23431c06b3c"
+ },
+ {
+  "path": "ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md",
+  "bytes": 12849,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "efb5a044b0546f17bb71b7f71604eae6"
+ },
+ {
+  "path": "ЖУРНАЛ_ЧИСТКИ_РЕД5.md",
+  "bytes": 12849,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "efb5a044b0546f17bb71b7f71604eae6"
+ },
+ {
+  "path": "ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx",
+  "bytes": 46074,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "4d8a59cb410e8ef0d5b3dc2bdc664492"
+ },
+ {
+  "path": "ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md",
+  "bytes": 28227,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d9ec7d9e858d0f24e59a3fae71829b66"
+ },
+ {
+  "path": "КОЛОДА_ОБМЕНА (1).md",
+  "bytes": 6360,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7037f808a0c815691ad93c48161cfb7d"
+ },
+ {
+  "path": "КОЛОДА_ОБМЕНА.md",
+  "bytes": 6360,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.053225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7037f808a0c815691ad93c48161cfb7d"
+ },
+ {
+  "path": "КОНТЕКСТ_БРИФ.md",
+  "bytes": 151318,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.054225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f23740ea2ffba84414484ffde8e49bfd"
+ },
+ {
+  "path": "ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md",
+  "bytes": 34271,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.054225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "af82b87c523f7b3e4e0edcc2f915b37a"
+ },
+ {
+  "path": "ПРАВИЛА_БЛИЦ_БОЙ_v2.md",
+  "bytes": 34271,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.055225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "af82b87c523f7b3e4e0edcc2f915b37a"
+ },
+ {
+  "path": "ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md",
+  "bytes": 51260,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.055225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5f917269d5844640f4a927d9debbccfd"
+ },
+ {
+  "path": "ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "bytes": 41788,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.055225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d9cc944857c587d35d604ec45cf5150c"
+ },
+ {
+  "path": "ПРАВИЛА_БЛИЦ_БОЙ_v3.md",
+  "bytes": 51260,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.055225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5f917269d5844640f4a927d9debbccfd"
+ },
+ {
+  "path": "ПРИМЕР_ИГРЫ_8_игроков (1).md",
+  "bytes": 81919,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.056225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "31e3f9f5e3e50811807441260fdc7c70"
+ },
+ {
+  "path": "ПРИМЕР_ИГРЫ_8_игроков (2).md",
+  "bytes": 81919,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.056225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "31e3f9f5e3e50811807441260fdc7c70"
+ },
+ {
+  "path": "ПРИМЕР_ИГРЫ_8_игроков.md",
+  "bytes": 81919,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.056225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "31e3f9f5e3e50811807441260fdc7c70"
+ },
+ {
+  "path": "ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md",
+  "bytes": 37300,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.056225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "97e2ea04723fec1bfdfee148c1b6288c"
+ },
+ {
+  "path": "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md",
+  "bytes": 11551,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d6df90b206c9dd817a3625f96379f187"
+ },
+ {
+  "path": "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md",
+  "bytes": 11551,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d6df90b206c9dd817a3625f96379f187"
+ },
+ {
+  "path": "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx",
+  "bytes": 41898,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f3e54f1a8b773040e505b481b2255a9d"
+ },
+ {
+  "path": "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md",
+  "bytes": 11551,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d6df90b206c9dd817a3625f96379f187"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_2_20 (1).md",
+  "bytes": 18728,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "aeca2a7109226dfb829a1e2347fa129a"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_2_20.md",
+  "bytes": 18728,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "aeca2a7109226dfb829a1e2347fa129a"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_8ПУНКТОВ (1).docx",
+  "bytes": 60254,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6e6f2d3dae252a1ef9e51674c40c5f4c"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_8ПУНКТОВ (1).md",
+  "bytes": 46843,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.057225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "ea87b37281036c5b4cb746d5f9636a53"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_8ПУНКТОВ.docx",
+  "bytes": 60254,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.058225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6e6f2d3dae252a1ef9e51674c40c5f4c"
+ },
+ {
+  "path": "СИМУЛЯЦИИ_8ПУНКТОВ.md",
+  "bytes": 46843,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.058225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "ea87b37281036c5b4cb746d5f9636a53"
+ },
+ {
+  "path": "СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx",
+  "bytes": 41993,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.058225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "dedd259f7cfae5e2f950c53e66e27a65"
+ },
+ {
+  "path": "СТАРТ_ЧАТА_С_CODER.md",
+  "bytes": 10414,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.058225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7185db70be259f0c8a2d7c40e467b8c1"
+ },
+ {
+  "path": "карты_v5_по_категориям.md",
+  "bytes": 199592,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.059225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f37d28b1e81af1a8779649fe0857bcb7"
+ },
+ {
+  "path": "карты_настолка_v4.xlsx",
+  "bytes": 541461,
+  "ext": ".xlsx",
+  "mtime_epoch": 1793553004.062225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d7a40b2fa7f7b98dd2f1272d5f316f29"
+ },
+ {
+  "path": "карты_настолка_полный_набор.md",
+  "bytes": 129387,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.063225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "dc00398f05f0e0b1261d114b3f8a0f05"
+ },
+ {
+  "path": "blitz1.1/README.md",
+  "bytes": 6939,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1aa273d25ccb9aebc5af10b4985acd18"
+ },
+ {
+  "path": "blitz1.1/blitz.py",
+  "bytes": 3028,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.874225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "709a1ee9944bea5ba08bb3605cf3c64d"
+ },
+ {
+  "path": "blitz1.1/docs/game.js",
+  "bytes": 672832,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.876225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c105500cc6dd31e96b483af9a323d38a"
+ },
+ {
+  "path": "blitz1.1/docs/index.html",
+  "bytes": 716816,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.877225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3539e29fdabb6dfc6748b4dbcb4a8dc6"
+ },
+ {
+  "path": "blitz1.1/docs/observer.html",
+  "bytes": 43998,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "de6e843bb77dc3c4a22596844f6f3141"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_abilities.md",
+  "bytes": 1568,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "76652c27c4ff0c0252bc97678fb0d0dc"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_body.md",
+  "bytes": 1026,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "30c5b45bc484c922ea1fd758fd510922"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_details.md",
+  "bytes": 1812,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d89234abd955541dea8a12e024e52d2b"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_exchange.md",
+  "bytes": 1536,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1dabe981da5ce26cfc894772376befaf"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_history.md",
+  "bytes": 1326,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "bc8d27add6adb76dc99943156bf77e93"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_inventory.md",
+  "bytes": 1102,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "30fcb7891aeb73fa097c386344c7d21a"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_knowledge.md",
+  "bytes": 1420,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "33233dd34c5310758ff1e719b86b4bf0"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_mind.md",
+  "bytes": 1141,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "26ea29115b9480abfcde4df6716be83a"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_professions.md",
+  "bytes": 4775,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4272e32b1b408f41f225e7bde903e253"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_shadows.md",
+  "bytes": 2165,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8828e7d4a238ee1858d6a0ae622ece49"
+ },
+ {
+  "path": "blitz1.1/docs/cards/cards_spec.md",
+  "bytes": 3928,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.875225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c3e036fef263e1bd76d8b03d38babd35"
+ },
+ {
+  "path": "blitz1.1/docs/notes/ANSWERS.md",
+  "bytes": 2155,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.877225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "5a4ea70a1f1e0264362848e0fabf9621"
+ },
+ {
+  "path": "blitz1.1/docs/notes/BB_SIMS.md",
+  "bytes": 25602,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.877225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0dba2dc91c4c3b439d5a657d8903f240"
+ },
+ {
+  "path": "blitz1.1/docs/notes/DECISIONS_IDEAS.md",
+  "bytes": 35909,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "167a8a9aa26caaaada109656bbacb2f4"
+ },
+ {
+  "path": "blitz1.1/docs/notes/DEFAULTS.md",
+  "bytes": 33861,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8d67002c1cf0383fbb6555d298ed6596"
+ },
+ {
+  "path": "blitz1.1/docs/notes/FULL_REPORT.md",
+  "bytes": 40457,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e198fca48491245f8a5434f77aa3e11d"
+ },
+ {
+  "path": "blitz1.1/docs/notes/GRUDGE.md",
+  "bytes": 11133,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "38a61a450dc86676ba7df9373ef37f5f"
+ },
+ {
+  "path": "blitz1.1/docs/notes/GUIDE_LEADER.md",
+  "bytes": 11244,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "fbad540dd4cb8987434fd0398a9637f6"
+ },
+ {
+  "path": "blitz1.1/docs/notes/HANDLIMIT.md",
+  "bytes": 10035,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7e097a36507e42b38172227e71e297e0"
+ },
+ {
+  "path": "blitz1.1/docs/notes/HOWTO_RUN.md",
+  "bytes": 3680,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "56ec76da62e4c364e9e9f6a210f5c076"
+ },
+ {
+  "path": "blitz1.1/docs/notes/MENU_33_IDEAS.md",
+  "bytes": 10052,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "259788b5dba0d7c2d6d9afc40630e1a4"
+ },
+ {
+  "path": "blitz1.1/docs/notes/PENDULUM_N16.md",
+  "bytes": 10385,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ef85b9d88f5b4b56ccb472d4b743d98c"
+ },
+ {
+  "path": "blitz1.1/docs/notes/QUESTIONS.md",
+  "bytes": 2086,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8c5e71d3e9be0364669b9dc071e1678a"
+ },
+ {
+  "path": "blitz1.1/docs/notes/REPUTATION.md",
+  "bytes": 4846,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.878225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "efa63260ebe174c621670ba9d636b863"
+ },
+ {
+  "path": "blitz1.1/docs/notes/RESERVE.md",
+  "bytes": 22998,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "99d090b12b190a1d40886e238ca59d17"
+ },
+ {
+  "path": "blitz1.1/docs/notes/TILT.md",
+  "bytes": 7002,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c5e2cbd3c7464cc1934b9e54a2d8e63a"
+ },
+ {
+  "path": "blitz1.1/docs/notes/TORNADO.md",
+  "bytes": 32266,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e3505b3be3b1d8348b05d94a2ec9cf6d"
+ },
+ {
+  "path": "blitz1.1/docs/notes/VERDICT_tornado.md",
+  "bytes": 7259,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8542655a9954672dde0920fcd045a240"
+ },
+ {
+  "path": "blitz1.1/docs/notes/VIEWER.md",
+  "bytes": 11505,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "007bb999b34512c40c4550cb5ea211e5"
+ },
+ {
+  "path": "blitz1.1/docs/notes/WINRATE.md",
+  "bytes": 6633,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c9028cb769d31a90f9bd32e30c3c9033"
+ },
+ {
+  "path": "blitz1.1/docs/notes/report_generators_digest.md",
+  "bytes": 4070,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e29b1644850d82fa8362daa5c41432d6"
+ },
+ {
+  "path": "blitz1.1/docs/notes/sim8_digest.md",
+  "bytes": 9066,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "a08779609faab59c0711444658bbf3aa"
+ },
+ {
+  "path": "blitz1.1/docs/notes/sim_n_digest.md",
+  "bytes": 2995,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f3665ba1d017344f02c7b499f4f985af"
+ },
+ {
+  "path": "blitz1.1/docs/notes/src_test_digest.md",
+  "bytes": 5071,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2fa835bec2d5f81b0cc84386798b7480"
+ },
+ {
+  "path": "blitz1.1/docs/notes/sweeps_digest.md",
+  "bytes": 5496,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.879225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f857961e044298a30998775192cbe65c"
+ },
+ {
+  "path": "blitz1.1/docs/preview/game.js",
+  "bytes": 672832,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.880225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c105500cc6dd31e96b483af9a323d38a"
+ },
+ {
+  "path": "blitz1.1/docs/preview/game.json",
+  "bytes": 447765,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b78a42e3468523b44897ed172639630a"
+ },
+ {
+  "path": "blitz1.1/docs/preview/index.html",
+  "bytes": 716816,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3539e29fdabb6dfc6748b4dbcb4a8dc6"
+ },
+ {
+  "path": "blitz1.1/docs/preview/observer.html",
+  "bytes": 43998,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "de6e843bb77dc3c4a22596844f6f3141"
+ },
+ {
+  "path": "blitz1.1/docs/reports/REPORT_game_168804_N12_hrono.md",
+  "bytes": 18787,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ede52374dc504a9f0273e2c059ce28e8"
+ },
+ {
+  "path": "blitz1.1/docs/reports/REPORT_game_777_N8_plane.md",
+  "bytes": 17954,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dd79330b448876fd8d768804e2b8febc"
+ },
+ {
+  "path": "blitz1.1/docs/reports/REPORT_game_7_N12_hrono.md",
+  "bytes": 20880,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.881225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "270d4066a8a31d97af3b9f8c046cdf56"
+ },
+ {
+  "path": "blitz1.1/docs/rules/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "bytes": 43127,
+  "ext": ".docx",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1f2241ce483fc519c21e4d6ca7ac6441"
+ },
+ {
+  "path": "blitz1.1/docs/rules/D6_CARD.md",
+  "bytes": 4829,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "174dbf31f55e75d73849ae91b408e632"
+ },
+ {
+  "path": "blitz1.1/docs/rules/SPEC_cardlife.md",
+  "bytes": 4657,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2a3300ab6846ae54c3fd8003c447b8ef"
+ },
+ {
+  "path": "blitz1.1/docs/rules/pamyatka.txt",
+  "bytes": 10643,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b3c650f7b29f5f289334eb5bed79b199"
+ },
+ {
+  "path": "blitz1.1/docs/rules/rules_print_v3.txt",
+  "bytes": 38641,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "99473f2335357d7fc125d62181816170"
+ },
+ {
+  "path": "blitz1.1/docs/rules/rules_short.txt",
+  "bytes": 23400,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7fcfc0b5ee9234e4a269b808e001e2dc"
+ },
+ {
+  "path": "blitz1.1/docs/rules/rules_v3.txt",
+  "bytes": 36281,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "94c1ae31ed849157ff43920046efff22"
+ },
+ {
+  "path": "blitz1.1/docs/rules/situations.md",
+  "bytes": 3846,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0c833fb5d215fae7352ca21a61e60cdf"
+ },
+ {
+  "path": "blitz1.1/docs/rules/zadanie_sim.txt",
+  "bytes": 27976,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.882225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f091f56e2964a4ba49fec822f971212e"
+ },
+ {
+  "path": "blitz1.1/docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx",
+  "bytes": 32593,
+  "ext": ".docx",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0b391e547fc80b0fbc879c21dea88cf1"
+ },
+ {
+  "path": "blitz1.1/docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "bytes": 41788,
+  "ext": ".docx",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d9cc944857c587d35d604ec45cf5150c"
+ },
+ {
+  "path": "blitz1.1/src/bb.py",
+  "bytes": 7585,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ef3ebd46fdefa1d375f76287aaab01ac"
+ },
+ {
+  "path": "blitz1.1/src/game_sim.py",
+  "bytes": 71092,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.884225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "275adc642fb00d7289ca9be805a869d7"
+ },
+ {
+  "path": "blitz1.1/src/make_web.py",
+  "bytes": 4646,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.884225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "5478a8146e368e5d31d997e1b628f539"
+ },
+ {
+  "path": "blitz1.1/src/observer_template.html",
+  "bytes": 43998,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.884225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "de6e843bb77dc3c4a22596844f6f3141"
+ },
+ {
+  "path": "blitz1.1/src/template_index.html",
+  "bytes": 9078,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.884225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1b456bd8183b6917c5153def9d945059"
+ },
+ {
+  "path": "blitz1.1/src/test_game.js",
+  "bytes": 2636,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.884225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e1f6e1aa6fee7e915280f22b77281b7d"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_abilities.md",
+  "bytes": 1568,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "76652c27c4ff0c0252bc97678fb0d0dc"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_body.md",
+  "bytes": 1026,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "30c5b45bc484c922ea1fd758fd510922"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_details.md",
+  "bytes": 1812,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d89234abd955541dea8a12e024e52d2b"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_exchange.md",
+  "bytes": 1536,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1dabe981da5ce26cfc894772376befaf"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_history.md",
+  "bytes": 1326,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "bc8d27add6adb76dc99943156bf77e93"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_inventory.md",
+  "bytes": 1102,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "30fcb7891aeb73fa097c386344c7d21a"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_knowledge.md",
+  "bytes": 1420,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "33233dd34c5310758ff1e719b86b4bf0"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_mind.md",
+  "bytes": 1141,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "26ea29115b9480abfcde4df6716be83a"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_professions.md",
+  "bytes": 4775,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4272e32b1b408f41f225e7bde903e253"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_shadows.md",
+  "bytes": 2165,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8828e7d4a238ee1858d6a0ae622ece49"
+ },
+ {
+  "path": "blitz1.1/src/canon/cards_spec.md",
+  "bytes": 3928,
+  "ext": ".md",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c3e036fef263e1bd76d8b03d38babd35"
+ },
+ {
+  "path": "blitz1.1/src/canon/decks.json",
+  "bytes": 14371,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.883225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6f8542a72407d0c7b934c9b96aa45711"
+ },
+ {
+  "path": "blitz1.1/src/web/index.html",
+  "bytes": 456789,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3272db71640a7474119ecf8cf160fbff"
+ },
+ {
+  "path": "blitz1.1/tests/run_tests.sh",
+  "bytes": 2682,
+  "ext": ".sh",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f1cfd313a757c7d75d3cb5c73359a80e"
+ },
+ {
+  "path": "blitz1.1/tools/batch_stats.py",
+  "bytes": 1776,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ad02a5ed9640642b7ce7a92f8e1d7400"
+ },
+ {
+  "path": "blitz1.1/tools/patch_personality.py",
+  "bytes": 8816,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "84978ee82697863eb4fc1e196b320211"
+ },
+ {
+  "path": "blitz1.1/tools/patch_personality_b.py",
+  "bytes": 7254,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "cf22543fb8b62d1f7757d44b01e4a952"
+ },
+ {
+  "path": "blitz1.1/tools/patch_personality_c.py",
+  "bytes": 3546,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "eefea69f58ad0f5270f294da21d728bf"
+ },
+ {
+  "path": "blitz1.1/viewer/VIEW_bb_seed5.html",
+  "bytes": 29074,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1c5b31de5b0a0cf4e430efd3f3eb46b1"
+ },
+ {
+  "path": "blitz1.1/viewer/VIEW_bb_seed777.html",
+  "bytes": 49410,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1b6b8654f2267f4f8073acd18b6c2918"
+ },
+ {
+  "path": "blitz1.1/viewer/game.html",
+  "bytes": 55787,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.885225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ae62b4814c096b080fa38f31846e2044"
+ },
+ {
+  "path": "blitz1.1/web/game.js",
+  "bytes": 672832,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.886225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c105500cc6dd31e96b483af9a323d38a"
+ },
+ {
+  "path": "blitz1.1/web/index.html",
+  "bytes": 716816,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.887225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3539e29fdabb6dfc6748b4dbcb4a8dc6"
+ },
+ {
+  "path": "blitz1.1/web/observer.html",
+  "bytes": 43998,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "de6e843bb77dc3c4a22596844f6f3141"
+ },
+ {
+  "path": "data/duplicates.json",
+  "bytes": 21263,
+  "ext": ".json",
+  "mtime_epoch": 1793553796.597076,
+  "mtime": "2026-11-01T17:23:16Z",
+  "md5": "5e636a7827ba3f19de92cfb0b1cda489"
+ },
+ {
+  "path": "data/inventory_report.txt",
+  "bytes": 0,
+  "ext": ".txt",
+  "mtime_epoch": 1793553800.7151093,
+  "mtime": "2026-11-01T17:23:20Z",
+  "md5": "d41d8cd98f00b204e9800998ecf8427e"
+ },
+ {
+  "path": "data/manifest.csv",
+  "bytes": 47628,
+  "ext": ".csv",
+  "mtime_epoch": 1793553796.5950758,
+  "mtime": "2026-11-01T17:23:16Z",
+  "md5": "aad6b33d170097304fd841612c7d88c1"
+ },
+ {
+  "path": "data/manifest.json",
+  "bytes": 82680,
+  "ext": ".json",
+  "mtime_epoch": 1793553796.593076,
+  "mtime": "2026-11-01T17:23:16Z",
+  "md5": "1c9cc05a45bb8aa4f0e251c6ce5abc3e"
+ },
+ {
+  "path": "data_old/batch_100.json",
+  "bytes": 19217,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "404ea7888cfc3858778f5840a4edfa31"
+ },
+ {
+  "path": "data_old/batch_canon24.json",
+  "bytes": 19532,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ffe0fb2a7daaf3b6f698b038352d38c0"
+ },
+ {
+  "path": "data_old/grudge.json",
+  "bytes": 16092,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2eb7c1d0d63051b4073bf01ac381b673"
+ },
+ {
+  "path": "data_old/handlimit.json",
+  "bytes": 17234,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "97076588aa870900bb08f5a6b5dc55fc"
+ },
+ {
+  "path": "data_old/matrix_abl.json",
+  "bytes": 5604,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dead63e9e3d3fd7e4dc273a0aeeeefa9"
+ },
+ {
+  "path": "data_old/matrix_b7.json",
+  "bytes": 18225,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3a55870c718b27d71694e313d146d9ca"
+ },
+ {
+  "path": "data_old/matrix_b8.json",
+  "bytes": 15415,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "80d37f07f764663a439feb383bfe3a4e"
+ },
+ {
+  "path": "data_old/matrix_results.json",
+  "bytes": 5833,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3c6ab3f266c7ba786cffadb08b7c9227"
+ },
+ {
+  "path": "data_old/matrix_revesc.json",
+  "bytes": 3077,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "84d937c9cea496db07a3636e61230558"
+ },
+ {
+  "path": "data_old/matrix_sits_ro.json",
+  "bytes": 1829,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e6e8e94aed761ea8f83152a7e91e0f5b"
+ },
+ {
+  "path": "data_old/nsweep_current.json",
+  "bytes": 284,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3bde9733905fe472fb66cb24b4febc2d"
+ },
+ {
+  "path": "data_old/pendulum.json",
+  "bytes": 16565,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.888225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1587a2e065c7dd4eb5328e6d5c3ea3c3"
+ },
+ {
+  "path": "data_old/plane100_b5.json",
+  "bytes": 950,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.889225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d5ecaca35bfe2e801ebc5997e9d4a7ae"
+ },
+ {
+  "path": "data_old/reputation.json",
+  "bytes": 1791,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.889225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "829253bb551cbe53571cb94472505022"
+ },
+ {
+  "path": "data_old/reserve.json",
+  "bytes": 31040,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.889225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2968422551c5899fbd547cd29c29b64b"
+ },
+ {
+  "path": "data_old/tilt.json",
+  "bytes": 5894,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.889225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7c43f215444b06500f84a82ddfaf6be5"
+ },
+ {
+  "path": "data_old/tornado_n12.json",
+  "bytes": 94742,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.889225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "15f4d17309c78f051d1e21c9b09ba045"
+ },
+ {
+  "path": "data_old/tornado_n8.json",
+  "bytes": 113338,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.890225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c0b85eeb529b1fa3ff6418cce53800da"
+ },
+ {
+  "path": "data_old/tornado_triggers.json",
+  "bytes": 803,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.890225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7e1aea41c8f180155a9941877edc570a"
+ },
+ {
+  "path": "data_old/winrate.json",
+  "bytes": 10061,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.890225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "87938df60cf38025ea7bea50a19bb115"
+ },
+ {
+  "path": "data_old/witness_seeds.json",
+  "bytes": 1897,
+  "ext": ".json",
+  "mtime_epoch": 1793553003.890225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3c8296389e7606c6a9db27a5f4bff1f0"
+ },
+ {
+  "path": "data_old/карты_настолка_v4.xlsx",
+  "bytes": 541461,
+  "ext": ".xlsx",
+  "mtime_epoch": 1793553003.892225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d7a40b2fa7f7b98dd2f1272d5f316f29"
+ },
+ {
+  "path": "docs_old/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx",
+  "bytes": 53460,
+  "ext": ".docx",
+  "mtime_epoch": 1793553003.893225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "fbb110f6d114156abceabcea4ef3eae7"
+ },
+ {
+  "path": "dumps/SP-131_compressed.pdf",
+  "bytes": 11830941,
+  "ext": ".pdf",
+  "mtime_epoch": 1793553003.932225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "04075b53c903f0aa0a416635197396e9"
+ },
+ {
+  "path": "dumps/Test-BB-revert-4-game-file-analysis-b3311.zip",
+  "bytes": 13645435,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.966225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "964522c726a2a32590ed418094341ea4"
+ },
+ {
+  "path": "dumps/github_workflows_jekyll-docker.yml",
+  "bytes": 476,
+  "ext": ".yml",
+  "mtime_epoch": 1793553003.966225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "0c0f5808f5614061782310a2598c2263"
+ },
+ {
+  "path": "experiments/log_showcase.txt",
+  "bytes": 8288,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.966225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "85a91cb62ea7b2f20a28810897387686"
+ },
+ {
+  "path": "experiments/sim_8punk.txt",
+  "bytes": 46608,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.966225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "806265c1f9b6fe2c2d4f8bb840c7f921"
+ },
+ {
+  "path": "experiments/sim_dop_2_20.txt",
+  "bytes": 43924,
+  "ext": ".txt",
+  "mtime_epoch": 1793553003.967225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "efef150ea96b9da361dae62956fe5832"
+ },
+ {
+  "path": "old_engine/bb_full.py",
+  "bytes": 24345,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "314f892c63ab608f10a5536efe9bef3e"
+ },
+ {
+  "path": "old_engine/patch_b11.py",
+  "bytes": 4500,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8732e0613b055e627be841a67e6a618f"
+ },
+ {
+  "path": "old_engine/patch_b13_snap.py",
+  "bytes": 4778,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "a023353bfc2b55ae0dbfdd7bae3b06b3"
+ },
+ {
+  "path": "old_engine/patch_b14_blindguard.py",
+  "bytes": 4491,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d5af968b94c7c28df975dae8b913b1d0"
+ },
+ {
+  "path": "old_engine/patch_b14_events.py",
+  "bytes": 3032,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6acfe8cb001271f20e178f98dfc35849"
+ },
+ {
+  "path": "old_engine/patch_b15_handlimit.py",
+  "bytes": 11590,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1b11dc8846cfb551ea1dae8739c6f766"
+ },
+ {
+  "path": "old_engine/patch_b15b_handfix.py",
+  "bytes": 3209,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1537e08d6d433173083b90852ac16e3c"
+ },
+ {
+  "path": "old_engine/patch_b15c_maxhand.py",
+  "bytes": 1142,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dbb5591ecf8918924d46ef781f6b27e7"
+ },
+ {
+  "path": "old_engine/patch_b16_draft.py",
+  "bytes": 12028,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "59c93acd9725ca0a41c259f999e9e3bd"
+ },
+ {
+  "path": "old_engine/patch_b17_deadstop.py",
+  "bytes": 7085,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e4c971255af5fb90c715c175fc3076ed"
+ },
+ {
+  "path": "old_engine/patch_b18_trio.py",
+  "bytes": 5174,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1701cd2e876091b19c335626d008b45c"
+ },
+ {
+  "path": "old_engine/patch_b21_reputation.py",
+  "bytes": 11463,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1f3d7d1f7b7700e301cbc9e90b3941c1"
+ },
+ {
+  "path": "old_engine/patch_b21b_agentrevive.py",
+  "bytes": 6349,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "12c9161de5e95e2da02ce5910fab8f1c"
+ },
+ {
+  "path": "old_engine/patch_b22_tilt.py",
+  "bytes": 18151,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.970225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "50c01c0c634393ae2e3e8270ee5c3b4c"
+ },
+ {
+  "path": "old_engine/patch_b23_reserve.py",
+  "bytes": 24559,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.971225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "76a36344dd17b0a176eb76f5e01fc2af"
+ },
+ {
+  "path": "old_engine/patch_b23b_reservegate.py",
+  "bytes": 9083,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.971225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e604d0a5cb564e558c397a2d92ff8ed6"
+ },
+ {
+  "path": "old_engine/patch_b25_grudge.py",
+  "bytes": 23740,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.971225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e8bdd1fe7e37a86b849e92b96570c57d"
+ },
+ {
+  "path": "old_tests/test_effects.py",
+  "bytes": 16656,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.971225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "01da8c9246113f0361e1453883a53155"
+ },
+ {
+  "path": "other/Test-BB-site.zip",
+  "bytes": 435419,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.973225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6d98d9ed3269104ba8f7191bc037323d"
+ },
+ {
+  "path": "other/blitz_new_site.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.973225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e52844049a5bf269d06d974a40af3e09"
+ },
+ {
+  "path": "other/live_index.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.973225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "other/pages_index.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.973225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "other/site_new_index.html",
+  "bytes": 555943,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "931e957addd7ae1262a676b97aeda71d"
+ },
+ {
+  "path": "other/site_package.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e52844049a5bf269d06d974a40af3e09"
+ },
+ {
+  "path": "other/site_root_index.zip",
+  "bytes": 16510,
+  "ext": ".zip",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "dfe4a07105eb3088c2f89db862e320ca"
+ },
+ {
+  "path": "other/user_original.html",
+  "bytes": 78739,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.974225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f14af24bb480a64050eabf1e2040d2b2"
+ },
+ {
+  "path": "site_live/current.html",
+  "bytes": 9379,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.977225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c1f9838a645648cb3b25359f7890a288"
+ },
+ {
+  "path": "src_extra/dbg_human.js",
+  "bytes": 1430,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ee22d35c38b4251968a31f85f7fb9d08"
+ },
+ {
+  "path": "src_extra/test_human.js",
+  "bytes": 1747,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b4b665483122101481697d5aac20e836"
+ },
+ {
+  "path": "src_extra/view_test.js",
+  "bytes": 12862,
+  "ext": ".js",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1cf3bf54481622d56380de34a0f139e6"
+ },
+ {
+  "path": "src_github_workflows/workflows/pages.yml",
+  "bytes": 571,
+  "ext": ".yml",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "cb8ef203cd9291b780e3f9c9200fdc65"
+ },
+ {
+  "path": "src_github_workflows/workflows/python-package-conda.yml",
+  "bytes": 1061,
+  "ext": ".yml",
+  "mtime_epoch": 1793553003.979225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7a4e34e072fb1f2f492e8fbc37cfafbb"
+ },
+ {
+  "path": "tools/inventory.py",
+  "bytes": 8310,
+  "ext": ".py",
+  "mtime_epoch": 1793553799.0040953,
+  "mtime": "2026-11-01T17:23:19Z",
+  "md5": "8373be047585c9dd2e45312f6c070a4e"
+ },
+ {
+  "path": "tools_old/build_canon_decks.py",
+  "bytes": 3731,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c8ad166074709a1261c2fe45c35cb43a"
+ },
+ {
+  "path": "tools_old/build_pool1000.py",
+  "bytes": 9956,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4372077703f193318508e68ab5fe90b2"
+ },
+ {
+  "path": "tools_old/check.py",
+  "bytes": 1283,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "34f49d1d526d726213d79b9833fb1ccf"
+ },
+ {
+  "path": "tools_old/extract.py",
+  "bytes": 543,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9922f79d0b6336cea9663e6b21aadc78"
+ },
+ {
+  "path": "tools_old/integrity_audit.py",
+  "bytes": 8522,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6cf4b996d9da6dd789c7b7ebd45c9ba7"
+ },
+ {
+  "path": "tools_old/make_fingerprints.py",
+  "bytes": 5163,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.988225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "632c0923fffc7a1e6468bf0de8868fdf"
+ },
+ {
+  "path": "tools_old/make_game_html.py",
+  "bytes": 35623,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c013e3bd34ea7c4b6d9645dd17c5fd5d"
+ },
+ {
+  "path": "tools_old/matrix_b8.py",
+  "bytes": 2887,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4d1145d5a9820608e41fc14ebe32ee95"
+ },
+ {
+  "path": "tools_old/md2docx_min.py",
+  "bytes": 2814,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9301c123ac9ae79bfb72d402d0fde53a"
+ },
+ {
+  "path": "tools_old/near.py",
+  "bytes": 791,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8d406d5152d94a8f7fcdf2ddd965465e"
+ },
+ {
+  "path": "tools_old/run_d6_experiment.py",
+  "bytes": 5521,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2ce5b7ee299e5afd130f711b8e8ec4cb"
+ },
+ {
+  "path": "tools_old/run_draft.py",
+  "bytes": 10777,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "2d2a32bfca6de6abf961b63d3905dcf0"
+ },
+ {
+  "path": "tools_old/run_grudge.py",
+  "bytes": 11755,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d656ba00d8503b16bbf0c789275d5260"
+ },
+ {
+  "path": "tools_old/run_handlimit.py",
+  "bytes": 11479,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "831b514288bc72faae5125ae2293b665"
+ },
+ {
+  "path": "tools_old/run_matrix.py",
+  "bytes": 1997,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b751b48d23e4aeb678f0bce4c5a67fa3"
+ },
+ {
+  "path": "tools_old/run_matrix_b7.py",
+  "bytes": 3208,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "ce60f9cdbeefc341361618c105e0af67"
+ },
+ {
+  "path": "tools_old/run_pendulum.py",
+  "bytes": 14699,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e90b0a5bb5d73b4c85216bc2ba076658"
+ },
+ {
+  "path": "tools_old/run_report.py",
+  "bytes": 4003,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "9fd6eee6029f84e5868c23451bf7a8a8"
+ },
+ {
+  "path": "tools_old/run_reputation.py",
+  "bytes": 8639,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "3d5f3b6e8ce669d060c563897ac8c151"
+ },
+ {
+  "path": "tools_old/run_reserve.py",
+  "bytes": 15076,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8f991a8efc59ba86da8ad3808b20b8a4"
+ },
+ {
+  "path": "tools_old/run_tilt.py",
+  "bytes": 9326,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "91b1f0dab5eb6d3bb6281fe1310ace2b"
+ },
+ {
+  "path": "tools_old/run_tornado.py",
+  "bytes": 14347,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.989225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "972538bfc2f9b5a0587e7d22ddea2d76"
+ },
+ {
+  "path": "tools_old/run_triggers.py",
+  "bytes": 5131,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "72b601f7ed0093f6a104cd9f276caf20"
+ },
+ {
+  "path": "tools_old/run_winrate.py",
+  "bytes": 2238,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "60691f1ba02260ec5abaa7128ee07c1d"
+ },
+ {
+  "path": "tools_old/tornado_report.py",
+  "bytes": 21654,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "6ad8171c740282e6e5457a295badf91e"
+ },
+ {
+  "path": "tools_old/validate.py",
+  "bytes": 2324,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "fc39642fe8641064a4cf76a1081e45ca"
+ },
+ {
+  "path": "tools_old/xpeek.py",
+  "bytes": 369,
+  "ext": ".py",
+  "mtime_epoch": 1793553003.990225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "50d9b2bfae365ea3f401560bf3393c93"
+ },
+ {
+  "path": "viewer_old/VIEW_game_2026_N16_base.html",
+  "bytes": 218262,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.991225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d2a770dfc33b848f34d9ee20ac3eb811"
+ },
+ {
+  "path": "viewer_old/VIEW_game_2_N8_grudge.html",
+  "bytes": 150046,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.992225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "1fd8f9f88f7cce44d2bd304226fa8fbd"
+ },
+ {
+  "path": "viewer_old/VIEW_game_2_N8_grudwindow.html",
+  "bytes": 154000,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.992225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "628972e9500315c39115e626b55e3363"
+ },
+ {
+  "path": "viewer_old/VIEW_game_2_N8_reserve.html",
+  "bytes": 131107,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.992225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "4ff7513d8c3629cdd031d8fa786186ce"
+ },
+ {
+  "path": "viewer_old/VIEW_game_2_N8_strictreserve.html",
+  "bytes": 114953,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.992225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "e7144e77597a92c617f7bff6ae0b7df6"
+ },
+ {
+  "path": "viewer_old/VIEW_game_4_N8_agentrevive.html",
+  "bytes": 109301,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.993225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "a28cafabc522fd1a79d9f9703e8eee96"
+ },
+ {
+  "path": "viewer_old/VIEW_game_4_N8_tilt.html",
+  "bytes": 135132,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.993225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "d12b997fda7bf994a8666c4ddc9e8ecc"
+ },
+ {
+  "path": "viewer_old/VIEW_game_55_N12_handlimit7.html",
+  "bytes": 204141,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.993225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "73b561a446317cda9e4fad555ac19862"
+ },
+ {
+  "path": "viewer_old/VIEW_game_58_N8_draft.html",
+  "bytes": 94096,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.994225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "df188be489ea66574f4f98114329180b"
+ },
+ {
+  "path": "viewer_old/VIEW_game_606_N8_traitor.html",
+  "bytes": 129607,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.994225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c73e43e5142e7cc3c14424d571db41b9"
+ },
+ {
+  "path": "viewer_old/VIEW_game_777_N8_plane.html",
+  "bytes": 120541,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.994225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "b8a009634e563ca1ec0fac057b807006"
+ },
+ {
+  "path": "viewer_old/VIEW_tornado.html",
+  "bytes": 74647,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "c0906fe83a368f5db5b8c95e346a41d3"
+ },
+ {
+  "path": "web_old/game101.html",
+  "bytes": 46511,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "f266c2341726db047e4d85f0b6822d66"
+ },
+ {
+  "path": "web_old/game42.html",
+  "bytes": 39941,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "8243aa23e8e05802b5a45f2695599abf"
+ },
+ {
+  "path": "web_old/game5.html",
+  "bytes": 29526,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "7b6c359897205c5d35ccd72d368a7fea"
+ },
+ {
+  "path": "web_old/game777.html",
+  "bytes": 48418,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "29dca0bf126d5be8f75095b346481c10"
+ },
+ {
+  "path": "web_old/start.html",
+  "bytes": 1731,
+  "ext": ".html",
+  "mtime_epoch": 1793553003.995225,
+  "mtime": "2026-11-01T17:10:03Z",
+  "md5": "69c5137c7535c68d7a88c09f40aafe2a"
+ },
+ {
+  "path": "workflows/deploy-pages.yml",
+  "bytes": 716,
+  "ext": ".yml",
+  "mtime_epoch": 1793553004.019225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "afc9c96999da4b27e2e381360185ab1d"
+ },
+ {
+  "path": "ws/README.md",
+  "bytes": 3135,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6933b8b65560b41ff1febac45f043c8b"
+ },
+ {
+  "path": "ws/00_brief/КОНТЕКСТ_БРИФ.md",
+  "bytes": 151318,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.036225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f23740ea2ffba84414484ffde8e49bfd"
+ },
+ {
+  "path": "ws/10_docs/колода/obmen_raw.txt",
+  "bytes": 1182,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.036225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "36cfa4263358b6907c518ee82a096339"
+ },
+ {
+  "path": "ws/10_docs/колода/prof_raw.txt",
+  "bytes": 14695,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.036225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "be775e5dadf2d04055f49c51cda8c76a"
+ },
+ {
+  "path": "ws/10_docs/колода/spec_raw.txt",
+  "bytes": 20544,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.036225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7b114b8f5691dabe3e020580a480f248"
+ },
+ {
+  "path": "ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md",
+  "bytes": 12849,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.037225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "efb5a044b0546f17bb71b7f71604eae6"
+ },
+ {
+  "path": "ws/10_docs/колода/КОЛОДА_ОБМЕНА.md",
+  "bytes": 6360,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.037225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7037f808a0c815691ad93c48161cfb7d"
+ },
+ {
+  "path": "ws/10_docs/колода/ПЕЧАТНЫЙ_НАБОР_КАРТ.md",
+  "bytes": 27413,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.037225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "dd1960a8d7611910df76eb20d624dab5"
+ },
+ {
+  "path": "ws/10_docs/колода/карты_настолка_v4.xlsx",
+  "bytes": 541461,
+  "ext": ".xlsx",
+  "mtime_epoch": 1793553004.040225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d7a40b2fa7f7b98dd2f1272d5f316f29"
+ },
+ {
+  "path": "ws/10_docs/правила/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx",
+  "bytes": 44027,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.040225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e18ee0728cea1ca9907ad9c0fac01319"
+ },
+ {
+  "path": "ws/10_docs/правила/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx",
+  "bytes": 29015,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.041225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5f1fcc2afa128bff97de9d8d879abbf3"
+ },
+ {
+  "path": "ws/10_docs/правила/ЗАМЕТКИ_РЕШЕНИЙ.md",
+  "bytes": 7820,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.041225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "30a4591de0777b6517130ec41450eb41"
+ },
+ {
+  "path": "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx",
+  "bytes": 43127,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.041225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "1f2241ce483fc519c21e4d6ca7ac6441"
+ },
+ {
+  "path": "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx",
+  "bytes": 82313,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.042225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "b12adb41dca425798cafd364643aa0e8"
+ },
+ {
+  "path": "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md",
+  "bytes": 121905,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.042225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "a1c6d8b4dfa218204b2ceed149322eb8"
+ },
+ {
+  "path": "ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.docx",
+  "bytes": 42720,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.043225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "86ea9128d31a48cf1dcfbbf950ab6a14"
+ },
+ {
+  "path": "ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.md",
+  "bytes": 16878,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.043225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "3d05511a59add6084466a9dc3ce00fac"
+ },
+ {
+  "path": "ws/10_docs/правила/архив/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД_ДО_ПЕЧАТИ.docx",
+  "bytes": 38741,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.043225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "e9eaf8efb8a1456213522d014fb57dec"
+ },
+ {
+  "path": "ws/10_docs/правила/архив/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД_ПЕЧАТЬ_2026-10-04.docx",
+  "bytes": 33875,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.043225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "c609173021a0973142b2ce28df5169b3"
+ },
+ {
+  "path": "ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ДО_ПЕЧАТИ.docx",
+  "bytes": 41788,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d9cc944857c587d35d604ec45cf5150c"
+ },
+ {
+  "path": "ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ПЕЧАТЬ_2026-10-04.docx",
+  "bytes": 41710,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "55eedeaa2d3d3ed75957aaf5cd201887"
+ },
+ {
+  "path": "ws/10_docs/симуляции/QWEN_MD_ПРАВИЛА_ПРОЕКТА.md",
+  "bytes": 32201,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "4546c3464d22db17c3aea94ef793a108"
+ },
+ {
+  "path": "ws/10_docs/симуляции/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx",
+  "bytes": 53460,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "fbb110f6d114156abceabcea4ef3eae7"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx",
+  "bytes": 53863,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "da2ca4e1739a36edd84267228c74005c"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.docx",
+  "bytes": 46074,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.044225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "4d8a59cb410e8ef0d5b3dc2bdc664492"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md",
+  "bytes": 28227,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d9ec7d9e858d0f24e59a3fae71829b66"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx",
+  "bytes": 41898,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f3e54f1a8b773040e505b481b2255a9d"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md",
+  "bytes": 11551,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d6df90b206c9dd817a3625f96379f187"
+ },
+ {
+  "path": "ws/10_docs/симуляции/СИМУЛЯЦИИ_8ПУНКТОВ.docx",
+  "bytes": 60254,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6e6f2d3dae252a1ef9e51674c40c5f4c"
+ },
+ {
+  "path": "ws/10_docs/симуляции/СТАРТ_ЧАТА_С_CODER.md",
+  "bytes": 10414,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "7185db70be259f0c8a2d7c40e467b8c1"
+ },
+ {
+  "path": "ws/10_docs/симуляции/ТРИ_СООБЩЕНИЯ_СТАРТ_CODER.md",
+  "bytes": 14884,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "1910123ab74b26a45be6dfc53c0620af"
+ },
+ {
+  "path": "ws/10_docs/ситуации_пробные/situations_raw.txt",
+  "bytes": 13838,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5f9918c8b4bd674540e372a6b6872ed9"
+ },
+ {
+  "path": "ws/10_docs/ситуации_пробные/КАТАКЛИЗМЫ_АНАРХПАК.md",
+  "bytes": 20541,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "20c01b9bfeb685d08bb4d4ae02a4a84d"
+ },
+ {
+  "path": "ws/10_docs/ситуации_пробные/ПЬЯНАЯ_ХРОНОЛОГИЯ_РЕД2.md",
+  "bytes": 2821,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5d7940df8627280002f3566465146176"
+ },
+ {
+  "path": "ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.docx",
+  "bytes": 39757,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "4914bf50851b03b80b981c5d42196934"
+ },
+ {
+  "path": "ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.md",
+  "bytes": 8291,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.045225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "75378d361452dec0d52b62160d7ff289"
+ },
+ {
+  "path": "ws/10_docs/справочники/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx",
+  "bytes": 41970,
+  "ext": ".docx",
+  "mtime_epoch": 1793553004.046225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "c79cd79c899701202ca3b74f109cbde5"
+ },
+ {
+  "path": "ws/10_docs/справочники/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.md",
+  "bytes": 12913,
+  "ext": ".md",
+  "mtime_epoch": 1793553004.046225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6b7b2c94f279f2d8d72fad6d67cdc519"
+ },
+ {
+  "path": "ws/20_data/deck_v4.json",
+  "bytes": 582038,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.047225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "aa55c2a92e4c059c88d38066cae77ec1"
+ },
+ {
+  "path": "ws/20_data/event_freq.json",
+  "bytes": 558,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.047225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "9d3eecc9025890c16492ff144d2dad24"
+ },
+ {
+  "path": "ws/20_data/harvest_off_duration.json",
+  "bytes": 3471,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.047225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "5f3984020e869a70a3094550bddbc902"
+ },
+ {
+  "path": "ws/20_data/report_numbers.json",
+  "bytes": 25160,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.048225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "0048454ff16609bdba04fd8b7eba341d"
+ },
+ {
+  "path": "ws/20_data/sweep_mods_results.json",
+  "bytes": 21201,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.048225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "6fd73e3249227ac8a19e6129b58d54bc"
+ },
+ {
+  "path": "ws/20_data/sweep_n_results.json",
+  "bytes": 10507,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.048225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "424026eb56f750f733bb579359ed568c"
+ },
+ {
+  "path": "ws/20_data/verify_dop_results.json",
+  "bytes": 3677,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.048225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "aae69791265835407949286cc42dd4a4"
+ },
+ {
+  "path": "ws/20_data/Анархический Пак.json",
+  "bytes": 222367,
+  "ext": ".json",
+  "mtime_epoch": 1793553004.048225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "dbf75d03e04048b83b6bfe8c1db4a136"
+ },
+ {
+  "path": "ws/30_tools/md2docx.py",
+  "bytes": 4692,
+  "ext": ".py",
+  "mtime_epoch": 1793553004.049225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "db025b5c07758705effd116538c94e59"
+ },
+ {
+  "path": "ws/30_tools/md2docx.txt",
+  "bytes": 4692,
+  "ext": ".txt",
+  "mtime_epoch": 1793553004.049225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "db025b5c07758705effd116538c94e59"
+ },
+ {
+  "path": "ws/99_inbox/1_image.png",
+  "bytes": 71614,
+  "ext": ".png",
+  "mtime_epoch": 1793553004.049225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "392c276d6c63cd12ea36d304463ceedb"
+ },
+ {
+  "path": "ws/99_inbox/2_image.png",
+  "bytes": 92628,
+  "ext": ".png",
+  "mtime_epoch": 1793553004.050225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f2210635adfdf362a646ef29c0e3f450"
+ },
+ {
+  "path": "ws/99_inbox/3_image.png",
+  "bytes": 46223,
+  "ext": ".png",
+  "mtime_epoch": 1793553004.050225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "ce68b1c7a36edea966e2c514a45793fd"
+ },
+ {
+  "path": "ws/99_inbox/4_image.png",
+  "bytes": 76892,
+  "ext": ".png",
+  "mtime_epoch": 1793553004.050225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "d51adda3cb2c729e366ce52edfddec79"
+ },
+ {
+  "path": "ws/99_inbox/image.png",
+  "bytes": 76067,
+  "ext": ".png",
+  "mtime_epoch": 1793553004.051225,
+  "mtime": "2026-11-01T17:10:04Z",
+  "md5": "f7a49e65877a7af85b4a8d0123cdde71"
+ }
+]

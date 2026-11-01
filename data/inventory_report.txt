@@ -1,0 +1,246 @@
+root=/workspace
+files_total=409  dup_groups=120  dup_drop=145
+code           56
+deck_data      3
+sim_results    21
+docs_rules     35
+docs_reports   11
+logs           2
+web_junk       39
+zip_archives   12
+duplicates     145
+unknown        85
+
+== UNKNOWN (85) ==
+README.md	14	no rule matched (ext .md)
+blitz1.1/README.md	6939	no rule matched (ext .md)
+blitz1.1/docs/notes/ANSWERS.md	2155	no rule matched (ext .md)
+blitz1.1/docs/notes/BB_SIMS.md	25602	no rule matched (ext .md)
+blitz1.1/docs/notes/DECISIONS_IDEAS.md	35909	no rule matched (ext .md)
+blitz1.1/docs/notes/DEFAULTS.md	33861	no rule matched (ext .md)
+blitz1.1/docs/notes/FULL_REPORT.md	40457	no rule matched (ext .md)
+blitz1.1/docs/notes/GRUDGE.md	11133	no rule matched (ext .md)
+blitz1.1/docs/notes/GUIDE_LEADER.md	11244	no rule matched (ext .md)
+blitz1.1/docs/notes/HANDLIMIT.md	10035	no rule matched (ext .md)
+blitz1.1/docs/notes/HOWTO_RUN.md	3680	no rule matched (ext .md)
+blitz1.1/docs/notes/MENU_33_IDEAS.md	10052	no rule matched (ext .md)
+blitz1.1/docs/notes/QUESTIONS.md	2086	no rule matched (ext .md)
+blitz1.1/docs/notes/REPUTATION.md	4846	no rule matched (ext .md)
+blitz1.1/docs/preview/game.json	447765	big json, needs inspection
+blitz1.1/docs/rules/D6_CARD.md	4829	no rule matched (ext .md)
+blitz1.1/docs/rules/pamyatka.txt	10643	no rule matched (ext .txt)
+blitz1.1/src/canon/cards_abilities.md	1568	no rule matched (ext .md)
+blitz1.1/src/canon/cards_body.md	1026	no rule matched (ext .md)
+blitz1.1/src/canon/cards_details.md	1812	no rule matched (ext .md)
+blitz1.1/src/canon/cards_exchange.md	1536	no rule matched (ext .md)
+blitz1.1/src/canon/cards_history.md	1326	no rule matched (ext .md)
+blitz1.1/src/canon/cards_inventory.md	1102	no rule matched (ext .md)
+blitz1.1/src/canon/cards_knowledge.md	1420	no rule matched (ext .md)
+blitz1.1/src/canon/cards_mind.md	1141	no rule matched (ext .md)
+blitz1.1/src/canon/cards_professions.md	4775	no rule matched (ext .md)
+blitz1.1/src/canon/cards_shadows.md	2165	no rule matched (ext .md)
+blitz1.1/src/canon/decks.json	14371	no rule matched (ext .json)
+blitz1.1/tests/run_tests.sh	2682	no rule matched (ext .sh)
+data/duplicates.json	21263	no rule matched (ext .json)
+data/inventory_report.txt	0	small txt, needs reading
+data/manifest.csv	47628	no rule matched (ext .csv)
+data/manifest.json	82680	no rule matched (ext .json)
+data_old/batch_100.json	19217	no rule matched (ext .json)
+data_old/batch_canon24.json	19532	no rule matched (ext .json)
+data_old/grudge.json	16092	no rule matched (ext .json)
+data_old/handlimit.json	17234	no rule matched (ext .json)
+data_old/matrix_abl.json	5604	no rule matched (ext .json)
+data_old/matrix_b7.json	18225	no rule matched (ext .json)
+data_old/matrix_b8.json	15415	no rule matched (ext .json)
+data_old/matrix_revesc.json	3077	no rule matched (ext .json)
+data_old/matrix_sits_ro.json	1829	no rule matched (ext .json)
+dumps/SP-131_compressed.pdf	11830941	pdf needs manual view
+dumps/github_workflows_jekyll-docker.yml	476	no rule matched (ext .yml)
+rules_print_v3.txt	38641	no rule matched (ext .txt)
+rules_short.txt	23400	no rule matched (ext .txt)
+rules_v3.txt	36281	no rule matched (ext .txt)
+run_tests.sh	16869	no rule matched (ext .sh)
+ryukzak_raw.txt	3823	small txt, needs reading
+sim8_digest.md	9066	no rule matched (ext .md)
+sim_8punk.txt	46608	no rule matched (ext .txt)
+sim_dop_2_20.txt	43924	no rule matched (ext .txt)
+sim_n_digest.md	2995	no rule matched (ext .md)
+src_github_workflows/workflows/pages.yml	571	no rule matched (ext .yml)
+src_github_workflows/workflows/python-package-conda.yml	1061	no rule matched (ext .yml)
+src_test_digest.md	5071	no rule matched (ext .md)
+sweeps_digest.md	5496	no rule matched (ext .md)
+telo_raw.txt	605	small txt, needs reading
+verify_dop.txt	7121	no rule matched (ext .txt)
+workflows/deploy-pages.yml	716	no rule matched (ext .yml)
+ws/10_docs/колода/obmen_raw.txt	1182	small txt, needs reading
+ws/10_docs/колода/prof_raw.txt	14695	no rule matched (ext .txt)
+ws/10_docs/колода/spec_raw.txt	20544	no rule matched (ext .txt)
+ws/10_docs/колода/ПЕЧАТНЫЙ_НАБОР_КАРТ.md	27413	no rule matched (ext .md)
+ws/10_docs/правила/ЗАМЕТКИ_РЕШЕНИЙ.md	7820	no rule matched (ext .md)
+ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.docx	42720	no rule matched (ext .docx)
+ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.md	16878	no rule matched (ext .md)
+ws/10_docs/симуляции/ТРИ_СООБЩЕНИЯ_СТАРТ_CODER.md	14884	no rule matched (ext .md)
+ws/10_docs/ситуации_пробные/situations_raw.txt	13838	no rule matched (ext .txt)
+ws/10_docs/ситуации_пробные/КАТАКЛИЗМЫ_АНАРХПАК.md	20541	no rule matched (ext .md)
+ws/10_docs/ситуации_пробные/ПЬЯНАЯ_ХРОНОЛОГИЯ_РЕД2.md	2821	no rule matched (ext .md)
+ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.docx	39757	no rule matched (ext .docx)
+ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.md	8291	no rule matched (ext .md)
+ws/20_data/deck_v4.json	582038	big json, needs inspection
+ws/20_data/Анархический Пак.json	222367	big json, needs inspection
+ws/99_inbox/1_image.png	71614	no rule matched (ext .png)
+ws/99_inbox/2_image.png	92628	no rule matched (ext .png)
+ws/99_inbox/3_image.png	46223	no rule matched (ext .png)
+ws/99_inbox/4_image.png	76892	no rule matched (ext .png)
+ws/99_inbox/image.png	76067	no rule matched (ext .png)
+ws/README.md	3135	no rule matched (ext .md)
+zadanie_sim.txt	27976	no rule matched (ext .txt)
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	53460	no rule matched (ext .docx)
+карты_v5_по_категориям.md	199592	no rule matched (ext .md)
+карты_настолка_полный_набор.md	129387	no rule matched (ext .md)
+
+== DUPLICATES drop-list (145) ==
+VIEWER.md	<- keep blitz1.1/docs/notes/VIEWER.md	11505B
+old_tests/test_effects.py	<- keep test_effects.py	16656B
+SP-131_compressed.pdf	<- keep dumps/SP-131_compressed.pdf	11830941B
+blitz1.1/docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx	<- keep БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx	32593B
+blitz1.1/docs/rules/situations.md	<- keep situations.md	3846B
+data_old/pendulum.json	<- keep pendulum.json	16565B
+data_old/tornado_n12.json	<- keep tornado_n12.json	94742B
+VIEW_bb_seed777.html	<- keep blitz1.1/viewer/VIEW_bb_seed777.html	49410B
+src_extra/view_test.js	<- keep view_test.js	12862B
+blitz1.1/docs/cards/cards_exchange.md	<- keep blitz1.1/src/canon/cards_exchange.md	1536B
+blitz1.1/docs/rules/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx	<- keep ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx	43127B
+VIEW_game_2_N8_grudge.html	<- keep viewer_old/VIEW_game_2_N8_grudge.html	150046B
+blitz1.1/docs/cards/cards_mind.md	<- keep blitz1.1/src/canon/cards_mind.md	1141B
+REPORT_game_7_N12_hrono.md	<- keep blitz1.1/docs/reports/REPORT_game_7_N12_hrono.md	20880B
+workspace.tar	<- keep workspace.tar.gz	4101125B
+data_old/reserve.json	<- keep reserve.json	31040B
+SPEC_cardlife.md	<- keep blitz1.1/docs/rules/SPEC_cardlife.md	4657B
+run_d6_experiment.py	<- keep tools_old/run_d6_experiment.py	5521B
+run_draft.py	<- keep tools_old/run_draft.py	10777B
+blitz1.1/docs/notes/src_test_digest.md	<- keep src_test_digest.md	5071B
+src_test_digest (1).md	<- keep src_test_digest.md	5071B
+blitz1.1/docs/cards/cards_body.md	<- keep blitz1.1/src/canon/cards_body.md	1026B
+blitz1.1/docs/cards/cards_inventory.md	<- keep blitz1.1/src/canon/cards_inventory.md	1102B
+ПРИМЕР_ИГРЫ_8_игроков (1).md	<- keep ПРИМЕР_ИГРЫ_8_игроков.md	81919B
+ПРИМЕР_ИГРЫ_8_игроков (2).md	<- keep ПРИМЕР_ИГРЫ_8_игроков.md	81919B
+blitz1.1/docs/cards/cards_knowledge.md	<- keep blitz1.1/src/canon/cards_knowledge.md	1420B
+blitz1.1/web/index.html	<- keep index.html	716816B
+blitz1.1/docs/preview/index.html	<- keep index.html	716816B
+blitz1.1/docs/index.html	<- keep index.html	716816B
+data_old/witness_seeds.json	<- keep witness_seeds.json	1897B
+run_reputation.py	<- keep tools_old/run_reputation.py	8639B
+sweep_n_results.json	<- keep ws/20_data/sweep_n_results.json	10507B
+blitz1.1/docs/cards/cards_professions.md	<- keep blitz1.1/src/canon/cards_professions.md	4775B
+QWEN_MD_ПРАВИЛА_ПРОЕКТА.md	<- keep ws/10_docs/симуляции/QWEN_MD_ПРАВИЛА_ПРОЕКТА.md	32201B
+ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx	<- keep ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.docx	46074B
+VIEW_game_2_N8_reserve.html	<- keep viewer_old/VIEW_game_2_N8_reserve.html	131107B
+tools_old/xpeek.py	<- keep xpeek.py	369B
+ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md	<- keep ПРАВИЛА_БЛИЦ_БОЙ_v3.md	51260B
+situations_raw.txt	<- keep ws/10_docs/ситуации_пробные/situations_raw.txt	13838B
+run_winrate.py	<- keep tools_old/run_winrate.py	2238B
+VIEW_game_2_N8_grudwindow.html	<- keep viewer_old/VIEW_game_2_N8_grudwindow.html	154000B
+tools_old/tornado_report.py	<- keep tornado_report.py	21654B
+Test-BB-site.zip	<- keep other/Test-BB-site.zip	435419B
+ws/10_docs/симуляции/СИМУЛЯЦИИ_8ПУНКТОВ.docx	<- keep СИМУЛЯЦИИ_8ПУНКТОВ.docx	60254B
+СИМУЛЯЦИИ_8ПУНКТОВ (1).docx	<- keep СИМУЛЯЦИИ_8ПУНКТОВ.docx	60254B
+sweep_mods_results.json	<- keep ws/20_data/sweep_mods_results.json	21201B
+ws/10_docs/колода/КОЛОДА_ОБМЕНА.md	<- keep КОЛОДА_ОБМЕНА.md	6360B
+КОЛОДА_ОБМЕНА (1).md	<- keep КОЛОДА_ОБМЕНА.md	6360B
+ws/10_docs/симуляции/СТАРТ_ЧАТА_С_CODER.md	<- keep СТАРТ_ЧАТА_С_CODER.md	10414B
+run_triggers.py	<- keep tools_old/run_triggers.py	5131B
+VIEW_game_55_N12_handlimit7.html	<- keep viewer_old/VIEW_game_55_N12_handlimit7.html	204141B
+blitz1.1/docs/cards/cards_abilities.md	<- keep blitz1.1/src/canon/cards_abilities.md	1568B
+spec_raw.txt	<- keep ws/10_docs/колода/spec_raw.txt	20544B
+data_old/tilt.json	<- keep tilt.json	5894B
+data_old/tornado_triggers.json	<- keep tornado_triggers.json	803B
+blitz1.1/docs/rules/rules_short.txt	<- keep rules_short.txt	23400B
+experiments/sim_8punk.txt	<- keep sim_8punk.txt	46608B
+data_old/reputation.json	<- keep reputation.json	1791B
+run_handlimit.py	<- keep tools_old/run_handlimit.py	11479B
+VERDICT_tornado.md	<- keep blitz1.1/docs/notes/VERDICT_tornado.md	7259B
+data_old/winrate.json	<- keep winrate.json	10061B
+blitz1.1/docs/cards/cards_shadows.md	<- keep blitz1.1/src/canon/cards_shadows.md	2165B
+QUESTIONS.md	<- keep blitz1.1/docs/notes/QUESTIONS.md	2086B
+run_reserve.py	<- keep tools_old/run_reserve.py	15076B
+run_tilt.py	<- keep tools_old/run_tilt.py	9326B
+other/site_new_index.html	<- keep site_new_index.html	555943B
+blitz1.1/docs/rules/rules_v3.txt	<- keep rules_v3.txt	36281B
+Test-BB-revert-4-game-file-analysis-b3311.zip	<- keep dumps/Test-BB-revert-4-game-file-analysis-b3311.zip	13645435B
+run_tornado.py	<- keep tools_old/run_tornado.py	14347B
+blitz1.1/docs/rules/rules_print_v3.txt	<- keep rules_print_v3.txt	38641B
+RESERVE.md	<- keep blitz1.1/docs/notes/RESERVE.md	22998B
+run_report.py	<- keep tools_old/run_report.py	4003B
+blitz1.1/docs/notes/sim8_digest.md	<- keep sim8_digest.md	9066B
+VIEW_game_4_N8_agentrevive.html	<- keep viewer_old/VIEW_game_4_N8_agentrevive.html	109301B
+verify_dop_results.json	<- keep ws/20_data/verify_dop_results.json	3677B
+СИМУЛЯЦИИ_2_20 (1).md	<- keep СИМУЛЯЦИИ_2_20.md	18728B
+ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md	<- keep ПРАВИЛА_БЛИЦ_БОЙ_v2.md	34271B
+src_extra/test_human.js	<- keep test_human.js	1747B
+run_matrix.py	<- keep tools_old/run_matrix.py	1997B
+VIEW_game_777_N8_plane.html	<- keep viewer_old/VIEW_game_777_N8_plane.html	120541B
+blitz1.1/docs/cards/cards_history.md	<- keep blitz1.1/src/canon/cards_history.md	1326B
+VIEW_tornado.html	<- keep viewer_old/VIEW_tornado.html	74647B
+data_old/tornado_n8.json	<- keep tornado_n8.json	113338B
+blitz1.1/docs/preview/game.js	<- keep blitz1.1/web/game.js	672832B
+blitz1.1/docs/game.js	<- keep blitz1.1/web/game.js	672832B
+blitz1.1/docs/cards/cards_spec.md	<- keep blitz1.1/src/canon/cards_spec.md	3928B
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md	<- keep БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md	23572B
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md	<- keep БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md	23572B
+TILT.md	<- keep blitz1.1/docs/notes/TILT.md	7002B
+VIEW_game_606_N8_traitor.html	<- keep viewer_old/VIEW_game_606_N8_traitor.html	129607B
+WINRATE.md	<- keep blitz1.1/docs/notes/WINRATE.md	6633B
+run_matrix_b7.py	<- keep tools_old/run_matrix_b7.py	3208B
+VIEW_game_4_N8_tilt.html	<- keep viewer_old/VIEW_game_4_N8_tilt.html	135132B
+VIEW_game_2026_N16_base.html	<- keep viewer_old/VIEW_game_2026_N16_base.html	218262B
+data_old/plane100_b5.json	<- keep plane100_b5.json	950B
+run_grudge.py	<- keep tools_old/run_grudge.py	11755B
+ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md	<- keep ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md	11551B
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md	<- keep ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md	11551B
+ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md	<- keep ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md	11551B
+ws/10_docs/колода/карты_настолка_v4.xlsx	<- keep карты_настолка_v4.xlsx	541461B
+data_old/карты_настолка_v4.xlsx	<- keep карты_настолка_v4.xlsx	541461B
+blitz1.1/docs/cards/cards_details.md	<- keep blitz1.1/src/canon/cards_details.md	1812B
+ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ДО_ПЕЧАТИ.docx	<- keep ПРАВИЛА_БЛИЦ_БОЙ_v3.docx	41788B
+blitz1.1/docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx	<- keep ПРАВИЛА_БЛИЦ_БОЙ_v3.docx	41788B
+ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md	<- keep ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md	28227B
+ws/10_docs/симуляции/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx	<- keep ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx	53863B
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx	<- keep ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx	53863B
+ws/30_tools/md2docx.txt	<- keep ws/30_tools/md2docx.py	4692B
+REPORT_game_777_N8_plane.md	<- keep blitz1.1/docs/reports/REPORT_game_777_N8_plane.md	17954B
+blitz1.1/src/observer_template.html	<- keep blitz1.1/web/observer.html	43998B
+blitz1.1/docs/preview/observer.html	<- keep blitz1.1/web/observer.html	43998B
+blitz1.1/docs/observer.html	<- keep blitz1.1/web/observer.html	43998B
+VIEW_game_58_N8_draft.html	<- keep viewer_old/VIEW_game_58_N8_draft.html	94096B
+other/site_root_index.zip	<- keep site_root_index.zip	16510B
+ws/10_docs/правила/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx	<- keep БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx	44027B
+БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx	<- keep БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx	44027B
+blitz1.1/docs/notes/report_generators_digest.md	<- keep report_generators_digest.md	4070B
+TORNADO.md	<- keep blitz1.1/docs/notes/TORNADO.md	32266B
+other/site_package.zip	<- keep site_package.zip	16510B
+other/blitz_new_site.zip	<- keep site_package.zip	16510B
+blitz_new_site.zip	<- keep site_package.zip	16510B
+ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md	<- keep ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md	44295B
+VIEW_game_2_N8_strictreserve.html	<- keep viewer_old/VIEW_game_2_N8_strictreserve.html	114953B
+run_pendulum.py	<- keep tools_old/run_pendulum.py	14699B
+СИМУЛЯЦИИ_8ПУНКТОВ (1).md	<- keep СИМУЛЯЦИИ_8ПУНКТОВ.md	46843B
+REPORT_game_168804_N12_hrono.md	<- keep blitz1.1/docs/reports/REPORT_game_168804_N12_hrono.md	18787B
+PENDULUM_N16.md	<- keep blitz1.1/docs/notes/PENDULUM_N16.md	10385B
+REPUTATION.md	<- keep blitz1.1/docs/notes/REPUTATION.md	4846B
+ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md	<- keep ЖУРНАЛ_ЧИСТКИ_РЕД5.md	12849B
+ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md	<- keep ЖУРНАЛ_ЧИСТКИ_РЕД5.md	12849B
+experiments/sim_dop_2_20.txt	<- keep sim_dop_2_20.txt	43924B
+blitz1.1/docs/rules/zadanie_sim.txt	<- keep zadanie_sim.txt	27976B
+pages_index.html	<- keep user_original.html	78739B
+other/user_original.html	<- keep user_original.html	78739B
+other/live_index.html	<- keep user_original.html	78739B
+other/pages_index.html	<- keep user_original.html	78739B
+live_index.html	<- keep user_original.html	78739B
+ws/00_brief/КОНТЕКСТ_БРИФ.md	<- keep КОНТЕКСТ_БРИФ.md	151318B
+blitz1.1/docs/notes/sim_n_digest.md	<- keep sim_n_digest.md	2995B
+ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx	<- keep ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx	41898B
+blitz1.1/docs/notes/sweeps_digest.md	<- keep sweeps_digest.md	5496B
+ws/10_docs/симуляции/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	<- keep БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	53460B
+docs_old/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	<- keep БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	53460B
+БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx	<- keep БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx	53460B
+tools_old/validate.py	<- keep validate.py	2324B

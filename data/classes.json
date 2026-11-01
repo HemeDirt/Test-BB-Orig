@@ -1,0 +1,2456 @@
+{
+ "10_teny.txt": {
+  "class": "deck_data",
+  "reason": "numbered deck category file",
+  "bytes": 23040,
+  "ext": ".txt"
+ },
+ "117352720311 (1).htm": {
+  "class": "web_junk",
+  "reason": "ext .htm",
+  "bytes": 167579,
+  "ext": ".htm"
+ },
+ "117352720311.htm": {
+  "class": "web_junk",
+  "reason": "ext .htm",
+  "bytes": 167579,
+  "ext": ".htm"
+ },
+ "11_obmen.txt": {
+  "class": "deck_data",
+  "reason": "numbered deck category file",
+  "bytes": 3875,
+  "ext": ".txt"
+ },
+ "Crome bin and asa.zip": {
+  "class": "zip_archives",
+  "reason": "ext .zip",
+  "bytes": 4808178,
+  "ext": ".zip"
+ },
+ "PENDULUM_N16.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 10385,
+  "ext": ".md"
+ },
+ "QUESTIONS.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2086,
+  "ext": ".md"
+ },
+ "QWEN_MD_ПРАВИЛА_ПРОЕКТА.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 32201,
+  "ext": ".md"
+ },
+ "README.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 14,
+  "ext": ".md"
+ },
+ "REPORT_game_168804_N12_hrono.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 18787,
+  "ext": ".md"
+ },
+ "REPORT_game_777_N8_plane.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 17954,
+  "ext": ".md"
+ },
+ "REPORT_game_7_N12_hrono.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 20880,
+  "ext": ".md"
+ },
+ "REPUTATION.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4846,
+  "ext": ".md"
+ },
+ "RESERVE.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 22998,
+  "ext": ".md"
+ },
+ "SP-131_compressed.pdf": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11830941,
+  "ext": ".pdf"
+ },
+ "SPEC_cardlife.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4657,
+  "ext": ".md"
+ },
+ "TILT.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 7002,
+  "ext": ".md"
+ },
+ "TORNADO.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 32266,
+  "ext": ".md"
+ },
+ "Test-BB-revert-4-game-file-analysis-b3311.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 13645435,
+  "ext": ".zip"
+ },
+ "Test-BB-site.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 435419,
+  "ext": ".zip"
+ },
+ "VERDICT_tornado.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 7259,
+  "ext": ".md"
+ },
+ "VIEWER.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11505,
+  "ext": ".md"
+ },
+ "VIEW_bb_seed777.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 49410,
+  "ext": ".html"
+ },
+ "VIEW_game_2026_N16_base.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 218262,
+  "ext": ".html"
+ },
+ "VIEW_game_2_N8_grudge.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 150046,
+  "ext": ".html"
+ },
+ "VIEW_game_2_N8_grudwindow.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 154000,
+  "ext": ".html"
+ },
+ "VIEW_game_2_N8_reserve.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 131107,
+  "ext": ".html"
+ },
+ "VIEW_game_2_N8_strictreserve.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 114953,
+  "ext": ".html"
+ },
+ "VIEW_game_4_N8_agentrevive.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 109301,
+  "ext": ".html"
+ },
+ "VIEW_game_4_N8_tilt.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 135132,
+  "ext": ".html"
+ },
+ "VIEW_game_55_N12_handlimit7.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 204141,
+  "ext": ".html"
+ },
+ "VIEW_game_58_N8_draft.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 94096,
+  "ext": ".html"
+ },
+ "VIEW_game_606_N8_traitor.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 129607,
+  "ext": ".html"
+ },
+ "VIEW_game_777_N8_plane.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 120541,
+  "ext": ".html"
+ },
+ "VIEW_tornado.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 74647,
+  "ext": ".html"
+ },
+ "WINRATE.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 6633,
+  "ext": ".md"
+ },
+ "blitz_new_site.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "docs.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 45529,
+  "ext": ".rar"
+ },
+ "game_sim_before_personality.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 49495,
+  "ext": ".py"
+ },
+ "index.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 716816,
+  "ext": ".html"
+ },
+ "live_index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "main_backup.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 426568,
+  "ext": ".rar"
+ },
+ "package-lock.json": {
+  "class": "web_junk",
+  "reason": "web artifact by name",
+  "bytes": 18662,
+  "ext": ".json"
+ },
+ "package.json": {
+  "class": "web_junk",
+  "reason": "web artifact by name",
+  "bytes": 51,
+  "ext": ".json"
+ },
+ "pages_index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "pendulum.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 16565,
+  "ext": ".json"
+ },
+ "plane100_b5.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 950,
+  "ext": ".json"
+ },
+ "pool_indices (1).json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 13818,
+  "ext": ".json"
+ },
+ "report_generators_digest.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 4070,
+  "ext": ".md"
+ },
+ "reputation.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 1791,
+  "ext": ".json"
+ },
+ "reserve.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 31040,
+  "ext": ".json"
+ },
+ "rules_print_v3.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 38641,
+  "ext": ".txt"
+ },
+ "rules_short.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 23400,
+  "ext": ".txt"
+ },
+ "rules_v3.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 36281,
+  "ext": ".txt"
+ },
+ "run_d6_experiment.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5521,
+  "ext": ".py"
+ },
+ "run_draft.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 10777,
+  "ext": ".py"
+ },
+ "run_grudge.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11755,
+  "ext": ".py"
+ },
+ "run_handlimit.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11479,
+  "ext": ".py"
+ },
+ "run_matrix.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1997,
+  "ext": ".py"
+ },
+ "run_matrix_b7.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 3208,
+  "ext": ".py"
+ },
+ "run_page.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 895,
+  "ext": ".js"
+ },
+ "run_pendulum.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 14699,
+  "ext": ".py"
+ },
+ "run_report.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4003,
+  "ext": ".py"
+ },
+ "run_reputation.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 8639,
+  "ext": ".py"
+ },
+ "run_reserve.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 15076,
+  "ext": ".py"
+ },
+ "run_tests.sh": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .sh)",
+  "bytes": 16869,
+  "ext": ".sh"
+ },
+ "run_tilt.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 9326,
+  "ext": ".py"
+ },
+ "run_tornado.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 14347,
+  "ext": ".py"
+ },
+ "run_triggers.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5131,
+  "ext": ".py"
+ },
+ "run_winrate.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2238,
+  "ext": ".py"
+ },
+ "ryukzak_raw.txt": {
+  "class": "unknown",
+  "reason": "small txt, needs reading",
+  "bytes": 3823,
+  "ext": ".txt"
+ },
+ "sample_log_frag.txt": {
+  "class": "logs",
+  "reason": "log by name",
+  "bytes": 2103,
+  "ext": ".txt"
+ },
+ "sim8_digest.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 9066,
+  "ext": ".md"
+ },
+ "sim_8punk.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 46608,
+  "ext": ".txt"
+ },
+ "sim_dop_2_20.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 43924,
+  "ext": ".txt"
+ },
+ "sim_n_digest.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 2995,
+  "ext": ".md"
+ },
+ "site_live.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 50893,
+  "ext": ".rar"
+ },
+ "site_new_index.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 555943,
+  "ext": ".html"
+ },
+ "site_package.zip": {
+  "class": "zip_archives",
+  "reason": "ext .zip",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "site_root_index.zip": {
+  "class": "zip_archives",
+  "reason": "ext .zip",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "site_v11.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 45389,
+  "ext": ".rar"
+ },
+ "site_v9_final.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 45382,
+  "ext": ".rar"
+ },
+ "situations.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 3846,
+  "ext": ".md"
+ },
+ "situations_raw.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 13838,
+  "ext": ".txt"
+ },
+ "spec_raw.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 20544,
+  "ext": ".txt"
+ },
+ "src_test_digest (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5071,
+  "ext": ".md"
+ },
+ "src_test_digest.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 5071,
+  "ext": ".md"
+ },
+ "sweep8_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 2266840,
+  "ext": ".json"
+ },
+ "sweep_mods_results.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 21201,
+  "ext": ".json"
+ },
+ "sweep_n_results.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 10507,
+  "ext": ".json"
+ },
+ "sweeps_digest.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 5496,
+  "ext": ".md"
+ },
+ "telo_raw.txt": {
+  "class": "unknown",
+  "reason": "small txt, needs reading",
+  "bytes": 605,
+  "ext": ".txt"
+ },
+ "template_index.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 7405,
+  "ext": ".html"
+ },
+ "test_effects.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 16656,
+  "ext": ".py"
+ },
+ "test_game.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 2573,
+  "ext": ".js"
+ },
+ "test_human.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 1747,
+  "ext": ".js"
+ },
+ "tilt.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 5894,
+  "ext": ".json"
+ },
+ "time_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 88759,
+  "ext": ".json"
+ },
+ "tornado_n12.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 94742,
+  "ext": ".json"
+ },
+ "tornado_n8.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 113338,
+  "ext": ".json"
+ },
+ "tornado_report.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 21654,
+  "ext": ".py"
+ },
+ "tornado_triggers.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 803,
+  "ext": ".json"
+ },
+ "user_original.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "validate.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2324,
+  "ext": ".py"
+ },
+ "verify_dop.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 7121,
+  "ext": ".txt"
+ },
+ "verify_dop_results.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 3677,
+  "ext": ".json"
+ },
+ "view_test.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 12862,
+  "ext": ".js"
+ },
+ "webtest.rar": {
+  "class": "zip_archives",
+  "reason": "ext .rar",
+  "bytes": 4802878,
+  "ext": ".rar"
+ },
+ "winrate.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 10061,
+  "ext": ".json"
+ },
+ "witness_seeds.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 1897,
+  "ext": ".json"
+ },
+ "workspace.tar": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4101125,
+  "ext": ".tar"
+ },
+ "workspace.tar.gz": {
+  "class": "zip_archives",
+  "reason": "ext .gz",
+  "bytes": 4101125,
+  "ext": ".gz"
+ },
+ "xpeek.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 369,
+  "ext": ".py"
+ },
+ "zadanie_sim.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 27976,
+  "ext": ".txt"
+ },
+ "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 44027,
+  "ext": ".docx"
+ },
+ "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 23572,
+  "ext": ".md"
+ },
+ "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА (2).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 23572,
+  "ext": ".md"
+ },
+ "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 44027,
+  "ext": ".docx"
+ },
+ "БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 23572,
+  "ext": ".md"
+ },
+ "БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 32593,
+  "ext": ".docx"
+ },
+ "БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ (1).docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 53460,
+  "ext": ".docx"
+ },
+ "БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .docx)",
+  "bytes": 53460,
+  "ext": ".docx"
+ },
+ "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 53863,
+  "ext": ".docx"
+ },
+ "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20 (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 44295,
+  "ext": ".md"
+ },
+ "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 53863,
+  "ext": ".docx"
+ },
+ "ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 44295,
+  "ext": ".md"
+ },
+ "ЖУРНАЛ_ЧИСТКИ_РЕД5 (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 12849,
+  "ext": ".md"
+ },
+ "ЖУРНАЛ_ЧИСТКИ_РЕД5.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 12849,
+  "ext": ".md"
+ },
+ "ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ (1).docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 46074,
+  "ext": ".docx"
+ },
+ "ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 28227,
+  "ext": ".md"
+ },
+ "КОЛОДА_ОБМЕНА (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 6360,
+  "ext": ".md"
+ },
+ "КОЛОДА_ОБМЕНА.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 6360,
+  "ext": ".md"
+ },
+ "КОНТЕКСТ_БРИФ.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 151318,
+  "ext": ".md"
+ },
+ "ПРАВИЛА_БЛИЦ_БОЙ_v2 (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 34271,
+  "ext": ".md"
+ },
+ "ПРАВИЛА_БЛИЦ_БОЙ_v2.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 34271,
+  "ext": ".md"
+ },
+ "ПРАВИЛА_БЛИЦ_БОЙ_v3 (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 51260,
+  "ext": ".md"
+ },
+ "ПРАВИЛА_БЛИЦ_БОЙ_v3.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 41788,
+  "ext": ".docx"
+ },
+ "ПРАВИЛА_БЛИЦ_БОЙ_v3.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 51260,
+  "ext": ".md"
+ },
+ "ПРИМЕР_ИГРЫ_8_игроков (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 81919,
+  "ext": ".md"
+ },
+ "ПРИМЕР_ИГРЫ_8_игроков (2).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 81919,
+  "ext": ".md"
+ },
+ "ПРИМЕР_ИГРЫ_8_игроков.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 81919,
+  "ext": ".md"
+ },
+ "ПРИМЕР_ИГРЫ_УПРОЩЁННЫЙ.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 37300,
+  "ext": ".md"
+ },
+ "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11551,
+  "ext": ".md"
+ },
+ "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER (2).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11551,
+  "ext": ".md"
+ },
+ "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 41898,
+  "ext": ".docx"
+ },
+ "ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 11551,
+  "ext": ".md"
+ },
+ "СИМУЛЯЦИИ_2_20 (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 18728,
+  "ext": ".md"
+ },
+ "СИМУЛЯЦИИ_2_20.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 18728,
+  "ext": ".md"
+ },
+ "СИМУЛЯЦИИ_8ПУНКТОВ (1).docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 60254,
+  "ext": ".docx"
+ },
+ "СИМУЛЯЦИИ_8ПУНКТОВ (1).md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 46843,
+  "ext": ".md"
+ },
+ "СИМУЛЯЦИИ_8ПУНКТОВ.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 60254,
+  "ext": ".docx"
+ },
+ "СИМУЛЯЦИИ_8ПУНКТОВ.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 46843,
+  "ext": ".md"
+ },
+ "СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 41993,
+  "ext": ".docx"
+ },
+ "СТАРТ_ЧАТА_С_CODER.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 10414,
+  "ext": ".md"
+ },
+ "карты_v5_по_категориям.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 199592,
+  "ext": ".md"
+ },
+ "карты_настолка_v4.xlsx": {
+  "class": "deck_data",
+  "reason": "spreadsheet deck",
+  "bytes": 541461,
+  "ext": ".xlsx"
+ },
+ "карты_настолка_полный_набор.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 129387,
+  "ext": ".md"
+ },
+ "blitz1.1/README.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 6939,
+  "ext": ".md"
+ },
+ "blitz1.1/blitz.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3028,
+  "ext": ".py"
+ },
+ "blitz1.1/docs/game.js": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 672832,
+  "ext": ".js"
+ },
+ "blitz1.1/docs/index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 716816,
+  "ext": ".html"
+ },
+ "blitz1.1/docs/observer.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 43998,
+  "ext": ".html"
+ },
+ "blitz1.1/docs/cards/cards_abilities.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1568,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_body.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1026,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_details.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1812,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_exchange.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1536,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_history.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1326,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_inventory.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1102,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_knowledge.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1420,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_mind.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1141,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_professions.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4775,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_shadows.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2165,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/cards/cards_spec.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 3928,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/ANSWERS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 2155,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/BB_SIMS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 25602,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/DECISIONS_IDEAS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 35909,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/DEFAULTS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 33861,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/FULL_REPORT.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 40457,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/GRUDGE.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 11133,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/GUIDE_LEADER.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 11244,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/HANDLIMIT.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 10035,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/HOWTO_RUN.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 3680,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/MENU_33_IDEAS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 10052,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/PENDULUM_N16.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 10385,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/QUESTIONS.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 2086,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/REPUTATION.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 4846,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/RESERVE.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 22998,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/TILT.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 7002,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/TORNADO.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 32266,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/VERDICT_tornado.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 7259,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/VIEWER.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 11505,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/WINRATE.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 6633,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/report_generators_digest.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4070,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/sim8_digest.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 9066,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/sim_n_digest.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2995,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/src_test_digest.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5071,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/notes/sweeps_digest.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5496,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/preview/game.js": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 672832,
+  "ext": ".js"
+ },
+ "blitz1.1/docs/preview/game.json": {
+  "class": "unknown",
+  "reason": "big json, needs inspection",
+  "bytes": 447765,
+  "ext": ".json"
+ },
+ "blitz1.1/docs/preview/index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 716816,
+  "ext": ".html"
+ },
+ "blitz1.1/docs/preview/observer.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 43998,
+  "ext": ".html"
+ },
+ "blitz1.1/docs/reports/REPORT_game_168804_N12_hrono.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 18787,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/reports/REPORT_game_777_N8_plane.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 17954,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/reports/REPORT_game_7_N12_hrono.md": {
+  "class": "docs_reports",
+  "reason": "report-ish name",
+  "bytes": 20880,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/rules/1_ПРАВИЛА_БЛИЦ_БОЙ_v3.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 43127,
+  "ext": ".docx"
+ },
+ "blitz1.1/docs/rules/D6_CARD.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 4829,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/rules/SPEC_cardlife.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 4657,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/rules/pamyatka.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 10643,
+  "ext": ".txt"
+ },
+ "blitz1.1/docs/rules/rules_print_v3.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 38641,
+  "ext": ".txt"
+ },
+ "blitz1.1/docs/rules/rules_short.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 23400,
+  "ext": ".txt"
+ },
+ "blitz1.1/docs/rules/rules_v3.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 36281,
+  "ext": ".txt"
+ },
+ "blitz1.1/docs/rules/situations.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 3846,
+  "ext": ".md"
+ },
+ "blitz1.1/docs/rules/zadanie_sim.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 27976,
+  "ext": ".txt"
+ },
+ "blitz1.1/docs/rules/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 32593,
+  "ext": ".docx"
+ },
+ "blitz1.1/docs/rules/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 41788,
+  "ext": ".docx"
+ },
+ "blitz1.1/src/bb.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7585,
+  "ext": ".py"
+ },
+ "blitz1.1/src/game_sim.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 71092,
+  "ext": ".py"
+ },
+ "blitz1.1/src/make_web.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4646,
+  "ext": ".py"
+ },
+ "blitz1.1/src/observer_template.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 43998,
+  "ext": ".html"
+ },
+ "blitz1.1/src/template_index.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 9078,
+  "ext": ".html"
+ },
+ "blitz1.1/src/test_game.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 2636,
+  "ext": ".js"
+ },
+ "blitz1.1/src/canon/cards_abilities.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1568,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_body.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1026,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_details.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1812,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_exchange.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1536,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_history.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1326,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_inventory.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1102,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_knowledge.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1420,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_mind.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 1141,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_professions.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 4775,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_shadows.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 2165,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/cards_spec.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 3928,
+  "ext": ".md"
+ },
+ "blitz1.1/src/canon/decks.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 14371,
+  "ext": ".json"
+ },
+ "blitz1.1/src/web/index.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 456789,
+  "ext": ".html"
+ },
+ "blitz1.1/tests/run_tests.sh": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .sh)",
+  "bytes": 2682,
+  "ext": ".sh"
+ },
+ "blitz1.1/tools/batch_stats.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1776,
+  "ext": ".py"
+ },
+ "blitz1.1/tools/patch_personality.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8816,
+  "ext": ".py"
+ },
+ "blitz1.1/tools/patch_personality_b.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7254,
+  "ext": ".py"
+ },
+ "blitz1.1/tools/patch_personality_c.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3546,
+  "ext": ".py"
+ },
+ "blitz1.1/viewer/VIEW_bb_seed5.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 29074,
+  "ext": ".html"
+ },
+ "blitz1.1/viewer/VIEW_bb_seed777.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 49410,
+  "ext": ".html"
+ },
+ "blitz1.1/viewer/game.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 55787,
+  "ext": ".html"
+ },
+ "blitz1.1/web/game.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 672832,
+  "ext": ".js"
+ },
+ "blitz1.1/web/index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 716816,
+  "ext": ".html"
+ },
+ "blitz1.1/web/observer.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 43998,
+  "ext": ".html"
+ },
+ "data/duplicates.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 21263,
+  "ext": ".json"
+ },
+ "data/inventory_report.txt": {
+  "class": "unknown",
+  "reason": "small txt, needs reading",
+  "bytes": 0,
+  "ext": ".txt"
+ },
+ "data/manifest.csv": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .csv)",
+  "bytes": 47628,
+  "ext": ".csv"
+ },
+ "data/manifest.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 82680,
+  "ext": ".json"
+ },
+ "data_old/batch_100.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 19217,
+  "ext": ".json"
+ },
+ "data_old/batch_canon24.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 19532,
+  "ext": ".json"
+ },
+ "data_old/grudge.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 16092,
+  "ext": ".json"
+ },
+ "data_old/handlimit.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 17234,
+  "ext": ".json"
+ },
+ "data_old/matrix_abl.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 5604,
+  "ext": ".json"
+ },
+ "data_old/matrix_b7.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 18225,
+  "ext": ".json"
+ },
+ "data_old/matrix_b8.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 15415,
+  "ext": ".json"
+ },
+ "data_old/matrix_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 5833,
+  "ext": ".json"
+ },
+ "data_old/matrix_revesc.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 3077,
+  "ext": ".json"
+ },
+ "data_old/matrix_sits_ro.json": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .json)",
+  "bytes": 1829,
+  "ext": ".json"
+ },
+ "data_old/nsweep_current.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 284,
+  "ext": ".json"
+ },
+ "data_old/pendulum.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16565,
+  "ext": ".json"
+ },
+ "data_old/plane100_b5.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 950,
+  "ext": ".json"
+ },
+ "data_old/reputation.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1791,
+  "ext": ".json"
+ },
+ "data_old/reserve.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 31040,
+  "ext": ".json"
+ },
+ "data_old/tilt.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 5894,
+  "ext": ".json"
+ },
+ "data_old/tornado_n12.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 94742,
+  "ext": ".json"
+ },
+ "data_old/tornado_n8.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 113338,
+  "ext": ".json"
+ },
+ "data_old/tornado_triggers.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 803,
+  "ext": ".json"
+ },
+ "data_old/winrate.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 10061,
+  "ext": ".json"
+ },
+ "data_old/witness_seeds.json": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1897,
+  "ext": ".json"
+ },
+ "data_old/карты_настолка_v4.xlsx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 541461,
+  "ext": ".xlsx"
+ },
+ "docs_old/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 53460,
+  "ext": ".docx"
+ },
+ "dumps/SP-131_compressed.pdf": {
+  "class": "unknown",
+  "reason": "pdf needs manual view",
+  "bytes": 11830941,
+  "ext": ".pdf"
+ },
+ "dumps/Test-BB-revert-4-game-file-analysis-b3311.zip": {
+  "class": "zip_archives",
+  "reason": "ext .zip",
+  "bytes": 13645435,
+  "ext": ".zip"
+ },
+ "dumps/github_workflows_jekyll-docker.yml": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .yml)",
+  "bytes": 476,
+  "ext": ".yml"
+ },
+ "experiments/log_showcase.txt": {
+  "class": "logs",
+  "reason": "log by name",
+  "bytes": 8288,
+  "ext": ".txt"
+ },
+ "experiments/sim_8punk.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 46608,
+  "ext": ".txt"
+ },
+ "experiments/sim_dop_2_20.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 43924,
+  "ext": ".txt"
+ },
+ "old_engine/bb_full.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 24345,
+  "ext": ".py"
+ },
+ "old_engine/patch_b11.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4500,
+  "ext": ".py"
+ },
+ "old_engine/patch_b13_snap.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4778,
+  "ext": ".py"
+ },
+ "old_engine/patch_b14_blindguard.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4491,
+  "ext": ".py"
+ },
+ "old_engine/patch_b14_events.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3032,
+  "ext": ".py"
+ },
+ "old_engine/patch_b15_handlimit.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11590,
+  "ext": ".py"
+ },
+ "old_engine/patch_b15b_handfix.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3209,
+  "ext": ".py"
+ },
+ "old_engine/patch_b15c_maxhand.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1142,
+  "ext": ".py"
+ },
+ "old_engine/patch_b16_draft.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 12028,
+  "ext": ".py"
+ },
+ "old_engine/patch_b17_deadstop.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 7085,
+  "ext": ".py"
+ },
+ "old_engine/patch_b18_trio.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5174,
+  "ext": ".py"
+ },
+ "old_engine/patch_b21_reputation.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11463,
+  "ext": ".py"
+ },
+ "old_engine/patch_b21b_agentrevive.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 6349,
+  "ext": ".py"
+ },
+ "old_engine/patch_b22_tilt.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 18151,
+  "ext": ".py"
+ },
+ "old_engine/patch_b23_reserve.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 24559,
+  "ext": ".py"
+ },
+ "old_engine/patch_b23b_reservegate.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9083,
+  "ext": ".py"
+ },
+ "old_engine/patch_b25_grudge.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 23740,
+  "ext": ".py"
+ },
+ "old_tests/test_effects.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16656,
+  "ext": ".py"
+ },
+ "other/Test-BB-site.zip": {
+  "class": "zip_archives",
+  "reason": "ext .zip",
+  "bytes": 435419,
+  "ext": ".zip"
+ },
+ "other/blitz_new_site.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "other/live_index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "other/pages_index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "other/site_new_index.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 555943,
+  "ext": ".html"
+ },
+ "other/site_package.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "other/site_root_index.zip": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 16510,
+  "ext": ".zip"
+ },
+ "other/user_original.html": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 78739,
+  "ext": ".html"
+ },
+ "site_live/current.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 9379,
+  "ext": ".html"
+ },
+ "src_extra/dbg_human.js": {
+  "class": "web_junk",
+  "reason": "ext .js",
+  "bytes": 1430,
+  "ext": ".js"
+ },
+ "src_extra/test_human.js": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 1747,
+  "ext": ".js"
+ },
+ "src_extra/view_test.js": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 12862,
+  "ext": ".js"
+ },
+ "src_github_workflows/workflows/pages.yml": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .yml)",
+  "bytes": 571,
+  "ext": ".yml"
+ },
+ "src_github_workflows/workflows/python-package-conda.yml": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .yml)",
+  "bytes": 1061,
+  "ext": ".yml"
+ },
+ "tools/inventory.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8310,
+  "ext": ".py"
+ },
+ "tools_old/build_canon_decks.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3731,
+  "ext": ".py"
+ },
+ "tools_old/build_pool1000.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9956,
+  "ext": ".py"
+ },
+ "tools_old/check.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1283,
+  "ext": ".py"
+ },
+ "tools_old/extract.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 543,
+  "ext": ".py"
+ },
+ "tools_old/integrity_audit.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8522,
+  "ext": ".py"
+ },
+ "tools_old/make_fingerprints.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5163,
+  "ext": ".py"
+ },
+ "tools_old/make_game_html.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 35623,
+  "ext": ".py"
+ },
+ "tools_old/matrix_b8.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2887,
+  "ext": ".py"
+ },
+ "tools_old/md2docx_min.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2814,
+  "ext": ".py"
+ },
+ "tools_old/near.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 791,
+  "ext": ".py"
+ },
+ "tools_old/run_d6_experiment.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5521,
+  "ext": ".py"
+ },
+ "tools_old/run_draft.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 10777,
+  "ext": ".py"
+ },
+ "tools_old/run_grudge.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11755,
+  "ext": ".py"
+ },
+ "tools_old/run_handlimit.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 11479,
+  "ext": ".py"
+ },
+ "tools_old/run_matrix.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 1997,
+  "ext": ".py"
+ },
+ "tools_old/run_matrix_b7.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 3208,
+  "ext": ".py"
+ },
+ "tools_old/run_pendulum.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14699,
+  "ext": ".py"
+ },
+ "tools_old/run_report.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4003,
+  "ext": ".py"
+ },
+ "tools_old/run_reputation.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 8639,
+  "ext": ".py"
+ },
+ "tools_old/run_reserve.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 15076,
+  "ext": ".py"
+ },
+ "tools_old/run_tilt.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 9326,
+  "ext": ".py"
+ },
+ "tools_old/run_tornado.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 14347,
+  "ext": ".py"
+ },
+ "tools_old/run_triggers.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 5131,
+  "ext": ".py"
+ },
+ "tools_old/run_winrate.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 2238,
+  "ext": ".py"
+ },
+ "tools_old/tornado_report.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 21654,
+  "ext": ".py"
+ },
+ "tools_old/validate.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 2324,
+  "ext": ".py"
+ },
+ "tools_old/xpeek.py": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 369,
+  "ext": ".py"
+ },
+ "viewer_old/VIEW_game_2026_N16_base.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 218262,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_2_N8_grudge.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 150046,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_2_N8_grudwindow.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 154000,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_2_N8_reserve.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 131107,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_2_N8_strictreserve.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 114953,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_4_N8_agentrevive.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 109301,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_4_N8_tilt.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 135132,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_55_N12_handlimit7.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 204141,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_58_N8_draft.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 94096,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_606_N8_traitor.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 129607,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_game_777_N8_plane.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 120541,
+  "ext": ".html"
+ },
+ "viewer_old/VIEW_tornado.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 74647,
+  "ext": ".html"
+ },
+ "web_old/game101.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 46511,
+  "ext": ".html"
+ },
+ "web_old/game42.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 39941,
+  "ext": ".html"
+ },
+ "web_old/game5.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 29526,
+  "ext": ".html"
+ },
+ "web_old/game777.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 48418,
+  "ext": ".html"
+ },
+ "web_old/start.html": {
+  "class": "web_junk",
+  "reason": "ext .html",
+  "bytes": 1731,
+  "ext": ".html"
+ },
+ "workflows/deploy-pages.yml": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .yml)",
+  "bytes": 716,
+  "ext": ".yml"
+ },
+ "ws/README.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 3135,
+  "ext": ".md"
+ },
+ "ws/00_brief/КОНТЕКСТ_БРИФ.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 151318,
+  "ext": ".md"
+ },
+ "ws/10_docs/колода/obmen_raw.txt": {
+  "class": "unknown",
+  "reason": "small txt, needs reading",
+  "bytes": 1182,
+  "ext": ".txt"
+ },
+ "ws/10_docs/колода/prof_raw.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 14695,
+  "ext": ".txt"
+ },
+ "ws/10_docs/колода/spec_raw.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 20544,
+  "ext": ".txt"
+ },
+ "ws/10_docs/колода/ЖУРНАЛ_ЧИСТКИ_РЕД5.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 12849,
+  "ext": ".md"
+ },
+ "ws/10_docs/колода/КОЛОДА_ОБМЕНА.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 6360,
+  "ext": ".md"
+ },
+ "ws/10_docs/колода/ПЕЧАТНЫЙ_НАБОР_КАРТ.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 27413,
+  "ext": ".md"
+ },
+ "ws/10_docs/колода/карты_настолка_v4.xlsx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 541461,
+  "ext": ".xlsx"
+ },
+ "ws/10_docs/правила/БЛИЦ_БОЙ_КОРОТКИЕ_ПРАВИЛА.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 44027,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 29015,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/ЗАМЕТКИ_РЕШЕНИЙ.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 7820,
+  "ext": ".md"
+ },
+ "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_v3.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 43127,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 82313,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/ПРАВИЛА_БЛИЦ_БОЙ_ред4.0_КАНОН.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 121905,
+  "ext": ".md"
+ },
+ "ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.docx": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .docx)",
+  "bytes": 42720,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/РЕЕСТР_ПРЕТЕНЗИЙ_И_РЕШЕНИЙ.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 16878,
+  "ext": ".md"
+ },
+ "ws/10_docs/правила/архив/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД_ДО_ПЕЧАТИ.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 38741,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/архив/БЛИЦ_БОЙ_ПАМЯТКА_ПЕРВЫЙ_ХОД_ПЕЧАТЬ_2026-10-04.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 33875,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ДО_ПЕЧАТИ.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 41788,
+  "ext": ".docx"
+ },
+ "ws/10_docs/правила/архив/ПРАВИЛА_БЛИЦ_БОЙ_v3_ПЕЧАТЬ_2026-10-04.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 41710,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/QWEN_MD_ПРАВИЛА_ПРОЕКТА.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 32201,
+  "ext": ".md"
+ },
+ "ws/10_docs/симуляции/БЛИЦ_БОЙ_ПОЛНЫЙ_ОТЧЁТ_ЗА_ВЕСЬ_ЧАТ.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 53460,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/ДОПОЛНЕНИЕ_СИМУЛЯЦИИ_2_20.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 53863,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 46074,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/ЗАДАНИЕ_НА_СИМУЛЯЦИЮ_ББ.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 28227,
+  "ext": ".md"
+ },
+ "ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 41898,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/ПРОТОКОЛ_РАБОТЫ_С_QWEN_CODER.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 11551,
+  "ext": ".md"
+ },
+ "ws/10_docs/симуляции/СИМУЛЯЦИИ_8ПУНКТОВ.docx": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 60254,
+  "ext": ".docx"
+ },
+ "ws/10_docs/симуляции/СТАРТ_ЧАТА_С_CODER.md": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 10414,
+  "ext": ".md"
+ },
+ "ws/10_docs/симуляции/ТРИ_СООБЩЕНИЯ_СТАРТ_CODER.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 14884,
+  "ext": ".md"
+ },
+ "ws/10_docs/ситуации_пробные/situations_raw.txt": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .txt)",
+  "bytes": 13838,
+  "ext": ".txt"
+ },
+ "ws/10_docs/ситуации_пробные/КАТАКЛИЗМЫ_АНАРХПАК.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 20541,
+  "ext": ".md"
+ },
+ "ws/10_docs/ситуации_пробные/ПЬЯНАЯ_ХРОНОЛОГИЯ_РЕД2.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 2821,
+  "ext": ".md"
+ },
+ "ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.docx": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .docx)",
+  "bytes": 39757,
+  "ext": ".docx"
+ },
+ "ws/10_docs/ситуации_пробные/СИТУАЦИИ_РЕД2_ЧЕРНОВИК.md": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .md)",
+  "bytes": 8291,
+  "ext": ".md"
+ },
+ "ws/10_docs/справочники/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.docx": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 41970,
+  "ext": ".docx"
+ },
+ "ws/10_docs/справочники/СПРАВОЧНИК_СЛОЖНЫХ_МЕХАНИК.md": {
+  "class": "docs_rules",
+  "reason": "rules-ish name",
+  "bytes": 12913,
+  "ext": ".md"
+ },
+ "ws/20_data/deck_v4.json": {
+  "class": "unknown",
+  "reason": "big json, needs inspection",
+  "bytes": 582038,
+  "ext": ".json"
+ },
+ "ws/20_data/event_freq.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 558,
+  "ext": ".json"
+ },
+ "ws/20_data/harvest_off_duration.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 3471,
+  "ext": ".json"
+ },
+ "ws/20_data/report_numbers.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 25160,
+  "ext": ".json"
+ },
+ "ws/20_data/sweep_mods_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 21201,
+  "ext": ".json"
+ },
+ "ws/20_data/sweep_n_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 10507,
+  "ext": ".json"
+ },
+ "ws/20_data/verify_dop_results.json": {
+  "class": "sim_results",
+  "reason": "sim json by name pattern",
+  "bytes": 3677,
+  "ext": ".json"
+ },
+ "ws/20_data/Анархический Пак.json": {
+  "class": "unknown",
+  "reason": "big json, needs inspection",
+  "bytes": 222367,
+  "ext": ".json"
+ },
+ "ws/30_tools/md2docx.py": {
+  "class": "code",
+  "reason": "python source",
+  "bytes": 4692,
+  "ext": ".py"
+ },
+ "ws/30_tools/md2docx.txt": {
+  "class": "duplicates",
+  "reason": "md5-dup, drop per keep-rule",
+  "bytes": 4692,
+  "ext": ".txt"
+ },
+ "ws/99_inbox/1_image.png": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .png)",
+  "bytes": 71614,
+  "ext": ".png"
+ },
+ "ws/99_inbox/2_image.png": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .png)",
+  "bytes": 92628,
+  "ext": ".png"
+ },
+ "ws/99_inbox/3_image.png": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .png)",
+  "bytes": 46223,
+  "ext": ".png"
+ },
+ "ws/99_inbox/4_image.png": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .png)",
+  "bytes": 76892,
+  "ext": ".png"
+ },
+ "ws/99_inbox/image.png": {
+  "class": "unknown",
+  "reason": "no rule matched (ext .png)",
+  "bytes": 76067,
+  "ext": ".png"
+ }
+}
