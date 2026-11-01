@@ -1,0 +1,30 @@
+{
+ "games": 1800,
+ "rolls": 89241,
+ "rolls_per_game": 49.6,
+ "kills_declared": 7912,
+ "kills_per_game": 4.4,
+ "critfail_per_declared_pct": 12.4,
+ "pct": {
+  "spec_any": 98.6,
+  "critfail_kill": 54.4,
+  "crit_kill": 55.1,
+  "crit_wound2": 77.9,
+  "fail_self2": 72.7,
+  "cascade": 40.6,
+  "immune": 4.1,
+  "croupier": 42.1,
+  "mass": 35.1,
+  "mass_fail": 31.4,
+  "bet_hit": 54.9,
+  "avoid": 17.0,
+  "steal_empty": 2.2,
+  "revive_spec": 20.9,
+  "revive_pool": 4.9,
+  "harvest": 67.0,
+  "nat1": 87.8,
+  "nat20": 86.9,
+  "marauder": 69.1,
+  "heal_self": 91.6
+ }
+}
