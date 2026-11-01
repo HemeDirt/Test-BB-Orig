@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>БЛИЦ БОЙ — Наблюдатель</title>
+<style>
+:root{--bg:#0e1116;--panel:#151b23;--line:#28303c;--txt:#dde5ef;--dim:#8b98a9;
+--gold:#f2b544;--cyan:#7fd4f2;--red:#f2736f;--green:#7ee081;--violet:#b9a6f5;--orange:#f2a05c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 ui-sans-serif,system-ui,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:20;background:#12171fee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:8px 14px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+h1{font-size:16px;margin:0;color:var(--gold)}
+.btn{background:var(--panel);border:1px solid var(--line);color:var(--txt);padding:6px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.btn:hover{border-color:var(--gold)}
+.btn.on{color:#111;background:var(--gold);border-color:var(--gold);font-weight:700}
+.btn.mini{padding:3px 9px;font-size:12px}
+select,input[type=number]{background:var(--panel);border:1px solid var(--line);color:var(--txt);border-radius:6px;padding:4px 6px;font-size:13px}
+label{color:var(--dim);font-size:12px}
+main{max-width:1240px;margin:0 auto;padding:10px 14px 120px}
+/* панель перемотки */
+#transport{position:fixed;bottom:0;left:0;right:0;z-index:20;background:#12171fee;backdrop-filter:blur(6px);border-top:1px solid var(--line);padding:8px 14px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+#frameinfo{color:var(--cyan);font-size:12px;min-width:180px}
+#seek{flex:1;min-width:140px;accent-color:var(--gold)}
+/* доска */
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:8px;margin-top:8px}
+.pc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:8px;cursor:pointer;position:relative}
+.pc:hover{border-color:var(--cyan)}
+.pc.dead{opacity:.5;border-color:#4d2b2b}
+.pc.active{outline:2px solid var(--gold)}
+.pc .nm{font-weight:700;font-size:14px}
+.pc .pr{color:var(--violet);font-size:12px}
+.or{display:inline-block;background:#3a1d1d;color:var(--red);border-radius:6px;padding:1px 7px;font-size:12px;margin:3px 3px 0 0}
+.tk{background:#2a2f38;color:var(--dim);border-radius:6px;padding:1px 7px;font-size:12px;margin:3px 3px 0 0;display:inline-block}
+.tk.repP{background:#1d3a26;color:var(--green)}.tk.repN{background:#3a1d1d;color:var(--red)}.tk.repG{background:#3a2d1d;color:var(--gold)}
+.st{font-size:12px;margin-top:2px}.st.alive{color:var(--green)}.st.dead{color:var(--red)}
+.card{display:block;background:#10151c;border-left:3px solid #555;border-radius:4px;padding:2px 7px;font-size:12px;margin:2px 0;white-space:normal}
+.cТЕЛО{border-left-color:#e05c5c}.cРАЗУМ{border-left-color:#e8b34b}.cСПОСОБНОСТИ{border-left-color:#cfd6dd}
+.cИНВЕНТАРЬ{border-left-color:#a97b50}.cИСТОРИЯ{border-left-color:#9a7fd4}.cЗНАНИЯ{border-left-color:#5fb72f}.cДЕТАЛИ{border-left-color:#e58fc0}.cПРОФЕССИЯ{border-left-color:var(--gold)}
+.facedown{display:inline-block;background:#1d2530;border:1px dashed #3b4756;color:var(--dim);border-radius:4px;font-size:11px;padding:1px 6px;margin:2px 2px 0 0}
+/* боковая панель */
+#side{position:fixed;top:0;right:-360px;width:350px;height:100vh;background:#12171f;border-left:1px solid var(--line);z-index:40;transition:right .2s;padding:14px;overflow-y:auto}
+#side.open{right:0}
+#side h3{margin:4px 0;color:var(--gold);font-size:14px}
+#side .sect{border-bottom:1px solid var(--line);padding:8px 0}
+.switchrow{display:flex;justify-content:space-between;align-items:center;gap:8px;margin:6px 0;font-size:13px;color:var(--txt)}
+.archgrid{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:12px}
+.archgrid select{width:100%}
+/* лог */
+.cycle{margin:14px 0 4px;font-weight:700;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:3px}
+.turn{margin:8px 0 2px;font-weight:600;color:var(--cyan)}
+.ln{padding:1px 0 1px 10px;border-left:2px solid transparent;white-space:pre-wrap;color:#c3ccd6;font-size:13px}
+.dth{border-left-color:var(--red);color:var(--red)}
+.har{border-left-color:var(--green);color:var(--green)}
+.rev{border-left-color:var(--cyan);color:var(--cyan)}
+.roll{color:var(--violet)}
+.act{color:var(--orange)}
+.pers{color:var(--gold)}
+.cur{background:#243044;border-left-color:var(--gold)!important}
+/* модалки */
+.modal{display:none;position:fixed;inset:0;background:#000a;z-index:50;overflow-y:auto;padding:30px 10px}
+.modal.open{display:block}
+.mbox{max-width:860px;margin:0 auto;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+.mbox h2{margin:0 0 8px;color:var(--gold);font-size:17px}
+.mhead{display:flex;justify-content:space-between;align-items:center}
+table{border-collapse:collapse;width:100%;font-size:13px;margin:8px 0}
+th,td{border:1px solid var(--line);padding:4px 8px;text-align:left}
+th{background:#10151c;color:var(--cyan)}
+.bar{height:10px;background:var(--cyan);border-radius:3px;display:inline-block;vertical-align:middle}
+.note{color:var(--dim);font-size:12px}
+.score{background:#10151c;border:1px solid var(--line);border-radius:8px;padding:8px 12px;font-family:ui-monospace,monospace;font-size:12px;color:var(--green);white-space:pre-wrap;margin-top:8px}
+.deckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:10px;margin-top:8px}
+.deckcol{background:#10151c;border:1px solid var(--line);border-radius:10px;padding:8px}
+.deckcol h3{margin:2px 0 6px;font-size:13px;color:var(--gold)}
+.view{display:none}.view.on{display:block}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{background:var(--panel);border:1px solid var(--line);color:var(--dim);padding:5px 12px;border-radius:8px;cursor:pointer;font-size:13px}
+.tab.on{color:#111;background:var(--gold);border-color:var(--gold);font-weight:700}
+#banner{display:none;background:#3a2d1d;color:var(--gold);border:1px solid var(--gold);border-radius:8px;padding:8px 12px;margin:8px 0;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ БЛИЦ БОЙ · Наблюдатель</h1>
+<div class="tabs">
+<div class="tab on" data-v="board">Стол</div>
+<div class="tab" data-v="logs">Логи</div>
+<div class="tab" data-v="lists">Списки</div>
+<div class="tab" data-v="decks">Колоды</div>
+<div class="tab" data-v="stats">Статистика</div>
+</div>
+<span class="note" id="seedlbl"></span>
+<span style="flex:1"></span>
+<button class="btn mini" id="openStatsEnd" style="display:none">🏁 Итог игры</button>
+<button class="btn" id="gearBtn">⚙ Меню</button>
+</header>
+<div id="banner"></div>
+<main>
+<div class="view on" id="v-board"><div class="board" id="board"></div><div class="score" id="curlog"></div></div>
+<div class="view" id="v-logs"><div class="note">Полный текстовый лог партии. Жёлтая строка — текущий кадр перемотки.</div><div id="logbox"></div></div>
+<div class="view" id="v-lists">
+  <div class="note">Данные соответствуют текущему кадру перемотки.</div>
+  <div id="listsbox"></div>
+</div>
+<div class="view" id="v-decks"><div class="note">Канон v1: 7 колод характеристик × 24 карты + тени, обмен, профессии, спецкарты.</div><div class="deckgrid" id="deckgrid"></div></div>
+<div class="view" id="v-stats"><div id="statsbox"></div></div>
+</main>
+
+<div id="transport">
+<button class="btn" id="tCycPrev" title="предыдущий цикл">⏪ ц−</button>
+<button class="btn" id="tCycNext" title="следующий цикл">ц+ ⏩</button>
+<button class="btn" id="tPrev" title="предыдущий ход">⏮</button>
+<button class="btn" id="tPlay" title="пуск/пауза">▶</button>
+<button class="btn" id="tNext" title="следующий ход">⏭</button>
+<label title="перейти к конкретному циклу">цикл <select id="cycleSel" style="max-width:110px"></select></label>
+<label title="перейти к конкретному ходу (кадру)">ход <select id="frameSel" style="max-width:230px"></select></label>
+<input type="range" id="seek" min="0" max="0" value="0">
+<span id="frameinfo"></span>
+<label>скорость <select id="speedSel">
+<option value="5000" selected>5.0 c</option><option value="3000">3.0 c</option><option value="2000">2.0 c</option><option value="1000">1.0 c</option><option value="500">0.5 c</option>
+<option value="200">0.2 c</option><option value="80">0.08 c</option><option value="0">макс</option>
+</select></label>
+<label><input type="checkbox" id="autoEnd" checked> авто-итог в конце</label>
+</div>
+
+<div id="side">
+<h3>⚙ Управление</h3>
+<div class="sect"><h3>Режим показа карт</h3>
+<div class="switchrow"><span>Наблюдатель (все руки открыты)</span><input type="radio" name="handmode" value="obs" checked></div>
+<div class="switchrow"><span>От лица игрока (руки закрыты рубашкой)</span><input type="radio" name="handmode" value="hidden"></div>
+</div>
+<div class="sect"><h3>Новая партия</h3>
+<div class="switchrow"><label>Игроков (2–26)</label><input type="number" id="nSel" min="2" max="26" value="8"></div>
+<div class="switchrow"><label>Seed</label><input type="number" id="seedSel" value="5" style="width:90px"></div>
+<div class="switchrow"><label>Должно выжить (правило S)</label><input type="number" id="survSel" min="1" max="25" value="4" style="width:70px"></div>
+<div class="switchrow"><label>Состав архетипов</label>
+<select id="archMode"><option value="random">случайно</option><option value="manual">вручную</option></select></div>
+<div id="archPick" style="display:none" class="archgrid"></div>
+<button class="btn" id="genBtn" style="width:100%;margin-top:8px">🎲 Сыграть и показать партию</button>
+<div class="note">Кнопка считает новую партию встроенным движком (~секунда) и перематывает её по ходам. Для статистики многих партий используй «Автопрогон» ниже.</div>
+</div>
+<div class="sect"><h3>Автопрогон (статистика)</h3>
+<div class="switchrow"><label>Партий</label><input type="number" id="batchN" min="1" max="300" value="10" style="width:80px"></div>
+<div class="switchrow"><label>Игроков за стол</label><input type="number" id="batchP" min="2" max="26" value="8" style="width:80px"></div>
+<button class="btn" id="batchBtn" style="width:100%">⚡ Прогнать серию</button>
+<div class="note">Серия считается прямо в браузере; результат — окно сводной статистики с экспортом.</div>
+</div>
+<div class="sect"><h3>Экспорт</h3>
+<button class="btn mini" id="expMd">📄 Лог партии (.md)</button>
+<button class="btn mini" id="expJson">🗂 Данные партии (.json)</button>
+<div class="note">Excel-совместимый CSV итогов — внутри окна «Статистика серии».</div>
+</div>
+<button class="btn" id="closeSide" style="width:100%;margin-top:8px">✖ Закрыть меню</button>
+</div>
+
+<div class="modal" id="mPlayer"><div class="mbox"><div class="mhead"><h2 id="mpTitle"></h2><button class="btn mini closeM">✖</button></div><div id="mpBody"></div></div></div>
+<div class="modal" id="mEnd"><div class="mbox"><div class="mhead"><h2>🏁 Итог партии</h2><button class="btn mini closeM">✖</button></div><div id="meBody"></div></div></div>
+<div class="modal" id="mBatch"><div class="mbox"><div class="mhead"><h2>⚡ Статистика серии</h2><button class="btn mini closeM">✖</button></div><div id="mbBody"></div></div></div>
+
+<script src="game.js"></script>
+<script>
+// ---------- нормализатор данных партии (общий для встроенной и браузерных партий) ----------
+function normalizeParty(d){
+  // старые записи могли хранить snapshot без snap.players — приводим к единому виду
+  d.events.forEach(e=>{ if(e.t==='snapshot'&&(!e.snap||!Array.isArray(e.snap.players))){
+    e.snap={alive:(d.players||[]).filter(p=>p.alive).length,dark:false,players:(d.players||[]).map(p=>({
+      seat:p.seat,name:p.name,arch:p.arch||(DATA.arch_ru||{})[(p.pers||{}).arch]||'',prof:p.prof?p.prof[0]:p.prof||'',
+      alive:p.alive,or:p.or,tokens:p.tokens,kills:p.kills,hand:p.hand,hand_n:p.hand_n,
+      revealed:p.revealed,rep:p.rep,grudge:p.grudge,obmen:p.obmen,ghostcard:p.ghostcard,spec_used:p.spec_used}))};
+  }});
+  return d;
+}
+const DATA = normalizeParty(window.GAME.DATA), CARDS = window.GAME.CARDS;
+const EV = DATA.events.filter(e=>e.t!=='snapshot');
+const SNAPS = DATA.events.filter(e=>e.t==='snapshot');
+// привязка: для каждого snapshot находим его индекс в общем потоке событий
+function linkBounds(){ // события идут в исходном порядке в DATA.events; режем потоки между снимками
+  const all = DATA.events; let cur=-1; const bounds=[];
+  for(let i=0;i<all.length;i++){ if(all[i].t==='snapshot'){bounds.push([cur+1,i]); cur=i;} }
+  bounds.push([cur+1, all.length]);
+  SNAPS.forEach((s,idx)=>{ s._from=bounds[idx][0]; s._to=bounds[idx][1]; });
+}
+linkBounds();
+let frame=0, playing=false, timer=null;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+$('seedlbl').textContent=`партия seed ${DATA.seed} · ${DATA.n} игроков · кадров: ${SNAPS.length}`;
+$('seek').max=SNAPS.length-1;
+function handMode(){return document.querySelector('input[name=handmode]:checked').value}
+function snap(){return SNAPS[frame]}
+// ---------- СТОЛ ----------
+function renderBoard(){
+  const bd=$('board'); bd.innerHTML='';
+  const s=snap(), hidden=handMode()==='hidden';
+  for(const p of s.snap.players){
+    const d=document.createElement('div'); d.className='pc'+(p.alive?'':' dead')+((p.seat===s.seat)?' active':'');
+    const rev=p.revealed.map(([k,c])=>`<span class="card c${k}">[${k}] ${esc(c)}</span>`).join('');
+    let handHtml='';
+    if(hidden){ handHtml='<span class="facedown">🂠 скрыто ×'+p.hand_n+'</span>'; }
+    else { handHtml=p.hand.map(([k,c])=>`<span class="card c${k}" style="opacity:.75">🔒[${k}] ${esc(c)}</span>`).join(''); }
+    const repB=Object.entries(p.rep||{}).filter(([k,v])=>v!==0).map(([k,v])=>{
+      const cls=v>=0.5?'repP':(v<=-0.5?'repN':''); return `<span class="tk ${cls}" title="Мнение P${k}">${'P'+k} ${v>0?'+':''}${(+v).toFixed(1)}</span>`}).join('');
+    const grB=Object.entries(p.grudge||{}).filter(([k,g])=>g[0]>0).map(([k,g])=>`<span class="tk repG" title="Обида на P${k} (цикл ${g[1]})">💢P${k} ${g[0].toFixed(1)}</span>`).join('');
+    const tilt=p.tilt?(' ↯'+(p.tilt==='hot'?'взвод':'оборона')):'';
+    d.innerHTML=`<div class="nm">P${p.seat} ${esc(p.name)}${tilt}</div><div class="pr">${esc(p.prof)} · 🎭 ${esc(p.arch)}</div>
+    <div>${p.alive?'':'💀 мёртв с цикла '+DATA.players.find(x=>x.seat===p.seat).died_cycle}</div>
+    <span class="or">ОР: ${p.or}</span><span class="tk">🪙 ${p.tokens}</span><span class="tk">☠ ${p.kills}</span>
+    ${p.obmen?`<span class="tk" title="Карта обмена">🎴 ${esc(p.obmen)}</span>`:''}
+    ${p.ghostcard?`<span class="tk" title="Карта мёртвых">👻 ${esc(p.ghostcard)}</span>`:''}
+    <div class="st ${p.alive?'alive':'dead'}">${p.alive?'ЖИВ':'ПРИЗРАК'}</div>
+    <div>${repB}${grB}</div>
+    <div>${rev}${hidden?'':handHtml}</div>`;
+    d.onclick=()=>showPlayer(p);
+    bd.appendChild(d);
+  }
+  // текущий ход: события между этим кадром и следующим
+  const evs=SNAPS[frame]._from!==undefined?EV.slice(SNAPS[frame]._from,SNAPS[frame]._to):[];
+  const box=$('curlog'); box.innerHTML='';
+  const head = s.seat? `Ход: цикл ${s.cycle}, P${s.seat} ${esc(s.name)} (${esc(s.arch)})` : `Начало цикла ${s.cycle}`;
+  box.insertAdjacentHTML('beforeend',`<div class="turn">${head}</div>`);
+  for(const e of evs){ box.insertAdjacentHTML('beforeend',evLine(e)); }
+  $('frameinfo').textContent=`кадр ${frame+1}/${SNAPS.length}: цикл ${s.cycle}${s.seat?', ход P'+s.seat+' '+s.name:' (начало)'}`;
+  $('seek').value=frame;
+  markLogCurrent();
+}
+function evLine(e){
+  if(e.t==='roll') return `<div class="ln roll">🎲 ${esc(e.name)}: бросок d20=${e.nat} (эфф ${e.eff}) — ${esc(e.action)}${e.target?' → '+esc(e.target):''}</div>`;
+  if(e.t==='reveal') return `<div class="ln">🂪 ${esc(e.name)} раскрывает [${e.kind}] «${esc(e.card)}»</div>`;
+  if(e.t==='wound') return `<div class="ln${e.immune?'':' dth'}">${e.immune?'🛡 удар не прошёл по '+esc(e.name):'🩸 '+esc(e.name)}: +${e.amt} ОР (от ${esc(e.src||'?')}) → ${e.or_after}</div>`;
+  if(e.t==='death') return `<div class="ln dth">💀 ${esc(e.name)} УМИРАЕТ (${esc(e.cause)}, источник: ${esc(e.killer||'—')})</div>`;
+  if(e.t==='venge') return `<div class="ln pers">💢 МЕСТЬ: ${esc(e.name)} выбирает целью ${esc(e.target)} (долг ${e.debt})</div>`;
+  if(e.t==='tilt') return `<div class="ln pers">↯ ТИЛЬТ: ${esc(e.name)} — ${e.mode==='hot'?'вспышка (агрессия ↑)':'заморозка (оборона)'}</div>`;
+  if(e.t==='rep') return `<div class="ln pers">⚖ репутация ${esc(e.by)}→${esc(e.victim)}: ${e.dw>0?'+':''}${e.dw}</div>`;
+  if(e.t==='cycle_start') return `<div class="ln har">—— старт цикла ${e.cycle}, живых ${e.alive} ——</div>`;
+  if(e.t==='rpd') return `<div class="ln act">🃏 РПД ${esc(e.name)}: использовано С=${e.rpds_used}/Д=${e.rpdi_used}, осталось С=${e.rpds_left}/Д=${e.rpdi_left}</div>`;
+  if(e.t==='spec') return `<div class="ln pers">⚡ СПЕЦКАРТА «${esc(e.card)}» — ${esc(e.name)} (цикл ${e.cycle})</div>`;
+  if(e.t==='turn_start') return '';
+  return '';
+}
+// ---------- ЛОГИ ----------
+function renderLogs(){
+  const lb=$('logbox'); lb.innerHTML='';
+  for(const ln of DATA.log){
+    const s=ln.trim(); let cls='ln';
+    if(s.startsWith('════')){lb.insertAdjacentHTML('beforeend',`<div class="cycle">${esc(ln)}</div>`);continue}
+    if(s.startsWith('———')){lb.insertAdjacentHTML('beforeend',`<div class="turn">${esc(ln)}</div>`);continue}
+    if(s.includes('МЕСТЬ')||s.includes('ТИЛЬТ'))cls+=' pers';
+    else if(s.includes('РПДС:')||s.includes('РПДИ'))cls+=' act';
+    else if(s.includes('УМИРАЕТ')||s.includes('💀'))cls+=' dth';
+    else if(s.includes('ЖАТВА')||s.includes('🌾'))cls+=' har';
+    else if(s.includes('ВОСКРЕШ')||s.includes('возвращается'))cls+=' rev';
+    else if(s.includes('бросок d20'))cls+=' roll';
+    lb.insertAdjacentHTML('beforeend',`<div class="${cls}">${esc(ln)}</div>`);
+  }
+}
+function markLogCurrent(){
+  document.querySelectorAll('#logbox .cur').forEach(x=>x.classList.remove('cur'));
+  const s=SNAPS[frame]; if(!s.name)return;
+  const key=`P${s.seat} ${s.name}`;
+  const nodes=document.querySelectorAll('#logbox .turn');
+  for(const n of nodes){ if(n.textContent.includes(key)){n.classList.add('cur');n.scrollIntoView({block:'center',behavior:'smooth'});break} }
+}
+// ---------- СПИСКИ ----------
+function renderLists(){
+  const s=snap(), hidden=handMode()==='hidden';
+  const alive=s.snap.players.filter(p=>p.alive), dead=s.snap.players.filter(p=>!p.alive);
+  const usedCards={}; for(const p of s.snap.players) for(const [k,c] of p.revealed){usedCards[c]=(usedCards[c]||0)+1}
+  const inPlay=[]; for(const p of s.snap.players){ if(p.obmen)inPlay.push(['🎴 обмен',p.obmen,p.name]); if(p.ghostcard)inPlay.push(['👻 тень',p.ghostcard,p.name]); }
+  const acts=EV.slice(0,s._to).filter(e=>e.t==='roll');
+  const actCnt={}; for(const a of acts){const k=(a.action||'?').split(' ')[0];actCnt[k]=(actCnt[k]||0)+1}
+  const topRolls=acts.slice(-12).reverse().map(a=>`<tr><td>${a.cycle}</td><td>${esc(a.name)}</td><td>${esc(a.action)}</td><td>${a.nat}→${a.eff}</td><td>${esc(a.target||'')}</td></tr>`).join('');
+  $('listsbox').innerHTML=`
+  <div class="deckcol" style="margin:8px 0"><h3>❤️ Живые (${alive.length})</h3>${alive.map(p=>`<span class="tk">${esc(p.name)} ОР:${p.or}</span>`).join(' ')||'—'}</div>
+  <div class="deckcol" style="margin:8px 0"><h3>💀 Мёртвые (${dead.length})</h3>${dead.map(p=>`<span class="tk repN">${esc(p.name)} (цикл ${DATA.players.find(x=>x.seat===p.seat).died_cycle}) 👻${p.tokens}</span>`).join(' ')||'—'}</div>
+  <div class="deckcol" style="margin:8px 0"><h3>🃏 Активные эффекты на столе</h3>${inPlay.map(([t,c,n])=>`<div class="card">${t} — ${esc(c)} <span class="note">(${esc(n)})</span></div>`).join('')||'<span class=note>нет</span>'}</div>
+  <div class="deckcol" style="margin:8px 0"><h3>🂪 Использованные (раскрытые) карты — топ</h3>${Object.entries(usedCards).sort((a,b)=>b[1]-a[1]).slice(0,15).map(([c,n])=>`<div class="card">${esc(c)} <span class="note">×${n}</span></div>`).join('')||'<span class=note>нет</span>'}</div>
+  <div class="deckcol" style="margin:8px 0"><h3>🎲 Активности (последние броски до кадра)</h3><table><tr><th>цкл</th><th>кто</th><th>действие</th><th>бросок</th><th>цель</th></tr>${topRolls||'<tr><td colspan=5>нет</td></tr>'}</table></div>
+  <div class="deckcol" style="margin:8px 0"><h3>📊 Активности по типам действий</h3>${Object.entries(actCnt).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`<div>${esc(k)}: <span class="bar" style="width:${Math.min(200,v*14)}px"></span> ${v}</div>`).join('')||'<span class=note>нет</span>'}</div>`;
+}
+// ---------- МОДАЛКА ИГРОКА ----------
+function showPlayer(p){
+  $('mpTitle').textContent=`P${p.seat} ${p.name} — ${p.prof} · 🎭 ${p.arch}`;
+  const fin=DATA.players.find(x=>x.seat===p.seat);
+  const pers=(fin&&fin.pers)||{};
+  const names={aggr:'агрессия',help:'помощь',neut:'нейтралитет',theat:'театральность',thief:'воровство',chaos:'хаос'};
+  const bars=['aggr','help','neut','theat','thief','chaos'].map(k=>{const v=pers[k]||0;return `<div>${names[k]}: <span class="bar" style="width:${Math.round(v*220)}px"></span> ${Math.round(v*100)}%</div>`}).join('');
+  const myActs=EV.filter(e=>e.t==='roll'&&e.seat===p.seat);
+  const succ=myActs.filter(e=>e.eff>=15||(e.table==='A'&&e.eff>12)).length;
+  const dealt=EV.filter(e=>e.t==='wound'&&e.src===p.name).reduce((a,e)=>a+(e.immune?0:e.amt),0);
+  const taken=EV.filter(e=>e.t==='wound'&&e.seat===p.seat&&e.src!==p.name).reduce((a,e)=>a+(e.immune?0:e.amt),0);
+  const deathsT=EV.filter(e=>e.t==='death'&&e.killer===p.name).length;
+  const tilts=EV.filter(e=>e.t==='tilt'&&e.seat===p.seat).length;
+  const veng=EV.filter(e=>e.t==='venge'&&e.seat===p.seat).length;
+  const repNow=Object.entries(p.rep||{}).filter(([k,v])=>v!==0).map(([k,v])=>`P${k}: ${v>0?'+':''}${(+v).toFixed(1)}`).join(', ')||'—';
+  const grNow=Object.entries(p.grudge||{}).filter(([k,g])=>g[0]>0).map(([k,g])=>`на P${k}: ${g[0].toFixed(1)} (с ц.${g[1]})`).join(', ')||'—';
+  $('mpBody').innerHTML=`
+  <table><tr><th>Показатель</th><th>Значение</th></tr>
+  <tr><td>Статус в этом кадре</td><td>${p.alive?'жив (ОР '+p.or+')':'призраK (жетон '+p.tokens+')'}</td></tr>
+  <tr><td>Спецкарта</td><td>${esc(fin.spec[1])} — ${p.spec_used?'использована':'в запасе'}</td></tr>
+  <tr><td>Роль в партии (итоги)</td><td>${fin.alive?'выжил(а)':`умер(ла) в цикле ${fin.died_cycle}`}${fin.resurrected?' · воскрешал(ась)':''}</td></tr>
+  <tr><td>Бросков / успешных</td><td>${myActs.length} / ~${succ}</td></tr>
+  <tr><td>Нанесено ОР / получено ОР</td><td>${dealt} / ${taken}</td></tr>
+  <tr><td>Убийств</td><td>${deathsT}</td></tr>
+  <tr><td>Тильты / акты мести</td><td>${tilts} / ${veng}</td></tr>
+  <tr><td>Репутация сейчас</td><td>${repNow}</td></tr>
+  <tr><td>Личные обиды</td><td>${grNow}</td></tr></table>
+  <h3 style="color:var(--violet)">🎭 Вектор личности</h3>${bars}
+  <h3 style="color:var(--cyan)">Раскрытые карты</h3>${p.revealed.map(([k,c])=>`<span class="card c${k}">[${k}] ${esc(c)}</span>`).join('')||'<span class=note>нет</span>'}
+  ${handMode()==='obs'?`<h3 style="color:var(--dim)">Закрытая рука (видно только наблюдателю)</h3>${p.hand.map(([k,c])=>`<span class="card c${k}">🔒[${k}] ${esc(c)}</span>`).join('')||'<span class=note>пусто</span>'}`:''}`;
+  openModal('mPlayer');
+}
+// ---------- КОЛОДЫ ----------
+function renderDecks(){
+  const dg=$('deckgrid');
+  const order=['ТЕЛО','РАЗУМ','СПОСОБНОСТИ','ИНВЕНТАРЬ','ИСТОРИЯ','ЗНАНИЯ','ДЕТАЛИ','ТЕНЬ'];
+  for(const k of order){
+    const items=CARDS.DECKS[k].map(c=>`<span class="card c${k}">${esc(c)}</span>`).join('');
+    dg.insertAdjacentHTML('beforeend',`<div class="deckcol"><h3>${k} (${CARDS.DECKS[k].length})</h3>${items}</div>`);
+  }
+  for(const [name,arr] of [['ПРОФЕССИИ',CARDS.PROFS],['СПЕЦКАРТЫ',CARDS.SPECS],['КАРТЫ ОБМЕНА',CARDS.OBMEN]]){
+    const items=arr.map(([t,x])=>`<span class="card"><b>${esc(t)}</b> — ${esc(x)}</span>`).join('');
+    dg.insertAdjacentHTML('beforeend',`<div class="deckcol"><h3>${name} (${arr.length})</h3>${items}</div>`);
+  }
+}
+// ---------- СТАТИСТИКА ОДНОЙ ПАРТИИ ----------
+function partyStats(){
+  const st=DATA.state;
+  const rows=DATA.players.map(p=>{
+    const dealt=EV.filter(e=>e.t==='wound'&&e.src===p.name).reduce((a,e)=>a+(e.immune?0:e.amt),0);
+    const taken=EV.filter(e=>e.t==='wound'&&e.seat===p.seat&&e.src!==p.name&&e.src!=='self').reduce((a,e)=>a+(e.immune?0:e.amt),0);
+    const rolls=EV.filter(e=>e.t==='roll'&&e.seat===p.seat).length;
+    const tilts=EV.filter(e=>e.t==='tilt'&&e.seat===p.seat).length;
+    const veng=EV.filter(e=>e.t==='venge'&&e.seat===p.seat).length;
+    const kills=EV.filter(e=>e.t==='death'&&e.killer===p.name).length;
+    return `<tr><td>P${p.seat} ${esc(p.name)}</td><td>${esc(p.prof[0])}</td><td>${esc((DATA.arch_ru||{})[(p.pers||{}).arch]||'—')}</td>
+    <td>${p.alive?'✅ жив':'💀 '+p.died_cycle}</td><td>${p.or}</td><td>${kills}</td><td>${dealt}</td><td>${taken}</td><td>${rolls}</td><td>${tilts}</td><td>${veng}</td><td>${p.tokens}</td></tr>`;
+  }).join('');
+  const win=DATA.players.filter(p=>p.alive).map(p=>`P${p.seat} ${p.name}`).join(', ');
+  return `<h2>📊 Детальная статистика партии (seed ${DATA.seed})</h2>
+  <div class="note">Победители (цикл ${st.end_cycle}): ${esc(win)}</div>
+  <table><tr><th>Игрок</th><th>Профессия</th><th>Архетип</th><th>Финал</th><th>ОР</th><th>Убийств</th><th>Нанес ОР</th><th>Получ. ОР</th><th>Бросков</th><th>Тильты</th><th>Месть</th><th>🪙</th></tr>${rows}</table>
+  <div class="score">${esc(DATA.log[DATA.log.length-1])}</div>`;
+}
+$('statsbox').innerHTML=partyStats();
+// ---------- ПЕРЕМОТКА ----------
+// списки циклов и ходов для быстрого перехода + кнопки ⏪/⏩ между циклами
+const CYCLES = [...new Set(SNAPS.map(s=>s.cycle))];
+function buildJumpLists(){
+  const cSel=$('cycleSel'), fSel=$('frameSel');
+  cSel.innerHTML = CYCLES.map(c=>`<option value="${c}">цикл ${c}</option>`).join('');
+  fSel.innerHTML = SNAPS.map((s,i)=>`<option value="${i}">${i+1}: цикл ${s.cycle}${s.seat?' · P'+s.seat+' '+esc(s.name):' · начало'}</option>`).join('');
+}
+function firstFrameOfCycle(c){ for(let i=0;i<SNAPS.length;i++) if(SNAPS[i].cycle===c) return i; return 0; }
+function cycleStep(dir){
+  const cur=snap().cycle;
+  let idx=CYCLES.indexOf(cur); idx=Math.max(0,Math.min(CYCLES.length-1,idx+dir));
+  setFrame(firstFrameOfCycle(CYCLES[idx]));
+}
+function syncJumpLists(){ $('cycleSel').value=snap().cycle; $('frameSel').value=frame; }
+function setFrame(i){frame=Math.max(0,Math.min(SNAPS.length-1,i));renderBoard();syncJumpLists();if($('v-lists').classList.contains('on'))renderLists()}
+function stopPlay(){playing=false;if(timer)clearInterval(timer);timer=null;$('tPlay').textContent='▶'}
+function startPlay(){
+  if(frame>=SNAPS.length-1)frame=0;
+  playing=true;$('tPlay').textContent='⏸';
+  const sp=+$('speedSel').value;
+  const step=()=>{ if(!playing)return;
+    if(frame>=SNAPS.length-1){ stopPlay(); if($('autoEnd').checked)showEnd(); return; }
+    setFrame(frame+1);
+    if(sp===0){ timer=setTimeout(step,0); } else timer=setTimeout(step,sp);
+  };
+  step();
+}
+$('tPlay').onclick=()=>playing?stopPlay():startPlay();
+$('tNext').onclick=()=>{stopPlay();setFrame(frame+1)};
+$('tPrev').onclick=()=>{stopPlay();setFrame(frame-1)};
+$('tCycNext').onclick=()=>{stopPlay();cycleStep(+1)};
+$('tCycPrev').onclick=()=>{stopPlay();cycleStep(-1)};
+$('cycleSel').onchange=e=>{stopPlay();setFrame(firstFrameOfCycle(+e.target.value))};
+$('frameSel').onchange=e=>{stopPlay();setFrame(+e.target.value)};
+$('seek').oninput=e=>{stopPlay();setFrame(+e.target.value)};
+document.addEventListener('keydown',e=>{
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT')return;
+  if(e.key==='ArrowRight'){stopPlay();setFrame(frame+1)}
+  if(e.key==='ArrowLeft'){stopPlay();setFrame(frame-1)}
+  if(e.key==='PageDown'){stopPlay();cycleStep(+1)}
+  if(e.key==='PageUp'){stopPlay();cycleStep(-1)}
+  if(e.key===' '){e.preventDefault();playing?stopPlay():startPlay()}
+});
+// ---------- ИТОГ ----------
+function showEnd(){ $('meBody').innerHTML=partyStats(); openModal('mEnd'); }
+$('openStatsEnd').onclick=showEnd;
+// ---------- МОДАЛКИ / ТАБЫ / МЕНЮ ----------
+function openModal(id){document.getElementById(id).classList.add('open')}
+function closeModal(){document.querySelectorAll('.modal').forEach(m=>m.classList.remove('open'))}
+document.querySelectorAll('.closeM').forEach(b=>b.onclick=closeModal);
+document.querySelectorAll('.modal').forEach(m=>m.onclick=e=>{if(e.target===m)closeModal()});
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on');$('v-'+t.dataset.v).classList.add('on');
+  if(t.dataset.v==='lists')renderLists();
+  if(t.dataset.v==='stats')$('statsbox').innerHTML=partyStats();
+});
+$('gearBtn').onclick=()=>$('side').classList.toggle('open');
+$('closeSide').onclick=()=>$('side').classList.remove('open');
+document.querySelectorAll('input[name=handmode]').forEach(r=>r.onchange=renderBoard);
+// выбор архетипов вручную
+(function(){
+  const keys=Object.keys(DATA.arch_vec);
+  const pick=$('archPick');
+  for(let i=0;i<26;i++){
+    const sel=document.createElement('select');sel.dataset.i=i;
+    sel.innerHTML=`<option value="">— авто —</option>`+keys.map(k=>`<option value="${k}">${DATA.arch_ru[k]}</option>`).join('');
+    const lab=document.createElement('div');lab.textContent='P'+(i+1);
+    pick.appendChild(lab);pick.appendChild(sel);
+  }
+  $('archMode').onchange=e=>{pick.style.display=e.target.value==='manual'?'grid':'none'};
+})();
+// генерация новой партии — через Pyodide (C++-сборка CPython): реальный движок в браузере
+let PY=null, pyLoading=false;
+async function ensurePy(){
+  if(PY) return PY;
+  if(pyLoading) throw new Error('движок уже загружается, подожди…');
+  pyLoading=true;
+  const banner=$('banner'); banner.style.display='block';
+  banner.textContent='⏳ Загрузка Python-движка в браузер (Pyodide, ~10 МБ, первый раз)…';
+  try{
+    if(!window.loadPyodide){
+      await new Promise((res,rej)=>{const s=document.createElement('script');
+        s.src='https://cdn.jsdelivr.net/pyodide/v0.26.4/full/pyodide.js';s.onload=res;s.onerror=()=>rej(new Error('нет сети для CDN'));document.head.appendChild(s);});
+    }
+    PY=await window.loadPyodide({indexURL:'https://cdn.jsdelivr.net/pyodide/v0.26.4/full/'});
+    // кладём исходники движка и канонные колоды (в ту же структуру папок, что и на ПК)
+    for(const [name,src] of Object.entries(window.GAME.SRC)) PY.FS.writeFile('/'+name, src);
+    try{PY.FS.mkdir('/canon');}catch(e){}
+    PY.FS.writeFile('/canon/decks.json', JSON.stringify(CARDS.DECKS));
+    PY.FS.writeFile('/decks.json', JSON.stringify(CARDS.DECKS));
+    await PY.runPythonAsync(`
+import sys, os, json
+sys.path.insert(0,'/')
+os.chdir('/')
+try:
+    import game_sim as gs
+except Exception as _e:
+    raise RuntimeError('импорт движка в браузере не удался: '+str(_e))
+if getattr(gs,'DECKS',None) is None:
+    gs.DECKS=json.load(open('/canon/decks.json',encoding='utf-8'))
+    gs.CATS=getattr(gs,'CATS',['ТЕЛО','РАЗУМ','СПОСОБНОСТИ','ИНВЕНТАРЬ','ИСТОРИЯ','ЗНАНИЯ','ДЕТАЛИ'])
+    gs.POOLS={k:gs.DECKS[k][:] for k in gs.CATS if k in gs.DECKS}
+`);
+    banner.style.display='none'; pyLoading=false;
+    return PY;
+  }catch(e){ pyLoading=false; banner.style.display='none'; throw e; }
+}
+$('genBtn').onclick=async()=>{
+  const banner=$('banner');
+  try{
+    await ensurePy();
+    banner.style.display='block'; banner.textContent='⏳ Идёт новая партия…';
+    const n=Math.max(2,Math.min(26,+$('nSel').value||8));
+    const seed=Math.max(1,+$('seedSel').value||1);
+    let archs=null;
+    if($('archMode').value==='manual'){
+      const sels=[...document.querySelectorAll('#archPick select')].slice(0,n);
+      const given=sels.map(s=>s.value).filter(v=>v);
+      if(given.length) archs=given; // недостающие места движок добьёт случайно
+    }
+    const sv=Math.max(1,Math.min(n-1,+$('survSel').value||4));
+    PY.globals.set('_req', JSON.stringify({seed:seed, n:n, archs:archs, surv:sv}));
+    // Pyodide сам конвертирует возвращаемый dict в JS-объект — json.dumps НЕ нужен
+    const d0=await PY.runPythonAsync(`
+import sys
+gs=sys.modules['game_sim']
+r=__import__('json').loads(_req)
+res=gs.play_game(r['seed'], n=r['n'], archs=r.get('archs'), survivors=r['surv'])
+def _pl(p):
+    gr={}
+    for k,v in (p.get('grudge') or {}).items():
+        gr[str(k)] = list(v) if isinstance(v,(list,tuple,set)) else [v]
+    return {'seat':p['seat'],'name':p['name'],'prof':list(p['prof']),'alive':p['alive'],'or':p['or'],
+      'died_cycle':p['died_cycle'],'tokens':p['tokens'],'kills':p['kills'],'resurrected':p['resurrected'],
+      'hand_n':sum(len(v) for v in p['hand'].values()),
+      'hand':[[k,c] for k,cs in p['hand'].items() for c in cs],
+      'revealed':[[k,c] for k,c in p['revealed']],
+      'spec_used':p['spec_used'],'spec':list(p['spec']),
+      'obmen':list(p['obmen']) if p.get('obmen') else None,
+      'rpds':int(p.get('rpds',0) or 0),'rpdi':int(p.get('rpdi',0) or 0),
+      'pers':dict(p.get('pers') or {}),
+      'rep':{str(k):v for k,v in (p.get('rep') or {}).items()},
+      'grudge':gr}
+import json as _j
+st=dict(res['state'])
+for k,v in list(st.items()):
+    if isinstance(v, dict): st[k]={str(kk):vv for kk,vv in v.items()}
+return _j.dumps({'seed':r['seed'],'n':len(res['players']),'log':res['log'],'events':res['events'],
+ 'state':st,'players':[_pl(p) for p in res['players']],
+ 'arch_ru':dict(gs.ARCH_RU),'arch_vec':{k:dict(v) for k,v in gs.ARCH.items()},'survivors':r['surv']}, default=str)
+`);
+    const d=JSON.parse(d0);
+    loadParty(normalizeParty(d));
+    banner.style.display='none';
+  }catch(e){ banner.style.display='block'; banner.textContent='Не удалось посчитать партию в браузере: '+e.message+' — альтернатива: python3 blitz.py web --seed N --n M'; }
+};
+function loadParty(d){
+  DATA.seed=d.seed;DATA.n=d.n;DATA.log=d.log;DATA.events=d.events;DATA.state=d.state;
+  DATA.players=d.players;DATA.arch_ru=d.arch_ru;DATA.arch_vec=d.arch_vec;
+  EV.length=0; EV.push(...d.events.filter(e=>e.t!=='snapshot'));
+  SNAPS.length=0; SNAPS.push(...d.events.filter(e=>e.t==='snapshot'));
+  linkBounds();
+  buildJumpLists();
+  $('seedlbl').textContent=`партия seed ${DATA.seed} · ${DATA.n} игроков · кадров: ${SNAPS.length}`;
+  $('seek').max=SNAPS.length-1; setFrame(0);
+  renderLogs(); $('statsbox').innerHTML=partyStats();
+}
+// автопрогон серии партий через тот же движок
+$('batchBtn').onclick=async()=>{
+  const banner=$('banner');
+  try{
+    await ensurePy();
+    const games=Math.max(1,Math.min(300,+$('batchN').value||10));
+    const n=Math.max(2,Math.min(26,+$('batchP').value||8));
+    banner.style.display='block'; banner.textContent=`⏳ Серия: ${games} партий по ${n} игроков…`;
+    PY.globals.set('_breq', JSON.stringify({games:games,n:n,baseSeed:DATA.seed*1000+7}));
+    const out=await PY.runPythonAsync(`
+import json, sys
+gs=sys.modules['game_sim']
+r=json.loads(_breq)
+rows=[]
+for i in range(r['games']):
+    res=gs.play_game(r['baseSeed']+i, n=r['n'])
+    st=res['state']; lines=[x for x in res['log'] if isinstance(x,str)]
+    _sc=[x for x in lines if isinstance(x,str) and x.startswith('SCORE=')]
+    score=int(_sc[-1].split()[0].split('=')[1]) if _sc else 0
+    evs=[x for x in res['events'] if isinstance(x,dict)]
+    from collections import Counter
+    act=Counter(e['action'].split(' ')[0] for e in evs if e['t']=='roll')
+    tilts=sum(1 for e in evs if e['t']=='tilt'); veng=sum(1 for e in evs if e['t']=='venge')
+    deaths_by=Counter((e['killer'] or e['cause']) for e in evs if e['t']=='death')
+    rows.append(dict(seed=r['baseSeed']+i, end=st['end_cycle'], first_death=st['first_death_cycle'],
+      deaths=st['deaths'], harvest=bool(st['harvest_fired']), bets_hit=st['bet_hits'],
+      revive=bool(st['token_revive']), specrevive=bool(st['spec_revive']), avoid=bool(st['avoid_saved']),
+      nat20=bool(st['nat20']), nat1=bool(st['nat1']), cascade=bool(st['cascade_hit']),
+      marauder=bool(st['marauder_ok']), croupier=bool(st['croupier_used']), score=score,
+      winners=[f"P{p['seat']} {p['name']}" for p in res['players'] if p['alive']],
+      arch_winners=[ ((gs.ARCH_RU.get((p.get('pers') or {}).get('arch',''), '?')) ) for p in res['players'] if p['alive']],
+      top_action=(act.most_common(1)[0][0] if act else ''), tilts=tilts, veng=veng,
+      harvest_kills=sum(1 for e in evs if e['t']=='death' and e['cause']=='жатва')))
+return json.dumps(rows)
+`);
+    banner.style.display='none';
+    showBatch(JSON.parse(out), games, n);
+  }catch(e){ banner.style.display='block'; banner.textContent='Серия не удалась: '+e.message; }
+};
+function showBatch(rows, games, n){
+  const avg=a=>a.reduce((x,y)=>x+y,0)/a.length;
+  const pct=a=>(100*a.length/games).toFixed(0)+'%';
+  const ends=rows.map(r=>r.end), fds=rows.map(r=>r.first_death||99), dths=rows.map(r=>r.deaths), scs=rows.map(r=>r.score);
+  const hist={}; for(const r of rows)hist[r.end]=(hist[r.end]||0)+1;
+  const maxH=Math.max(...Object.values(hist));
+  const archWin={}; for(const r of rows)for(const a of r.arch_winners)archWin[a]=(archWin[a]||0)+1;
+  const aw=Object.entries(archWin).sort((a,b)=>b[1]-a[1]);
+  const har=rows.filter(r=>r.harvest), bh=rows.filter(r=>r.bets_hit>0), rv=rows.filter(r=>r.revive), sr=rows.filter(r=>r.specrevive), av=rows.filter(r=>r.avoid);
+  const n20=rows.filter(r=>r.nat20), n1=rows.filter(r=>r.nat1), cas=rows.filter(r=>r.cascade), mar=rows.filter(r=>r.marauder), crp=rows.filter(r=>r.croupier);
+  const csv=['seed;end;first_death;deaths;harvest;bets_hit;revive;specrevive;avoid;n20;n1;cascade;marauder;croupier;score;winners',
+    ...rows.map(r=>[r.seed,r.end,r.first_death,r.deaths,+r.harvest,r.bets_hit,+r.revive,+r.specrevive,+r.avoid,+r.nat20,+r.nat1,+r.cascade,+r.marauder,+r.croupier,r.score,'"'+r.winners.join(', ')+'"'].join(';'))].join('\n');
+  window.BATCH_CSV=csv;
+  $('mbBody').innerHTML=`
+  <div class="note">Серия: ${games} партий × ${n} игроков. Среднее длительность ${avg(ends).toFixed(2)} цикла(ов), средняя S=${avg(scs).toFixed(1)}, смертей в среднем ${avg(dths).toFixed(1)}.</div>
+  <h3>Длительность игр</h3>${Object.keys(hist).sort().map(k=>`<div>цикл ${k}: <span class="bar" style="width:${hist[k]/maxH*220}px"></span> ${hist[k]} (${pct(rows.filter(r=>r.end==+k))})</div>`).join('')}
+  <h3>Вероятности событий (по партиям)</h3>
+  <table><tr><th>Событие</th><th>Частота</th></tr>
+  <tr><td>Жатва сработала</td><td>${pct(har)}</td></tr>
+  <tr><td>Ставки призраков сыграны ≥1</td><td>${pct(bh)}</td></tr>
+  <tr><td>Выкуп жетонами (воскрешение)</td><td>${pct(rv)}</td></tr>
+  <tr><td>Воскрешение спецкартой</td><td>${pct(sr)}</td></tr>
+  <tr><td>Уход от смерти («avoid»)</td><td>${pct(av)}</td></tr>
+  <tr><td>Nat20 хоть раз</td><td>${pct(n20)}</td></tr>
+  <tr><td>Nat1 хоть раз</td><td>${pct(n1)}</td></tr>
+  <tr><td>Каскадёр принял удар</td><td>${pct(cas)}</td></tr>
+  <tr><td>Мародёрство увенчалось</td><td>${pct(mar)}</td></tr>
+  <tr><td>Крупье перебрасывал</td><td>${pct(crp)}</td></tr>
+  <tr><td>Первая смерть раньше 4 цикла</td><td>${pct(rows.filter(r=>r.first_death&&r.first_death<=3))}</td></tr></table>
+  <h3>Архетипы выживших</h3>${aw.map(([a,c])=>`<div>${esc(a)}: <span class="bar" style="width:${c/aw[0][1]*200}px"></span> ${c}</div>`).join('')||'—'}
+  <h3>Все партии</h3><div style="max-height:240px;overflow:auto"><table><tr><th>seed</th><th>конец</th><th>1-я смерть</th><th>смертей</th><th>S</th><th>победители</th></tr>
+  ${rows.map(r=>`<tr><td>${r.seed}</td><td>${r.end}</td><td>${r.first_death??'—'}</td><td>${r.deaths}</td><td>${r.score}</td><td>${esc(r.winners.join(', '))}</td></tr>`).join('')}</table></div>
+  <button class="btn mini" id="expCsv">📥 Скачать CSV (Excel)</button>`;
+  openModal('mBatch');
+  $('expCsv').onclick=()=>dl(`blitz_batch_${games}x${n}.csv`,'\ufeff'+csv,'text/csv;charset=utf-8');
+}
+// экспорт
+function dl(name,text,type){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([text],{type:type||'text/plain;charset=utf-8'}));a.download=name;a.click()}
+$('expMd').onclick=()=>dl(`blitz_seed${DATA.seed}.md`,'# Партия БЛИЦ БОЙ seed='+DATA.seed+'\n\n```\n'+DATA.log.join('\n')+'\n```');
+$('expJson').onclick=()=>dl(`blitz_seed${DATA.seed}.json`,JSON.stringify(GAME,null,1),'application/json');
+// ---- стартовый рендер ----
+buildJumpLists(); syncJumpLists();
+renderLogs();renderDecks();renderBoard();
+// кнопка итога показываем когда досмотрели до конца или игра закончена
+$('openStatsEnd').style.display='inline-block';
+</script>
+</body>
+</html>

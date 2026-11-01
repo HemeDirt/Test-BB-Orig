@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>БЛИЦ БОЙ — рабочая игра</title>
+<style>
+:root{--bg:#14161c;--card:#1e2129;--acc:#e0b34d;--red:#e05d5d;--gr:#6dc36d;--mut:#8a8f9d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#e8eaf0;font-family:system-ui,Segoe UI,Roboto,sans-serif;line-height:1.45}
+.wrap{max-width:820px;margin:0 auto;padding:14px}
+h1{color:var(--acc);font-size:24px;margin:6px 0 2px}
+.sub{color:var(--mut);font-size:13px;margin-bottom:12px}
+button{background:var(--acc);border:0;color:#14161c;font-size:15px;font-weight:700;padding:10px 16px;border-radius:10px;cursor:pointer;margin:4px 6px 4px 0}
+button.sec{background:#2a2e3a;color:#e8eaf0;font-weight:400}
+.panel{background:var(--card);border-radius:14px;padding:14px;margin:10px 0;border:1px solid #2a2e3a}
+.seats{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin:8px 0}
+.seat{background:#222632;border-radius:10px;padding:8px 10px;font-size:13px;border:1px solid #2e3342}
+.seat.dead{opacity:.4}.seat.cur{border-color:var(--acc);box-shadow:0 0 0 1px var(--acc)}
+.or{color:var(--red);font-weight:700}
+.log{font-size:13px;white-space:pre-wrap;max-height:46vh;overflow-y:auto;background:#101218;border-radius:10px;padding:10px;margin-top:8px}
+.log .d{color:var(--red)}.log .g{color:var(--gr)}.log .y{color:var(--acc)}.log .m{color:var(--mut)}
+select,input[type=text]{background:#222632;color:#e8eaf0;border:1px solid #2e3342;border-radius:8px;padding:8px;font-size:14px}
+.tag{display:inline-block;background:#2a2e3a;border-radius:6px;padding:1px 7px;font-size:12px;margin:2px}
+.small{font-size:12px;color:var(--mut)}
+h3{margin:4px 0 8px;color:var(--acc);font-size:15px}
+.hand{font-size:12px}.hand .tag{background:#26313f}
+.revs{font-size:12px;color:#9fb3d9}
+</style></head><body><div class="wrap">
+<h1>⚡ БЛИЦ БОЙ</h1>
+<div class="sub">Рабочий билд v1 · правила v3 · канонные колоды 24×7 · 8 игроков · «Ночь в панельке» · S=4 · ОР-порог 3</div>
+<div id="menu" class="panel">
+<h3>Режим</h3>
+<button onclick="startGame(false)">▶ Партия с ботами</button>
+<button onclick="startGame(true)">🎮 Я играю за Валеру (P1), остальные — боты</button>
+<div style="margin-top:8px">
+<select id="variant">
+<option value="base">Базовые правила v3</option>
+<option value="harvest_off">БЕЗ Жатвы</option>
+<option value="or5">Порог смерти 5 ОР (тест длинной партии)</option>
+<option value="fast">Порог смерти 2 ОР (тест быстрой партии)</option>
+</select>
+<input type="text" id="seedInp" placeholder="seed (пусто = случайный)" size="14">
+</div>
+<div style="margin-top:6px"><button class="sec" onclick="showDecks()">📋 Колоды (канон 24)</button>
+<button class="sec" onclick="showRules()">📖 Краткие правила</button></div>
+</div>
+<div id="decks" class="panel" style="display:none"></div>
+<div id="game" class="panel" style="display:none">
+<div id="status"></div>
+<div class="seats" id="seats"></div>
+<div id="action"></div>
+<div class="log" id="log"></div>
+<button class="sec" onclick="location.reload()">⬅ В меню</button>
+</div>
+</div>
+<script>
+"use strict";
+const CATS=["ТЕЛО", "РАЗУМ", "СПОСОБНОСТИ", "ИНВЕНТАРЬ", "ИСТОРИЯ", "ЗНАНИЯ", "ДЕТАЛИ"];
+const DECKS={"ТЕЛО":["1 Ангел с похмелья", "2 Вампир", "3 Есть третий глаз во лбу", "4 Скелет", "5 Самый настоящий дворф", "6 Слабый и немощный", "7 Он реально Раян Гослинг", "8 Горбатый как гора", "9 Выглядит как страшное существо из ада", "10 Лошадь с магической палочкой", "11 Тело это костюм", "12 Температура тела 420°", "13 Андроид", "14 Неизвестный вид", "15 Тело Конструктор", "16 Преобразует свое тело каждые 5 минут", "17 Нет тени", "18 Прозрачное тело", "19 Одет в самое худшее сочетание одежды", "20 Весит 400 кг", "21 Рост меняется от настроения", "22 Самый типичный \"НОРМИС\"", "23 Камень", "24 Сам придумай"], "РАЗУМ":["1 Мыслит через аналогии", "2 Мыслит образами", "3 Эмоциональный вампир", "4 В голове комиссия из пяти человек", "5 Убеждён, что он NPC", "6 Паранойя как образ жизни", "7 Манипулятор", "8 Чёрный юмор", "9 Шутит в самый неподходящий момент", "10 Альтруист", "11 Зависим от внимания", "12 Бездарь", "13 Тварь", "14 Страх Магии", "15 Боязнь самого себя", "16 Боязнь собственной тени", "17 Странный", "18 Не умеет считать", "19 Делает все свои действия наоборот", "20 Говорит только ложь", "21 Хвастается тем, чего не делал", "22 Копит вещи «на всякий случай»", "23 Верит в приметы, которые сам придумал", "24 Засыпает в неподходящий момент"], "СПОСОБНОСТИ":["1 Управляет электричеством", "2 Шутит шутки, после которых люди умирают", "3 Может копировать все что угодно", "4 Ходит сквозь материю", "5 Чинит сломанное, при этом ломается что-то другое", "6 Пугает всех своим существованием", "7 Видит будущие", "8 Клонирует сам себя", "9 Подбрасывает монетку, и реальность преобразуется", "10 Летает на сверхзвуковой скорости", "11 Дышит под водой, но на суше задыхается", "12 Осознает будущие но рандомно", "13 В кармане всегда находится нужная вещь", "14 Превращается в предмет", "15 Молчит, но все слышат его мысли", "16 Стирает память людям, но взамен и свою", "17 Хранит все чужие секреты", "18 Призывает существ в радиусе ста метров", "19 Опаздывает всегда, везде, повсюду", "20 Ремонтирует предметы ударом", "21 Поджигает взглядом", "22 Бесконтактный бой по методичке 1974 года", "23 Телекинез", "24 Некромантия начального уровня"], "ИНВЕНТАРЬ":["1 Компас, указывающий на цель в жизни", "2 Говорящее зеркало, с дерзким характером", "3 Магический посох", "4 Тотем бессмертия", "5 Свиток с древними знаниями", "6 Жумайсумба", "7 Неизвестный артефакт", "8 Пульт от неизвестного устройства", "9 Парацетамол", "10 Портальный пистолет", "11 Кнопка для вызова Аирдропа", "12 Колба с вирусом", "13 Странная хуйня", "14 Обогащенный U-238", "15 23 рубля 19 копеек", "16 Станок плазменной резки металла с ЧПУ Giperplasma START", "17 Пакет санкций", "18 Тетрадь смерти", "19 Горн призывателя", "20 Карманное измерение", "21 Священный Грааль", "22 Дырокол", "23 Часы судного дня", "24 Замок"], "ИСТОРИЯ":["1 Живёт в чужих снах и платит аренду", "2 О моей истории сняли фильм", "3 Пророчество сбылось, но не про меня", "4 Умер на три минуты пока рассказывал историю", "5 Лучший друг каждого Диктатора", "6 Разгневал всех богов своим существованием", "7 Сеть информаторов", "8 Теория заговор", "9 Рецепты из подручных материалов", "10 Стал причиной появления ситуации", "11 Работал(а) в цирке", "12 Живет с родителями", "13 Проходил лечение в психдиспансере", "14 Основатель роблокс секты", "15 Был шпионом", "16 Просто бомж", "17 Мошенник", "18 Украл документ, изменивший ход событий", "19 Посвящён в распавшийся орден", "20 Проклятие рода", "21 Изгой", "22 Не закончил(а) школу", "23 Самоучка", "24 Нажал на таинственную кнопку и не знает, что произошло"], "ЗНАНИЯ":["1 Познания в криминалистике на уровне сериалов", "2 Мёртвые и забытые языки", "3 Квантовая физика", "4 Все тайтлы аниме", "5 Астрология", "6 Объясняет так, что понимают", "7 Научпоп факты", "8 Теория заговор", "9 Рецепты из подручных материалов", "10 Разбирается в лоре любой неинтересной ебанины", "11 Виртуозная ложь", "12 Какая-то недочитанная книга", "13 Оригами из чего угодно", "14 Основы хирургии", "15 Помнит всё, кроме нужного сейчас", "16 Познания на уровне камня, а может и ниже", "17 Использование самые скучные познания в решении любых проблем", "18 Всё мировоззрение противоречиво", "19 Верит в собственную выдуманную теорию", "20 Знание, за которое убьют", "21 Библиотека в голове", "22 Работает без инструкций", "23 Генеалогическое древо упирается в животное", "24 Секретная информация"], "ДЕТАЛИ":["1 Говорит о себе в третьем лице.", "2 Носит в кармане таинственную вещь", "3 Знает тайну человечества", "4 Никогда не опаздывает.", "5 Прозвище: «Тот, Который Вернулся»", "6 Сам себя зовёт «Капитан»", "7 Кошмар: преследуют потусторонние существа из другого измерения.", "8 Произносит мантру на выдуманном языке.", "9 Единственный, кто помнит, что всё было иначе.", "10 Имеет 2000 часов в Танках.", "11 Диктор на заднем плане рассказывает грустную историю жизни игрока.", "12 Смотрел все фильмы с Райаном Гослингом.", "13 Пользуется только народными методами лечения.", "14 Считает, что Земля плоская.", "15 Убьёт за кукурузные палочки.", "16 Ломает четвёртую стену", "17 Коллекционирует ключи.", "18 Собирает мусор.", "19 Разговаривает с неодушевлёнными предметами", "20 Никогда не использует предметы, не проверив их на подвох.", "21 Никогда не договаривает последнее слово.", "22 Предсказывает будущие по колену", "23 Просыпается в неизвестном месте и не помнит, как туда попал.", "24 Состоит в отношениях с культистами."]};
+const NAMES=["Валера", "Зинка", "Петрович", "Саня", "Ленка", "Эдик", "Маринка", "Толик"];
+// ЛИЧНОСТИ (пересажено из python-ядра game_sim.py, патчи B21/B22/B25)
+const ARCH={"aggr":{aggr:.70,help:.02,neut:.08,theat:.05,thief:.10,chaos:.05},"hoard":{aggr:.10,help:.05,neut:.35,theat:0,thief:.50,chaos:0},"actor":{aggr:.15,help:0,neut:.10,theat:.65,thief:.10,chaos:0},"manip":{aggr:.25,help:0,neut:.15,theat:.20,thief:.40,chaos:0},"team":{aggr:.30,help:.40,neut:.15,theat:0,thief:0,chaos:0},"turtle":{aggr:.05,help:.25,neut:.60,theat:0,thief:.05,chaos:0},"gambler":{aggr:.35,help:0,neut:.05,theat:.10,thief:.10,chaos:.40},"chaos":{aggr:.30,help:0,neut:0,theat:.25,thief:.15,chaos:.30},"medic":{aggr:.02,help:.80,neut:.10,theat:0,thief:0,chaos:0},"marauder":{aggr:.25,help:0,neut:.10,theat:0,thief:.65,chaos:0},"star":{aggr:.15,help:0,neut:.05,theat:.70,thief:.05,chaos:.05},"lurker":{aggr:.05,help:.10,neut:.80,theat:0,thief:.05,chaos:0}};
+const ARRU={"aggr":"Агрессор","hoard":"Копитель","actor":"Актёр","manip":"Манипулятор","team":"Командный","turtle":"Черепаха","gambler":"Азартный","chaos":"Хаотик","medic":"Медик","marauder":"Мародёр","star":"Звезда","lurker":"Скрытень"};
+const REP_BIAS=0.18,REP_MIN=0.25,REP_MAX=2.5,GR_DECAY=0.8,GR_VENG=1.0,GR_BIAS=0.45,TILT_HOT=0.25,TILT_COLD=-0.25;
+function makePers(a){const v={};let s=0;for(const k in ARCH[a]){const x=Math.max(.01,ARCH[a][k]*(0.7+rnd()*0.6));v[k]=x;s+=x}for(const k in v)v[k]=Math.round(v[k]/s*1000)/1000;v.arch=a;return v}
+function tiltHot(p){return p.tiltUntil>0&&S.cycle<=p.tiltUntil}
+function tiltCold(p){return p.tiltUntil<0&&S.cycle<=-p.tiltUntil}
+function tiltTrigger(p,src){const v=p.pers,tp=v.aggr+v.chaos-v.neut,c=S.cycle;
+ if(tp>=TILT_HOT){p.tiltUntil=c+1;log(`  ↯ ТИЛЬТ: ${p.name} (${ARRU[v.arch]}, горячий) вспыхивает после провала «${src}» — агрессия ↑ до цикла ${c+1}`,"act")}
+ else if(tp<=TILT_COLD){p.tiltUntil=-(c+1);log(`  ↯ ТИЛЬТ: ${p.name} (${ARRU[v.arch]}, холодный) замыкается после провала «${src}» — уходит в оборону`,"act")}
+ else log(`  ↯ ${p.name} пережил провал «${src}» ровно (без тильта)`,"m")}
+function grudgeEff(p,seat){const g=p.grudge[seat];if(!g||g[0]<=0)return 0;
+ const e=g[0]*Math.pow(GR_DECAY,Math.max(0,S.cycle-g[1]));return e>=0.05?e:0}
+function repNote(perp,victim,dw,personal){if(!perp)return;
+ for(const x of S.P)x.rep[perp.seat]=Math.round(((x.rep[perp.seat]||0)+dw)*1000)/1000;
+ if(victim&&victim!==perp){victim.rep[perp.seat]=Math.round(((victim.rep[perp.seat]||0)+(personal||0))*1000)/1000;
+  if(dw<0){const cur=victim.grudge[perp.seat]?victim.grudge[perp.seat][0]:0;
+   victim.grudge[perp.seat]=[Math.round((cur+Math.abs(personal||0.5))*100)/100,S.cycle]}
+  else if(dw>0)victim.grudge[perp.seat]=[0,S.cycle]}}
+const PROFS=[["Почтальон", "Получает в инвентарь посылку с рандомным предметом"], ["Стример", "Может вести стрим и собирать донаты"], ["Водитель", "Получает любую машину на выбор"], ["Вор", "Может украсть одну вещь за цикл, работает 3 раза"], ["Медик", "Может воскресить другого игрока"], ["Крупье", "Может перебросить кубик 1 раз за цикл"], ["Шизик", "Немного поехавший, но на удивление везучий"], ["Каскадёр", "Принимает чужое РП-действие на себя (до броска)"]];
+const SPECS=[["extra", "Добавляется одно любое РП действие"], ["immune", "Игнорировать любое воздействие на себя от другого игрока на один цикл"], ["fullheal", "Вылечить любого игрока полностью от всего"], ["avoid", "Даёт возможность избежать смерти (использовать до смерти)"], ["lootdead", "Может украсть у мёртвого игрока всё, что захочет"], ["additem", "Добавить характеристику себе (крупный инвентарь)"], ["revive", "Вернуть игрока из мёртвых с дебафом −1 РП-действие"], ["autohit", "Одно РП-действие со 100% вероятностью"]];
+const TENY=["1 Раскрывает одну закрытую характеристику у любого игрока", "2 Возьмите 2 жетона мертвых", "3 Удалить одну закрытую карту любого игрока", "4 Получите 1 жетон мертвых", "5 Защитить свои карты на 1 цикл, как открытые так и закрытые, от их кражи или использования", "6 Обменять одну характеристику между двумя игроками", "7 Получите 3 жетона мертвых", "8 Дать еще одно РПД любому игроку", "9 Дать игроку одну спецкарту", "10 Получите 1 жетон мертвых", "11 Заставить игрока ходить вне очереди", "12 Дает +1 к РПД", "13 Дает +2 к РПД", "14 Дает -1 к РПД", "15 Дает -2 к РПД", "16 Удалить одну открытую карту любого игрока", "17 Закрывает одну закрытую характеристику у любого игрока", "18 Отменяешь последнее РПД любого игрока", "19 Заставляет игрока ходить самым последним", "20 Выдать игроку одну спецкарту", "21 Преобразовывает РПДИ-ранения на смерть", "22 Убрать РПДС у любого игрока", "23 Меняет результат РПДИ с одного игрока на другого", "24 Убрать очки ранения у любого игрока"];
+const OBMEN=["Потратьте неиспользованное РП-действие на себя, чтобы обратить любое РП-действие, направленное на вас", "Потратьте неиспользованное РП-действие на себя, чтобы обратить любое РП-действие, направленное на вас", "Потратьте неиспользованное РП-действие на себя, чтобы обратить любое РП-действие, направленное на вас", "Потратьте неиспользованное РП-действие на себя, чтобы обратить любое РП-действие, направленное на вас", "Потратьте неиспользованное РП-действие на себя, чтобы обратить любое РП-действие, направленное на вас", "Можно обменять неиспользованные РП действия на любую карту характеристик", "Можно обменять неиспользованные РП действия на любую карту характеристик", "Можно обменять неиспользованные РП действия на любую карту характеристик", "Можно обменять неиспользованные РП действия на другое РП действие", "Замените неиспользованное РПД или РПДС на взятие новой спецкарты", "Замените неиспользованное РПД или РПДС на взятие новой спецкарты", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "В следующий раз повезет", "Потратьте неиспользованное РП-действие на себя, чтобы спасти игрока от использования на него РП-действия на игроков", "Потратьте неиспользованное РП-действие на себя, чтобы спасти игрока от использования на него РП-действия на игроков", "Потратьте неиспользованное РП-действие на себя, чтобы спасти игрока от использования на него РП-действия на игроков", "Потратьте неиспользованное РП-действие на себя, чтобы спасти игрока от использования на него РП-действия на игроков"];
+/* ================= ядро (порт game_sim.py) ================= */
+let S=null,HUMAN=false,VARIANT="base",seed=0,rnd=Math.random;
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+const R=()=>rnd(),RI=n=>Math.floor(R()*n)+1,pick=a=>a[Math.floor(R()*a.length)];
+function pickW(pairs){let t=pairs.reduce((s,x)=>s+x[1],0),x=R()*t;for(const[v,w]of pairs){x-=w;if(x<=0)return v}return pairs[0][0]}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(R()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+const thr=()=>VARIANT==="fast"?2:(VARIANT==="or5"?5:3);
+const harvestOn=()=>VARIANT!=="harvest_off";
+function log(s,cls){const el=document.getElementById("log");if(!el)return;const d=document.createElement("div");if(cls)d.className=cls;d.textContent=s;el.appendChild(d);el.scrollTop=el.scrollHeight}
+const alive=()=>S.P.filter(p=>p.alive);
+const ghosts=()=>S.P.filter(p=>!p.alive);
+function bySeat(n){return S.P[n-1]}
+function closed(p){const o=[];for(const k of CATS)for(const c of p.hand[k])o.push([k,c]);return o}
+function cardText(c){return Array.isArray(c)?c[1]:c}
+function cardName(c){return Array.isArray(c)?c[0]:String(c).split(" — ")[0]}
+function reveal(p,n){for(let i=0;i<n;i++){const cc=closed(p);if(!cc.length)return;const[k,c]=pick(cc);p.hand[k].splice(p.hand[k].indexOf(c),1);p.revealed.push([k,c]);log(`  ${p.name} раскрывает [${k}] «${cardText(c)}»`)}}
+function wound(p,amt,src){if(!p.alive||amt<=0)return false;
+ if(p.immune===S.cycle&&src!=="self"){log(`  ${p.name}: невосприимчив (спецкарта) — ${amt} ОР не проходит`,"m");return false}
+ p.or+=amt;S.lastWound=[p.seat,amt];log(`  ${p.name}: +${amt} ОР → ${p.or}`+(src?` (${src})`:""),"d");
+ if(p.or>=thr())death(p,"ранения",src);return true}
+function death(p,cause,src){if(!p.alive)return;
+ if(p.specArmed){p.specArmed=false;p.usedSpec=true;p.or=thr()-1;log(`  !!! ${p.name} уходит от смерти: спецкарта «избежать смерти», ОР → ${p.or}`,"y");return}
+ p.alive=false;p.died=S.cycle;S.deaths++;if(S.firstDeath===null)S.firstDeath=S.cycle;
+ if(cause==="жатва")log(`  💀 ${p.name} (место ${p.seat}) УМИРАЕТ от ЖАТВЫ`,"d");
+ else{S.playerDeath=true;log(`  💀 ${p.name} (место ${p.seat}) УМИРАЕТ (${cause}${src?", источник: "+src:""})`,"d")}
+ p.obmen=null}
+function modRoll(p,m,kind){if(p.buff){m+=p.buff;p.buff=0;log("    (+1 невидимый напарник)","m")}if(S.dark&&(kind==="рпди"||kind==="mass"))m--;return m}
+function croupier(p,eff,kind){const cr=S.P.find(q=>q.alive&&q.prof[0]==="Крупье"&&q!==p&&q.crCycle!==S.cycle);
+ if(cr&&eff<10&&R()<0.55){cr.crCycle=S.cycle;const r2=RI(20);log(`  КРУПЬЕ ${cr.name} перебрасывает кубик: ${eff} → ${r2}`,"y");return r2}return eff}
+function tableA(p,declared,t){const nat=RI(20);let eff=modRoll(p,nat,"рпди");const kill=declared==="УБИЙСТВО";
+ log(`  ${p.name}: заявлено ${declared}${t?" против "+t.name:""}, d20=${nat}${eff!==nat?" (с мод. "+eff+")":""}`);
+ eff=croupier(p,eff,"рпди");
+ if(kill){if(eff<=4){log("    КРИТ-ПРОВАЛ: удар возвращается в автора","d");repNote(p,t,-1.5,-1.5);tiltTrigger(p,"крит-провал убийства");death(p,"крит-провал собственного убийства",p.name)}
+  else if(eff<=8){repNote(p,t,-0.7,-0.7);tiltTrigger(p,"откат убийства");wound(p,1,"свой провал")}
+  else if(eff<=12)log("    ничего не произошло","m");
+  else if(eff<=16){repNote(p,t,-0.7,-0.7);if(t)wound(t,2,p.name)}
+  else{log("    КРИТ: цель умирает сразу","d");if(t){repNote(p,t,-1.5,-1.5);p.kills++;death(t,"крит убийства",p.name)}}}
+ else{if(eff<=4){log("    КРИТ-ПРОВАЛ: +2 ОР автору","d");repNote(p,t,-0.7,-0.7);tiltTrigger(p,"крит-провал ранения");wound(p,2,"self")}
+  else if(eff<=8){repNote(p,t,-0.7,-0.7);tiltTrigger(p,"откат ранения");wound(p,1,"self")}
+  else if(eff<=12)log("    ничего не произошло","m");else if(eff<=16){repNote(p,t,-0.7,-0.7);if(t)wound(t,1,p.name)}
+  else{log("    КРИТ: +2 ОР цели","d");repNote(p,t,-0.7,-0.7);if(t)wound(t,2,p.name)}}}
+function tableB(p,label,onS,onF,kind){const nat=RI(20);let eff=modRoll(p,nat,kind||"рпди");
+ log(`  ${p.name}: ${label}, d20=${nat}${eff!==nat?" (с мод. "+eff+")":""}`);eff=croupier(p,eff,kind||"рпди");
+ if(nat===20||eff>=15)onS();else if(nat===1||eff<=10){tiltTrigger(p,`провал «${label}»`);onF()}else log("    ничего не произошло (11–14)","m")}
+function tableV(p,label,onS,onF){const nat=RI(20);const eff=modRoll(p,nat,"рпдс");
+ log(`  ${p.name}: ${label}, d20=${nat}${eff!==nat?" (с мод. "+eff+")":""}`);
+ if(nat===20||eff>=11)onS();else if(nat===1||eff<=9){tiltTrigger(p,`провал «${label}»`);onF()}else log("    ничего не произошло (10)","m")}
+function pickTarget(p,needDmg){const cs=S.P.filter(q=>q.alive&&q!==p&&!q.noTarget);const alt=S.P.filter(q=>q.alive&&q!==p);
+ let cands=cs.length?cs:alt.length?alt:[p];
+ if(needDmg&&S.cycle===1){const soft=cands.filter(q=>q.or<=1);if(soft.length)cands=soft}
+ if(cands.length<=1)return cands[0]||p;
+ // B25: МЕСТЬ — должник с живой обидой ≥ GR_VENG становится приоритетной целью
+ const debtors=cands.filter(q=>grudgeEff(p,q.seat)>=GR_VENG);
+ if(debtors.length){const t=debtors.reduce((a,b)=>grudgeEff(p,b.seat)>grudgeEff(p,a.seat)?b:a);
+  log(`    💢 МЕСТЬ: ${p.name} помнит обиду — цель ${t.name} (долг ${grudgeEff(p,t.seat).toFixed(2)})`,"act");return t}
+ // B21+B25: взвешенный выбор — обида тянет цель, хорошая репутация отталкивает
+ const pairs=cands.map(q=>{let w=1.0;
+  w*=Math.min(REP_MAX,Math.max(REP_MIN,1-REP_BIAS*(q.rep[p.seat]||0)));
+  w*=Math.min(2.5,1+GR_BIAS*grudgeEff(p,q.seat));return[q,w]});
+ return pickW(pairs)}
+function cascade(p,t){const cs=S.P.filter(q=>q.alive&&q.prof[0]==="Каскадёр"&&q!==t&&q!==p);
+ if(cs.length&&R()<0.4){const c=cs[0];log(`  КАСКАДЁР ${c.name} принимает удар на себя!`,"y");return c}return t}
+function steal(p,v){tableB(p,`кража у ${v.name} вслепую`,()=>{const cc=closed(v);
+ if(!cc.length){log("    у цели пусто — красть нечего","m");return}
+ const[k,c]=pick(cc);v.hand[k].splice(v.hand[k].indexOf(c),1);p.hand[k].push(c);
+ repNote(p,v,-0.4,-0.6);log(`    УСПЕХ: ${p.name} забирает [${k}] «${cardText(c)}»`,"g")},()=>{const cc=closed(p);
+ if(cc.length){const[k,c]=pick(cc);p.hand[k].splice(p.hand[k].indexOf(c),1);v.hand[k].push(c);
+ log(`    ПРОВАЛ: ${v.name} тянет у ${p.name} карту [${k}] «${cardText(c)}»`,"d")}else log("    ПРОВАЛ: рука открыта, позор без механики","m")})}
+function healAct(p,t){if(t.healTaken>=1){log(`  лимит лечения ${t.name} исчерпан — действие сгорает`,"m");return}
+ tableB(p,`помощь/лечение ${t.name}`,()=>{t.or=Math.max(0,t.or-1);t.healTaken++;repNote(p,t,+0.8,+0.8);log(`    УСПЕХ: ${t.name} −1 ОР → ${t.or}`,"g")},
+ ()=>{log("    ПРОВАЛ: неумелая помощь","d");wound(p,1,"self")})}
+function humiliate(p,t){tableB(p,`унижение ${t.name}`,()=>{const cc=closed(t);
+ if(cc.length){const[k,c]=pick(cc);t.hand[k].splice(t.hand[k].indexOf(c),1);t.revealed.push([k,c]);repNote(p,t,-0.4,-0.6);log(`    УСПЕХ: ${t.name} раскрывает [${k}] «${cardText(c)}»`,"g")}
+ else{t.obmen=null;log(`    УСПЕХ: ${t.name} публично унижен, сбрасывает карту обмена`,"g")}},
+ ()=>{const cc=closed(p);if(cc.length){const[k,c]=pick(cc);p.hand[k].splice(p.hand[k].indexOf(c),1);p.revealed.push([k,c]);log(`    ПРОВАЛ: осмеян сам ${p.name}, раскрывает [${k}] «${cardText(c)}»`,"d")}
+ else log(`    ПРОВАЛ: ${p.name} опозорился (без механики)`,"m")})}
+function rpdsWorld(p){tableV(p,"РПДС: взаимодействие с миром",()=>{const cat=pick(CATS);
+ if(S.draw[cat].length){const c=S.draw[cat].pop();p.hand[cat].push(c);log(`    УСПЕХ: найдено [{cat}] «${cardText(c)}»`,"g")}},
+ ()=>log("    ПРОВАЛ: мир не дал ничего (обратный эффект narrativный)","m"))}
+function rpdsHeal(p){tableV(p,"РПДС: самолечение",()=>{p.or=Math.max(0,p.or-1);p.healTaken++;log(`    УСПЕХ: −1 ОР → ${p.or}`,"g")},
+ ()=>{p.healTaken++;log("    ПРОВАЛ: стало хуже","d");wound(p,1,"self")})}
+function rpdsStream(p){tableV(p,"РПДС+профессия «Стример»: донаты",()=>{if(S.draw["ИНВЕНТАРЬ"].length){const c=S.draw["ИНВЕНТАРЬ"].pop();p.hand["ИНВЕНТАРЬ"].push(c);log(`    УСПЕХ: донаты → [ИНВЕНТАРЬ] «${cardText(c)}»`,"g")}},
+ ()=>log("    ПРОВАЛ: стрим забанили","m"))}
+function useObmen(p,st){const[name,txt]=p.obmen;const needRpdi=["Обмен","Свидетель","Подстава"].includes(name);
+ if(needRpdi&&!st.rpdi)return st;
+ log(`  🃏 ${p.name} применяет карту обмена «${name}»: ${txt}`,"y");p.obmen=null;
+ if(st.rpdi)st.rpdi--;else st.rpds--;
+ if(name==="Парамедик"){const q=p.or>=1?p:alive().find(x=>x.or>=1)||p;q.or=Math.max(0,q.or-1);q.healTaken++;log(`    ${q.name}: −1 ОР → ${q.or}`,"g")}
+ else if(name==="Отмена"){if(S.lastWound){const[s,a]=S.lastWound;const q=bySeat(s);q.or=Math.max(0,q.or-a);S.lastWound=null;log(`    последствие отменено: ${q.name} → ${q.or} ОР`,"g")}}
+ else if(name==="Заначка"){for(let i=0;i<2;i++){const cat=pick(CATS);if(S.draw[cat].length){const c=S.draw[cat].pop();p.hand[cat].push(c);log(`    в руку: [${cat}] «${cardText(c)}»`,"g")}}}
+ else if(name==="Обмен"){const t=pickTarget(p);const c1=closed(p),c2=closed(t);
+ if(c1.length&&c2.length){const[k1,x1]=pick(c1),[k2,x2]=pick(c2);
+  p.hand[k1].splice(p.hand[k1].indexOf(x1),1);t.hand[k2].splice(t.hand[k2].indexOf(x2),1);
+  p.hand[k2].push(x2);t.hand[k1].push(x1);log(`    обмен вслепую с ${t.name}: получил [${k2}] «${cardText(x2)}»`,"g")}}
+ else if(name==="Свидетель"){const t=pickTarget(p);const cc=closed(t);
+ if(cc.length){const[k,c]=pick(cc);t.hand[k].splice(t.hand[k].indexOf(c),1);t.revealed.push([k,c]);log(`    ${t.name} раскрывает [${k}] «${cardText(c)}»`,"g")}}
+ else if(name==="Второе дыхание"){st.rpds++;log(`    ${p.name} получает дополнительное РПДС`,"g")}
+ else if(name==="Взятка"){st.lastRoll=(st.lastRoll||0)+3}
+ else if(name==="Подстава"){const nb=bySeat(p.seat%8+1);nb.or+=1;log(`    последствие переведено на соседа слева ${nb.name}: +1 ОР`,"d");if(nb.or>=thr())death(nb,"подстава",p.name)}
+ return st}
+function ghostCard(g){if(!g.gcard)return;const[tag,text]=g.gcard;
+ if(g.gused.includes(tag)&&["cancel","eyes","fake","voice","photo"].includes(tag)){log(`  👻 ${g.name}: карта «${cardName(text)}» уже использована`,"m");return}
+ const lv=alive();if(!lv.length)return;
+ log(`  👻 ${g.name} применяет карту мёртвых: «${text}»`,"y");g.gused.push(tag);g.gcard=null;
+ if(tag==="knock")lv.forEach(q=>q.noRpds=true);
+ else if(tag==="cold"){const q=pick(lv);q.noRpds=true;log(`    ${q.name} теряет РПДС`,"d")}
+ else if(tag==="name"){const q=lv.reduce((a,b)=>b.or>a.or?b:a);q.noTarget=true;log(`    ${q.name} нельзя выбрать целью до конца цикла`,"d")}
+ else if(tag==="cancel"){if(S.lastWound){const[s,a]=S.lastWound;const q=bySeat(s);q.or=Math.max(0,q.or-a);S.lastWound=null;log(`    время отмотано: ${q.name} → ${q.or} ОР`,"g")}}
+ else if(tag==="buff"){const q=pick(lv);q.buff=1;log(`    ${q.name}: +1 к следующему броску`,"g")}
+ else if(tag==="mirror"){const q=pick(lv);const cc=closed(q);if(cc.length){const[k,c]=pick(cc);q.hand[k].splice(q.hand[k].indexOf(c),1);q.revealed.push([k,c]);log(`    зеркало: ${q.name} раскрывает [${k}] «${cardText(c)}»`,"d")}}
+ else if(tag==="eyes"){const q=pick(lv);q.skipReveal=true;log(`    ${q.name} пропускает следующее раскрытие`,"d")}
+ else if(tag==="dark"){S.dark=true;log("    свет гаснет: все РПДИ до конца цикла с −1","d")}
+ else if(tag==="fake"){const q=pick(lv);if(S.draw["ИНВЕНТАРЬ"].length){const c=S.draw["ИНВЕНТАРЬ"].pop();q.hand["ИНВЕНТАРЬ"].push(c);log(`    фантомный предмет у ${q.name}: «${cardText(c)}»`,"g")}}
+ else if(tag==="voice"){const q=pick(lv);if(q.obmen){q.obmen=null;log(`    ${q.name} сбрасывает карту обмена`,"d")}else{const cc=closed(q);if(cc.length){const[k,c]=pick(cc);q.hand[k].splice(q.hand[k].indexOf(c),1);q.revealed.push([k,c])}}}
+ else if(tag==="pain"){const h=lv.filter(q=>q.or>=1&&q.healTaken<1);if(h.length){const q=h.reduce((a,b)=>b.or>a.or?b:a);q.or--;q.healTaken++;log(`    боль уходит: ${q.name} → ${q.or} ОР`,"g")}}
+ else if(tag==="photo"){lv.forEach(q=>{const cc=closed(q);if(cc.length){const[k,c]=pick(cc);q.hand[k].splice(q.hand[k].indexOf(c),1);q.revealed.push([k,c]);log(`    фото: ${q.name} раскрывает [${k}] «${cardText(c)}»`,"d")}})}
+ else if(tag==="queue"){S.queueShift=true}
+ else if(tag==="whisper"){log(`    шёпот для ${pick(lv).name} (чистый вкус)`,"m")}}
+function ghostBets(){for(const g of ghosts()){if(g.tokens>=1&&R()<0.85){
+ const n=alive().length;const k=n>=6?pickW([[0,1],[1,5],[2,2]]):pickW([[1,2],[2,4],[3,2]]);
+ let stake=g.tokens<3?1:pick([1,2]);stake=Math.min(stake,g.tokens);g.tokens-=stake;g.bet=[stake,k];
+ log(`  👻 ${g.name} ставит ${stake} жетон(а) на «ровно ${k} смертей в цикле»`,"y")}else g.bet=null}}
+function resolveBets(cd){for(const g of ghosts()){if(!g.bet)continue;const[st,k]=g.bet;
+ if(k===cd){g.tokens+=st*2;S.betHits++;log(`  👻 СТАВКА СЫГРАЛА: ${g.name} угадал «${k}» → +${st*2} жетонов (итого ${g.tokens})`,"g")}
+ else log(`  👻 ставка ${g.name} мимо: было ${cd}, жетоны сгорели`,"m");g.bet=null}}
+function ghostShop(){for(const g of ghosts()){const lv=alive();if(!lv.length)continue;
+ if(g.tokens>=3&&R()<0.4){g.tokens--;const q=pick(lv);log(`  👻 магазин: ${g.name} подсматривает карты ${q.name} (жетонов ${g.tokens})`,"y")}
+ if(g.tokens>=2&&R()<0.25){g.tokens-=2;const q=pick(lv);const cc=closed(q);
+ if(cc.length){const[k,c]=pick(cc);q.hand[k].splice(q.hand[k].indexOf(c),1);q.revealed.push([k,c]);log(`  👻 магазин: принудительно раскрыта карта ${q.name}: [${k}] «${cardText(c)}»`,"d")}}}}
+function tokenRevive(){const gs=ghosts().filter(g=>g.died!==null&&S.cycle-g.died>=1);if(!gs.length)return;
+ const total=gs.reduce((s,g)=>s+g.tokens,0);const medik=alive().some(p=>p.prof[0]==="Медик");
+ if(total>=6&&(medik||R()<0.5)){gs.sort((a,b)=>a.died-b.died||a.seat-b.seat);const r=gs[0];
+ gs.forEach(g=>g.tokens=0);r.alive=true;r.or=0;r.resurrected=true;S.tokenRevive=true;
+ log(`  ✝️ ВОСКРЕШЕНИЕ: призраки скидывают ${total} жетонов (нужно 6) — ${r.name} возвращается с 0 ОР. Лишние жетоны сгорают.`,"g")}}
+function useSpec(p,st){if(p.usedSpec)return;const[tag,text]=p.spec;const lv=alive();
+ if(tag==="additem"&&S.cycle===2){p.usedSpec=true;if(S.draw["ИНВЕНТАРЬ"].length){const c=S.draw["ИНВЕНТАРЬ"].pop();p.hand["ИНВЕНТАРЬ"].push(c);log(`  ⚡ СПЕЦКАРТА ${p.name}: «${text}» → [ИНВЕНТАРЬ] «${cardText(c)}»`,"y")}}
+ else if(tag==="extra"&&S.cycle===3){p.usedSpec=true;st.rpdi++;log(`  ⚡ СПЕЦКАРТА ${p.name}: «${text}» (+1 РПДИ в этом ходу)`,"y")}
+ else if(tag==="immune"&&S.cycle===3&&R()<0.8){p.usedSpec=true;p.immune=S.cycle;log(`  ⚡ СПЕЦКАРТА ${p.name}: «${text}»`,"y")}
+ else if(tag==="lootdead"&&S.cycle>=3&&ghosts().length){const g=pick(ghosts());const cc=closed(g);
+ if(cc.length){p.usedSpec=true;const[k,c]=pick(cc);g.hand[k].splice(g.hand[k].indexOf(c),1);p.hand[k].push(c);
+ log(`  ⚡ СПЕЦКАРТА ${p.name}: снимает с трупа ${g.name} карту [${k}] «${cardText(c)}»`,"y")}}
+ else if(tag==="fullheal"&&S.cycle===4){const h=lv.filter(q=>q.or>=1);if(h.length){p.usedSpec=true;const q=h.reduce((a,b)=>b.or>a.or?b:a);q.or=0;log(`  ⚡ СПЕЦКАРТА ${p.name}: ${q.name} полностью вылечен (ОР→0)`,"y")}}
+ else if(tag==="avoid"&&S.cycle===4){p.usedSpec=true;p.specArmed=true;log(`  ⚡ СПЕЦКАРТА ${p.name}: следующая смерть будет отменена`,"y")}
+ else if(tag==="revive"&&S.cycle>=5&&ghosts().length&&!S.specRevive){const r=ghosts().sort((a,b)=>a.died-b.died)[0];
+ p.usedSpec=true;r.alive=true;r.or=0;r.debuff=true;r.resurrected=true;S.specRevive=true;log(`  ⚡ СПЕЦКАРТА ${p.name}: воскрешает ${r.name} с дебафом −1 РПД навсегда`,"y")}
+ else if(tag==="autohit"&&S.cycle>=5){const cand=lv.filter(q=>q!==p);if(cand.length){p.usedSpec=true;
+ const t=cand.reduce((a,b)=>b.or>a.or?b:a);log(`  ⚡ СПЕЦКАРТА ${p.name}: РАНЕНИЕ ${t.name} со 100% (бросок не нужен)`,"y");wound(t,2,p.name)}}}
+function massAction(p){const cs=S.P.filter(q=>q.alive&&q!==p&&!q.noTarget);if(cs.length<2)return false;
+ const ts=shuffle(cs.slice()).slice(0,2);
+ log(`  ${p.name}: МАССОВОЕ РАНЕНИЕ против ${ts[0].name} и ${ts[1].name} (порог 18–20)`);
+ const nat=RI(20),eff=modRoll(p,nat,"mass");log(`    d20=${nat}${eff!==nat?" (с мод. "+eff+")":""}`);
+ if(eff>=18){ts.forEach(t=>{repNote(p,t,-0.5,-0.5);wound(t,1,p.name)});log("    УСПЕХ массовки: каждой цели +1 ОР","g")}
+ else{log("    ПРОВАЛ массовки: атакующему +2 ОР","d");tiltTrigger(p,"провал массовки");wound(p,2,"self")}
+ S.massDone=true}
+function botRPDI(p){const gs=ghosts().length;const v=p.pers;
+ // базовые веса цикла × вектор личности × тильт (B22), как в python-ядре choose_rpdi
+ const tm=tiltHot(p)?{kill:1.35,wound:1.25,mass:1.2,skip:.7,heal:1,steal:1,hum:1,marauder:1}
+  :tiltCold(p)?{kill:.75,wound:.8,mass:.8,skip:1.3,heal:1.15,steal:1,hum:1,marauder:1}
+  :{kill:1,wound:1,mass:1,skip:1,heal:1,steal:1,hum:1,marauder:1};
+ let opts,wts;
+ if(S.cycle===1){opts=["hum","wound","steal","skip","heal"];wts=[35,25,15,20,5]}
+ else if(S.cycle===2){opts=["wound","kill","steal","hum","heal","skip"];wts=[30,25,12,13,10,10]}
+ else if(S.cycle===3){opts=["wound","kill","steal","hum","heal","skip","marauder"];wts=[18,6,12,14,12,28,gs?10:0]}
+ else if(S.cycle===4){opts=["wound","kill","steal","hum","heal","skip","marauder","mass"];wts=[24,16,10,10,10,15,gs?10:0,S.massDone?0:10]}
+ else{opts=["wound","kill","steal","hum","heal","skip","marauder"];wts=[26,30,8,6,8,10,gs?12:0]}
+ const PW={kill:()=>30*v.aggr+6*v.chaos,wound:()=>26*v.aggr+10*v.chaos,mass:()=>8*v.aggr+16*v.chaos,
+  heal:()=>30*v.help,steal:()=>18*v.thief,marauder:()=>18*v.thief,hum:()=>26*v.theat,skip:()=>18*v.neut};
+ if(p.prof[0]==="Вор"&&p.thiefLeft>0&&S.cycle>=2)wts[opts.indexOf("steal")]+=15;
+ if(p.prof[0]==="Медик")wts[opts.indexOf("heal")]+=8;
+ if(!alive().some(q=>q!==p&&q.or>=1&&q.healTaken<1))wts[opts.indexOf("heal")]=0;
+ const pairs=opts.map((o,i)=>[o,Math.max(0,wts[i]*(PW[o]()/15)*tm[o])]);
+ if(pairs.reduce((s,x)=>s+x[1],0)<=0)return "skip";
+ const act=pickW(pairs);
+ if(tiltHot(p)&&(act==="kill"||act==="wound"||act==="mass"))log(`    ↯ на взводе (${p.name}): ${ARRU[v.arch]} бьёт злее`,"act");
+ if(tiltCold(p)&&act==="skip")log(`    ↯ в глухой обороне (${p.name}): ${ARRU[v.arch]} пропускает удар`,"act");
+ return act}
+function doRPDI(p,act,st){
+ if(act==="skip"){log("    РПДИ сэкономлено","m");st.rpdi--;return true}
+ if(act==="mass"){massAction(p);st.rpdi--;return true}
+ if(act==="marauder"){const gs=ghosts();if(!gs.length)return false;const g=pick(gs);const cc=closed(g);
+  if(!cc.length){log("    на трупе пусто","m");st.rpdi--;return true}
+  log(`    РПДИ-мародёрство: тянет карту с трупа ${g.name}`);
+  tableB(p,"мародёрство",()=>{const[k,c]=pick(closed(g));g.hand[k].splice(g.hand[k].indexOf(c),1);p.hand[k].push(c);log(`    УСПЕХ: добыча [${k}] «${cardText(c)}»`,"g")},
+   ()=>log("    ПРОВАЛ: труп не отдаёт","m"));st.rpdi--;return true}
+ if(act==="heal"){const t=alive().filter(q=>q!==p&&q.or>=1&&q.healTaken<1).sort((a,b)=>b.or-a.or)[0];
+  if(!t){st.rpdi--;return true}log(`    РПДИ: лечение ${t.name}`);healAct(p,t);st.rpdi--;return true}
+ if(act==="steal"){let t=pickTarget(p);if(t===p){st.rpdi--;return true}
+  const useProf=p.prof[0]==="Вор"&&p.thiefLeft>0;if(useProf)p.thiefLeft--;
+  log(`    РПДИ: ${useProf?`кража (профессия Вор, осталось ${p.thiefLeft})`:"кража"} у ${t.name} вслепую`);steal(p,t);st.rpdi--;return true}
+ if(act==="hum"){let t=pickTarget(p);if(t===p){st.rpdi--;return true}t=cascade(p,t);log(`    РПДИ: унижение ${t.name}`);humiliate(p,t);st.rpdi--;return true}
+ let t=pickTarget(p,true);if(t===p){st.rpdi--;return true}t=cascade(p,t);
+ const decl=act==="kill"?"УБИЙСТВО":"РАНЕНИЕ";tableA(p,decl,t);st.rpdi--;return true}
+const HUMAN_MAP={"РАНЕНИЕ":"wound","УБИЙСТВО":"kill","КРАЖА":"steal","ПОЗОР":"hum","ЛЕЧЕНИЕ":"heal","МАССОВОЕ":"mass","ПРОПУСК":"skip"};
+function turnStart(p){
+ const tl=tiltHot(p)?" ↯взвод":tiltCold(p)?" ↯оборона":"";
+ log(`
+——— P${p.seat} ${p.name} (${p.prof[0]}, ${ARRU[p.pers.arch]}${tl}), ОР=${p.or} ———`);
+ if(p.skipReveal){p.skipReveal=false;log("  раскрытие пропущено (Ладонь на глазах)","m")}else reveal(p,S.cycle===1?2:1);
+ const st={rpds:p.noRpds?0:1,rpdi:p.debuff?0:1};
+ if(p.noRpds){log("  РПДС недоступно (карта мёртвых)","d");p.noRpds=false}
+ return st}
+function turnRpds(p,st){if(st.rpds<=0)return Promise.resolve();
+ if(p.or>=1&&R()<0.55){log("    РПДС: самолечение");rpdsHeal(p)}
+ else if(p.prof[0]==="Стример"&&R()<0.6){log("    РПДС+«Стример»: стрим с донатами");rpdsStream(p)}
+ else if(R()<0.75){rpdsWorld(p)}
+ else log("    РПДС: сэкономлено (копит на карту обмена)","m")
+ st.rpds=0;return Promise.resolve()}
+function turnBody(p){ /* весь ход одного игрока как цепочка */
+ const st=turnStart(p);
+ return turnRpds(p,st).then(()=>{
+  useSpec(p,st);
+  return new Promise(res=>{
+   const loop=()=>{
+    if(st.rpdi<=0){ // обменки (боты применяют с вероятностью, как в симуляторе)
+     if(p.obmen&&!isHumanSeat(p)){const w=p.obmen[0];
+      const needRpdi=["Обмен","Свидетель","Подстава"].includes(w);
+      if(!needRpdi||st.rpdi>0){
+       const want=(w==="Парамедик"&&p.or>=1&&p.healTaken<1)||(w==="Отмена"&&S.lastWound&&S.lastWound[0]===p.seat&&p.or>=1);
+       const maybe=["Заначка","Обмен","Свидетель","Второе дыхание","Подстава"].includes(w)&&R()<0.45;
+       if(want||maybe)useObmen(p,st)}}
+     res();return}
+    if(isHumanSeat(p)){showHumanButtons(p,st,loop)}
+    else{const act=botRPDI(p);if(!doRPDI(p,act,st))st.rpdi=0;setTimeout(loop,40)}
+   };loop()})}).then(()=>{render()})}
+function isHumanSeat(p){return HUMAN&&p.seat===1&&p.alive}
+function showHumanButtons(p,st,done){const el=document.getElementById("action");
+ const acts=Object.keys(HUMAN_MAP).filter(a=>!(a==="МАССОВОЕ"&&S.massDone));
+ el.innerHTML=`<h3>Твой ход: ${p.name} (ОР=${p.or}, РПДИ осталось ${st.rpdi})</h3>`+
+ acts.map(a=>`<button onclick="humanAct('${a}')">${a}</button>`).join("");
+ window._ha=(act)=>{window._ha=null;el.innerHTML="";if(!doRPDI(p,HUMAN_MAP[act],st))st.rpdi=0;done()}}
+window.humanAct=a=>window._ha(a);
+function endCycle(){
+ log(`  Конец цикла ${S.cycle}: карты обмена и мёртвых уходят в сброс`,"m");
+ // ставки призраков считаются ДО жатвы (по смертям от действий игроков), как в симуляторе
+ resolveBets(S.cycleDeaths);
+ if(S.cycle>=2&&harvestOn()&&!S.playerDeath&&alive().length>=2){
+  const v=pick(alive());log(`  🌾 ЖАТВА: никто не умер от игроков — умирает ${v.name} (место ${v.seat})`,"y");
+  death(v,"жатва","Жатва");S.harvest=true}
+ log(`  Живых после цикла ${S.cycle}: ${alive().length} (цель — довести до 4, S=4)`,"m");
+ // условие победы проверяется ПОСЛЕ всех смертей цикла (включая Жатву) — иначе партия не завершится никогда
+ if(alive().length<=4){finish();return Promise.resolve(false)}
+ if(S.cycle>=10){finish();return Promise.resolve(false)}
+ ghosts().forEach(g=>g.gcard=null);S.P.forEach(p=>p.obmen=null);
+ S.cycle++;S.idx=0;S.playerDeath=false;S.dark=false;S.lastWound=null;S.queueShift=null;S.cycleDeaths=0;
+ S.P.forEach(p=>{p.healTaken=0;p.noTarget=false;p.immune=-1});
+ log(`
+════════ ЦИКЛ ${S.cycle} ════════`,"y");
+ log(`  Начало цикла: живых ${alive().length}, призраков ${ghosts().length}`,"m");
+ for(const g of ghosts()){g.tokens++;log(`  👻 ${g.name}: +1 жетон (итого ${g.tokens})`,"m");
+  if(S.tenyDraw.length){g.gcard=S.tenyDraw.pop();log(`  👻 ${g.name} тянет карту мёртвых: «${cardName(g.gcard[1])}…»`,"m")}}
+ ghostBets();ghostShop();ghosts().forEach(ghostCard);
+ if(S.cycle>=2)for(const p of alive()){p.obmen=pick(OBMEN);log(`  🎴 ${p.name} тянет карту обмена «${p.obmen[0]}»`,"m")}
+ if(S.cycle>=4)tokenRevive();
+ // ротация очереди: первый ходящий становится последним
+ if(S.queueShift&&alive().length>1){const a=alive().slice();const first=a.shift();a.push(first);S.order=a;
+  log("  (очередь сдвинута картой мёртвых «Место в очереди»)","m")}else S.order=null;
+ render();return Promise.resolve(true)}
+function cycleLoop(){
+ if(S.over)return;
+ const order=S.order||alive();
+ if(S.idx>=order.length){endCycle().then(cont=>{if(cont)setTimeout(cycleLoop,300)});return}
+ const p=order[S.idx];
+ if(!p.alive){S.idx++;return cycleLoop()}
+ S.cur=p;render();
+ turnBody(p).then(()=>{S.cur=null;S.idx++;render();setTimeout(cycleLoop,60)})}
+function finish(){S.over=true;
+ const win=alive().map(p=>`${p.name} (${p.prof[0]}, ОР=${p.or})`).join("; ");
+ log(`
+════════ ИТОГ ════════`,"y");
+ log(alive().length?`Победили: ${win}`:"Все мертвы — побеждают призраки");
+ log(`first_death=${S.firstDeath} end=${S.cycle} harvest=${S.harvest?"была":"не была"} bets_hit=${S.betHits} revive=${S.tokenRevive?"жетонами":"нет"} deaths=${S.deaths}`,"m");
+ document.getElementById("action").innerHTML=`<button onclick="location.reload()">🔄 Новая партия</button>`;render()}
+function startGame(human){
+ HUMAN=human;VARIANT=document.getElementById("variant").value;
+ const sInp=document.getElementById("seedInp").value.trim();
+ seed=sInp?parseInt(sInp,10):RI(999999);rnd=mulberry32(seed);
+ S={cycle:1,idx:0,deaths:0,firstDeath:null,endCycle:null,playerDeath:false,dark:false,lastWound:null,
+    harvest:false,betHits:0,tokenRevive:false,specRevive:false,massDone:false,queueShift:null,
+    cycleDeaths:0,over:false,cur:null,draw:{},tenyDraw:shuffle(TENY.slice()),P:[],order:null};
+ CATS.forEach(c=>S.draw[c]=shuffle(DECKS[c].slice()));
+ const specOrder=shuffle(SPECS.slice());
+ for(let i=0;i<8;i++){const hand={};CATS.forEach(c=>hand[c]=[S.draw[c].pop()]);
+  S.P.push({seat:i+1,name:NAMES[i],prof:PROFS[i],hand,revealed:[],alive:true,or:0,spec:specOrder[i],usedSpec:false,specArmed:false,
+   tokens:0,gcard:null,gused:[],bet:null,obmen:null,healTaken:0,noRpds:false,noTarget:false,skipReveal:false,buff:0,debuff:false,
+   died:null,resurrected:false,kills:0,immune:-1,crCycle:-1,lastDeaths:0,thiefLeft:3,pers:null,rep:{},grudge:{},tiltUntil:0})}
+ // ЛИЧНОСТЬ: 8 архетипов из 12 без повторов (как в python-ядре)
+ const archs=shuffle(Object.keys(ARCH));
+ S.P.forEach((p,i)=>{p.pers=makePers(archs[i]);p.rep={};p.grudge={}});
+ log("Личности ботов (случайный состав архетипов):","y");
+ S.P.forEach(p=>{const v=p.pers;log(`  P${p.seat} ${p.name}: ${ARRU[v.arch]} (агр${(v.aggr*100|0)}% пом${(v.help*100|0)}% нейтр${(v.neut*100|0)}% театр${(v.theat*100|0)}% воров${(v.thief*100|0)}% хаос${(v.chaos*100|0)}%)`,"m")});
+ const post=S.P.find(p=>p.prof[0]==="Почтальон");
+ if(post&&S.draw["ИНВЕНТАРЬ"].length)post.hand["ИНВЕНТАРЬ"].push(S.draw["ИНВЕНТАРЬ"].pop());
+ S.P.forEach(p=>p.obmen=pick(OBMEN));
+ document.getElementById("menu").style.display="none";document.getElementById("game").style.display="block";
+ log(`ПАРТИЯ «БЛИЦ БОЙ» — 8 игроков, seed=${seed}, вариант=${VARIANT}${human?" (ты играешь за P1)":" (все — боты)"}`,"y");
+ log(`СИТУАЦИЯ: «Ночь в панельке» — раскрытие 1 карта/ход (в 1-м цикле 2), действия 1 РПДС + 1 РПДИ, конец при 4 живых`,"m");
+ log(`
+════════ ЦИКЛ 1 ════════`,"y");
+ render();setTimeout(cycleLoop,150)}
+function render(){
+ document.getElementById("status").innerHTML=`<b>Цикл ${S.cycle}</b> · живых ${alive().length}/8 · seed=${seed} · порог ОР=${thr()}${HUMAN?" · ты P1":""}`;
+ const el=document.getElementById("seats");el.innerHTML="";
+ S.P.forEach(p=>{const d=document.createElement("div");d.className="seat"+(p.alive?"":" dead")+(S.cur===p?" cur":"");
+  d.innerHTML=`P${p.seat} <b>${p.name}</b> <span class="small">${p.prof[0]} · 🎭 ${ARRU[p.pers.arch]}${tiltHot(p)?" ↯взвод":tiltCold(p)?" ↯оборона":""}</span><br>ОР: <span class="or">${p.or}</span>`+
+  (p.alive?"":` 👻 жетоны: ${p.tokens}`)+(p.obmen?`<span class="tag">🃏 ${p.obmen[0]}</span>`:"")+
+  (p.usedSpec?`<span class="tag">⚡</span>`:"")+
+  `<div class="small" title="агрессия/помощь/нейтралитет/театр/воровство/хаос">агр${(p.pers.aggr*100|0)}% пом${(p.pers.help*100|0)}% нейтр${(p.pers.neut*100|0)}% театр${(p.pers.theat*100|0)}% воров${(p.pers.thief*100|0)}% хаос${(p.pers.chaos*100|0)}%</div>`+
+  `<div class="revs">${p.revealed.slice(-3).map(r=>`[${r[0]}] ${cardText(r[1]).slice(0,28)}`).join("<br>")}</div>`;
+  el.appendChild(d)})}
+function showDecks(){const el=document.getElementById("decks");el.style.display="block";
+ el.innerHTML="<h3>Канон: 7 колод × 24 карты + Тень + Обмен</h3>"+CATS.map(c=>`<div class="small"><b>${c}:</b> ${DECKS[c].map(cardText).join(" · ")}</div>`).join("")+
+ `<div class="small"><b>Карты мёртвых (Тень):</b> ${TENY.map(t=>t[1].split(" — ")[0]).join(" · ")}</div>`+
+ `<div class="small"><b>Карты обмена:</b> ${OBMEN.map(o=>o[0]).join(", ")}</div>`+
+ `<div class="small"><b>Профессии:</b> ${PROFS.map(p=>p[0]).join(", ")}</div>`}
+function showRules(){const el=document.getElementById("decks");el.style.display="block";
+ el.innerHTML=`<h3>Краткие правила (v3)</h3><div class="small">
+ 8 игроков, колоды 7 категорий × 24 карты. Каждый цикл: каждый живой раскрывает 1 карту (в 1-м цикле 2), делает 1 РПДС (себя/мир) и 1 РПДИ (на других).
+ Бросок d20 по таблицам А (РПДИ на цель), Б (кража/лечение/позор: успех 15+, провал ≤10, обратный эффект), В (РПДС: успех 11+, провал ≤9).
+ 3 ОР = смерть. Если в цикле с цикла 2 никто не умирал от рук игроков — ЖАТВА забирает случайного. Мёртвые становятся призраками: +1 жетон/цикл, тянут карту мёртвых (Тень), ставят на число смертей цикла, покупают эффекты в магазине мёртвых. 6 жетонов общаком = воскрешение (цикл 4+). Игра кончается, когда живых остаётся 4 (S=4) — они побеждают.</div>`}
+</script></body></html>

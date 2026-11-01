@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>БЛИЦ БОЙ — канон v1 (колоды по 24 карты)</title>
+<style>
+:root{--bg:#0e1116;--panel:#151b23;--line:#28303c;--txt:#dde5ef;--dim:#8b98a9;
+--gold:#f2b544;--cyan:#7fd4f2;--red:#f2736f;--green:#7ee081;--violet:#b9a6f5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font:14px/1.5 ui-sans-serif,system-ui,"Segoe UI",sans-serif}
+header{position:sticky;top:0;z-index:5;background:#12171fee;backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+h1{font-size:17px;margin:0;color:var(--gold)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{background:var(--panel);border:1px solid var(--line);color:var(--dim);padding:6px 14px;border-radius:8px;cursor:pointer;font-size:13px}
+.tab.on{color:#111;background:var(--gold);border-color:var(--gold);font-weight:700}
+main{max-width:1000px;margin:0 auto;padding:14px 16px 60px}
+.view{display:none}.view.on{display:block}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;margin-top:8px}
+.pc{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px}
+.pc.dead{opacity:.55;border-color:#4d2b2b}
+.pc .nm{font-weight:700;font-size:15px}
+.pc .pr{color:var(--violet);font-size:12px}
+.or{display:inline-block;background:#3a1d1d;color:var(--red);border-radius:6px;padding:1px 8px;font-size:12px;margin:4px 4px 0 0}
+.tk{background:#1d3a26;color:var(--green);border-radius:6px;padding:1px 8px;font-size:12px;margin:4px 4px 0 0}
+.tk.repP{background:#1d3a26;color:var(--green)}
+.tk.repN{background:#3a1d1d;color:var(--red)}
+.tk.repZ{background:#2a2f38;color:var(--dim)}
+.tk.repG{background:#3a2d1d;color:var(--gold)}
+.st{font-size:12px;margin-top:4px}
+.st.alive{color:var(--green)}.st.dead{color:var(--red)}
+.cards{margin-top:6px}
+.card{display:block;background:#10151c;border-left:3px solid #555;border-radius:4px;padding:3px 8px;font-size:12px;margin:3px 0;white-space:normal}
+.cТЕЛО{border-left-color:#e05c5c}.cРАЗУМ{border-left-color:#e8b34b}.cСПОСОБНОСТИ{border-left-color:#cfd6dd}
+.cИНВЕНТАРЬ{border-left-color:#a97b50}.cИСТОРИЯ{border-left-color:#9a7fd4}.cЗНАНИЯ{border-left-color:#5fbf72}.cДЕТАЛИ{border-left-color:#e58fc0}
+.cycle{margin:20px 0 6px;font-weight:700;color:var(--gold);border-bottom:1px solid var(--line);padding-bottom:4px}
+.turn{margin:10px 0 4px;font-weight:600;color:var(--cyan)}
+.ln{padding:1px 0 1px 10px;border-left:2px solid transparent;white-space:pre-wrap;color:#c3ccd6}
+.dth{border-left-color:var(--red);color:var(--red)}
+.har{border-left-color:var(--green);color:var(--green)}
+.rev{border-left-color:var(--cyan);color:var(--cyan)}
+.roll{color:var(--violet)}
+.act{color:#f2a05c}
+.deckgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px;margin-top:10px}
+.deckcol{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px}
+.deckcol h3{margin:2px 0 8px;font-size:14px;color:var(--gold)}
+.note{color:var(--dim);font-size:12px;margin:8px 0}
+.score{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin-top:12px;font-family:ui-monospace,monospace;font-size:13px;color:var(--green);white-space:pre-wrap}
+footer{color:var(--dim);font-size:12px;padding:18px;text-align:center}
+</style>
+</head>
+<body>
+<header>
+<h1>⚡ БЛИЦ БОЙ</h1>
+<div class="tabs">
+<div class="tab on" data-v="board">Столы игроков</div>
+<div class="tab" data-v="log">Ход партии</div>
+<div class="tab" data-v="decks">Колоды (канон 24)</div>
+</div>
+<span class="note" id="seedlbl"></span>
+</header>
+<main>
+<div class="view on" id="v-board"><div class="board" id="board"></div><div class="score" id="score"></div></div>
+<div class="view" id="v-log"><div id="logbox"></div></div>
+<div class="view" id="v-decks"><div class="note">Канон: 7 колод характеристик × 24 карты + тени, обмен, профессии, спецкарты. Источник — canon/decks.json (расшифровки фото карт).</div><div class="deckgrid" id="deckgrid"></div></div>
+</main>
+<footer>Сделано внутри Qwen Code · октябрь 2026 · партия seed в шапке</footer>
+<script>
+const DATA = /*__DATA__*/null;
+const CARDS = /*__CARDS__*/null;
+document.getElementById('seedlbl').textContent = 'партия seed ' + DATA.seed + ' · 8 игроков · «Ночь в панельке»';
+// доска игроков
+const bd = document.getElementById('board');
+for (const p of DATA.players){
+  const d = document.createElement('div'); d.className = 'pc' + (p.alive?'':' dead');
+  let cards = p.revealed.map(([k,c])=>`<span class="card c${k}">[${k}] ${c}</span>`).join('');
+  const arch = p.pers && p.pers.arch ? ((DATA.arch_ru||{})[p.pers.arch]||p.pers.arch) : '';
+  const persLine = p.pers ? `<div class="pr" title="агрессия/помощь/нейтралитет/театр/воровство/хаос">🎭 ${arch}: агр${(p.pers.aggr*100|0)}% пом${(p.pers.help*100|0)}% нейтр${(p.pers.neut*100|0)}% театр${(p.pers.theat*100|0)}% воров${(p.pers.thief*100|0)}% хаос${(p.pers.chaos*100|0)}%</div>` : '';
+  // Личность: репутация у соседей + личные обиды (долг, цикл)
+  const seatOf = p.seat;
+  const others = DATA.players.filter(q=>q.seat!==seatOf);
+  const repBadges = others.map(q=>{ const v=(p.rep||{})[String(q.seat)]; if(v===undefined||v===0) return '';
+    const cls = v>=0.5?'repP':(v<=-0.5?'repN':'repZ'); return `<span class="tk ${cls}" title="Что ${q.name} думает о P${seatOf}">${q.name.split(' ')[0]} ${v>0?'+':''}${v.toFixed(1)}</span>`; }).join('');
+  const grudgeBadges = others.map(q=>{ const g=(p.grudge||{})[String(q.seat)]; if(!g||g[0]<=0) return '';
+    return `<span class="tk repG" title="Обида на ${q.name} (долг, цикл проступка)">💢${q.name.split(' ')[0]} ${g[0].toFixed(1)}</span>`; }).join('');
+  const mindLine = (repBadges||grudgeBadges) ? `<div class="cards" style="margin-top:4px">${repBadges}${grudgeBadges}</div>` : '';
+  d.innerHTML = `<div class="nm">P${p.seat} ${p.name}</div><div class="pr">${p.prof[0]}</div>${persLine}
+  <div>${p.alive?'':'💀 мёртв с цикла '+p.died_cycle}</div>
+  <span class="or">ОР: ${p.or}</span><span class="tk">🪙 жетоны: ${p.tokens}</span><span class="tk">☠ убийств: ${p.kills}</span>
+  <div class="st ${p.alive?'alive':'dead'}">${p.alive?'ЖИВ':'ПРИЗРАК'}</div>${mindLine}
+  <div class="cards">${cards||'<span class=note>(рукa открыта не была)</span>'}</div>`;
+  bd.appendChild(d);
+}
+document.getElementById('score').textContent = DATA.log[DATA.log.length-1];
+// лог
+const lb = document.getElementById('logbox');
+for (const ln of DATA.log){
+  const s = ln.trim(); let cls='ln';
+  if (s.startsWith('════')) {lb.insertAdjacentHTML('beforeend',`<div class="cycle">${esc(ln)}</div>`);continue;}
+  if (s.startsWith('———')) {lb.insertAdjacentHTML('beforeend',`<div class="turn">${esc(ln)}</div>`);continue;}
+  if (s.includes('МЕСТЬ')||s.includes('ТИЛЬТ')) cls+=' act';
+  else if (s.includes('РПДС:')||s.includes('РПДИ')) cls+=' act';
+  else if (s.includes('УМИРАЕТ')||s.includes('💀')) cls+=' dth';
+  else if (s.includes('ЖАТВА')||s.includes('🌾')) cls+=' har';
+  else if (s.includes('возвращается')||s.includes('ВОСКРЕШ')) cls+=' rev';
+  else if (s.includes('бросок d20')) cls+=' roll';
+  lb.insertAdjacentHTML('beforeend',`<div class="${cls}">${esc(ln)}</div>`);
+}
+function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+// колоды
+const dg = document.getElementById('deckgrid');
+const order = ['ТЕЛО','РАЗУМ','СПОСОБНОСТИ','ИНВЕНТАРЬ','ИСТОРИЯ','ЗНАНИЯ','ДЕТАЛИ','ТЕНЬ'];
+for (const k of order){
+  const items = CARDS.DECKS[k].map(c=>`<span class="card c${k}">${esc(c)}</span>`).join('');
+  dg.insertAdjacentHTML('beforeend',`<div class="deckcol"><h3>${k} (${CARDS.DECKS[k].length})</h3>${items}</div>`);
+}
+for (const [name,arr] of [['ПРОФЕССИИ',CARDS.PROFS],['СПЕЦКАРТЫ',CARDS.SPECS],['КАРТЫ ОБМЕНА',CARDS.OBMEN]]){
+  const items = arr.map(([t,x])=>`<span class="card">**${esc(t)}** — ${esc(x)}</span>`).join('');
+  dg.insertAdjacentHTML('beforeend',`<div class="deckcol"><h3>${name} (${arr.length})</h3>${items}</div>`);
+}
+// табы
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
+  document.querySelectorAll('.view').forEach(x=>x.classList.remove('on'));
+  t.classList.add('on'); document.getElementById('v-'+t.dataset.v).classList.add('on');
+});
+</script>
+</body>
+</html>
