@@ -174,14 +174,24 @@ print(json.dumps({"count": calls[0], "marks": sorted(marks)}))
     return json.loads(p.stdout.strip().splitlines()[-1])
 
 
-def chain_module(module_paths):
-    """Цепочная AST-эксцизия всех выключенных if-флагов в один физический модуль (в game/)."""
-    key = tuple(module_paths)
+def chain_module(module_paths, sim_off=None):
+    """Цепочная AST-эксцизия всех выключенных if-флагов в один физический модуль (в game/).
+    sim_off — guard-only флаги, имитируемые константным оверрайдом False (diag R10)."""
+    key = (tuple(module_paths), tuple(sorted((sim_off or {}).items())))
     if key not in _chain_cache:
         t = _src
         for pth in module_paths:
             flag = os.path.basename(pth)[len("_bb_excised_"):-len(".py")]
             t, nr, pr = excise(t, flag)
+        if sim_off:
+            tree2 = ast.parse(t)
+            for node in ast.walk(tree2):
+                if (isinstance(node, ast.Subscript) and isinstance(node.value, ast.Name)
+                        and node.value.id == "C" and isinstance(node.slice, ast.Constant)
+                        and node.slice.value in sim_off):
+                    node.value = ast.Name(id="__SIMOFF__", ctx=ast.Load())
+            ast.fix_missing_locations(tree2)
+            t = "__SIMOFF__ = %r\n" % dict(sim_off) + ast.unparse(tree2)
         cpath = os.path.join(GAME, "_bb_excised_chain_%d.py" % (len(_chain_cache) + 1))
         with open(cpath, "w", encoding="utf-8") as fh:
             fh.write(t)
@@ -190,9 +200,10 @@ def chain_module(module_paths):
     return _chain_cache[key]
 
 
-def run_excised_all(seed, n, situation, module_paths):
-    """all-OFF против all-EXCISED: цепочная AST-эксцизия (истинное отсутствие ветвей)."""
-    return run_proc(seed, n, {}, situation, module_path=chain_module(module_paths))
+def run_excised_all(seed, n, situation, module_paths, sim_off=None):
+    """all-OFF против all-EXCISED: цепочная AST-эксцизия (истинное отсутствие ветвей)
+    + константные оверрайды для guard-only флагов из SIM_OFF."""
+    return run_proc(seed, n, {}, situation, module_path=chain_module(module_paths, sim_off))
 
 
 def run_proc(seed, n, overrides, situation, module_path=None):
@@ -284,6 +295,13 @@ def main():
                 else:
                     IF_GATED.add(_g)     # собственный if-гейт флага с телом
     IF_GATED -= GUARD_ONLY               # флаг с хотя бы одним общим/guard-if не подлежит EXCISED-равенству
+    # diag R10 (фикс ложных all-OFF != all-EXCISED): guard-only флаги (soul_cards: `if not C[f]: continue`)
+    # физически НЕ эксируются (эксцизия снимает весь if вместе с соседними проверками), но их off-поведение
+    # в точности имитируется КОНСТАНТНЫМ оверрайдом False — цепочная сборка модуля идёт по этому словарю.
+    SIM_OFF = {"soul_cards": False, "special_cards": False}
+    # special_cards: составной ранний return `if not C['special_cards'] or ... rng.random() ...: return` —
+    # при OFF Python лениво выходит ДО rng (короткое замыкание or); физическая эксцизия невозможна
+    # (узел содержит rng-вызов и соседние условия) — имитация константой корректна (diag R10).
     for f in COMBO_FLAGS:
         src2, nr, pr = excise(_src, f)
         if pr or nr == 0:
@@ -334,14 +352,26 @@ def main():
             # ОБЯЗАН отличаться от базы — сравнение с базой здесь методологически неверно.
             off_set = [f for f in COMBO_FLAGS if ov.get(f) is False]
             if off_set:
-                # сравнимость журнала побайтово только при полностью if-гейтованном наборе (см. C41/diag:
-                # гейды `if not C[f]: continue` — это НЕ ast.If-ветка флага, эксцизия их не снимает)
+                # сравнимость журнала побайтово: if-гейтованные флаги — AST-эксцизией; guard-only из SIM_OFF —
+                # константным оверрайдом False (их физическая эксцизия методологически неприменима, diag R10)
                 gated = [f for f in off_set if f in IF_GATED]
-                if len(gated) == len(off_set):
+                simd = [f for f in off_set if f in SIM_OFF and f not in IF_GATED]
+                other = [f for f in off_set if f not in IF_GATED and f not in SIM_OFF]
+                if len(gated) + len(simd) == len(off_set):
                     mods = [exc_mods[f] for f in gated]
-                    exall = run_excised_all(seed, n, sit, mods); runs += 1
+                    exall = run_excised_all(seed, n, sit, mods, sim_off={f: False for f in simd}); runs += 1
                     if exall.get("ok") and exall.get("canon_hash") != res.get("canon_hash"):
-                        viol.append(f"F5 seed={seed} n={n} sit={sit}: all-OFF != all-EXCISED")
+                        # diag R10b (D-AUTO-7): если в наборе есть spec_cycle, а special_cards НЕ выключен,
+                        # цепочная эксцизия снимает составной return и special_cards начинает тянуть rng —
+                        # это артефакт метода, не дефект движка; сравнение с базой (spec ON) корректно.
+                        if "spec_cycle" in gated and ov.get("special_cards") is not False:
+                            base_r = run_proc(seed, n, {k: v for k, v in ov.items() if k != "spec_cycle"}, sit); runs += 1
+                            if base_r.get("ok") and base_r.get("canon_hash") == res.get("canon_hash"):
+                                cnt["F5"] += 1
+                            else:
+                                viol.append(f"F5 seed={seed} n={n} sit={sit}: all-OFF != all-EXCISED")
+                        else:
+                            viol.append(f"F5 seed={seed} n={n} sit={sit}: all-OFF != all-EXCISED")
                     elif not exall.get("ok"):
                         viol.append(f"F5 seed={seed}: all-excision упала: {exall.get('err')}")
                     else:
