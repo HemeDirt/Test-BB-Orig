@@ -12,7 +12,7 @@ _inbox/СИТУАЦИИ_ПЕЧАТЬ2.md). Из 21 названного в до�
 Использование: import bb_full; bb_full.run_game(seed, n, cfg=..., situation='base')
 ВНИМАНИЕ: S1a запрещает прогоны — файл написан и проверен только компиляцией и гард-тестом.
 """
-import json, os, random, sys
+import json, math, os, random, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
@@ -205,6 +205,17 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
     exch = None
     if exch_cards is not None:
         exch = exch_cards[:]; rng.shuffle(exch)
+    if C['draft2']:                                                # мод эпохи B (матрица §108): драфт по 2 карты на категорию; default off — rng цел
+        for p_i in range(n):
+            for k in CATS:
+                if len(decks[k]) >= 3:
+                    decks[k].pop(rng.randrange(len(decks[k])))     # одна «не взятая» карта уходит из пула
+    if C['pool1000']:                                              # мод эпохи B: пул 1000 копий вместо колоды; default off
+        for k in decks:
+            base = deck[SHEET[k]][:]
+            reps = math.ceil(1000 / len(base))
+            decks[k] = (base * reps)[:1000]
+            rng.shuffle(decks[k])
 
     P = []
     for i in range(n):  # §4.п.2 раздача: 10 закрытых карт = 7 категорий + профессия + спец + обмен
@@ -217,10 +228,16 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
                       frozen=0, lethal=False, no_rpds=False, bonus=0, shield=False, reflect=False,
                       pustoe=False, link=None, enemy=None, prof_off=False, prof_used=False, spec_used=False,
                       back2=0, exiled=False, alc=False, pers=personality(rng, arch),
+                      doll=None, open_hand=False,                       # моды open_hands/doll; default off — не читаются без флагов
                       uses=dict(prof=0, spec=0, shadow=0, exch=0, maraud=0)))
+    if C['open_hands']:                                                  # мод эпохи B: руки открыты с 1-го цикла; default off — rng цел
+        for p in P:
+            p['open_hand'] = True
 
     # порог конца S (§4.п.5) и параметры ситуации (zadanie_sim §3.6)
     S = n // 2
+    if C['s_plus1']: S += 1        # мод эпохи B (матрица §108); default off — печать не тронута
+    if C['s_third']: S = math.ceil(n / 3)   # мод эпохи B; default off
     if SCHED.get('S') == 1:
         S = 1                                   # Поле: выжить должен только один («проходят двое» при 3–4 — C6, ЖДЁТ АВТОРА)
     elif SCHED.get('S') == 'roll':              # Чистилище: W броском ДО игры, объявляется вслух
@@ -288,6 +305,11 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
         say(f'    P{p["seat"]}: +{amt} ОР → {p["or_"]}')
         if p['or_'] >= C['or_death']:                 # §8: 3 ОР — смерть
             death(p, 'wounds', src)
+        dth_floor = -1                                # печать v3: базовый нижний порог (NOTE(dth): точная строка v3 не цитирует floor; базовое поведение legacy/печати — без нижней смерти; помечено в SPEC_CONSOLIDATED как #HOUSE-допущение)
+        if C['dth2']: dth_floor = -2                  # мод эпохи B (матрица §108); default off — ветка не исполняется
+        if C['dth4']: dth_floor = -4                  # мод эпохи B; default off
+        if dth_floor != -1 and p['or_'] <= dth_floor and p['alive']:
+            death(p, 'deep_wounds', src)              # «смерть от тяжёлых ранений» — только под флагом
         return True
 
     def apply_A(eff, a, t):
@@ -368,8 +390,10 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
             if len(cands) < 2:
                 return
             ts = rng.sample(cands, 2); r = roll(a); st['mass'] += 1
+            mass_thr = MASS_THR                       # §6.5 печать: только 18–20
+            if C['mass_low']: mass_thr = 17           # мод эпохи B (матрица §108): нижняя граница 1–3 успеха; default off — rng цел
             say(f'  P{a["seat"]}: МАССОВОЕ по P{ts[0]["seat"]},P{ts[1]["seat"]} d20={r}')
-            if r >= MASS_THR:
+            if r >= mass_thr:
                 for t2 in ts: wound(t2, 1, str(a['seat']))
             else:
                 wound(a, 2, 'self')
@@ -385,6 +409,8 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
         hurt = [q for q in alive() if q is not a and q['or_'] >= 1 and q['heal'] < C['heal_cap_per_cycle']]
         if not hurt: w['heal'] = 0
         opts = list(w); wts = [max(0, w[k]) for k in opts]
+        if C['pressure'] and st['cycle'] > 8:                 # мод эпохи B: давление длинного стола — рост агрессии; default off — rng цел (weights те же)
+            wts = [x * (2.0 if k == 'kill' else 1.0) for x, k in zip(wts, opts)]
         return rng.choices(opts, weights=wts)[0] if sum(wts) else 'skip'
 
     # ---- профессии печати №2 (простые; лист ПРОФЕССИЯ; трактовки по SPEC/QWEN — C26) ----
@@ -446,7 +472,8 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
         # №20 «Отменяет спец. возможность» (лист Р2.1 ч.1/2, дословно): цель заблокирована до конца игры
         if p.get('spec_blocked'):
             return
-        if not C['special_cards'] or p['spec_used'] or p.get('spec_used_turn') or rng.random() > p['pers']['spec_p'] * .7:
+        if not C['special_cards'] or (p['spec_used'] and not C['spec_cycle']) or p.get('spec_used_turn') or rng.random() > p['pers']['spec_p'] * .7:
+            # §9.1 одноразовость; spec_cycle — мод эпохи B (спец каждый цикл), default off — ветка не меняет базу
             return
         i = p['spec_i']; lv = [q for q in alive() if q is not p]
         def use():
@@ -501,7 +528,7 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
     # ---- призраки: жетоны, карты мёртвых (soul_cards), магазин; ставки — только ghost_bets=on (C4) ----
     def ghost_phase(c):
         for g in ghosts():
-            g['tokens'] += C['ghost_token_per_cycle']                      # §8 +1 жетон за цикл
+            g['tokens'] += C['ghost_token_per_cycle'] * (2 if C['tokens2'] else 1)   # §8 +1 жетон за цикл; tokens2 — мод эпохи B, default off
             if g.get('exiled') and rng.random() < .5:                      # Кондуктор: возврат 50/50 каждый цикл
                 g['exiled'] = False; g['frozen'] = 0; say(f'  P{g["seat"]} возвращается из изгнания')
             if g.get('back2'):                                             # Тур. Агент: срок возврата истёк
@@ -531,8 +558,8 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
             # принудительное раскрытие за 2 жетона (§8 магазин) — базовая активность призрака
             if g['tokens'] >= C['shop_reveal_cost'] and rng.random() < .25 and alive():
                 g['tokens'] -= C['shop_reveal_cost']; reveal(rng.choice(alive()))
-            if g['tokens'] >= C['revive_cost'] and rng.random() < .5 and g['dead_c'] is not None:
-                g['tokens'] -= C['revive_cost']; g['alive'] = True; g['or_'] = 0
+            if g['tokens'] >= (5 if C['revive5'] else C['revive_cost']) and rng.random() < .5 and g['dead_c'] is not None:   # revive5 — мод эпохи B, default off
+                g['tokens'] -= (5 if C['revive5'] else C['revive_cost']); g['alive'] = True; g['or_'] = 0
                 g['revived'] = True; st['revives'] += 1                    # §8 Воскрешение за 6
                 say(f'  ✝ P{g["seat"]} восстаёт за {C["revive_cost"]} жетонов')
         if C['ghost_bets']:                                                # расчёт ставок (только on-ветка)
@@ -633,10 +660,35 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
                     for i2 in range(len(l)):
                         if decks[k]:
                             l[i2] = decks[k].pop()
-        if C['harvest'] and c >= 2 and not st['player_death'] and len(alive()) >= 2:   # §7 Жатва (off — rng цел)
-            v = rng.choice(alive()); st['harvests'] += 1
-            say(f'  🌾 Жатва: P{v["seat"]}')
-            death(v, 'harvest')
+        if C['harvest'] and c >= 2:                                            # §7 Жатва (off — rng цел); harvest_mode — матрица полного отчёта §108, дефолт random = печать
+            hm = C['harvest_mode']
+            fire = True; victims_n = max(1, int(C['harvest_k']))               # harvest_k default 1 = печать §7
+            if hm == 'quiet': fire = False                                     # жатва «тихая»: не срабатывает вовсе (мод эпохи B)
+            elif hm == 'quiet2': fire = st['deaths'] - before == 0             # только если за цикл вообще не было смертей
+            elif hm == 'off_after_corpse': fire = not any(q['revived'] for q in P)   # отключена, если в партии был труп/восставший
+            elif hm == 'off_after_death': fire = st['deaths'] == 0             # отключена после первой смерти любой причины
+            elif hm == 'late': fire = c >= 4                                   # поздняя жатва: с 4-го цикла вместо 2-го
+            elif hm == 'escalate':                                             # E(N)=⌈1.9+0.32·N⌉+1 жертв (матрица §108)
+                victims_n = math.ceil(1.9 + 0.32 * len(alive())) + 1
+            if fire and not st['player_death'] and len(alive()) >= 2:
+                pool_a = alive()
+                if hm == 'leader':                                             # жатва по лидеру убийств; ties — rng (первый rng-вызов ветки при любом режиме)
+                    mx = max(q['kills'] for q in pool_a)
+                    ld = [q for q in pool_a if q['kills'] == mx]
+                    v = rng.choice(ld)
+                else:
+                    v = rng.choice(pool_a)
+                st['harvests'] += 1
+                say(f'  🌾 Жатва[{hm}]: P{v["seat"]}')
+                death(v, 'harvest')
+                extra = victims_n - 1                                          # harvest_k/escalate: дополнительные жертвы, каждая своим choice
+                while extra > 0:
+                    lv2 = alive()
+                    if len(lv2) < 2: break
+                    v2 = rng.choice(lv2); st['harvests'] += 1
+                    say(f'  🌾 Жатва[{hm}]+: P{v2["seat"]}'); death(v2, 'harvest'); extra -= 1
+            if hm == 'off_after_corpse' and any(q['revived'] for q in P):
+                pass  # жатва выключена до конца партии (мод эпохи B)
         if situation == 'hrono' and st['thr_hit']:                         # §10.1 лист Р2.2 (C30/C33)
             st['end'] = c; break
         if situation == 'amkary' and len(set(q['team'] for q in alive())) <= 1:
