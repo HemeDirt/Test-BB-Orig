@@ -58,12 +58,15 @@ sec4 = spec_txt.split("## 4.")[1].split("## 5.")[0]
 cfg_keys = set(re.findall(r'(?:\|\s*|\))\s*·?\s*([a-z][a-z0-9_]{2,})\s*=', sec4))
 # допуск: константы печати №2 (прямые цитаты §8/§6.3) и технические пометки — НЕ флаги реестра;
 # зафиксированы ДО прогонов (Р6), сверены с комментариями config.py строки 72–113
+# pressure — мод эпохи B (C39): легален в CFG_DEFAULTS, но в словаре §4 не записан;
+# SPEC_CONSOLIDATED неизменяем до коммита «spec: §4 add pressure» (вердикт Р8) → временный whitelist.
 NON_FLAG_KEYS = ("drunk_chronology_step", "drunk_chronology_victory_on", "exchange_print11",
                  "ghost_token_per_cycle", "shop_reveal_cost", "reroll_cost", "revive_cost",
-                 "or_death", "heal_cap_per_cycle", "cycle_cap")
+                 "or_death", "heal_cap_per_cycle", "cycle_cap",
+                 "pressure")  # C39 whitelist — снять после spec: §4 add pressure
 orphans_cfg = [k for k in CFG_DEFAULTS if k not in cfg_keys and k not in sec4 and k not in NON_FLAG_KEYS]
 orphans_spec = [k for k in cfg_keys if k not in CFG_DEFAULTS]
-missing_real = [k for k in orphans_spec if k in ("doll","forced","duel_kit_c","rpdi_plus1","tokens2","revive5")]  # контроль反向
+missing_real = [k for k in orphans_spec if k in ("doll","forced","duel_kit_c","rpdi_plus1","tokens2","revive5")]  # контроль реестра
 if orphans_cfg: viol.append(f"V4: флаги в config без строки словаря: {orphans_cfg}")
 if missing_real: viol.append(f"V4: флаги словаря без ключа config: {missing_real}")
 
