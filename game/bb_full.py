@@ -350,6 +350,10 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
 
     def pick_target(a, need_hurt=False):
         cands = [q for q in alive() if q is not a and q['frozen'] == 0]
+        if C['doll'] and a.get('doll') is not None and a.get('doll_c') == st['cycle']:   # мод эпоха B (матрица §108): кукла — цель зафиксирована на цикл; default off — rng цел
+            d = by_seat(a['doll'])
+            if d is not None and d['alive'] and d in cands:
+                say(f'  🪆 P{a["seat"]}: кукла держит цель P{d["seat"]}'); return d
         if a['enemy'] and by_seat(a['enemy']) in cands and rng.random() < .8:
             return by_seat(a['enemy'])
         if need_hurt:
@@ -357,8 +361,12 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
             if hurt:
                 cands = hurt
         if a['pers']['aggr'] > .4 and cands:
-            return min(cands, key=lambda q: 3 - q['or_'])
-        return rng.choice(cands) if cands else None
+            t = min(cands, key=lambda q: 3 - q['or_'])
+            if C['doll']: a['doll'] = t['seat']; a['doll_c'] = st['cycle']   # кукла: фиксация цели на цикл (только под флагом)
+            return t
+        t = rng.choice(cands) if cands else None
+        if C['doll'] and t is not None: a['doll'] = t['seat']; a['doll_c'] = st['cycle']
+        return t
 
     def act(a, kind, t=None):
         st['acts'][kind] = st['acts'].get(kind, 0) + 1; T('acts')
@@ -558,26 +566,35 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
             # принудительное раскрытие за 2 жетона (§8 магазин) — базовая активность призрака
             if g['tokens'] >= C['shop_reveal_cost'] and rng.random() < .25 and alive():
                 g['tokens'] -= C['shop_reveal_cost']; reveal(rng.choice(alive()))
-            if g['tokens'] >= (5 if C['revive5'] else C['revive_cost']) and rng.random() < .5 and g['dead_c'] is not None:   # revive5 — мод эпохи B, default off
-                g['tokens'] -= (5 if C['revive5'] else C['revive_cost']); g['alive'] = True; g['or_'] = 0
+            rc = 5 if C['revive5'] else C['revive_cost']                    # revive5 — мод эпохи B, default off; база §8 = 6
+            if g['tokens'] >= rc and rng.random() < .5 and g['dead_c'] is not None:
+                g['tokens'] -= rc; g['alive'] = True; g['or_'] = 0
                 g['revived'] = True; st['revives'] += 1                    # §8 Воскрешение за 6
-                say(f'  ✝ P{g["seat"]} восстаёт за {C["revive_cost"]} жетонов')
+                say(f'  ✝ P{g["seat"]} восстаёт за {rc} жетонов')           # cosmetic-фикс (п.8а): текст печатает фактическую цену, база (off) = 6 без изменений
         if C['ghost_bets']:                                                # расчёт ставок (только on-ветка)
             pass  # выплата x2 выполняется в конце цикла по st['deaths']; учёт — S1b (в legacy не было расчёта выплат)
 
     def turn(p, c):
         if p['frozen'] > 0 and p['frozen'] < 90:
-            p['frozen'] -= 1; say(f'  P{p["seat"]}: пропуск (заморожен)'); return
+            p['frozen'] -= 1; say(f'  P{p["seat"]}: пропуск (заморожен)')
+            if C['forced']:                                             # мод эпоха B (матрица §108): принудительное действие при пропуске; default off — rng цел
+                t = pick_target(p, need_hurt=True)
+                if t is not None:
+                    say(f'  ⛓ P{p["seat"]}: вынужденное действие'); act(p, 'wound', t)
+            return
         if p['frozen'] >= 90:
             say(f'  P{p["seat"]}: изгнан, ожидает возврата'); return
         p['spec_used_turn'] = False
         say(f'——— P{p["seat"]} ({p["prof"]}), ОР={p["or_"]}, личность: агр{p["pers"]["aggr"]:.2f} пом{p["pers"]["help"]:.2f} нейтр{p["pers"]["neut"]:.2f} ———')
         rv, rpds, rpdi = C['reveal_per_turn'], 1, 1 + p['bonus']           # §5: норма печати — 2 раскрытия, 1 РПДС + 1 РПДИ (zadanie_sim п.2.1)
+        if C['rpdi_plus1']: rpdi += 1                                      # мод эпоха B (матрица §108): +1 РПДИ всем; default off — rng цел
         if SCHED.get('sched'):                                             # особые расписания ситуации (§10.1: «расписание циклов задаёт ситуация»)
             sc = SCHED['sched']; i2 = min(c - 1, len(sc) - 1)
             rv, rpds, rpdi = sc[i2][0], sc[i2][1], sc[i2][2] + p['bonus']
         else:
             rpds, rpdi = rpds, rpdi
+        if C['rpdi_extra'] and c >= 3 and p is alive()[len(alive()) // 2]:  # мод эпоха B: доп. РПДИ «активному» (средний выживший — #HOUSE-допущение, матрица текст не цитирует); default off — rng цел
+            rpdi += 1
         p['bonus'] = 0
         if p['no_rpds']: rpds = 0; p['no_rpds'] = False
         if st.get('no_rpdi_cycle') == c: rpdi = 0                          # спец №23 (трактовка C28)
@@ -629,6 +646,7 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
         st['cycle'] = c; st['player_death'] = False; T('breaks')
         for p in P:
             p['heal'] = 0
+            if C['doll']: p['doll'] = None                              # кукла живёт один цикл — сброс только под флагом (off — состояние не трогается)
             pass  # одноразовость спецкарты за цикл-всю-игру (§9.1): флаг spec_used НЕ сбрасывается (запись legacy удалена как no-op)
         say(f'════ ЦИКЛ {c} ════ живых {len(alive())}, призраков {len(ghosts())}')
         if c >= 2 and exch is not None:                                    # §5 начало цикла: живые тянут обмен
@@ -687,11 +705,12 @@ def run_game(seed, n, cfg=None, situation='base', log=None):
                     if len(lv2) < 2: break
                     v2 = rng.choice(lv2); st['harvests'] += 1
                     say(f'  🌾 Жатва[{hm}]+: P{v2["seat"]}'); death(v2, 'harvest'); extra -= 1
-            if hm == 'off_after_corpse' and any(q['revived'] for q in P):
-                pass  # жатва выключена до конца партии (мод эпохи B)
+            # off_after_corpse обработан выше (fire = not any(revived)); отдельная «мёртвая» ветка удалена — семантики не несла (КТ-вердикт координатора п.8б)
         if situation == 'hrono' and st['thr_hit']:                         # §10.1 лист Р2.2 (C30/C33)
             st['end'] = c; break
         if situation == 'amkary' and len(set(q['team'] for q in alive())) <= 1:
+            st['end'] = c; break
+        if C['duel_kit_c'] and len(alive()) <= 1:                          # дуэльный комплект C (матрица §108): конец при N≤1 без страховки stall; default off — rng цел
             st['end'] = c; break
         if SCHED.get('S') == 'half' or SCHED.get('places') or isinstance(SCHED.get('S'), int):
             if len(alive()) <= S:

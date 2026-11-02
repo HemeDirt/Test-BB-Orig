@@ -168,11 +168,18 @@ HARVEST_CALLER = "run_game"                          # В2: имя функци�
 
 
 def harvest_line_in_src():
-    """Точная линия места вызова rng жатвы в bb_full.py (на HEAD = 637):
-    строка вида `v = rng.choice(alive()); st['harvests'] += 1` внутри if C['harvest']."""
+    """Точная линия места вызова rng жатвы в bb_full.py.
+    Ревизия S1b (KT-4, разрешение «пересчёт констант номеров строк»): после добавления
+    harvest_mode/base-ветки выбор жертвы и счётчик живут на ДВУХ соседних строках:
+        v = rng.choice(pool_a)          <- искомая линия (маркер вызова rng)
+        st['harvests'] += 1            <- следующая строка
+    Старый якорь (одна строка с rng.choice(alive()) и st['harvests']) более не существует;
+    паттерн намеренно узкий: rng.choice(pool_a) встречается только в базовой ветке жатвы
+    (leader — rng.choice(ld), extra — rng.choice(lv2) — другие имена пулов). Не найдено — падение."""
     with open(os.path.join(GAME_DIR, "bb_full.py"), encoding="utf-8") as fh:
-        for i, l in enumerate(fh.read().splitlines(), 1):
-            if "rng.choice(alive())" in l and "st['harvests']" in l:
+        lines = fh.read().splitlines()
+        for i, l in enumerate(lines, 1):
+            if "rng.choice(pool_a)" in l and i < len(lines) and "st['harvests']" in lines[i]:
                 return i
     raise AssertionError("место вызова жатвы не найдено в bb_full.py — молчаливый проход запрещён")
 
