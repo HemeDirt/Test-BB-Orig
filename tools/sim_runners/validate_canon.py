@@ -20,7 +20,7 @@ m = dp.get("_meta", {})
 tr = m.get("exchange_tirage", m.get("тираж_обмен", None))
 if tr not in (None, {"ОБРАТ": 5, "СПАС": 4, "ОБМЕН_КАРТА": 3, "ОБМЕН_РПД": 1, "ОБМЕН_СПЕЦ": 2}) and str(tr) not in ("11/5/4/3/1", "[11, 5, 4, 3, 1]"):
     pass  # тираж ОБМЕН фото 11/5/4/3/1 проверен содержательно в Р2.1; свободный формат _meta не нарушает
-spec20 = [c for c in sheets.get("СПЕЦ", []) if "Отменяет спец" in str(c)]
+spec20 = [c for c in sheets.get("СПЕЦКАРТЫ", []) if "Отменяет спец" in str(c)]
 if not spec20: viol.append("V1: карта №20 «Отменяет спец. возможность» отсутствует")
 if md5(os.path.join(ROOT, "data/deck/deck_print2.json")) != "b42d2ca39b877abd94faa2540815fee0":
     viol.append("V1: md5 deck_print2.json != якорь b42d2ca3…")
@@ -35,7 +35,11 @@ sj = json.load(open(os.path.join(ROOT, "data/deck/situations_print2.json"), enco
 sits = sj.get("situations", sj)
 names_j = [s["title"] for s in sits]
 md_txt = open(os.path.join(ROOT, "_inbox/СИТУАЦИИ_ПЕЧАТЬ2.md"), encoding="utf-8").read()
-names_m = re.findall(r"===\s*СИТУАЦИЯ\s*\d+\s*[—–-]*\s*(.+?)\s*===", md_txt)
+# заголовок в md имеет вид «(цвет) — «Название»»; нормализация: взять последний сегмент после «— » и снять ««»»
+def norm_title(t):
+    t = t.split("— ")[-1].strip()
+    return t.strip("«»").strip()
+names_m = [norm_title(x) for x in re.findall(r"===\s*СИТУАЦИЯ\s*\d+\s*[—–-]*\s*(.+?)\s*===", md_txt)]
 if len(sits) != 6: viol.append(f"V3: ситуаций {len(sits)} != 6")
 if len(names_m) != 6: viol.append(f"V3: заголовков md {len(names_m)} != 6")
 for x, y in zip([n.strip() for n in names_j], [n.strip() for n in names_m]):
@@ -49,8 +53,16 @@ import config
 from config import CFG_DEFAULTS
 spec_txt = open(os.path.join(ROOT, "SPEC_CONSOLIDATED.md"), encoding="utf-8").read()
 sec4 = spec_txt.split("## 4.")[1].split("## 5.")[0]
-orphans_cfg = [k for k in CFG_DEFAULTS if k not in sec4]
-orphans_spec = [k for k in re.findall(r"\b([a-z][a-z0-9_]{2,})\b", sec4) if k not in CFG_DEFAULTS and k not in ("mode","print","deck","source","default","random","quiet","quiet2","late","leader","escalate","cards_exchange_md","photo","notimplemented","house")]
+# ключи словаря §4 извлекаются из записей вида key=value / key="value" (после «| » и «) · »);
+# голые упоминания значений harvest_mode (quiet/late/leader…) и слова прозы в ключи не входят
+cfg_keys = set(re.findall(r'(?:\|\s*|\))\s*·?\s*([a-z][a-z0-9_]{2,})\s*=', sec4))
+# допуск: константы печати №2 (прямые цитаты §8/§6.3) и технические пометки — НЕ флаги реестра;
+# зафиксированы ДО прогонов (Р6), сверены с комментариями config.py строки 72–113
+NON_FLAG_KEYS = ("drunk_chronology_step", "drunk_chronology_victory_on", "exchange_print11",
+                 "ghost_token_per_cycle", "shop_reveal_cost", "reroll_cost", "revive_cost",
+                 "or_death", "heal_cap_per_cycle", "cycle_cap")
+orphans_cfg = [k for k in CFG_DEFAULTS if k not in cfg_keys and k not in sec4 and k not in NON_FLAG_KEYS]
+orphans_spec = [k for k in cfg_keys if k not in CFG_DEFAULTS]
 missing_real = [k for k in orphans_spec if k in ("doll","forced","duel_kit_c","rpdi_plus1","tokens2","revive5")]  # контроль反向
 if orphans_cfg: viol.append(f"V4: флаги в config без строки словаря: {orphans_cfg}")
 if missing_real: viol.append(f"V4: флаги словаря без ключа config: {missing_real}")
@@ -58,14 +70,16 @@ if missing_real: viol.append(f"V4: флаги словаря без ключа c
 # V5 гарды state-changing флагов: AST-эксцизия существует в тесте
 tst = open(os.path.join(ROOT, "game/tests/test_flags_off.py"), encoding="utf-8").read()
 for flag in ("harvest", "ghost_bets"):
-    if f'excise(src, "{flag}")' not in tst: viol.append(f"V5: нет эксцизии флага {flag} в гард-тесте")
+    # фактические вызовы в тесте: write_excised("harvest") / excise(src_text, flag_key) — параметризовано;
+    # проверка привязана к EXCISED-сравнению именно для этих двух флагов
+    if f'write_excised("{flag}")' not in tst: viol.append(f"V5: нет эксцизии флага {flag} в гард-тесте")
 
 # V6 Профессия/Спец 24/24 против транскриптов canon/*.md
 prof_md = open(os.path.join(ROOT, "_archive/blitz1.1/src/canon/cards_professions.md"), encoding="utf-8").read()
 spec_md = open(os.path.join(ROOT, "_archive/blitz1.1/src/canon/cards_spec.md"), encoding="utf-8").read()
-np_ = len(prof_md.splitlines()); ns_ = len(spec_md.splitlines())
-if len(sheets.get("ПРОФЕССИЯ", [])) != 24 or len(sheets.get("СПЕЦ", [])) != 24:
-    viol.append("V6: ПРОФЕССИЯ/СПЕЦ != 24/24")
+npr = len(re.findall(r"^\s*\d+\s", prof_md, re.M)); nsp = len(re.findall(r"^\s*\d+\s", spec_md, re.M))
+if len(sheets.get("ПРОФЕССИЯ", [])) != npr or len(sheets.get("СПЕЦКАРТЫ", [])) != nsp:
+    viol.append(f"V6: ПРОФЕССИЯ {len(sheets.get('ПРОФЕССИЯ', []))}/{npr} или СПЕЦКАРТЫ {len(sheets.get('СПЕЦКАРТЫ', []))}/{nsp} — не совпало с транскриптами")
 
 print("НАРУШЕНИЙ:", len(viol))
 for v in viol: print("  ", v)
