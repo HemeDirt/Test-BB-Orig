@@ -43,14 +43,14 @@ for x, y in zip([n.strip() for n in names_j], [n.strip() for n in names_m]):
 if md5(os.path.join(ROOT, "data/deck/situations_print2.json")) != "444dbd8aa43a82cef6e941bbd0446737":
     viol.append("V3: md5 situations_print2.json != новый якорь 444dbd8a…")
 
-# V4 реестр флагов: config.CONFIG ↔ словарь SPEC_CONSOLIDATED §4
+# V4 реестр флагов: config.CFG_DEFAULTS ↔ словарь SPEC_CONSOLIDATED §4
 sys.path.insert(0, os.path.join(ROOT, "game"))
 import config
-from config import CONFIG
+from config import CFG_DEFAULTS
 spec_txt = open(os.path.join(ROOT, "SPEC_CONSOLIDATED.md"), encoding="utf-8").read()
 sec4 = spec_txt.split("## 4.")[1].split("## 5.")[0]
-orphans_cfg = [k for k in CONFIG if k not in sec4]
-orphans_spec = [k for k in re.findall(r"\b([a-z][a-z0-9_]{2,})\b", sec4) if k not in CONFIG and k not in ("mode","print","deck","source","default","random","quiet","quiet2","late","leader","escalate","cards_exchange_md","photo","notimplemented","house")]
+orphans_cfg = [k for k in CFG_DEFAULTS if k not in sec4]
+orphans_spec = [k for k in re.findall(r"\b([a-z][a-z0-9_]{2,})\b", sec4) if k not in CFG_DEFAULTS and k not in ("mode","print","deck","source","default","random","quiet","quiet2","late","leader","escalate","cards_exchange_md","photo","notimplemented","house")]
 missing_real = [k for k in orphans_spec if k in ("doll","forced","duel_kit_c","rpdi_plus1","tokens2","revive5")]  # контроль反向
 if orphans_cfg: viol.append(f"V4: флаги в config без строки словаря: {orphans_cfg}")
 if missing_real: viol.append(f"V4: флаги словаря без ключа config: {missing_real}")
