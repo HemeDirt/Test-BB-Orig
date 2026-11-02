@@ -1,18 +1,25 @@
 # -*- coding: utf-8 -*-
-"""Фазз S1b (п.4.4; фиксы вердикта Р8 а/б/в): инварианты F1–F6 из SPEC_CONSOLIDATED.md §7, 240 прогонов.
+"""Фазз S1b (п.4.4/R3; фиксы вердикта Р8 а/б/в + фикс diag-R9): инварианты F1–F6 из SPEC_CONSOLIDATED.md §7, 240 прогонов.
 Фикс (а): эксцизии пишутся в game/_bb_excised_<flag>.py (как в гард-тесте), а не в tempfile.mkdtemp —
 иначе подпроцесс резолвит ROOT от __file__ и не находит data/deck (FileNotFoundError).
-Фикс (б): сравнение OFF==база заменено на гардовый инвариант OFF == EXCISED побайтово (для harvest_k
+Фикс (б): сравнение OFF==база заменено на гардовый инвариант OFF == EXCISED (для harvest_k
 равенство журналов ложно даже при корректном флаге — параметр читается в активную ветку жатвы).
+СРАВНЕНИЕ — по КАНОНУ ЖУРНАЛА (diag R9): raw-journal побайтово == цепочная AST-эксцизия побайтово
+(копия test_flags_off.harvest:121-131: log.strip() + удаление строк T('…')/«P…: спецкарта …»).
+Предыдущая реализация сравнивала sha256 RAW-журнала — косметические say-строки off-ветки давали
+ложные нарушения all-OFF != all-EXCISED (16 шт.) и OFF != EXCISED (1 шт.). Логиca проверок F1-F4,F6 не менялась.
 Фикс (в): F4 — событийные инварианты (§7 + C41): alive<=n; deaths>=n-alive; revives<=deaths; end<=cap.
+Статический rng-гейт guard-флагов переписан на walk-order (diag R9): прежняя версия сканировала весь
+if-узел (включая вложенные if других флагов) и давал ложные «может расходовать rng» для spec_cycle/special_cards
+в смешанных all-OFF наборах (26 шт.); теперь — тело флага ДО первого вложенного If, ранний выход считается по первому rng.
 Инварианты зафиксированы ДО прогонов (§7), файл их только исполняет; текст §7 не меняется.
 F1 без исключений/трейсов; F2 детерминизм (два чистых подпроцесса, побайтово);
 F3 партия завершается (end не None, <= cycle_cap); F4 непротиворечивость счётчиков;
-F5 флаг OFF = база (сверка с прецедурным базовым прогоном тех же seed/n/situation);
+F5 флаг OFF == истинное отсутствие ветки (канон журнала, как в гарде);
 F6 n в [2..8], случайные допустимые комбинации флагов. Статистика — НЕ здесь (S2).
 Запуск из корня: python3 game/tests/fuzz_test.py   (выход 0 и «НАРУШЕНИЙ: 0» при успехе)
 """
-import ast, json, os, random, subprocess, sys, tempfile
+import ast, hashlib, json, os, random, re, subprocess, sys, tempfile
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 GAME = os.path.join(ROOT, "game")
@@ -53,11 +60,16 @@ cfg = make_cfg(**spec_s["overrides"])
 log = []
 try:
     st, P = bb.run_game(spec_s["seed"], spec_s["n"], cfg=cfg, situation=spec_s["situation"], log=log)
+    txt = "\n".join(log)
+    # КАНОН ЖУРНАЛА (diag R9, копия канона гарда test_flags_off.harvest:121-131): raw-строки say()
+    # включают cosmetic-реплики off-веток («⚡ P…: спецкарта …»); эксцизия их физически снимает.
+    # Сравниваем canon_hash (raw без T('…') и «спецкарта») — для F2 детерминизма достаточно jhash (raw).
+    canon = "\n".join(l for l in log if "T('" not in l and "спецкарта" not in l).strip()
     res = dict(ok=True, end=st["end"], deaths=st["deaths"], harvests=st["harvests"],
                revives=st["revives"], causes=st["causes"], first_death=st["first_death"],
                alive=sum(1 for p in P if p["alive"]), n=len(P), stall=st["stall"],
-               journal_len=len(log), jhash=__import__("hashlib").sha256("\n".join(log).encode()).hexdigest(),
-               journal=__import__("zlib").compress(__import__("base64").b64decode((__import__("base64").b64encode("\n".join(log).encode()))))[:0].hex())
+               journal_len=len(log), jhash=__import__("hashlib").sha256(txt.encode()).hexdigest(),
+               canon_hash=__import__("hashlib").sha256(canon.encode()).hexdigest())
 except Exception as e:
     import traceback
     res = dict(ok=False, err=type(e).__name__ + ": " + str(e), tb=traceback.format_exc())
@@ -66,11 +78,14 @@ print(json.dumps(res, ensure_ascii=False))
 
 
 def branch_rng_calls(src_text, flag_key):
-    """Статический разбор: число rng-вызовов в теле ветки if C[flag] и есть ли ранний выход
-    (return/continue/break) ДО первого rng-вызова. Для guard-флагов (`if not C[f]: ... return`)
-    OFF не расходует rng тогда и только тогда, когда ранний выход есть — динамический счётчик с
-    monkey-patch random.Random здесь неприменим (движок вызывает методы экземпляра random.Random,
-    глобальная подмена класса их не перехватывает; diag Р8)."""
+    """Статический разбор (diag R9, walk-order): число rng-вызовов в теле ветки if C[flag]
+    ДО первого вложенного If и есть ли ранний выход (return/continue/break) до первого rng.
+    Прежняя версия собирала rng-вызовы со ВСЕГО if-узла (ast.walk включает вложенные if
+    других флагов и orelse) — отсюда ложные «может расходовать rng» для spec_cycle/special_cards
+    в смешанных all-OFF наборах (26 шт. в results_fuzz_r8.log). Для guard-флагов
+    (`if not C[f]: ... return`) OFF не расходует rng тогда и только тогда, когда ранний выход
+    есть — динамический счётчик с monkey-patch random.Random здесь неприменим (движок вызывает
+    методы экземпляра random.Random, глобальная подмена класса их не перехватывает; diag Р8)."""
     tree = ast.parse(src_text)
     total = 0
     early_exit = False
@@ -80,22 +95,27 @@ def branch_rng_calls(src_text, flag_key):
                     if isinstance(x, ast.Subscript) and isinstance(x.value, ast.Name)
                     and x.value.id == "C" and isinstance(x.slice, ast.Constant)
                     and isinstance(x.slice.value, str)}
-            if flag_key in keys:
-                first_rng = None
-                for sub in ast.walk(node.body[0] if node.body else node):
-                    pass
-                # первый rng-вызов в теле (по строке)
-                lines = []
-                for sub in ast.walk(node):
-                    if isinstance(sub, ast.Call) and isinstance(sub.func, ast.Attribute) \
-                       and isinstance(sub.func.value, ast.Name) and sub.func.value.id == "rng":
-                        lines.append(sub.lineno)
-                if lines:
-                    total += len(lines)
-                    fr = min(lines)
-                    for sub in ast.walk(node):
-                        if isinstance(sub, (ast.Return, ast.Continue, ast.Break)) and getattr(sub, "lineno", 10**9) < fr:
-                            early_exit = True
+            if flag_key not in keys:
+                continue
+            # тело флага: только прямые stmt до первого вложенного If (walk-order)
+            body = []
+            for st_ in node.body:
+                if isinstance(st_, ast.If):
+                    break
+                body.append(st_)
+            frng = None
+            fexit = None
+            for sub in ast.walk(ast.Module(body=body, type_ignores=[])):
+                if isinstance(sub, ast.Call) and isinstance(sub.func, ast.Attribute) \
+                   and isinstance(sub.func.value, ast.Name) and sub.func.value.id == "rng":
+                    if frng is None or sub.lineno < frng:
+                        frng = sub.lineno
+                    total += 1
+                if isinstance(sub, (ast.Return, ast.Continue, ast.Break)):
+                    if fexit is None or sub.lineno < fexit:
+                        fexit = sub.lineno
+            if frng is not None and fexit is not None and fexit < frng:
+                early_exit = True
     return total, early_exit
 
 
@@ -320,7 +340,7 @@ def main():
                 if len(gated) == len(off_set):
                     mods = [exc_mods[f] for f in gated]
                     exall = run_excised_all(seed, n, sit, mods); runs += 1
-                    if exall.get("ok") and exall.get("jhash") != res.get("jhash"):
+                    if exall.get("ok") and exall.get("canon_hash") != res.get("canon_hash"):
                         viol.append(f"F5 seed={seed} n={n} sit={sit}: all-OFF != all-EXCISED")
                     elif not exall.get("ok"):
                         viol.append(f"F5 seed={seed}: all-excision упала: {exall.get('err')}")
@@ -348,7 +368,7 @@ def main():
             exd = run_proc(seed, n, {f: True}, "base", module_path=exc_mods[f]); runs += 1
             if not exd.get("ok"):
                 viol.append(f"F5 seed={seed}: эксцизия {f} упала: {exd.get('err')}")
-            elif off.get("ok") and off["jhash"] != exd["jhash"]:
+            elif off.get("ok") and off["canon_hash"] != exd["canon_hash"]:
                 viol.append(f"F5 seed={seed}: флаг {f}: OFF != EXCISED побайтово")
             else:
                 cnt["F5"] += 1
