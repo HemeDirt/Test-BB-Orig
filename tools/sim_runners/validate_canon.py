@@ -58,14 +58,16 @@ sec4 = spec_txt.split("## 4.")[1].split("## 5.")[0]
 cfg_keys = set(re.findall(r'(?:\|\s*|\))\s*·?\s*([a-z][a-z0-9_]{2,})\s*=', sec4))
 # допуск: константы печати №2 (прямые цитаты §8/§6.3) и технические пометки — НЕ флаги реестра;
 # зафиксированы ДО прогонов (Р6), сверены с комментариями config.py строки 72–113
-# pressure — мод эпохи B (C39): легален в CFG_DEFAULTS, но в словаре §4 не записан;
-# SPEC_CONSOLIDATED неизменяем до коммита «spec: §4 add pressure» (вердикт Р8) → временный whitelist.
+# C39 закрыт (вердикт Р8): pressure записан в словарь §4 → whitelist снят.
+# NON_FLAG_KEYS — константы печати №2, внесённые в §4 отдельной строкой «НЕФЛАГОВЫЕ КОНСТАНТЫ» (Р8).
 NON_FLAG_KEYS = ("drunk_chronology_step", "drunk_chronology_victory_on", "exchange_print11",
                  "ghost_token_per_cycle", "shop_reveal_cost", "reroll_cost", "revive_cost",
-                 "or_death", "heal_cap_per_cycle", "cycle_cap",
-                 "pressure")  # C39 whitelist — снять после spec: §4 add pressure
+                 "or_death", "heal_cap_per_cycle", "cycle_cap")
+# C40 (закрыт, вердикт Р8): таблица явных алиасов «§4-имя → config-ключ»; сопоставление имён,
+# логика проверок V1–V6 не тронута.
+SPEC_TO_CFG_ALIAS = {"drunk_step": "drunk_chronology_step", "victory_on": "drunk_chronology_victory_on"}
 orphans_cfg = [k for k in CFG_DEFAULTS if k not in cfg_keys and k not in sec4 and k not in NON_FLAG_KEYS]
-orphans_spec = [k for k in cfg_keys if k not in CFG_DEFAULTS]
+orphans_spec = [k for k in cfg_keys if k not in CFG_DEFAULTS and k not in SPEC_TO_CFG_ALIAS]
 missing_real = [k for k in orphans_spec if k in ("doll","forced","duel_kit_c","rpdi_plus1","tokens2","revive5")]  # контроль реестра
 if orphans_cfg: viol.append(f"V4: флаги в config без строки словаря: {orphans_cfg}")
 if missing_real: viol.append(f"V4: флаги словаря без ключа config: {missing_real}")
