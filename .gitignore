@@ -9,3 +9,4 @@ __pycache__/
 *.swo
 *.log
 *.tmp
+game/_bb_excised*.py
